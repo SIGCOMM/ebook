@@ -1,0 +1,229 @@
+% This work is licensed under
+% http://creativecommon.org/licenses/by/3.0/
+\section{Design considerations related to mobility}
+\label{sec:sec8}
+
+Mobility mechanisms lie close to the heart of networking, so they are
+related to many other communication services and aspects of
+networking.  In this section, we touch briefly on several other topics
+closely related to mobility.
+
+\subsection{Multihoming}
+\label{sec:multihoming}
+
+Increasingly, mobile devices connect to the Internet
+via multiple interfaces ({\it e.g.,}
+a laptop with WiFi and wired Ethernet
+interfaces, a smartphone with WiFi and cellular interfaces, or a
+virtual machine running on a physical server with multiple wired
+Ethernet interfaces).  
+Since these interfaces usually connect to
+different administrative domains ({\it e.g.,}
+a campus WiFi network and a
+commercial cellular provider), they must have different IP addresses in
+different address blocks.
+There is no name for the Internet host itself, and no way to
+route to the host itself rather than a specific one of its interfaces.
+
+{\it Sequential multihoming} is the use by a host of multiple
+interfaces, one after the other, during the lifetime of a channel.
+A mobility mechanism can be used to implement sequential multihoming;
+in principle either of the mobility patterns
+can be used to provide it.
+
+If we look at the specific real mobility protocols 
+in Sections~\ref{sec:sec4} through \ref{sec:sec6}, however,
+we see that the DRM protocols in Sections~\ref{sec:sec4} and 
+\ref{sec:sec5} work with a single IP address per host, while the
+SLM protocols in Section~\ref{sec:sec6} work with multiple IP addresses
+per host.
+This is an artifact of where these protocols sit in the IP stack rather
+than an inherent property of the implementation patterns,
+but it does mean that these SLM implementations are currently a better
+match for multihoming than these DRM implementations.
+
+{\it Simultaneous multihoming} allows a host to use its multiple
+interfaces to contribute bandwidth to the same channel simultaneously.
+Simultaneous multihoming
+is closely related to sequential multihoming and therefore
+to mobility, but not strictly the same because the multiple
+interfaces of a host might not be allowed to {\it change} during
+the lifetime of a channel.
+Of course, what we really want is simultaneous {\it and} sequential
+multihoming, which is a
+little more complex than sequential multihoming because it requires
+protocol extensions so that a layer member can
+have and use more than one attachment at a time. 
+All of HIP, ILNP, LISP Mobile Node, and Serval
+already have session protocols capable of simultaneous multihoming.
+
+Because there is such a close association between host multihoming
+and mobility, the well-known multihoming protocols
+Multipath TCP~\cite{RFC-6824} 
+and the Stream Control Transmission Protocol (SCTP)~\cite{RFC-4960}
+are worth studying.
+They have been used enough to gather experience on the performance
+aspects of switching from one interface to another, and on how performance
+affects the buffering and rate control in real transport (session)
+protocols such as TCP.
+This experience is as relevant to mobility as it is to multihoming.
+
+\subsection{Anycast}
+
+Increasingly, the Internet is a platform for users to
+access services hosted on multiple servers in multiple locations.
+The appropriate network abstraction for their requirements
+is {\it anycast},
+in which a service has an {\it anycast name} that corresponds
+to a group of servers offering the service.
+A request for a communication channel to the service can result in a
+channel to any member of the group of servers.
+
+For simple query-response services like DNS,
+all server replicas can share a single locator ({\it i.e.,} an IP address),
+and rely on IP routing to direct client requests to one of the server
+replicas.  
+However, IP routing does not guarantee that multiple
+messages sent to the same IP address would reach the same server
+replica. 
+In today's Internet, a domain name
+for a geo-replicated service
+can map to multiple IP addresses, one for each server replica.
+This supports communication services with multiple message exchanges
+between client and server.
+It is different from mobility, however, because the
+higher-level domain name has nothing to do with the channel after
+the initial DNS lookup.
+
+Alternatively, anycast could be combined with SLM, as it is in
+Serval~\cite{serval,serval-icnp}.
+A Serval identifier is an anycast name, and is registered as
+located at a dynamic group of servers in the locator layer.
+When a request for a channel to an identifier is 
+handled by the Serval session protocol,
+the protocol selects the locator of some member of the
+group.
+In contrast to the previous paragraph, the identifier remains
+the name of the channel's higher endpoint throughout its lifetime.
+The SLM session protocol can thus maintain the channel through both
+mobility events and changes to the membership of the server group.
+
+\subsection{Subnetwork mobility}
+
+Mobility proposals typically focus on the
+movement of a single mobile endpoint, like a mobile device or a virtual
+machine.  However, in some scenarios a subnetwork serving
+multiple endpoints can move from one location to another.  
+For example, a
+fast-moving bus, train, or plane may carry a LAN
+that provides network
+connectivity to a large collection of passengers.  
+
+Dynamic-routing
+mobility in a hierarchical layer
+naturally handles subnetwork mobility by updating the routes used
+to reach the entire aggregated block of names.
+For example, Boeing had an early in-flight WiFi service
+that provided seamless mobility for airline passengers by associating
+each international flight with an IP address block, and announcing the
+block into the global routing system at different locations as the
+plane moved~\cite{connexion}.  However, this solution required all
+interdomain routers in the Internet to store and update fine-grained
+routing information, leading to high overhead.  
+
+In our recent work~\cite{cnm}, we have shown that subnetwork
+mobility is merely the mobility of the gateway's attachment to the
+larger network, and is implemented with the same two patterns as
+mobility of endpoints.
+We identified several applications of the design
+patterns that seem promising
+for handling combinations of subnetwork mobility and endpoint
+mobility. 
+These solutions have the property that the mechanism for subnetwork
+mobility (a bus moves its access point from one roadside LAN to another)
+is completely independent of the mechanism for endpoint mobility
+(a user with a laptop gets on and off the bus).
+Nevertheless, it is not yet clear which solutions for
+subnetwork mobility would be most viable in practice.
+
+\subsection{Incremental deployment and interoperation}
+
+Deploying new protocols that span
+administrative domains is always challenging, since the Internet
+is a federated
+infrastructure and cannot easily have everyone upgrade to a new
+protocol at the same time.
+Most real deployments are DRM mechanisms that
+operate within a single administrative domain ({\it e.g.,}
+cellular networks, Ethernet LANs, or data-center networks),
+or require support only from the mobile endpoint and a small number of
+routers ({\it e.g.,} Mobile IPv4).  
+
+It is not surprising that most real mobility implementations use DRM,
+because SLM entails many more deployment hurdles.
+There can be a new set of identifiers, a new global directory service,
+changes to both endpoints, and even
+changes to the service interface that are visible to applications.
+The early SLM protocol TCP Migrate \cite{tcp-migrate} is probably
+the most deployable, requiring only changes to the operating system
+at the participating endpoints, but even so it has not had significant
+deployment.
+
+Nevertheless, as noted in the introduction,
+the pressure for better network mobility support is mounting.
+Ubiquitous computing may be a particularly powerful motivator,
+because an enormous number of sensors and actuators will require
+network access.
+This could accelerate the adoption of IPv6, enabling many
+other changes in its wake.
+
+For incremental deployment, an SLM-enabled host can interoperate
+with a legacy host in a degraded mode in which mobility does not work
+but other functions do.
+For full mobility, an SLM-enabled host can interoperate with
+a legacy host through a proxy or other middlebox.
+This raises many new questions concerning how a middlebox is
+introduced into the path between the hosts, and on the scalability
+of stateful middleboxes.
+These new questions must be added to the perennial list of old
+interoperability questions, such as how to traverse
+NAT boxes.
+Identifying
+effective ways to deploy these protocols incrementally remains an
+active area of research and standards work.
+
+\subsection{Security}
+
+All mobility solutions raise important questions about
+security.  
+In DRM, who is authorized to announce
+routing changes for an address or address block?  
+In SLM, who is authorized to update the directory service and a
+mobile endpoint's correspondents?  
+Answering these questions
+successfully requires unforgeable notions of identity, and secure
+protocols for sending update messages to routers, directory servers,
+and endpoints.  
+Can accidental misconfigurations or malicious attacks
+overload the routers, directory servers, or endpoints?  Preventing
+denial-of-service attacks requires effective ways to limit the work
+performed before recognizing that messages are unauthorized.  
+
+As
+mentioned in Section~\ref{sec:majordifferences}, some people believe that
+SLM protocols face greater security challenges
+because arbitrary endpoints can initiate updates to global layer state.
+On the other hand, SLM protocols provide for persistent identifiers
+which can be used as the basis for authentication of hosts, a valuable
+assistance to security.
+SLM protocols that use DNS as the directory
+service can update DNS
+records with an existing secure protocol~\cite{RFC-2137}.  
+Some protocols, like HIP and Serval, embed
+an endpoint's public key (or a hash of the key) in the identifier; 
+these identifiers support secure communication as well as
+authentication.
+Still, security is a rich and
+important topic warranting a much deeper treatment, especially since
+new protocols can easily introduce unforeseen vulnerabilities and new
+threats.

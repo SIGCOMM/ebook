@@ -1,0 +1,184 @@
+\clearpage
+\section{Future Directions}
+\label{sec:future}
+
+There are some interesting tasks left for traffic matrix
+research. The various algorithms and techniques described
+here could be improved, though in many cases the improvements may be
+relatively incremental given the success of existing approaches. More
+interest may be found in extending the ideas and techniques used here
+to new domains, and to evolving Internet traffic.
+
+There are a few obvious cases (and no doubt many less obvious cases
+that we have not thought of), for instance: multicast traffic has not,
+to our knowledge, been studied in this way. Multicast is interesting
+because it violates the {\em traffic conservation} assumption that
+lies underneath many techniques for estimation and modelling of
+traffic matrices. We could imagine modelling it by considering the
+``flow'' to be the traffic on a multicast group, from say, one source,
+to a set of destinations, and then stacking a vector with these. The
+routing matrices now include elements for every link used (no longer
+following a single path). The traffic ``matrix'' could then be a
+column vector of the traffic on each of these flows. So the idea of
+multicast traffic can fit into the structure we have talked about
+here, but appropriate models for performing tasks such as inference
+do not seem to exist.
+
+It would also be very interesting to understand the way that CDNs are
+affecting network traffic. A step in this direction, although not directly
+on traffic, but more on the discovery of the content hosts is \cite{Ager11CDN}.
+A CDN's typical goal is to bring content
+closer to the user, thereby reducing network traffic. However, that
+explicitly violates the ``friction free'' assumption in most gravity
+models, and introduces distance as something to be modelled.
+
+That leads naturally to the consideration of global traffic. Almost all
+studies of traffic have concentrated on a single network no larger
+than the national scale. That may still be very large -- for example,
+several studies looked at Tier 1 providers in the USA, which for some
+time dominated Internet traffic. However, although large, it was still
+relatively homogeneous traffic between people speaking much the same
+language(s) from place to place in the network. When we consider the
+Internet globally, we may see that there are language or cultural
+clusters where large groupings of traffic are focussed.
+
+On a large scale, time zones also play a significant role. Traffic
+patterns show strong cyclic behaviour based on user activity, but such
+activity is strongly dependent on the local time zone. If traffic is
+flowing from user to user, then this can result in strong apparent
+locality effects, simply because people in the same time zone are more
+likely to be awake at the same time \cite{gerber:03}. 
+ 
+While language and cultural focussing may be geographic in nature, it
+might also be considered per network, and that leads to another topic
+of some interest. Very few papers have tried to consider inter-AS
+(also known as inter-domain) traffic in any detail. Exceptions are
+Chang~\etal\cite{Chang05EmpiricalAS} (which presents suggestions for
+estimating traffic based on models derived from business models and resulting
+usage); Bharti~\etal\cite{Bharti10Invisible} (which considered
+inference of hidden elements of this matrix using a subset of data),
+Feldman~\etal\cite{Feldmann04Web} (which aimed to estimate a global
+traffic matrix, but only in the limited domain of WWW traffic), and
+Labovitz~\etal\cite{labovitz10:_inter_inter_domain_traff} (which
+looked at inter-domain traffic from 110 network operators over a
+two-year period, though not in the form of a matrix). Study of the
+Internet's global traffic matrix is made difficult by the sheer scale
+of the project: Labovitz~\etal studied 110 network operators over a
+two-year period\footnote{To put this in context, there are tens of
+  thousands of ASes in the Internet.} and to do so, collected over 200
+Exabytes of data. Many network operators do not collect or store data
+of the type required for such a study, and many more regard it as
+proprietary or covered by privacy legislation with provisions such
+that no researcher is ever likely to see it. So we can see that study
+of the inter-domain matrix is likely to be a long-term, and rather
+challenging project.
+
+In addition, we know that the {\em traffic profile} (or mix of
+applications) has changed fairly rapidly over time. It is likely this
+trend will continue, and there are bound to be effects on traffic
+patterns as a result. Peer-2-peer traffic significantly altered
+traffic patterns when it appeared because it was more symmetric than
+traditional (at the time) WWW traffic. However, in addition,
+peer-2-peer applications have the potential to exploit locality
+information to download from sources closer to the destination. This
+could potentially change the ``no friction'' assumption in much the
+same way that CDNs can, though in the early days it did not appear to
+be the case \cite{gerber:03}. An example traffic matrix (drawn from
+\cite{gerber:03}) showing normalised\footnote{The elements have been
+  normalised by dividing each row by the row-sum, so that each element
+  actually represents the probability that a packet enters the network
+  at a given region $i$ will depart the network at region $j$.}
+traffic between regions in a cable-network operator is given in
+\autoref{tab:cable_tm}. The major deviation, in this data, from a pure
+gravity model seemed to be time-zone differences.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{r|rrrrrrrr}
+    From/To & R1 & R2 & R3 & R4 & R5 & R6 & R7 & R8 \\
+    \hline
+    R1 & -     & 0.180 & 0.140 & 0.126 & 0.174 & 0.128 & 0.124 & 0.127 \\
+    R2 & 0.172 & -     & 0.141 & 0.126 & 0.190 & 0.132 & 0.118 & 0.120 \\
+    R3 & 0.132 & 0.120 & -     & 0.189 & 0.135 & 0.145 & 0.139 & 0.140 \\
+    R4 & 0.107 & 0.111 & 0.182 & -     & 0.124 & 0.163 & 0.155 & 0.158 \\
+    R5 & 0.161 & 0.180 & 0.136 & 0.132 & -     & 0.135 & 0.127 & 0.129 \\
+    R6 & 0.107 & 0.108 & 0.145 & 0.155 & 0.125 & -     & 0.187 & 0.173 \\
+    R7 & 0.107 & 0.106 & 0.137 & 0.157 & 0.127 & 0.182 & -     & 0.184 \\
+    R8 & 0.109 & 0.111 & 0.127 & 0.161 & 0.128 & 0.178 & 0.185 & - \\
+  \end{tabular}
+  \caption{Normalised inter-regional traffic matrix from \cite{gerber:03}.}
+  \label{tab:cable_tm}
+\end{table}
+
+% T = [
+%  [ 0     , 0.180 , 0.140 , 0.126 , 0.174 , 0.128 , 0.124 , 0.127 ]
+%  [ 0.172 , 0     , 0.141 , 0.126 , 0.190 , 0.132 , 0.118 , 0.120 ]
+%  [ 0.132 , 0.120 , 0     , 0.189 , 0.135 , 0.145 , 0.139 , 0.140 ]
+%  [ 0.107 , 0.111 , 0.182 , 0     , 0.124 , 0.163 , 0.155 , 0.158 ]
+%  [ 0.161 , 0.180 , 0.136 , 0.132 , 0     , 0.135 , 0.127 , 0.129 ]
+%  [ 0.107 , 0.108 , 0.145 , 0.155 , 0.125 , 0     , 0.187 , 0.173 ]
+%  [ 0.107 , 0.106 , 0.137 , 0.157 , 0.127 , 0.182 , 0     , 0.184 ]
+%  [ 0.109 , 0.111 , 0.127 , 0.161 , 0.128 , 0.178 , 0.185 , 0 ]
+% ]
+
+New traffic classes may change traffic matrices in the future, and
+modelling these will be interesting. On the other side, applications
+such as anomaly detection are likely to remain interesting due to
+their immediate benefits to operators, but the most overlooked task is
+traffic matrix synthesis. As mentioned in the previous section, the
+lack of real world traffic matrix datasets motivates the use of
+artificial traffic matrices to provide some degree of approximation in
+network traffic planning, provisioning and engineering tasks.  It is
+an important area to concentrate on, considering its usefulness to
+network operators.
+
+%Synthesis means generating artificial traffic matrices, typically for
+%use in simulations. There are only, to our knowledge, two papers
+%\cite{Nucci05TMSynth,Roughan05GravSynth} on synthesising Internet
+%traffic matrices, but there are already quite a few where synthetic
+%traffic matrices were used, and this demand for such matrices will
+%continue.
+%
+%Synthesis is not demanding in some ways. Traffic matrices are usually
+%relatively small (compared to other types of traffic data), when
+%measured at a reasonable level of aggregation and time scale. However,
+%in other ways these matrices are quite challenging. For instance:
+%\begin{itemize}
+%
+%\item we have few sets of traffic matrix data, and even fewer that are
+%  public, and somehow need to use these to estimate properties of
+%  these complex, high-dimensional objects;
+%
+%\item there is a real relationship between topology and traffic
+%  (although we would like a traffic matrix to be invariant to the
+%  topology, there are clear cases where, particularly IE matrices are
+%  not);
+%
+%\item traffic matrices come in a wide variety of types (at different
+%  levels of aggregation, for particular applications and so on) and it
+%  is unlikely that one model fits all; and 
+%
+%\item there are a number of conflicting goals in synthesis, \eg~to
+%  generate variability, but well ``matched'' to real traffic
+%  matrices. 
+%
+%\end{itemize}
+%However, there is considerable hope that progress can be made in terms
+%of generating synthetic matrices, both for green-fields network design
+%\cite{Kowalski95TeleModel}, and for simulation in general. 
+%
+%The major use of synthesis is in simulation. In many cases a traffic
+%matrix is enough for a simulation, but in others, we need to translate
+%this into packets (or at least connections). The analogue in
+%transportation modelling is often called a {\em micro-simulation}
+%model. Here, the problem becomes one of taking a {\em demand} matrix
+%(remember, most of the work here is related to traffic, not demand), and
+%translating this into carried load. We know how to do that (using
+%simulation tools such as \verb|ns|) but doing it efficiently is
+%difficult. One paper \cite{sommers11:_effic} starts to tackle this
+%problem, but as in the work of transportation modelling, there is
+%considerable scope for advanced scalable micro-simulation of traffic.
+%
+%Another use for synthetic traffic matrices is in the further task of
+%synthetic topology generation, but we shall leave discussion of this
+%topic to another section of this book.

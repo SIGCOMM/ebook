@@ -1,0 +1,950 @@
+\begin{thebibliography}{100}
+
+\bibitem{achlioptas05:_bias_of_tracer_sampl}
+{\sc Achlioptas, D., Clauset, A., Kempe, D., and Moore, C.}
+\newblock On the bias of traceroute sampling: or, power-law degree
+  distributions in regular graphs.
+\newblock In {\em ACM Symposium on Theory of Computing (STOC)\/} (2005), ACM,
+  pp.~694--703.
+
+\bibitem{ager12:_anatom_europ_ixp}
+{\sc Ager, B., Chatzis, N., Feldmann, A., Sarrar, N., Uhlig, S., and Willinger,
+  W.}
+\newblock Anatomy of a large {E}uropean {IXP}.
+\newblock In {\em ACM SIGCOMM\/} (2012).
+
+\bibitem{Aiello00}
+{\sc Aiello, W., Chung, F., and Lu, L.}
+\newblock A random graph model for massive graphs.
+\newblock In {\em ACM Symposium on Theory of Computing (STOC)\/} (2000), ACM,
+  pp.~171--180.
+
+\bibitem{albert_barabasi02}
+{\sc Albert, R., and Barab\'{a}si, A.-L.}
+\newblock Statistical mechanics of complex networks.
+\newblock {\em Reviews of Modern Physics 74\/} (2002), 47--97.
+
+\bibitem{barabasi00}
+{\sc Albert, R., H.Jeong, and Barab\'{a}si, A.-L.}
+\newblock Error and attack tolerance of complex networks.
+\newblock {\em Nature 406\/} (2000), 378--382.
+
+\bibitem{Alderson10}
+{\sc Alderson, D., and Doyle., J.}
+\newblock Contrasting views of complexity and their implications for
+  network-centric infrastructures.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics -- Part A
+  40}, 4 (2010).
+
+\bibitem{Alderson05}
+{\sc Alderson, D., Li, L., Willinger, W., and Doyle, J.~C.}
+\newblock Understanding {I}nternet topology: principles, models, and
+  validation.
+\newblock {\em IEEE/ACM Transactions on Networking 13\/} (December 2005),
+  1205--1218.
+
+\bibitem{atlas}
+{Internet Atlas}.
+\newblock \url{http://atlas.wail.wisc.edu/about-us.jsp}.
+
+\bibitem{augustin09:_ixps}
+{\sc Augustin, B., Krishnamurthy, B., and Willinger, W.}
+\newblock {IXPs}: Mapped?
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2009),
+  pp.~336--349.
+
+\bibitem{barabasi02:_linked}
+{\sc Barab\'{a}si, A.-L.}
+\newblock {\em Linked: How Everything Is Connected to Everything Else and What
+  it Means for Business, Science, and Everyday Life}.
+\newblock Perseus Publishing, Cambridge, MA, 2002.
+
+\bibitem{barabasi09:_scale_free_networ}
+{\sc Barab\'{a}si, A.-L.}
+\newblock Scale-free networks: A decade and beyond.
+\newblock {\em Science 325\/} (2009), 412--413.
+
+\bibitem{barabasi12}
+{\sc Barab\'{a}si, A.-L.}
+\newblock The network takeover.
+\newblock {\em Nature Physics 8\/} (2012), 14--16.
+
+\bibitem{barabasi99}
+{\sc Barab\'{a}si, A.-L., and Albert, R.}
+\newblock Emergence of scaling in random networks.
+\newblock {\em Science 286\/} (1999).
+
+\bibitem{battista_inferring:2003}
+{\sc Battista, G., Patrignani, M., and Pizzonia, M.}
+\newblock Computing the types of the relationships between autonomous systems.
+\newblock In {\em IEEE INFOCOM\/} (2003).
+
+\bibitem{bender08:_fixin_allys}
+{\sc Bender, A., Sherwood, R., and Spring, N.}
+\newblock Fixing {Ally's} growing pains with velocity modeling.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2008).
+
+\bibitem{rfc4950}
+{\sc Bonica, R., Gan, D., Tappan, D., and Pignataro, C.}
+\newblock {ICMP} extensions for multiprotocol label switching.
+\newblock IETF, Network Working Group, Request for Comments: 4950, August 2007.
+
+\bibitem{hijacking}
+{\sc Boothe, P., Hiebert, J., and Bush, R.}
+\newblock How prevalent is prefix hijacking on the {Internet?}
+\newblock {\em NANOG 36\/} (February 2006).
+
+\bibitem{Broder:2000:GSW:346241.346290}
+{\sc Broder, A., Kumar, R., Maghoul, F., Raghavan, P., Rajagopalan, S., Stata,
+  R., Tomkins, A., and Wiener, J.}
+\newblock Graph structure in the web.
+\newblock {\em Computer Networks 33}, 1-6 (June 2000), 309--320.
+
+\bibitem{broido01:_inter}
+{\sc Broido, A., and claffy, k.}
+\newblock Internet topology: connectivity of {IP} graphs.
+\newblock In {\em SPIE International Symposium on Convergence of IT and
+  Communication\/} (August 2001), pp.~172--187.
+
+\bibitem{bush07:_testin}
+{\sc Bush, R., Hiebert, J., Maennel, O., Roughan, M., and Uhlig, S.}
+\newblock Testing the reachability of (new) address space.
+\newblock In {\em ACM SIGCOMM workshop on Internet network management
+  (INM'07)\/} (2007), pp.~236--241.
+
+\bibitem{bush09:_inter_optom}
+{\sc Bush, R., Maennel, O., Roughan, M., and Uhlig, S.}
+\newblock Internet optometry: assessing the broken glasses in {I}nternet
+  reachability.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2009),
+  pp.~242--253.
+
+\bibitem{cai10:_AS_to_organ_map}
+{\sc Cai, X., Heidemann, J., Krishnamurthy, B., and Willinger, W.}
+\newblock Towards an {AS}-to-organization map.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2010).
+
+\bibitem{Calvert97}
+{\sc Calvert, K., Doar, M., and Zegura, E.}
+\newblock Modeling {I}nternet topology.
+\newblock {\em IEEE Communications Magazine 35}, 6 (June 1997), 160--163.
+
+\bibitem{carlson02:_pnas}
+{\sc Carlson, J., and Doyle, J.}
+\newblock Complexity and robustness.
+\newblock {\em Proceedings of the National Academy of Sciences of the USA
+  (PNAS) 99}, Suppl. 1 (2002), 2538--2545.
+
+\bibitem{cerf90:_selected_maps}
+{\sc Cerf, V., and Kahn, B.}
+\newblock Selected {ARPANET} maps.
+\newblock {\em ACM SIGCOMM Computer Communications Review (CCR) 20\/} (1990),
+  81--110.
+
+\bibitem{chang-thesis06}
+{\sc Chang, H.}
+\newblock {\em Modeling {I}nternet's Inter-Domain Topology and Traffic Demand
+  Based on Internet Business Characterization}.
+\newblock PhD thesis, University of Michigan, 2006.
+
+\bibitem{chang04:_towards}
+{\sc Chang, H., Govindan, R., Jamin, S., Shenker, S.~J., and Willinger, W.}
+\newblock Towards capturing representative {AS}-level {I}nternet topologies.
+\newblock {\em Computer Networks 44}, 6 (2004), 737--755.
+
+\bibitem{chen09:_sidewalk}
+{\sc Chen, K., Choffnes, D., Potharaju, R., Chen, Y., Bustamante, F., Pai, D.,
+  and Zhao, Y.}
+\newblock Where the sidewalks ends: Extending the {Internet AS} graph using
+  traceroutes from {P2P} users.
+\newblock In {\em ACM SIGCOMM CoNEXT\/} (2009).
+
+\bibitem{chiang12:_networ_life}
+{\sc Chiang, M.}
+\newblock {\em Networked Life: 20 Questions and Answers}.
+\newblock Cambridge University Press, 2012.
+
+\bibitem{Chung04}
+{\sc Chung, F., and Lu, L.}
+\newblock The average distance in a random graph with given expected degrees.
+\newblock {\em Internet Mathematics 1}, 1 (2004), 91--113.
+
+\bibitem{Cisco05}
+{ISP} network design, {C}isco {S}ystems.
+\newblock ISOC ISP/IXP Workshop, 2005.
+
+\bibitem{cisco13:_build_cost_effec_scalab_core}
+Building cost effective and scalable {CORE} networks using an elastic
+  architecture.
+\newblock Cisco white paper, 2013.
+\newblock
+  \url{http://www.cisco.com/en/US/prod/collateral/routers/ps5763/white_paper_c11-727983.pdf}.
+
+\bibitem{cisco13:_converged}
+Converged transport architecture: Improving scale and efficiency in service
+  provider.
+\newblock Cisco white paper, 2013.
+\newblock
+  \url{http://www.cisco.com/en/US/prod/collateral/routers/ps5763/white_paper_c11-728242.pdf}.
+
+\bibitem{clarke95:_design}
+{\sc Clarke, D.}
+\newblock The design principles of the {DARPA} {I}nternet protocols.
+\newblock {\em ACM SIGCOMM Computer Communications Review (CCR) 25}, 1 (January
+  1995).
+
+\bibitem{colitti06:_poison}
+{\sc Colitti, L.}
+\newblock {\em Internet Topology Discovery Using Active Probing}.
+\newblock PhD thesis, University di Roma Tre, 2006.
+
+\bibitem{cost_community}
+{BGP} cost community, {Cisco Systems}, 2005.
+\newblock
+  \url{http://www.cisco.com/en/US/docs/ios/12_0s/feature/guide/s_bgpcc.html}.
+
+\bibitem{dasu03:_data_mining}
+{\sc Dasu, T., and Johnson, T.}
+\newblock {\em Exploratory Data Mining and Data Cleaning}.
+\newblock Wiley, New York, 2003.
+
+\bibitem{dhamdhere-thesis08}
+{\sc Dhamdhere, A.}
+\newblock {\em Understanding the Evolution of the {AS}-level {I}nternet
+  Ecosystem}.
+\newblock PhD thesis, Georgia Institute of Technology, 2008.
+
+\bibitem{dhamdhere11:_twelv_years_evolut_inter_ecosy}
+{\sc Dhamdhere, A., and Dovrolis, C.}
+\newblock Twelve years in the evolution of the {I}nternet ecosystem.
+\newblock {\em IEEE/ACM Transactions on Networking 19}, 5 (2011), 1420--1433.
+
+\bibitem{chinahijacking}
+{\sc Diaz, J.}
+\newblock {GIZMODO: China's Internet} hijacking uncovered, 2010.
+\newblock
+  \url{http://gizmodo.com/5692217/chinas-secret-internet-hijacking-uncovered}.
+
+\bibitem{dimitropoulos07:_as_relat}
+{\sc Dimitropoulos, X., Krioukov, D., Fomenkov, M., Huffaker, B., Hyun, Y.,
+  kc~claffy, and Riley, G.}
+\newblock {AS} relationships: Inference and validation.
+\newblock {\em ACM SIGCOMM Computer Communications Review (CCR) 37}, 1 (2007),
+  29--40.
+
+\bibitem{Doar96}
+{\sc Doar, M.~B., and Nexion, A.}
+\newblock A better model for generating test networks.
+\newblock In {\em IEEE GLOBECOM\/} (1996), pp.~86--93.
+
+\bibitem{Donnet07}
+{\sc Donnet, B., and Friedman, T.}
+\newblock Internet topology discovery: A survey.
+\newblock {\em IEEE Communications Surveys \& Tutorials 9\/} (2007), 56--69.
+
+\bibitem{benoit12:_reveal_mpls}
+{\sc Donnet, B., Luckie, M., M\'{e}rindol, P., and Pansiot, J.-J.}
+\newblock Revealing {MPLS} tunnels obscured from traceroute.
+\newblock {\em ACM SIGCOMM Computer Communications Review (CCR)\/} (April
+  2012).
+\newblock \url{http://www.sigcomm.org/ccr/papers/2012/April/2185376.2185388}.
+
+\bibitem{dorogovtsev03:_evolut_networ}
+{\sc Dorogovtsev, S., and Mendes, J.}
+\newblock {\em Evolution of Networks: From Biological Nets to the {I}nternet
+  and {WWW}}.
+\newblock Oxford University Press, 2003.
+
+\bibitem{Doyle05}
+{\sc Doyle, J.~C., Alderson, D.~L., Li, L., Low, S., Roughan, M., Shalunov, S.,
+  Tanaka, R., and Willinger, W.}
+\newblock {The ``robust yet fragile'' nature of the Internet}.
+\newblock {\em Proceedings of the National Academy of Sciences of the USA
+  (PNAS) 102}, 41 (October 2005), 14497--502.
+
+\bibitem{erdos60}
+{\sc Erd\"{o}s, P., and R\'{e}nyi, A.}
+\newblock On the evolution of random graphs.
+\newblock {\em Publications of the Mathematical Institute of the Hungarian
+  Academy of Sciences 5\/} (1960), 17--61.
+
+\bibitem{Fabrikant02}
+{\sc Fabrikant, A., Koutsoupias, E., and Papadimitriou, C.}
+\newblock Heuristically optimized trade-offs: A new paradigm for power laws in
+  the internet.
+\newblock In {\em Automata, Languages and Programming}, vol.~2380 of {\em
+  Lecture Notes in Computer Science}. Springer Berlin / Heidelberg, 2002,
+  pp.~781--781.
+
+\bibitem{faloutsos99:_power_law_relat_of_inter_topol}
+{\sc Faloutsos, M., Faloutsos, P., and Faloutsos, C.}
+\newblock On power-law relationships of the {I}nternet topology.
+\newblock In {\em ACM SIGCOMM\/} (1999), pp.~251--262.
+
+\bibitem{nick-bogon}
+{\sc Feamster, N., Jung, J., and Balakrishnan, H.}
+\newblock An empirical study of bogon route advertisements.
+\newblock {\em ACM SIGCOMM Computer Communications Review (CCR) 35}, 1 (2005),
+  63--70.
+
+\bibitem{Feldman08}
+{\sc Feldman, D., and Shavitt, Y.}
+\newblock Automatic large scale generation of {I}nternet {PoP} level maps.
+\newblock In {\em IEEE GLOBECOM\/} (2008), pp.~2426--2431.
+
+\bibitem{feldmann00:_netscope}
+{\sc Feldmann, A., Greenberg, A., Lund, C., Reingold, N., and Rexford, J.}
+\newblock Netscope: Traffic engineering for {IP} networks.
+\newblock {\em IEEE Network Magazine\/} (March/April 2000), 11--19.
+
+\bibitem{feldmann04:_bgp}
+{\sc Feldmann, A., Maennel, O., Mao, Z.~M., Berger, A., and Maggs, B.}
+\newblock Locating {I}nternet routing instabilities.
+\newblock In {\em ACM SIGCOMM\/} (2004).
+
+\bibitem{fortz00}
+{\sc Fortz, B., and Thorup, M.}
+\newblock Internet traffic engineering by optimizing {OSPF} weights.
+\newblock In {\em IEEE INFOCOM\/} (2000), pp.~519--528.
+
+\bibitem{frazer:_merit_histor_nsfnet_backb_projec}
+{\sc Frazer, K.}
+\newblock Merit's history, the {NSFNET} backbone project 1987-1995, {Merit
+  Network, Inc.}
+\newblock \url{http://www.livinginternet.com/doc/merit.edu/phenom.html}.
+
+\bibitem{gao_inferring}
+{\sc Gao, L.}
+\newblock {On Inferring Autonomous System Relationships in the {I}nternet}.
+\newblock {\em Global Telecommunications Internet Mini-Conference\/} (2000).
+
+\bibitem{geant}
+{G\'{E}ANT}.
+\newblock
+  \url{http://www.geant.net/Network/The_Network/Pages/Network-Topology.aspx}.
+
+\bibitem{gill08:_flatt_inter_topol}
+{\sc Gill, P., Arlitt, M., Li, Z., and Mahanti, A.}
+\newblock The flattening {I}nternet topology: Natural evolution, unsightly
+  barnacles or contrived collapse?
+\newblock In {\em Passive and Active Measurement Conference (PAM)\/} (2008),
+  pp.~1--10.
+\newblock
+  \url{http://www.springerlink.com/content/1255p8g3k6766242/fulltext.pdf}.
+
+\bibitem{Gill}
+{\sc Gill, V.}
+\newblock Analysis of design decisions in a {10G} backbone.
+\newblock \url{www.nanog.org/meetings/nanog34/presentations/gill.pdf}.
+
+\bibitem{govindan97:_topology}
+{\sc Govindan, R., and Reddy, A.}
+\newblock An analysis of {I}nternet inter-domain topology and route stability.
+\newblock In {\em IEEE INFOCOM\/} (1997), pp.~850--857.
+
+\bibitem{griffin02:_under_border_gatew_protoc_bgp}
+{\sc Griffin, T.~G.}
+\newblock {Understanding the Border Gateway Protocol (BGP)}.
+\newblock ICNP Tutorial, \url{http://www.cl.cam.ac.uk/~tgg22/talks/}, 2002.
+
+\bibitem{tim10:ssp}
+{\sc Griffin, T.~G.}
+\newblock The stratified shortest-paths problem (invited paper).
+\newblock In {\em International Conference on Communications Systems \&
+  Networks (COMSNETS)\/} (January 2010).
+
+\bibitem{tim:wedgies}
+{\sc Griffin, T.~G., and Huston, G.}
+\newblock {BGP} wedgies.
+\newblock {RFC 4264}, 2005.
+
+\bibitem{griffin02:_analy_med_oscil_probl_bgp}
+{\sc Griffin, T.~G., and Wilfong, G.}
+\newblock An analysis of the {MED} oscillation problem in {BGP}.
+\newblock In {\em IEEE International Conference on Network Protocols (ICNP)\/}
+  (2002).
+
+\bibitem{gt_itm}
+{GT-ITM: Georgia Tech Internetwork Topology Models}.
+\newblock \url{http://www.cc.gatech.edu/projects/gtitm/}.
+
+\bibitem{GTITM}
+Modeling topology of large internetworks, 2000.
+\newblock \url{http://www.cc.gatech.edu/projects/gtitm/}.
+
+\bibitem{gunes09:_resol_ip_inter}
+{\sc Gunes, M., and Sarac, K.}
+\newblock Resolving {IP} aliases in building traceroute-based {I}nternet maps.
+\newblock {\em IEEE/ACM Transactions on Networking 17}, 6 (2009), 1738--1751.
+
+\bibitem{haddadi08:_networ_topol}
+{\sc Haddadi, H., Rio, M., Iannaccone, G., Moore, A., and Mortier, R.}
+\newblock Network topologies: inference, modeling and generation.
+\newblock {\em IEEE Communications Surveys 10}, 2 (2008).
+
+\bibitem{he07}
+{\sc He, Y., Siganos, G., Faloutsos, M., and Krishnamurthy, S.~V.}
+\newblock A systematic framework for unearthing the missing links: Measurements
+  and impact.
+\newblock In {\em USENIX Symposium on Networked Systems Design and
+  Implementation (NSDI)\/} (April 2007).
+
+\bibitem{he09:_lord_of_links}
+{\sc He, Y., Siganos, G., Faloutsos, M., and Krishnamurthy, S.~V.}
+\newblock Lord of the links: A framework for discovering missing links in the
+  {I}nternet topology.
+\newblock {\em IEEE/ACM Transactions on Networking 17}, 2 (2009), 391--404.
+
+\bibitem{heart78:_arpanet}
+{\sc Heart, F., McKenzie, A., McQuillian, J., and Walden, D.}
+\newblock {ARPANET} completion report.
+\newblock Tech. rep., Bolt, Beranek and Newman, Burlington, MA, 1978.
+\newblock
+  \url{http://www.cs.utexas.edu/users/chris/DIGITAL_ARCHIVE/ARPANET/DARPA4799.pdf}.
+
+\bibitem{huston99:_peering_i}
+{\sc Huston, G.}
+\newblock Peering and settlements - part {I}.
+\newblock {\em The Internet Protocol Journal 2}, 1 (March 1999).
+
+\bibitem{huston99:_peering_ii}
+{\sc Huston, G.}
+\newblock Peering and settlements - part {II}.
+\newblock {\em The Internet Protocol Journal 2}, 2 (June 1999).
+
+\bibitem{address_space_growth}
+{\sc Huston, G.}
+\newblock {IPv4} address report, 2007.
+\newblock \url{http://www.potaroo.net/tools/ipv4/index.html}.
+
+\bibitem{hyun03:_tracer_and_bgp}
+{\sc Hyun, Y., Broido, A., and k.c. claffy}.
+\newblock Traceroute and {BGP AS} path incongruities.
+\newblock Tech. rep., UCSD CAIDA, 2003.
+\newblock \url{http://www.caida.org/publications/papers/2003/ASP/}.
+
+\bibitem{inter_as_level_topol_const_analy}
+Internet {AS}-level topology construction \& analysis.
+\newblock \url{http://topology.neclab.eu/}.
+
+\bibitem{internet2}
+Internet 2.
+\newblock
+  \url{http://www.internet2.edu/pubs/networkmap-connectors-participants.pdf}.
+
+\bibitem{jacobson89:_tracer}
+{\sc Jacobson, V.}
+\newblock Traceroute.
+\newblock \url{ftp://ftp.ee.lbl.gov/traceroute.tar.gz}, 1989-04.
+
+\bibitem{jamakovic08}
+{\sc Jamakovic, A., and Uhlig, S.}
+\newblock On the relationships between topological metrics in real-world
+  networks.
+\newblock {\em Networks and Heterogeneous Media 3}, 2 (June 2008), 345--359.
+
+\bibitem{juniper13:_evolv_backb_networ_using_mpls_super}
+Evolving backbone networks using with an {MPLS} supercore.
+\newblock Juniper Networks white paper, 2013.
+\newblock
+  \url{http://www.juniper.net/us/en/local/pdf/whitepapers/2000392-en.pdf}.
+
+\bibitem{kardes12:_cheleb}
+{\sc Kardes, H., Oz, T., and Gunes, M.~H.}
+\newblock Cheleby: A subnet-level {I}nternet topology mapping system.
+\newblock In {\em International Conference on Communications Systems \&
+  Networks (COMSNETS)\/} (2012).
+
+\bibitem{keller05:_revis}
+{\sc Keller, E.~F.}
+\newblock Revisiting ``scale-free'' networks.
+\newblock {\em BioEssays 27}, 1 (2005), 1060--1068.
+
+\bibitem{knight12:_i}
+{\sc Knight, S., Falkner, N., Nguyen, H., Tune, P., and Roughan, M.}
+\newblock I can see for miles: {R}e-visualizing the {I}nternet.
+\newblock {\em IEEE Network 26}, 6 (2012), 26--32.
+
+\bibitem{Zoo}
+{\sc Knight, S., Nguyen, H., Falkner, N., Bowden, R., and Roughan, M.}
+\newblock The {I}nternet topology zoo.
+\newblock {\em IEEE Journal on Selected Areas in Communications (JSAC) 29}, 9
+  (October 2011), 1765--1775.
+
+\bibitem{krishnamurthy11:_what}
+{\sc Krishnamurthy, B., and Willinger, W.}
+\newblock What are our standards for validation of measurement-based networking
+  research?
+\newblock {\em ACM SIGMETRICS Performance Evaluation Review 36\/} (2008),
+  64--69.
+
+\bibitem{labovitzSig00}
+{\sc Labovitz, C., Ahuja, A., Bose, A., and Jahanian, F.}
+\newblock Delayed {I}nternet routing convergence.
+\newblock In {\em ACM SIGCOMM\/} (2000).
+
+\bibitem{labovtizFTCS99}
+{\sc Labovitz, C., Ahuja, A., and Jahanian, F.}
+\newblock Experimental study of {I}nternet stability and wide-area network
+  failures.
+\newblock In {\em International Symposium on Fault-Tolerant Computing (FTCS)\/}
+  (1999).
+
+\bibitem{labovitz10:_inter_inter_domain_traff}
+{\sc Labovitz, C., Iekel-Johnson, S., McPherson, D., Oberheide, J., and
+  Jahanian, F.}
+\newblock Internet inter-domain traffic.
+\newblock In {\em ACM SIGCOMM\/} (2010), pp.~75--86.
+
+\bibitem{labovitzSig97}
+{\sc Labovitz, C., Malan, R., and Jahanian, F.}
+\newblock {I}nternet routing stability.
+\newblock In {\em ACM SIGCOMM\/} (1997).
+
+\bibitem{labovitzInfo99}
+{\sc Labovitz, C., Malan, R., and Jahanian, F.}
+\newblock Origins of {I}nternet routing instability.
+\newblock In {\em IEEE INFOCOM\/} (1999).
+
+\bibitem{LakhinaByersCrovellaXie03}
+{\sc Lakhina, A., Byers, J., Crovella, M., and Xie, P.}
+\newblock Sampling biases in {IP} topology measurements.
+\newblock In {\em IEEE INFOCOM\/} (April 2003).
+
+\bibitem{Li_internet_math}
+{\sc Li, L., Alderson, D., Doyle, J., and Willinger, W.}
+\newblock Towards a theory of scale-free graphs: Definitions, properties, and
+  implications.
+\newblock {\em Internet Mathematics 2}, 4 (2005), 431--523.
+
+\bibitem{Li04}
+{\sc Li, L., Alderson, D., Willinger, W., and Doyle, J.}
+\newblock A first-principles approach to understanding the {Internet's}
+  router-level topology.
+\newblock In {\em ACM SIGCOMM\/} (2004), pp.~3--14.
+
+\bibitem{liljenstam03:_devel_of_inter_backb_topol}
+{\sc Liljenstam, M., Liu, J., and Nicol, D.}
+\newblock Development of an {I}nternet backbone topology for large-scale
+  network simulations.
+\newblock In {\em Winter Simulation Conference\/} (2003).
+
+\bibitem{iPlane}
+{\sc Madhyastha, H.~V., Isdal, T., Piatek, M., Dixon, C., Anderson, T.,
+  Krishnamurthy, A., and Venkataramani, A.}
+\newblock {iPlane}: An information plane for distributed services.
+\newblock In {\em USENIX Symposium on Operating Systems Design and
+  Implementation (OSDI)\/} (November 2006).
+
+\bibitem{Mahadevan06}
+{\sc Mahadevan, P., Krioukov, D., Fomenkov, M., Dimitropoulos, X., claffy,
+  k.~c., and Vahdat, A.}
+\newblock The {I}nternet {AS}-level topology: three data sources and one
+  definitive metric.
+\newblock {\em ACM SIGCOMM Computer Communications Review (CCR) 36\/} (January
+  2006), 17--26.
+
+\bibitem{mao02:_flap}
+{\sc Mao, Z., Govindan, R., Varghese, G., and Katz, R.}
+\newblock Route flap dampening exacerbates {I}nternet routing convergence.
+\newblock In {\em ACM SIGCOMM\/} (2002).
+
+\bibitem{path_inference_sigmetrics:2005}
+{\sc Mao, Z., Qiu, L., Wang, J., and Zhang, Y.}
+\newblock On {AS}-level path inference.
+\newblock In {\em ACM SIGMETRICS\/} (2005).
+
+\bibitem{mao03:_bgp_beacon}
+{\sc Mao, Z.~M., Bush, R., Griffin, T.~G., and Roughan, M.}
+\newblock {BGP} beacons.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (October
+  2003).
+
+\bibitem{mao03:_as-tr}
+{\sc Mao, Z.~M., Rexford, J., Wang, J., and Katz, R.}
+\newblock Towards an accurate {AS}-level traceroute tool.
+\newblock In {\em ACM SIGCOMM\/} (August 2003).
+
+\bibitem{marchetta13:_detec_third_addres_tracer_traces}
+{\sc Marchetta, P., de~Donato, W., and Pescape, A.}
+\newblock Detecting third-party addresses in traceroute traces with {IP}
+  timestamp option.
+\newblock In {\em Passive and Active Measurement Conference (PAM)\/} (2013).
+
+\bibitem{marchetta12:_quant_igmp}
+{\sc Marchetta, P., Merindol, P., Donnet, B., Pescape, A., and Pansiot, J.}
+\newblock Quantifying and mitigating {IGMP} filtering in topology discovery.
+\newblock In {\em IEEE GLOBECOM\/} (2012), pp.~1871--1876.
+
+\bibitem{Medina01}
+{\sc Medina, A., Lakhina, A., Matta, I., and Byers, J.}
+\newblock {BRITE:} an approach to universal topology generation.
+\newblock In {\em Ninth International Symposium on Modeling, Analysis and
+  Simulation of Computer and Telecommunication Systems\/} (2001), pp.~346--353.
+
+\bibitem{Merindol:layer2:imc2010}
+{\sc M\'{e}rindol, P., Donnet, B., Bonaventure, O., and Pansiot, J.-J.}
+\newblock On the impact of layer-2 on node degree distribution.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2010),
+  pp.~179--191.
+
+\bibitem{merindol09:_quant_ases}
+{\sc M\'{e}rindol, P., Van~den Schrieck, V., Donnet, B., Bonaventure, O., and
+  Pansiot, J.-J.}
+\newblock Quantifying {AS}es multiconnectivity using multicast information.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2009),
+  pp.~370--376.
+
+\bibitem{Mitzenmacher01}
+{\sc Mitzenmacher, M.}
+\newblock A brief history of generative models for power law and lognormal
+  distributions.
+\newblock {\em Internet Mathematics 1\/} (2001), 226--251.
+
+\bibitem{mitzenmacher06:_editor}
+{\sc Mitzenmacher, M.}
+\newblock Editorial: The future of power law research.
+\newblock {\em Internet Mathematics 2}, 4 (2006), 525--534.
+
+\bibitem{Morris07}
+{\sc Morris, M.}
+\newblock Network design templates.
+\newblock {\url{www.networkworld.com/community/blog/network-design-templates}},
+  July 2007.
+
+\bibitem{mrinfo}
+{The MRINFO and MERLIN project}.
+\newblock \url{http://svnet.u-strasbg.fr/mrinfo/index.html}.
+
+\bibitem{muehlbauer06:_build_as}
+{\sc M\"uhlbauer, W., Feldmann, A., Maennel, O., Roughan, M., and Uhlig, S.}
+\newblock Building an {AS}-topology model that captures route diversity.
+\newblock In {\em ACM SIGCOMM\/} (2006).
+
+\bibitem{muehlbauer07:_in_search}
+{\sc M\"uhlbauer, W., Uhlig, S., Fu, B., Meulle, M., and Maennel, O.}
+\newblock In search for an appropriate granularity to model routing policies.
+\newblock In {\em ACM SIGCOMM\/} (2007).
+
+\bibitem{berger05:_spread_of_viruses}
+{\sc N.~Berger, C.~Borgs, J. T.~C., and Saberi, A.}
+\newblock On the spread of viruses on the {I}nternet.
+\newblock In {\em 16th ACM-SIAM Symposium on Discrete Algorithm (SODA)\/}
+  (2005), pp.~301--310.
+
+\bibitem{newman10:_networ}
+{\sc Newman, M.}
+\newblock {\em Networks: An Introduction}.
+\newblock Oxford University Press, 2010.
+
+\bibitem{norton_paid_peering}
+{\sc Norton, W.~B.}
+\newblock A study of 28 peering policies.
+\newblock
+  \url{http://drpeering.net/white-papers/Peering-Policies/A-Study-of-28-Peering-Policies.html}.
+
+\bibitem{norton1}
+{\sc Norton, W.~B.}
+\newblock Internet service providers and peering, 2010.
+\newblock
+  \url{http://drpeering.net/white-papers/Internet-Service-Providers-And-Peering.html}.
+
+\bibitem{RISgoals}
+{\sc of~the Routing Information~Service, G.}
+\newblock \url {http://www.ripe.net/ripe/docs/ripe-200}.
+
+\bibitem{oliveira10:_incompl_of_obser_inter}
+{\sc Oliveira, R., Pei, D., Willinger, W., Zhang, B., and Zhang, L.}
+\newblock The (in)completeness of the observed {I}nternet {AS}-level structure.
+\newblock {\em IEEE/ACM Transactions on Networking 18}, 1 (2010), 109--122.
+
+\bibitem{ORVdata}
+{University of Oregon Route Views Archive Project}.
+\newblock \url{www.routeviews.org}.
+
+\bibitem{pansiot98:_inter}
+{\sc Pansiot, J.-J., and Grad, D.}
+\newblock On routes and multicast trees in the internet.
+\newblock {\em ACM SIGCOMM Computer Communications Review (CCR) 28}, 1 (1998),
+  41--50.
+
+\bibitem{pansiot10:_extrac}
+{\sc Pansiot, J.-J., M{\'e}rindol, P., Donnet, B., and Bonaventure, O.}
+\newblock Extracting intra-domain topology from mrinfo probing.
+\newblock In {\em Passive and Active Measurement Conference (PAM)\/} (2010),
+  pp.~81--90.
+
+\bibitem{parsonage11:_gener_graph_produc_networ_desig_analy}
+{\sc Parsonageque, E., Nguyen, H.~X., Bowden, R., Knight, S., Falkner, N.~J.,
+  and Roughan, M.}
+\newblock Generalized graph products for network design and analysis.
+\newblock In {\em IEEE International Conference on Network Protocols (ICNP)\/}
+  (October 2011).
+
+\bibitem{pastor-satorras01:_epidem}
+{\sc Pastor-Satorras, R., and Vespignani, A.}
+\newblock Epidemic spreading in scale-free networks.
+\newblock {\em Physical Review Letters 86}, 14 (2001), 3200--3203.
+
+\bibitem{pastor-satorras04:_evolut_struc_inter}
+{\sc Pastor-Satorras, R., and Vespignani, A.}
+\newblock {\em Evolution and Structure of the {I}nternet: A Statistical Physics
+  Approach}.
+\newblock Cambridge University Press, 2004.
+
+\bibitem{pelsser:rfd}
+{\sc Pelsser, C., Maennel, O., Mohapatra, P., Bush, R., and Patel, K.}
+\newblock Route flap damping made useful.
+\newblock In {\em Passive and Active Measurement Conference (PAM)\/} (2011).
+
+\bibitem{Poese:2011:IGD:1971162.1971171}
+{\sc Poese, I., Uhlig, S., Kaafar, M.~A., Donnet, B., and Gueye, B.}
+\newblock {IP} geolocation databases: unreliable?
+\newblock {\em ACM SIGCOMM Computer Communications Review (CCR) 41}, 2 (April
+  2011), 53--56.
+
+\bibitem{Qiu07}
+{\sc Qiu, S.~Y., Mcdaniel, P.~D., and Monrose, F.}
+\newblock {Toward valley-free inter-domain routing}.
+\newblock In {\em IEEE International Conference on Communications\/} (2007).
+
+\bibitem{quoitin09:_igen}
+{\sc Quoitin, B., Van~den Schrieck, V., François, P., and Bonaventure, O.}
+\newblock {IGen:} generation of router-level internet topologies through
+  network design heuristics.
+\newblock In {\em International Teletraffic Congress\/} (2009), pp.~1--8.
+
+\bibitem{ramachandran06:_spam}
+{\sc Ramachandran, A., and Feamster, N.}
+\newblock Understanding the network-level behavior of spammers.
+\newblock In {\em ACM SIGCOMM\/} (2006), pp.~291--302.
+
+\bibitem{rasti10:_eyebal_ases}
+{\sc Rasti, A.~H., Magharei, N., Rejaie, R., and Willinger, W.}
+\newblock Eyeball {ASes}: From geography to connectivity.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2010).
+
+\bibitem{RFC4271}
+{\sc Rekhter, Y., and Li, T.}
+\newblock A border gateway protocol {(BGP-4)}.
+\newblock RFC 4271, January 2006.
+
+\bibitem{RIPEdata}
+{Ripe NCC:} routing information service.
+\newblock \url{http://www.ripe.net/projects/ris/}.
+
+\bibitem{roughan05:_fundamental}
+{\sc Roughan, M.}
+\newblock Fundamental bounds on the accuracy of network performance
+  measurements.
+\newblock In {\em ACM SIGMETRICS\/} (June 2005), pp.~253--264.
+
+\bibitem{roughan04:_SNMP_BGPb}
+{\sc Roughan, M., Griffin, T., Mao, M., Greenberg, A., and Freeman, B.}
+\newblock {IP} forwarding anomalies and improving their detection using
+  multiple data sources.
+\newblock In {\em ACM SIGCOMM Workshop on Network Troubleshooting\/} (September
+  2004), pp.~307--312.
+
+\bibitem{roughan08:_bigfoot}
+{\sc Roughan, M., Tuke, J., and Maennel, O.}
+\newblock Bigfoot, {S}asquatch, the {Y}eti and other missing links: what we
+  don't know about the {AS} graph.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (October
+  2008).
+
+\bibitem{roughan11}
+{\sc Roughan, M., Willinger, W., Maennel, O., Perouli, D., and Bush, R.}
+\newblock 10 lessons from 10 years of measuring and modeling the {I}nternet's
+  autonomous systems.
+\newblock {\em IEEE Journal on Selected Areas in Communications (JSAC) 29\/}
+  (2011), 1810--1821.
+
+\bibitem{sanchez13:_dasu}
+{\sc Sanchez, M., Otto, J., Bischof, Z., Choffnes, D., Bustamante, F.,
+  Krishnamurthy, B., and Willinger, W.}
+\newblock Dasu: Pushing experiments to the {I}nternet's edge.
+\newblock In {\em 10th USENIX NSDI\/} (2013).
+
+\bibitem{shaikh01:_ospf}
+{\sc Shaikh, A., and Greenberg, A.}
+\newblock Experience in black-box {OSPF} measurement.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2001),
+  pp.~113--125.
+
+\bibitem{Shavitt10}
+{\sc Shavitt, Y., and Zilberman, N.}
+\newblock A structural approach for {PoP} geo-location.
+\newblock In {\em IEEE INFOCOM\/} (2010).
+
+\bibitem{Shavitt:2012:GIP:2238856.2238872}
+{\sc Shavitt, Y., and Zilberman, N.}
+\newblock Geographical {I}nternet {PoP}-level maps.
+\newblock In {\em 4th international conference on Traffic Monitoring and
+  Analysis\/} (2012), TMA'12, pp.~121--124.
+
+\bibitem{sherry10:_resol_ip_alias_presp_times}
+{\sc Sherry, J., Katz-Bassett, E., Pimenova, M., Madhyastha, H., Anderson, T.,
+  and Krishnamurthy, A.}
+\newblock Resolving {IP} aliases with prespecified timestamps.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2010).
+
+\bibitem{sherwood08:_discar}
+{\sc Sherwood, R., Bender, A., and Spring, N.}
+\newblock {DisCarte:} a disjunctive {I}nternet cartographer.
+\newblock In {\em ACM SIGCOMM\/} (August 2008).
+
+\bibitem{sommers11:_preval_charac_mpls_deploy_open_inter}
+{\sc Sommers, J., Eriksson, B., and Barford, P.}
+\newblock On the prevalence and characteristics of {MPLS} deployments in the
+  open internet.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2011).
+
+\bibitem{spring03:_inflation}
+{\sc Spring, N., Mahajan, R., and Anderson, T.}
+\newblock Quantifying the causes of path inflation.
+\newblock In {\em ACM SIGCOMM\/} (2003).
+
+\bibitem{rocketfuel_1}
+{\sc Spring, N., Mahajan, R., and Wetherall, D.}
+\newblock Measuring {ISP} topologies with {R}ocketfuel.
+\newblock In {\em ACM SIGCOMM\/} (August 2002).
+
+\bibitem{strogatz05:_roman}
+{\sc Strogatz, S.}
+\newblock Romanesque networks.
+\newblock {\em Nature 433\/} (2005).
+
+\bibitem{subramanian02:_charac_inter}
+{\sc Subramanian, L., Agarwal, S., Rexford, J., and Katz, R.}
+\newblock Characterizing the {I}nternet hierarchy from multiple vantage points.
+\newblock In {\em IEEE INFOCOM\/} (2002), vol.~2, pp.~618--627.
+
+\bibitem{cymru}
+The {T}eam {C}ymru bogon reference page.
+\newblock \url{http://www.cymru.com/Bogons/}.
+
+\bibitem{Tozal:tracenet:imc2010}
+{\sc Tozal, M.~E., and Sarac, K.}
+\newblock {TraceNET:} an {I}nternet topology data collector.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2010),
+  pp.~356--368.
+
+\bibitem{Tozal:2012:ENL:2342042.2342069}
+{\sc Tozal, M.~E., and Sarac, K.}
+\newblock Estimating network layer subnet characteristics via statistical
+  sampling.
+\newblock In {\em 11th international IFIP TC 6 conference on Networking --
+  Volume Part I\/} (2012), IFIP'12, pp.~274--288.
+
+\bibitem{tune13:_sigcom_ebook}
+{\sc Tune, P., and Roughan, M.}
+\newblock {\em SIGCOMM eBook on Recent Advances in Networking}, vol.~1.
+\newblock ACM, 2013, ch.~Internet Traffic Matrices: A Primer.
+
+\bibitem{varadhan96:_oscillation}
+{\sc Varadhan, K., Govindan, R., and Estrin, D.}
+\newblock Persistent route oscillations in inter-domain routing.
+\newblock Tech. rep., 96-631, USC/ISI, 1996.
+
+\bibitem{govindanNetworks00}
+{\sc Varadhan, K., Govindan, R., and Estrin, D.}
+\newblock Persistent route oscillations in inter-domain routing.
+\newblock {\em Computer Networks\/} (March 2000).
+
+\bibitem{wang03:_infer}
+{\sc Wang, F., and Gao, L.}
+\newblock On inferring and characterizing {I}nternet routing policies.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (October
+  2003).
+
+\bibitem{vroom}
+{\sc Wang, Y., Keller, E., Biskeborn, B., van~der Merwe, J., and Rexford, J.}
+\newblock Virtual routers on the move: live router migration as a
+  network-management primitive.
+\newblock In {\em ACM SIGCOMM\/} (2008), pp.~231--242.
+
+\bibitem{Waxman88}
+{\sc Waxman, B.~M.}
+\newblock Routing of multipoint connections.
+\newblock {\em IEEE Journal on Selected Areas in Communications (JSAC) 6}, 9
+  (December 1988), 1617--1622.
+
+\bibitem{willinger09:_mathem_and_inter}
+{\sc Willinger, W., Alderson, D., and Doyle, J.}
+\newblock Mathematics and the {I}nternet: A source of enormous confusion and
+  great potential.
+\newblock {\em Notices of the AMS 56}, 5 (2009), 586--599.
+\newblock \url{http://www.ams.org/notices/200905/rtx090500586p.pdf}.
+
+\bibitem{Willinger04}
+{\sc Willinger, W., Alderson, D., Doyle, J.~C., and Li, L.}
+\newblock More "normal" than normal: scaling distributions and complex systems.
+\newblock In {\em 36th cWinter simulation Conference\/} (2004), pp.~130--141.
+
+\bibitem{winter09:_model_inter_routin_topol_with}
+{\sc Winter, R.}
+\newblock Modeling the {I}nternet routing topology with a known degree of
+  accuracy -- in less than 24h.
+\newblock In {\em ACM/IEEE/SCS Workshop on Principles of Advanced and
+  Distributed Simulation (PADS)\/} (2009).
+
+\bibitem{xia04:_as}
+{\sc Xia, J., and Gao, L.}
+\newblock On the evaluation of {AS} relationship inferences.
+\newblock In {\em Globecom\/} (2004).
+
+\bibitem{xu04:_ixps}
+{\sc Xu, K., Duan, Z., Zhang, Z.-L., and Chandrashekar, J.}
+\newblock On properties of {I}nternet exchange points and their impact on {AS}
+  topology and relationship.
+\newblock {\em LNCS 3042\/} (2004), 284--295.
+\newblock
+  \url{http://www.springerlink.com/content/umu88q1eewk0e8yy/fulltext.pdf}.
+
+\bibitem{barabasi02}
+{\sc Yook, S.-H., H.Jeong, and Barab\'{a}si, A.-L.}
+\newblock Modeling the {I}nternet's large-scale topology.
+\newblock {\em Proceedings of the National Academy of Sciences of the USA
+  (PNAS)}, 99 (2002), 13382--13386.
+
+\bibitem{Yoshida09}
+{\sc Yoshida, K., Kikuchi, Y., Yamamoto, M., Fujii, Y., Nagami, K., Nakagawa,
+  I., and Esaki, H.}
+\newblock Inferring {PoP}-level {ISP} topology through end-to-end delay
+  measurement.
+\newblock In {\em Passive and Active Measurement Conference (PAM)\/} (2009),
+  pp.~35--44.
+
+\bibitem{maz:partial-transit}
+{\sc Yoshinobu, M.}
+\newblock {What makes our policy messy}, 2010.
+\newblock
+  \url{http://www.attn.jp/maz/p/c/bgpworkshop200904/bgpworkshop-policy.pdf}.
+
+\bibitem{Zegura96}
+{\sc Zegura, E., Calvert, K., and Bhattacharjee, S.}
+\newblock How to model an internetwork.
+\newblock In {\em IEEE INFOCOM\/} (1996), vol.~2, pp.~594--602.
+
+\bibitem{Zegura97}
+{\sc Zegura, E.~W., Calvert, K.~L., and Donahoo, M.~J.}
+\newblock A quantitative comparison of graph-based models for {I}nternet
+  topology.
+\newblock {\em IEEE/ACM Transactions on Networking 5\/} (December 1997),
+  770--783.
+
+\bibitem{zhang05:_collec_inter_as_topol}
+{\sc Zhang, B., Liu, R., Massey, D., and Zhang, L.}
+\newblock Collecting the {Internet AS-level} topology.
+\newblock {\em ACM SIGCOMM Computer Communications Review (CCR)\/} (January
+  2005).
+
+\bibitem{Zhao01:_MOAS}
+{\sc Zhao, X., Pei, D., Wang, L., Massey, D., Mankin, A., Wu, S.~F., and Zhang,
+  L.}
+\newblock An analysis of {BGP} multiple origin {AS} ({MOAS}) conflicts.
+\newblock In {\em ACM SIGCOMM Internet Measurement Workshop (IMW)\/} (2001),
+  pp.~31--35.
+
+\end{thebibliography}

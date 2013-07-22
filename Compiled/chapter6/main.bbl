@@ -1,0 +1,106 @@
+\begin{thebibliography}{10}
+
+\bibitem{rfc5036}
+L.~Andersson, I.~Minei, and B.~Thomas.
+\newblock {{LDP Specification}}.
+\newblock RFC 5036, 2007.
+
+\bibitem{rfc4664}
+L.~Andersson and E.~Rosen.
+\newblock {{Framework for Layer 2 Virtual Private Networks (L2VPNs)}}.
+\newblock RFC 4664, 2006.
+
+\bibitem{rfc4665}
+W.~Augustyn and Y.~Serbest.
+\newblock {{Service Requirements for Layer 2 Provider-Provisioned Virtual
+  Private Networks}}.
+\newblock RFC 4665, 2006.
+
+\bibitem{rfc3209}
+D.~Awduche, L.~Berger, D.~Gan, T.~Li, V.~Srinivasan, and G.~Swallow.
+\newblock {{RSVP-TE: Extensions to RSVP for LSP Tunnels}}.
+\newblock RFC 3209, December 2001.
+
+\bibitem{rfc2858}
+T.~Bates, Y.~Rekhter, R.~Chandra, and D.~Katz.
+\newblock {{Multiprotocol Extensions for BGP-4}}.
+\newblock RFC 2858, 2000.
+
+\bibitem{integrity}
+Randy Bush and Timothy~G. Griffin.
+\newblock Integrity for virtual private routed networks.
+\newblock In {\em In Proc. IEEE INFOCOM}, 2003.
+
+\bibitem{rfc4110}
+R.~Callon and M.~Suzuki.
+\newblock {{A Framework for Layer 3 Provider-Provisioned Virtual Private
+  Networks}}.
+\newblock RFC 4110, 2005.
+
+\bibitem{rfc4031}
+M.~Carugi and D.~McDysan.
+\newblock {{Service Requirements for Layer 3 Provider-Provisioned Virtual
+  Private Networks}}.
+\newblock RFC 4031, 2005.
+
+\bibitem{de-ghein}
+Luc {De Ghein}.
+\newblock {\em {MPLS} Fundamentals}.
+\newblock Cisco Press, December 2006.
+
+\bibitem{rfc4632}
+V.~Fuller and T.~Li.
+\newblock {{Classless Inter-domain Routing (CIDR): The Internet Address
+  Assignment and Aggregation Plan}}.
+\newblock RFC 4632, 2006.
+
+\bibitem{minei-lucek}
+Ina Minei and Julia Lucek.
+\newblock {\em {MPLS}-Enabled Applications: {E}merging Developments and New
+  Technologies}.
+\newblock Wiley, October 2005.
+
+\bibitem{juniper-preso}
+I.~Miney.
+\newblock {Scaling considerations in MPLS networks}.
+\newblock Nanog 35, 2005.
+
+\bibitem{rfc5512}
+P.~Mohapatra and E.~Rosen.
+\newblock {{The BGP Encapsulation Subsequent Address Family Identifier (SAFI)
+  and the BGP Tunnel Encapsulation Attribute}}.
+\newblock RFC 5512, 2009.
+
+\bibitem{rfc4364}
+E.~Rosen and Y.~Rekhter.
+\newblock {{BGP/MPLS IP Virtual Private Networks (VPNs)}}.
+\newblock RFC 4364, 2006.
+
+\bibitem{rfc3031}
+E.~Rosen, A.~Viswanathan, and R.~Callon.
+\newblock {{Multiprotocol Label Switching Architecture}}.
+\newblock RFC 3031, 2001.
+
+\bibitem{rfc4023}
+Y.~Rekhter T.~Worster and E.~Rosen.
+\newblock {{Encapsulating MPLS in IP or Generic Routing Encapsulation (GRE)}}.
+\newblock RFC 4023, 2005.
+
+\bibitem{cisco-preso}
+M.~Townsley.
+\newblock {{MPLS over various IP tunnels}}.
+\newblock Nanog 30, 2004.
+
+\bibitem{varghese}
+George Varghese.
+\newblock {\em {Network Algorithmics: An Interdisciplinary Approach to
+  Designing Fast Networked Devices (The Morgan Kaufmann Series in
+  Networking)}}.
+\newblock Morgan Kaufmann, December 2004.
+
+\bibitem{rfc5439}
+S.~Yasukawa, A.~Farrel, and O.~Komolafe.
+\newblock {{An Analysis of Scaling Issues in MPLS-TE Core Networks}}.
+\newblock RFC 5439, February 2009.
+
+\end{thebibliography}

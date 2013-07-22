@@ -1,0 +1,228 @@
+\newcommand{\CLASSINPUTinnersidemargin}{0.7in}
+\newcommand{\CLASSINPUToutersidemargin}{0.7in}
+\documentclass{article}
+% \documentclass[11pt,oneside]{article}
+% This text is inserted in the beginning of all
+% LaTex and Tex files I create.
+%
+% File created: Thu Apr  1 2010
+% File name:    paper.tex
+% Path:         /home/mroughan/Reports/Networking/Topology/Waxman/
+%
+% Matthew Roughan
+% matthew.roughan@adelaide.edu.au
+%
+\usepackage[pdftex]{graphicx}
+\usepackage{verbatim}
+\usepackage{fixltx2e}
+\usepackage{alltt}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{pdfpages}
+% pdfimages gets actual 'images' (bitmaps) out of the PDF, but not plots
+\usepackage{latexsym}
+\usepackage{dsfont}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{ifthen}
+\usepackage{cite}
+\usepackage[table]{xcolor}
+\usepackage{makeidx}
+\usepackage{eso-pic}
+% \usepackage[margin=1.0in]{geometry} % use most of the available page
+\usepackage[activate={true,nocompatibility}]{microtype} % meant to do better typography
+\usepackage{booktabs} 
+\usepackage{verbatim}
+\usepackage{epstopdf}
+\epstopdfsetup{update=true,outdir=EPSTOPDF/,suffix=-epstopdf}
+\epstopdfDeclareGraphicsRule{.jpg.intrados.eps}{pdf}{.jpg_1.pdf}{%
+  epstopdf #1 --outfile=\OutputFile
+}
+\epstopdfDeclareGraphicsRule{.jpg.extrados.eps}{pdf}{.jpg_2.pdf}{%
+  epstopdf #1 --outfile=\OutputFile
+}
+\epstopdfDeclareGraphicsRule{.5.eps}{pdf}{.5.pdf}{%
+  epstopdf #1 --outfile=\OutputFile
+}
+\epstopdfDeclareGraphicsRule{.jpg.eps}{pdf}{.jpg.pdf}{%
+  epstopdf #1 --outfile=\OutputFile
+}
+% \usepackage{mdframed}
+\graphicspath{{.}
+{Figures/}
+}
+
+
+% http://tex.stackexchange.com/questions/18931/memoir-class-with-subcaption-and-hyperref-packages
+% captions and subcaptions
+% \usepackage[caption=false,position=bottom]{subfig}
+\usepackage{caption}
+\let\subcaption\relax
+\let\subfloat\relax
+\usepackage{subcaption}
+% \usepackage[caption=false,position=bottom]{subcaption}
+% \let\subbottom\subfloat % to allow use of \subbottom instead of \subfloat
+\captionsetup[figure]{labelfont={bf,small},textfont={it,small}}
+\captionsetup[subfloat]{labelfont={bf,footnotesize},textfont={it,footnotesize},subrefformat=parens}
+
+% hyperlinks, which caused some of the grief above
+\let\captioncaption\caption
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,pdfauthor={Matthew Roughan},pdftitle={Optimisation III}]{hyperref}
+\let\caption\captioncaption
+\usepackage[all]{hypcap} 
+ 
+
+% use "autoref" the way I want
+%   autoref is nice because the text or brackets of a ref are part of link
+%   see http://tex.stackexchange.com/questions/36575/autorefs-inserted-text-has-not-the-correct-case
+%       http://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing
+%       http://www.tug.org/applications/hyperref/manual.html#TBL-23
+\def\sectionautorefname{\S\!}
+\def\subsectionautorefname{\S\!}
+\def\subsubsectionautorefname{\S\!}
+% from http://tex.stackexchange.com/questions/52410/how-to-use-the-command-autoref-to-implement-the-same-effect-when-use-the-comman
+\def\equationautorefname~#1\null{%
+  (#1)\null
+}
+
+\lefthyphenmin=2
+\righthyphenmin=3
+
+\renewcommand{\baselinestretch}{1.0}
+\renewcommand{\textfraction}{0.1}
+
+\renewcommand{\comment}[1]{}
+
+\makeindex
+\newcommand{\boldindex}[1]{\textbf{\hyperpage{#1}}} % need this so that bold index entries still have hyperlinks
+\newcommand{\define}[1]{{\em #1}\index{#1|boldindex}}
+
+\definecolor{paleblue}{rgb}{0.5,0.5,1}
+\definecolor{palegray}{gray}{0.92}
+% \rowcolors{1}{white}{palegray}
+
+% \def\RR{\mathds{R}}
+% \def\CC{\mathds{C}}
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\Z{\mathbb{Z}}
+\def\x{{\mathbf x}}
+\def\y{{\mathbf y}}
+\newcommand{\aset}[2]{\left\{ \left. #1 \, \right| \, #2 \right\} }
+\newcommand{\areaint}[1]{\int \hspace{-3mm} \int_{\Omega} #1  \, d\!x \, d\!y}
+\newcommand{\sstrut}{\rule[-1mm]{0mm}{5mm} }
+
+%\renewcommand{\baselinestretch}{1.01}
+% space saving itemize and enumerate environments
+\newenvironment{sitemize}{%
+  \begin{list}{$\bullet$}{%
+    %\setlength{\rightmargin}{\leftmargin}
+    \setlength{\itemsep}{0.1cm}%
+    \setlength{\leftmargin}{3.5em}%
+    \setlength{\topsep}{0.1cm}%
+    \setlength{\parsep}{0mm}}%
+  }{\end{list}}
+
+\newenvironment{senumerate}{%
+   \begin{list}{\arabic{enumi}.}{%
+    \setlength\labelwidth{3.5em}%
+    \setlength\leftmargin{3.5em}%
+    \setlength{\topsep}{2pt plus 2pt minus 2pt}%
+    \setlength\itemsep{0.0cm}%
+    \usecounter{enumi}}%
+  }{\end{list}}
+
+\newlength{\figurewidth}
+\setlength{\figurewidth}{0.9\columnwidth}
+\newlength{\figurewidthA}
+\setlength{\figurewidthA}{0.44\columnwidth}
+\newlength{\captionspace}
+\setlength{\captionspace}{-5mm}
+\newlength{\figstarspace}
+\setlength{\figstarspace}{-4mm}
+\newcommand{\ie}{{\em i.e., }}
+\newcommand{\eg}{{\em e.g., }}
+\newcommand{\etal}{{\em et al.}}
+\newcommand{\erdren}{Erd\"{o}s-R\'{e}nyi }
+
+\newcommand{\subtitlestr}{}
+\newcommand{\shorttitlestr}{Internet Topology Research Redux}
+\newcommand{\titlestr}{\shorttitlestr, \\
+  \subtitlestr}
+\title{\shorttitlestr}
+\author{
+  \begin{tabular}{ccc}
+    Walter Willinger &  & Matthew Roughan \\
+    AT\&T Labs-Research   &  & University of Adelaide \\
+    {\small \texttt{walter@research.att.com}}  & & {\small \texttt{matthew.roughan@adelaide.edu.au}} \\
+  \end{tabular}
+}
+\date{}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[theorem]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{Def}{Definition}[section]
+
+\renewcommand\arraystretch{1.0} 
+% \newcommand{\full}[1]{#1}
+\newcommand{\full}[1]{}
+\usepackage{fourier}
+\newcommand\starbreak{\fancybreak{\decosix\quad\decosix\quad\decosix}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+
+\begin{document}
+
+\pagenumbering{arabic}
+\pagestyle{plain}
+
+\maketitle
+
+% ToC, etc
+\setcounter{tocdepth}{2}
+\tableofcontents
+% \clearpage
+% \listoffigures
+% \clearpage
+% \listoftables
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% main text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\includeonly{chaptr2} %If you just want to process chaptr2.tex
+
+\input{intro}
+\input{primer}
+\input{router}
+\input{as}
+\input{pop}
+% \input{overlay}
+\input{conclusion}
+
+\clearpage
+{
+\setlength{\parskip}{1mm}
+\footnotesize
+% \bibliographystyle{ieeetr}
+\bibliographystyle{acm}  
+% http://sites.stat.psu.edu/~surajit/present/bib.htm
+% http://www.cs.stir.ac.uk/~kjt/software/latex/showbst.html
+% http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#Bibliography_styles
+% \bibliography{cov,books,statistics,routing,internet,graph,bgp,ospf,ip_traffic,measurements,topology_fulllist} 
+\bibliography{topology} 
+ 
+%\clearpage
+% \printindex
+}
+
+\end{document}
+
+

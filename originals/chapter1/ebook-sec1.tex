@@ -1,0 +1,167 @@
+% This work is licensed under
+% http://creativecommon.org/licenses/by/3.0/
+\section{Introduction}
+\label{sec:sec1}
+
+The Internet is increasingly mobile.  
+Users access Internet services from mobile devices that move from one
+wireless access point to another, or switch between WiFi and cellular 
+network connectivity.  
+Ubiquitous computing relies on sensors and actuators attached to vehicles,
+portable objects, and animals as well as people.
+Applications 
+provide customers with application-level identities that can be
+used to reach them at whichever device they are currently using.
+Increasingly, software runs on virtual machines that can migrate from one
+physical server, or even one data center, to another.
+
+We define network
+mobility as the capability that allows a communicating entity
+to continue to communicate over a network, despite the fact that its
+location at (or binding to) a lower-level communicating entity is changing.
+Further, we focus on so-called ``seamless'' mobility, in which the
+high-level entity's communication channels are preserved throughout
+the change.
+
+It is important to note that this definition applies at all conceptual
+levels.
+A person can have an identifier as a communicating entity, and can be
+mobile by moving from one networked device to another.
+A device such as a
+cellphone can have an identifier, and can be mobile by moving from one
+network attachment point to another.
+An interface on a device, such as an Ethernet interface, can have an
+identifier and be mobile by moving within or between local area networks.
+
+In recent years, many mechanisms have emerged for supporting 
+mobility.
+A recent survey~\cite{rfc6301} cites 22 Internet protocols dating from 1991
+to 2009, including most prominently Mobile IPv4, Mobile IPv6,
+MSM-IP, HIP, MOBIKE,
+Cellular IP, HAWAII,
+ILNP, and LISP Mobile Node.
+In other contexts mobility is supported by:
+\begin{itemize}
+\item
+Ethernet LANs and VLANs, which allow an interface to retain its IP address 
+as the host moves within the LAN;
+
+\item 
+the scalable ``flat'' routing architectures 
+SEATTLE \cite{seattle}, PortLand~\cite{portland},
+VL2~\cite{vl2}, NVP~\cite{nvp}, and
+Rbridges/TRILL~\cite{rbridges,rfc5556}
+that also naturally support routing to an interface that
+retains its addresses as the host move;
+
+\item
+injecting the IP address of a mobile machine into existing routing protocols
+such as OSPF and BGP~\cite{connexion,smog};
+
+\item
+the General Packet Radio Service (GPRS) Tunneling Protocol (GTP),
+which supports mobility in most cellular networks;
+
+\item
+other research proposals including
+TCP Migrate \cite{tcp-migrate}, Serval \cite{serval}, 
+and the Internet Indirection Infrastructure~\cite{i3};
+
+\item
+application-level protocols such as 
+the Session Initiation Protocol (SIP)~\cite{mobilesip}.
+\end{itemize}
+
+\noindent
+Each well-known proposal tends to spawn a family of variants, so
+the total number is probably in the hundreds and growing.
+
+These various mechanisms operate at different levels, and make
+different assumptions about naming, routing, session
+protocols, scale, security, and the cooperation of
+remote endpoints or multiple administrative domains.  
+Because the
+community lacks a common framework for describing and comparing
+mobility mechanisms, their relationships are poorly understood.
+Comparisons tend to be based on superficial characteristics rather
+than inherent ones.  
+Quantitative comparison must be based on
+labor-intensive prototyping and measurement or simulation.
+
+This book chapter has two goals:
+\begin{itemize}
+\item
+To describe and compare existing proposals for implementing mobility.
+\item
+To map out a design space in which
+new mobility mechanisms can be discovered,
+evaluated, and exploited.
+\end{itemize}
+
+\noindent
+To achieve these goals,
+we explain mobility in a new way.
+We begin by defining a common framework for describing network
+architectures.
+This framework is
+called the {\it geomorphic view} of networking, and is
+introduced in
+Section~\ref{sec:sec2}.
+
+The geomorphic view has been developed to be simple, modular,
+comprehensive, and formalizable.
+It supports the first goal by providing a precise, unique description
+of each mobility mechanism
+that omits inessential detail while exposing subtle differences
+and important engineering trade-offs.
+
+The common framework supports the second goal in several ways.
+It allows us to generalize over the implementations of mobility,
+showing that they are all instances of two major patterns.
+It also allows us to understand how 
+different instances of the mobility patterns at different places in a
+network
+architecture can be composed, generating a potentially large design
+space to be explored.
+
+Section~\ref{sec:sec3} of this chapter introduces the two major
+patterns---\emph{dynamic-routing mobility}
+and \emph{session-location mobility}---for implementing mobility.
+If they are both implemented within an IP layer, the difference centers
+on whether a mobile machine
+retains its IP address when
+it moves, or changes its IP address and updates its correspondents.
+Each pattern has a completely different set of subsidiary design
+decisions and resource costs.
+
+The next sections 
+use the patterns to describe and compare many of the most
+important proposals for mobility.  
+Sections~\ref{sec:sec4} and
+\ref{sec:sec5} compare different ways to implement
+dynamic-routing mobility,
+with a non-hierarchical name space ({\it e.g.,}
+MAC addresses in a local area
+network) or a hierarchical name
+space ({\it e.g.,} IP addresses in the wide
+area), respectively.  
+Section~\ref{sec:sec6} compares four prominent protocols for
+session-location mobility at different stages in the IETF
+standardization process.
+
+Section~\ref{sec:sec7} of the chapter turns to
+a more systematic exploration of the
+design space, first showing that there may be some freedom concerning
+where in an architecture a particular kind of mobility is handled.
+The section also discusses composition of mobility
+mechanisms.
+As an example, we illustrate how Mobile IPv6 is a
+composition of both the dynamic-routing mobility and session-location
+mobility design patterns.
+
+Finally, Section~\ref{sec:sec8} surveys several topics closely
+related to mobility, including multihoming, anycast services, site
+mobility, incremental deployment of mobility protocols, and security
+issues for mobility.  
+The chapter ends with a brief
+conclusion outlining several more advanced areas of study.

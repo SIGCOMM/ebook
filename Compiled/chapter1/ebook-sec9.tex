@@ -1,0 +1,77 @@
+% This work is licensed under
+% http://creativecommon.org/licenses/by/3.0/
+\section{Conclusion}
+\label{sec:sec9}
+
+In this chapter we have presented an abstract framework for describing, 
+understanding, and comparing approaches to network mobility.  
+As illustrations, we have covered several mobility protocols 
+in some detail.
+We believe the geomorphic model provides a clear and precise way to understand the considerable similarities between different mobility proposals,
+allowing discussions to focus on their meaningful distinctions rather than artificial differences in terminology.
+
+We have compared mobility proposals on both qualitative
+(deployment constraints, security) and quantitative (resource costs,
+latency) criteria.
+The basis for making comparisons has been completely {\it structural},
+in the sense of {\it structural modeling} as defined in 
+Section~\ref{sec:structural}.
+This is important because structural comparisons are vastly easier
+to obtain than comparisons based on simulation, and should always
+be the first step in any evaluation project.
+
+In the interest of brevity, our discussions of quantitative
+criteria have merely suggested trends and trade-offs, rather than
+providing a more substantive analysis.
+A true understanding of metrics such as
+storage cost, update cost, and path cost requires a more 
+detailed characterization of the proposals, including
+supporting technologies such as routing protocols and directory services. 
+Scalability depends on how these costs grow as the size of a network
+grows within the expected range.
+ 
+Equally important, different mobility mechanisms can be composed.
+Even today it would not be surprising to see
+dynamic-routing mobility used 
+within an administrative domain, while
+session-location mobility is used simultaneously
+across administrative boundaries.
+The ultimate goal would be to compose performance models along with
+the mechanisms they are modeling, so that the performance of
+a composed solution could be derived from the performance of its
+components.   
+
+Today, many Internet applications that could benefit from mobility
+use work-arounds instead, satisfying the need for session continuity
+with {\it ad hoc} application-specific mechanisms, or simply doing
+without \cite{handley}.
+This is both an effect and a cause of scant deployment of mobility
+mechanisms.
+Most existing mobility protocols operate at fairly low levels
+in a network architecture, 
+specifically the link, network, and transport levels
+of the classic Internet stack.
+At these levels they are expensive, difficult to deploy, or both.
+
+Many of these limitations are unnecessary, as
+the essence of mobility is simply a dynamic binding of more abstract
+names to more concrete names.  
+As such, mobility can be easily implemented in middleware as a service to
+even higher-level application layers.  
+We believe that this is a fruitful avenue for further exploration,
+particularly because it might be easier to optimize narrowly-targeted
+implementations of mobility.
+
+More generally, we believe that the geomorphic view promotes
+common terminology, modularity,
+separation of concerns, discovery of design patterns,
+composition,
+rigorous reasoning,
+and code reuse in networking.
+While widely appreciated by software engineers, 
+these concepts have been less central to the study of networking.  
+We believe that the geomorphic view should be extended to understand
+other important aspects of networking.
+We also believe that an appreciation of these concepts would be 
+valuable for networking researchers and practitioners alike, 
+far beyond the treatment of any one subject like network mobility.

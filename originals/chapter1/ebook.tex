@@ -1,0 +1,102 @@
+% This work is licensed under
+% http://creativecommon.org/licenses/by/3.0/
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{url}
+\hyphenation{wrap-around}
+
+%this is a nice-looking bullet list:
+%\begin{list}{$\bullet$}{
+%                      \setlength{\topsep}{0in}
+%                      \setlength{\itemsep}{0in}
+%                      \setlength{\parsep}{0in}
+%                      \setlength{\leftmargin}{.13in}
+%                     }
+%\item
+%\end{list}
+
+%this is a two-column figure:
+%(for a one-column figure, remove *)
+%figure must be in ???.pdf
+%\begin{figure*}[hbt]
+%\begin{center}
+%\includegraphics[scale=1.00]{???}
+%\end{center}
+%\caption{???}
+%\label{fig:???}
+%\end{figure*}
+
+%this is a two-column, floating table:
+%(for a one-column table, remove *)
+%(for a non-floating table, remove table environment)
+%\begin{table*}
+%\begin{tabular}
+%\end{tabular}
+%\end{table*}
+
+%JEN: for new text added by jen.  can simply remove \textcolor{red} to
+%get rid of red color, or remove the \jen{} where it appears in the text.
+\newcommand{\jen}[1]{\textcolor{red}{#1}}
+
+\title{The Design Space of Network Mobility}
+
+\author{
+Pamela Zave \\
+AT\&T Laboratories---Research \\
+Florham Park, New Jersey, USA \\
+{\tt pamela@research.att.com}
+\and
+Jennifer Rexford \\
+Princeton University \\
+Princeton, New Jersey, USA \\
+{\tt jrex@cs.princeton.edu}
+}
+
+\begin{document}
+\thispagestyle{empty}
+\maketitle
+
+
+\begin{abstract}
+While the Internet is increasingly mobile, seamless mobility is
+difficult to implement at Internet scale.  Over the years, standards
+bodies and the research community have introduced a large and
+confusing collection of mobility proposals that are difficult to
+compare.  In this tutorial, we present these mobility proposals
+in a uniform framework, called the geomorphic view of networking.
+The geomorphic view shows that there are two distinct patterns
+for implementing mobility, each with its own range of 
+design choices and cost-benefit trade-offs.
+We use these patterns to classify and explain
+a representative sample of mobility
+mechanisms, abstractly yet precisely.
+The patterns also serve as a basis for evaluating properties of
+these mechanisms such as resource costs and scalability,
+and for considering composition of mobility mechanisms.
+\end{abstract}
+
+\input{ebook-sec1}
+
+\input{ebook-sec2}
+
+\input{ebook-sec3}
+
+\input{ebook-sec4}
+
+\input{ebook-sec5}
+
+\input{ebook-sec6}
+
+\input{ebook-sec7}
+
+\input{ebook-sec8}
+
+\input{ebook-sec9}
+
+\bibliographystyle{IEEEtran}
+\bibliography{ebook}
+
+\end{document}

@@ -1,0 +1,308 @@
+ \newcommand{\CLASSINPUTinnersidemargin}{0.7in}
+\newcommand{\CLASSINPUToutersidemargin}{0.7in}
+\documentclass{article}
+
+
+% Package to generate and customize Algorithm as per ACM style
+\usepackage[ruled]{algorithm2e}
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+% \IncMargin{-\parindent}
+
+\usepackage{amsmath, amssymb, epsfig, graphicx, psfrag}
+\usepackage{multirow}
+\usepackage{sidecap}
+\usepackage{caption,cleveref,subcaption}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{fullpage}
+ \usepackage{enumerate}
+ 
+\def\del{\partial}
+\def\ds{\displaystyle}
+\def\ts{\textstyle}
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\beqa{\begin{eqnarray}}
+\def\eeqa{\end{eqnarray}}
+\def\beqan{\begin{eqnarray*}}
+\def\eeqan{\end{eqnarray*}}
+\def\nn{\nonumber}
+\def\binomial{\mathop{\mathrm{binomial}}}
+\def\half{{\ts\frac{1}{2}}}
+\def\Half{{\frac{1}{2}}}
+\def\N{{\mathbb{N}}}
+\def\Z{{\mathbb{Z}}}
+\def\Q{{\mathbb{Q}}}
+\def\R{{\mathbb{R}}}
+\def\C{{\mathbb{C}}}
+\def\argmin{\mathop{\mathrm{arg\,min}}}
+\def\argmax{\mathop{\mathrm{arg\,max}}}
+ \def\diag{\mathop{\mathrm{diag}}}
+\def\x{\times}
+\def\limn{\lim_{n \rightarrow \infty}}
+\def\liminfn{\liminf_{n \rightarrow \infty}}
+\def\limsupn{\limsup_{n \rightarrow \infty}}
+\def\GV{Guo and Verd{\'u}}
+
+%\newtheorem{proposition}{Proposition}
+%\newtheorem{definition}{Definition}
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{lemma}{Lemma}
+%\newtheorem{corollary}{Corollary}
+%\newtheorem{assumption}{Assumption}
+%\newtheorem{algorithm}{Algorithm}
+%\newtheorem{claim}{Claim}
+\def\qed{\mbox{} \hfill $\Box$}
+\setlength{\unitlength}{1mm}
+
+\newtheorem{thm}{Proposition}  
+
+\def\ehat{\widehat{e}}
+\def\qhat{\widehat{q}}
+\def\rhat{\widehat{r}}
+\def\uhat{\widehat{u}}
+\def\xhat{\widehat{x}}
+\def\zhat{\widehat{z}}
+\def\la{\leftarrow}
+\def\ra{\rightarrow}
+\def\SR{\mbox{\small \sffamily SR}}
+\def\SRTX{\mbox{\small \sffamily SRTX}}
+\def\SRRX{\mbox{\small \sffamily SRRX}}
+\def\MRX{\mbox{\small \sffamily MRX}}
+\def\SNR{\mbox{\small \sffamily SNR}}
+\def\SINR{\mbox{\small \sffamily SINR}}
+\def\arr{\rightarrow}
+\def\Exp{\mathbf{E}}
+\def\var{\mbox{\bf var}}
+
+\def\Xset{{\cal X}}
+
+\newcommand{\one}{\mathbf{1}}
+\newcommand{\abf}{\mathbf{a}}
+\newcommand{\bbf}{\mathbf{b}}
+\newcommand{\dbf}{\mathbf{d}}
+\newcommand{\ebf}{\mathbf{e}}
+\newcommand{\gbf}{\mathbf{g}}
+\newcommand{\hbf}{\mathbf{h}}
+\newcommand{\pbf}{\mathbf{p}}
+\newcommand{\qbf}{\mathbf{q}}
+\newcommand{\qbfhat}{\widehat{\mathbf{q}}}
+\newcommand{\rbf}{\mathbf{r}}
+\newcommand{\sbf}{\mathbf{s}}
+\newcommand{\sbfhat}{\widehat{\mathbf{s}}}
+\newcommand{\tbf}{\mathbf{t}}
+\newcommand{\ubf}{\mathbf{u}}
+\newcommand{\utildebf}{\tilde{\mathbf{u}}}
+\newcommand{\vbf}{\mathbf{v}}
+\newcommand{\wbf}{\mathbf{w}}
+\newcommand{\xbf}{\mathbf{x}}
+\newcommand{\xbfhat}{\widehat{\mathbf{x}}}
+\newcommand{\ybf}{\mathbf{y}}
+\newcommand{\zbf}{\mathbf{z}}
+\newcommand{\zbfhat}{\widehat{\mathbf{z}}}
+\newcommand{\Abf}{\mathbf{A}}
+\newcommand{\Bbf}{\mathbf{B}}
+\newcommand{\Dbf}{\mathbf{D}}
+\newcommand{\Gbf}{\mathbf{G}}
+\newcommand{\Pbf}{\mathbf{P}}
+\newcommand{\Qbf}{\mathbf{Q}}
+\newcommand{\Sbf}{\mathbf{S}}
+\newcommand{\Ubf}{\mathbf{U}}
+\newcommand{\Wbf}{\mathbf{W}}
+\newcommand{\Xhat}{\widehat{X}}
+\newcommand{\Xbf}{\mathbf{X}}
+\newcommand{\Ybf}{\mathbf{Y}}
+\newcommand{\Zbf}{\mathbf{Z}}
+\newcommand{\Zhat}{\widehat{Z}}
+\newcommand{\Zbfhat}{\widehat{\mathbf{Z}}}
+\newcommand{\thetabf}{{\bm{\theta}}}
+\newcommand{\mubf}{{\bm{\mu}}}
+\newcommand{\mubar}{\overline{\mu}}
+\newcommand{\muavg}{\mu}
+\newcommand{\sigbf}{\bm{\sigma}}
+\newcommand{\etal}{\emph{et al.}}
+\newcommand{\eg}{\emph{eg.}}
+
+\def\Nrx{N_{\rm rx}}
+\def\Ntx{N_{\rm tx}}
+
+\usepackage[compact]{titlesec}
+
+%\input{journal_names.tex}
+
+%\def\negSpace{\hspace{-0.15in}}
+%%\oddsidemargin -0.15in \evensidemargin -0.15in
+%\oddsidemargin 0in \evensidemargin 0in
+%\marginparwidth 40pt \marginparsep 10pt
+%\topmargin 0pt \headsep 0in
+%\textheight 8.85in \textwidth 6.5in
+\title{Smart Data Pricing (SDP): \\ Economic Solutions to Network Congestion}
+\author{Soumya Sen\footnote{Present affiliation: University of Minnesota}, Carlee Joe-Wong, Sangtae Ha\footnote{Present affiliation: DataMi}, Mung Chiang\\Princeton University}
+\date{}
+\begin{document}
+
+
+
+\maketitle
+
+%\begin{abstract}
+%The unprecedented growth in demand for data is causing serious concerns about the technological sustainability and economic viability of the Internet. Traditionally, network operators have used simple flat-rate broadband data plans for both wired and wireless network access. But today, with the popularity of mobile devices and exponential growth of apps, videos, and clouds, service providers are gradually moving towards more sophisticated pricing schemes, including dynamic pricing. This decade will therefore likely witness a major change in ways in which network resources are managed and the role of economics in allocating these resources.  Students in Computer Science and Electrical Engineering therefore need to be equipped with an adequate knowledge about the interplay between technological and economic factors in making prudent design choices for networked systems. In particular, they need to have a good overview of economic concepts, network pricing models, system design, pricing signaling mechanisms and protocols, and the impact of human factors on pricing decisions. Unfortunately, most of these materials are not readily available as a single source for quick reference; they are scattered across published articles, white papers, news reports, and industry technical reports, from across researchers in diverse fields. It is therefore important for the networking community to create a chapter that organizes the relevant materials in a holistic approach, drawing on both past and present literature in engineering and economics, theory and systems, academia and industry. This proposed chapter will review some of the well-known past broadband pricing proposals (both static and dynamic) and their current realizations in various consumer data plans around the world, discuss several research challenges and developments, and provide an in-depth analysis of economic models and systems design for smart dynamic pricing. It will also provide a brief overview of the relationships between various pricing ideas in broadband data plans and their counterparts in other markets, such as electricity and transportation networks.  By exploring the economics of Internet data pricing, this work attempts to facilitate the academic community's efforts in understanding the existing literature, recognizing new trends, and shaping an appropriate and timely research agenda.  Graduate students will also benefit from a discussion of the open questions and challenges in pricing for identifying project and research topics, as well as access to video lectures, slides, class notes, and exercise questions to help them better understand the material.
+%\end{abstract}
+
+%\noindent
+% {\bf Keywords --} Economic aspects of the Internet, Network economics, Broadband pricing\\
+
+\input{Intro.tex}
+
+\input{Factors.tex}
+
+\input{Threats.tex}
+
+\input{SDP.tex}
+
+\input{Congestion.tex}
+
+\input{Economics.tex}
+
+\input{psychology.tex}
+
+\input{engg.tex}
+
+\input{TDP.tex}
+
+\input{20Q.tex}
+
+%In response, many computer networking researchers have begun to focus on the pricing of broadband data, proposing and evaluating alternative pricing policies that aim to relieve network congestion due to increased demand.
+
+%This unprecedented growth has been outpacing ISPs' (Internet service providers) ability to expand their network capacity, prompting ISPs to turn to new pricing plans in an effort to manage their demand for data \cite{comm-mag}. Such policies include charging based on usage volume, throttling users' bandwidth, and imposing caps on monthly usage. In response, many computer networking researchers have begun to focus on the pricing of broadband data, proposing and evaluating alternative pricing policies that aim to relieve network congestion due to increased demand.
+
+%In the past few years, ISPs around the world have offered mainly usage-based pricing plans, which often include some form of bandwidth caps and either usage-based overage charges or throttling once users exceed their data cap \cite{computing-survey}. Figure \ref{fig:timeline} gives an overview of these different usage-based pricing plans offered by major U.S. ISPs since 2008. 
+
+%Yet usage-based pricing often end up hurting ISPs, as they do not take into account the actual costs of network congestion at any given time \cite{Odlyzko-Public}. Some ISPs in Europe and Asia have thus begun offering smarter, more innovative plans, such as app-based or location-dependent pricing. Coupled with recent advances in pricing research, these measures indicate that pricing plans will soon change. In this book chapter, we plan to give an overview of current pricing practices and a review of relevant literature on smart data pricing (SDP).
+
+%Motivated by rapid changes in the pricing plans offered by Internet service providers (ISPs) around the world, we propose a chapter on the pricing for mobile data. In particular, we discuss several different pricing plans that have been proposed in research works, viewing them in the context of currently offered pricing plans and various challenges unique to the pricing of broadband data.
+
+%\section{Smart Data Pricing}
+
+%\subsection{Mobile Data Demand: The Importance of SDP}
+
+% \subsection{Growth in Demand for Data}
+
+%By now, it has been well-established that the demand for mobile data is growing at unsustainable rates, and will likely continue to do so for the next several years. The often-cited Cisco Visual Networking Index predicts that mobile data will grow to a volume of 10.8 exabytes per month in 2016, while wired network traffic will increase at a compound annual growth rate of 28\% per year \cite{CiscoVNI}. This unprecedented growth has been outpacing ISPs' (Internet service providers) ability to expand their network capacity, prompting ISPs to turn to new pricing plans in an effort to manage their demand for data \cite{comm-mag}. Such policies include charging based on usage volume, throttling users' bandwidth, and imposing caps on monthly usage. In response, many computer networking researchers have begun to focus on the pricing of broadband data, proposing and evaluating alternative pricing policies that aim to relieve network congestion due to increased demand.
+%
+%In the past few years, ISPs around the world have offered mainly usage-based pricing plans, which often include some form of bandwidth caps and either usage-based overage charges or throttling once users exceed their data cap \cite{computing-survey}. Figure \ref{fig:timeline} gives an overview of these different usage-based pricing plans offered by major U.S. ISPs since 2008. Yet usage-based pricing often end up hurting ISPs, as they do not take into account the actual costs of network congestion at any given time \cite{Odlyzko-Public}. Some ISPs in Europe and Asia have thus begun offering smarter, more innovative plans, such as app-based or location-dependent pricing. Coupled with recent advances in pricing research, these measures indicate that pricing plans will soon change. In this book chapter, we plan to give an overview of current pricing practices and a review of relevant literature on smart data pricing (SDP).
+%\begin{figure}
+%\centering
+%\includegraphics[width = 0.8\textwidth]{Timeline.pdf}
+%\vspace{-0.1in}
+%\caption{Broadband pricing plans offered by major U.S. ISPs, 2008 - 2012.}
+%\label{fig:timeline}
+%\vspace{-0.05in}
+%\end{figure}
+
+%\subsection{Static Pricing}\label{sec:static}
+%
+%Recently, AT\&T and Verizon, the two largest U.S. ISPs, switched their mobile data plans from usage-based plans with monthly caps to shared data plans, in which monthly data caps are shared between multiple devices \cite{nyt-shared}. Researchers are still trying to understand the implications of this move, e.g., its effects on cooperation between users who share the same data cap. Yet monthly data caps do not significantly help in reducing the \emph{peak} load on a network--even if their overall usage is limited, users tend to crowd onto the network at the same times of the day, resulting in significant congestion at those times. Thus, though they are relatively simple for users to understand and easy to implement, data caps and other forms of usage-based pricing (i.e., charging solely by the total usage volume) do not fully mitigate problems of network congestion.
+%
+%One way to help deal with these congestion issues is to vary prices by the time of the day (ToD pricing). In this pricing plan, users are charged higher usage-based rates during pre-determined peak hours of the day (e.g., during the evening or day). By charging higher prices during these more congested times, ISPs can induce users to shift some usage to lower-price times, when usage is generally lower. Yet because the peak periods are fixed and users must wait several hours for a reduced price, such pricing plans often end up creating two peaks--one during the designated ``peak'' periods, and another during designated ``off-peak'' periods, made up of delay-tolerant traffic such as software updates \cite{computing-survey}. Thus, while ToD pricing is again simple enough to be appealing to users, it fails to fully address the problem of network congestion.
+%
+%Many more static pricing plans have been proposed in the past, and generally involve either pre-negotiated pricing contracts with users (e.g., Parris' reservation-based pricing and Clark's expected capacity pricing) or mechanisms to offer different traffic classes with different qualities of service and prices charged (e.g., Odlyzko's Paris metro pricing). While such policies can help ISPs reduce congestion on their network and do not raise network neutrality concerns, they do require some automated mechanism for users to perform these negotiations or choose QoS classes. An overview of these and other static pricing plans can be found in \cite{computing-survey}; we plan to address these in more detail in the full book chapter.
+%
+%% One variation on simple flat-rate or usage-based pricing would offer multiple classes of service, requiring users to pay more for improved quality of service (QoS). A particularly elegant proposal for multiple QoS is called Paris metro pricing, taking its name from actual pricing practices on the Paris metro in the 1980s. The idea of Paris metro pricing is that users will self-select into the different service classes depending on their price--the more expensive class will have fewer users, and will thus offer superior QoS without the ISP needing to improve its infrastructure for that service class \cite{Odlyzko}.
+%
+%% Another form of static pricing would allow content providers to share the cost of transmitting data for the content they provide. Such two-sided pricing plans have been attacked as violating network neutrality, as bigger and wealthier content providers could offer greater subsidies on their content, thus creating dis-incentives for users to consume more expensive content from smaller providers. Yet other 
+%
+%\subsection{Dynamic Pricing}\label{sec:dynamic}
+%
+%Dynamic pricing allows ISPs more flexibility than static pricing to adjust their prices based on the network load. Thus, it allows ISPs to quickly offer higher prices if congestion is observed on the network, providing a rapid feedback signal to users that induces them to reduce their usage. Yet despite its potential gains for network efficiency, dynamic pricing faces several hurdles in terms of user adoption--most users prefer simple, easy-to-understand data plans, and they may not accept rapid, uncertain fluctuations in price \cite{Odlyzko-Public,computing-survey}.
+%
+%Some forms of dynamic pricing have been proposed as early as the 1990s, including auction-based plans (e.g., MacKie-Mason et al.'s Smart Market) and real-time congestion-dependent pricing (e.g., Kelly's proportional-fair pricing). While these pricing plans have been shown to improve network efficiency, they require automated ways for users to respond to real-time changes in the prices, as well as careful interface design to help users understand how they are being charged.
+%
+%More recently, day-ahead pricing, in which prices are guaranteed for one day in the future but change each day, has been proposed as a viable pricing plan for mobile data. In day-ahead pricing, the ISP observes user reactions to the prices offered, as measured by their usage over the day, and incorporates these observations into updated estimates of how users will react to future prices. A pilot trial of this pricing plan showed that it can effectively reduce the peak load on the network and that users do respond to prices that vary each hour \cite{ha2012tube}. For this trial, interfaces were developed for users' mobile devices that allowed them to view future prices and even automatically schedule some delay-tolerant apps to cheaper times of the day; these were crucial to the success of the pilot trial.
+%
+%\subsection{Future Directions in Related Areas}
+%
+%One important future direction for SDP is the introduction of new pricing architectures. For instance, the introduction of client-side interfaces and control modules may help make dynamic pricing viable for deployment, but will require both careful interface design and research on how best to construct this client-side architecture. While some researchers in the human-computer interaction community have conducted some experiments along these lines, much work remains to be done \cite{computing-survey}.
+%
+%One can also consider SDP in different contexts--for instance, heterogeneous networks, in which users can offload their traffic, e.g. from cellular to WiFI networks. Many SDP pricing plans can also be applied to electricity networks--ToD pricing, for instance, has long been practiced by electricity operators. Many networking researchers, in fact, have begun to study electricity networks and ``smart grids'' as well as more traditional broadband networks \cite{computing-survey}.
+
+\input{Exercises.tex}
+
+%[from Network 20Q?]
+%
+%Review questions. Multiple choice questions. 
+
+% \section{20 Open Questions in SDP}\label{subsec:openQ}
+
+%The term ``SDP'' encompasses all types of pricing for broadband data, from congestion-dependent pricing to two-sided pricing and even the intelligent (price-driven) offloading of traffic onto supplementary networks (e.g., 3G to WiFi). Some types of ``smart'' pricing plans include time, location, and/or congestion-dependent pricing; app-based pricing; smart offloading; two-sided pricing; and Paris metro pricing.
+%
+%All of these pricing plans aim to improve ISPs' traffic management by influencing consumer behavior. Yet designing a pricing plan for broadband data requires researchers to consider many factors--feasible algorithms to compute the prices offered and any other relevant variables, implementability of the pricing plan in a network, the pricing's effect on network operations, and--perhaps most important--acceptability of that pricing plan to end users, government regulators, and ISPs alike. These requirements and the inherent tradeoffs between them raise important questions that researchers are still trying to answer. For instance,
+%\begin{itemize}
+%\item
+%Will users accept a dynamic pricing plan, in which prices change in real time depending on the network congestion? Is there a way to make such plans acceptable to users?
+%\item
+%Does app-based pricing (charging by the type of traffic, e.g., YouTube versus Netflix) violate network neutrality? Does it give larger, wealthier content providers undue advantage in subsidizing transmission of their content?
+%\item
+%Should ISPs charge for access to supplementary networks such as WiFi? If so, how much?
+%\end{itemize}
+%SDP research is driven by such questions. In our discussion, we attempt to highlight these types of tradeoffs and point to relevant research papers that address them. We first give an overview of  different pricing plans proposed by SDP research and deployed by ISPs, and then point to some emerging trends and open problems. For reasons of space, in this extended abstract we simply outline some of the topics and references that we plan to cover in the full book chapter. Relevant references may be found in our survey paper on broadband data pricing \cite{computing-survey}.
+%
+\section{Supplementary Materials} \label{subsec:supp}
+
+As a part of the supplementary reading materials for the chapter, students are encouraged to refer to the following materials:
+\begin{itemize}
+\item Slides on Time-dependent Usage-based pricing engineering (TUBE) and shared data plans.
+\item Chapter 12 from M. Chiang's book\\ (http://www.amazon.com/Networked-Life-20-Questions-Answers/dp/1107024943) \cite{chiang2012networked}.
+\item Lecture notes, slides and homework questions on SDP from ELE 381\\ (http://scenic.princeton.edu/network20q/).
+\item Course videos on SDP (Coursera material available at https://www.coursera.org/course/friendsmoneybytes; videos available at http://www.youtube.com/watch?v=MMl\_fZypX0w, \\ http://www.youtube.com/watch?v=N2oM0ISs0nY, http://www.youtube.com/watch?v=v\_uHP4SNKGo, http://www.youtube.com/watch?v=21KlcErIiHc) \cite{coursera}.
+\item Demo videos related to the DataMi project (http://scenic.princeton.edu/datami/) \cite{datami}. 
+\item Free DataWiz iPhone and Android app for usage monitoring \\ (download links at http://scenic.princeton.edu/datawiz/) \cite{datawiz}.
+\item Research papers, surveys, and white papers from SDP workshops\\ (available at http://scenic.princeton.edu/SDP2012/program.html) \cite{SDPForum}.
+% \item Relevant chapter pre-prints from the upcoming Smart Data Pricing (SDP) Book, edited by the authors for John Wiley \& Sons. 
+\end{itemize}
+
+\input{Appendix.tex}
+
+%\section{Our Qualifications}\label{sec:qualf}
+%
+%\subsection{Teaching Experience}
+%
+%M. Chiang has recently started a new undergraduate course (ELE 381) called ``Networks: Friends, Money, and Bytes,'' which was offered in the fall of 2011 and again in the fall of 2012 at Princeton University\footnote{More details may be found on the course website, http://scenic.princeton.edu/network20q.}. The graduate level version of the course was offered in the spring of 2012, covering more in-depth material on social networks, network economics, and network management. Beginning this fall, a version of the undergraduate course is also offered on Coursera, where it has over 40,000 enrolled students. Of particular relevance to this book chapter is the week spent on SDP; one lecture is spent entirely on dynamic time-dependent pricing, while another covers other forms of SDP, including usage-based and two-sided pricing. S. Ha, C. Joe-Wong, and S. Sen have given guest lectures on dynamic time-dependent pricing in both the undergraduate and graduate versions of this course.
+%
+%The Princeton version of Networks: Friends, Money, and Bytes follows a flipped classroom model \cite{flipped}, in which students watch lecture videos and read the lecture notes outside of the class, while class time is reserved for problem solving sessions, demos, and other interactive activities. Thus, two lecture videos on SDP have already been recorded and will be made publicly available on YouTube later this year. These and other course materials, including homework questions and lecture notes, can be made available as part of the Sigcomm e-book chapter for students. The course's accompanying textbook, also authored by M. Chiang, has been recently published by Cambridge University Press; it gives more background on the course topics and is organized around the lecture material \cite{chiang2012networked}.  The book's chapter on dynamic time-dependent pricing is available online\footnote{URL: http://www.princeton.edu/$\sim$cjoe/Ch12\_Network20Q.pdf}.  In addition to classroom teaching, S. Sen and M. Chiang have offered tutorials on SDP to the members of National Exchange Carrier Association (NECA) in Chicago (2011) and Seattle (2012), and will be hosting a tutorial at IEEE Globecom in December 2012. 
+%
+%\subsection{Research Experience}
+%
+%Our understanding of SDP from a teaching perspective is informed by the authors' long-standing experience and knowledge of network economics. We have published in several prestigious journal and conferences, including IEEE/ACM Transactions on Networking (M. Chiang and S. Sen), IEEE JSAC (M. Chiang, S. Ha, C. Joe-Wong, and S. Sen), ACM SIGCOMM Computer Communications Review (M. Chiang and S. Sen), SIGCOMM (S. Ha, S. Sen, C. Joe-Wong, and M. Chiang), IEEE INFOCOM (M. Chiang, S. Ha, C. Joe-Wong, and S. Sen), and IEEE ICDCS (M. Chiang, S. Ha, and C. Joe-Wong). Our major publications on SDP specifically are cited in the references and in the discussion below. C. Joe-Wong, S. Sen and M. Chiang also received the Best Paper Award at IEEE INFOCOM 2012 for their work on fairness-efficiency tradeoffs in network resource allocation \cite{joe2012multi}.
+%
+%Our research project, DataMi \cite{datami}, encompasses time-dependent pricing, intelligent throttling, and smart offloading onto supplementary networks. In particular, we have conducted the first consumer trial of time-dependent pricing for mobile data, the results of which were published in ACM SIGCOMM 2012 paper \cite{ha2012tube}; a preliminary version of this work was published in IEEE ICDCS 2011 \cite{Carlee}. We have also showcased demos of this time-dependent pricing system, called TUBE (Time-dependent Usage-based Broadband price Engineering), which were featured at both IEEE INFOCOM 2012 and ACM MobiSys 2012 \cite{ha2012demo}; demo videos have been made available online on our YouTube channel at http://www.youtube.com/user/princetonedge. We have also published an extension of our time-dependent pricing model to electricity markets, which was published in JSAC in July 2012 \cite{joe2012optimized}, and have worked on the economics of shared data plans \cite{WITS} and pricing in heterogeneous networks \cite{wifi-3g-infocom}. Several slide presentations of our work are also available online\footnote{Time-dependent pricing slides based on \cite{ha2012tube} are available at http://www.princeton.edu/$\sim$sangtaeh/TUBE\_SIGCOMM\_Slides.pdf; slides on pricing of heterogeneous networks, based on \cite{wifi-3g-infocom}, are available at http://www.princeton.edu/$\sim$cjoe/Offloading\_GSS\_Slides.pdf.} and will be included as part of the supplementary material for this Sigcomm e-book chapter.
+%
+%In addition to technical research papers, all four co-authors have written a position paper on SDP that will appear in IEEE Communications Magazine later this year \cite{comm-mag}. The paper, which is accessible to the general networking community as well as graduate students in the field, argues that in order to manage the growth in demand for data, future broadband data plans will need to utilize prices to incentivize changes in user behavior. It includes an overview of data plans currently offered around the world, as well as discussions of regulatory and net neutrality perspectives on different forms of SDP and a survey of relevant literature on time-dependent pricing. A more extensive literature survey, including the pricing of electricity and road networks, has been submitted to ACM Computing Surveys and received positive reviews; it is currently under submission. A draft has been made available online \cite{computing-survey}.
+%
+%\subsection{Industry Experience}
+%
+%We have supplemented our research experience with extensive interactions with industry and government bodies. In particular, our TUBE project on time-dependent pricing was a finalist in the 2011 Vodafone Wireless Innovation Competition, which aimed to reward projects that used novel wireless technologies to make a global impact. We also presented our work on TUBE at the NECA (National Exchange Carrier Association) Expo in 2011, and as a result of that collaboration are beginning a trial of TUBE with an Alaskan operator, MTA \cite{datami}. TUBE was also presented at the 2011 Keller Center Innovation Forum and the 2011 Princeton Innovation Forum, which showcased technologies from Princeton professors that showed market potential. More academic venues in which we presented TUBE include invited talks at Alcatel-Lucent Bell Labs, Korea Telecom, and the Workshop on Internet Topology Economics (WITE) hosted by Georgia Tech (all in 2012).
+%
+%In July 2012, S. Sen and M. Chiang organized and hosted the first SDP Forum, in which numerous leaders from academia and industry gave talks and participated in panel discussions on SDP's future role, both in terms of research and broadband markets. The slides presented are available online at http://scenic.princeton.edu/SDP2012. Forum participants included representatives from Alcatel-Lucent, AT\&T Labs, Cisco, Comcast, Korea Telecom, Microsoft Research and Qualcomm. We are in the process of editing a book documenting the proceedings and invited contributions of chapters for release in early 2013 by John Wiley \& Sons. A proposal for the second SDP forum is under consideration for a workshop at IEEE INFOCOM 2013 in Turin, Italy.
+
+
+\bibliographystyle{ieeetr}
+\bibliography{Citations}
+
+\section*{Author Biographies}
+
+{\bf Soumya Sen} received the B.E. (Hons.) in Electronics and Instrumentation Engineering from BITS-Pilani, India, in 2005, and both the M.S. and Ph.D. in Electrical and Systems Engineering from the University of Pennsylvania in 2008 and 2011, respectively, and did his postdoctoral research at the Princeton University. He is currently an Assistant Professor in the Department of Information \& Decision Sciences at the Carlson School of Management of the University of Minnesota. He is a co-organizer of the Smart Data Pricing (SDP) Forum, which promotes industry-academic interaction on broadband pricing research. His research interests are in Internet economics, communication systems, social networks, and network security. He has published several research articles in these areas and his work on broadband pricing was a f\hspace{0.01mm}inalist at the 2011 Vodafone Wireless Innovation project. He won the Best Paper Award at IEEE INFOCOM 2012.\\
+
+\noindent {\bf Carlee Joe-Wong}
+is a graduate student at Princeton University's Program in Applied and Computational Mathematics.  She received the A.B. degree (magna cum laude) in mathematics from Princeton University in 2011.  Currently, she is Director of Advanced Research at DataMi, a startup she co-founded in 2012 that aims to make mobile networks more efficient through better incentive and capacity management. Her research interests include network economics and optimal control theory. She won the Best Paper Award at IEEE INFOCOM 2012 for her work on the fairness of multi-resource allocations.  In 2011, she received the National Defense Science and Engineering Graduate Fellowship. \\
+
+\noindent {\bf Sangtae Ha} is the CTO and VP Engineering at DataMi. He received his Ph.D. in Computer Science from North Carolina State University in 2009. During his Ph.D. study, he co-authored CUBIC, a new mechanism for TCP congestion control, and was the primary engineer pushing it into Linux 2.6.18. CUBIC has been the default TCP congestion control algorithm in Linux since 2006 and is currently used by more than 40\% of Internet servers around the world as well as several hundred million Android/Linux devices.  After completing his Ph.D., he co-founded the Princeton EDGE Lab (http://scenic.princeton.edu) as its first Associate Director in 2009 and led its research team as an Associate Research Scholar at Princeton University from 2010 to 2013. In particular, he led the DataMi (http://www.datami.com) project team, which develops Smart Data Pricing (SDP) solutions to help Internet Service Providers (ISPs) meet the increasingly untenable demand for mobile data.  He is a co-founder of DataMi Inc. and a technical consultant to a few startups. He is an IEEE Senior Member and was a general co-chair of the Smart Data Pricing workshop in INFOCOM 2013. \\
+
+\noindent {\bf Mung Chiang} is the Arthur LeGrand Doty Professor of Electrical Engineering at Princeton University, and an affiliated faculty in Applied and Computational Mathematics, and in Computer Science. He received his B.S. (Hons.), M.S., and Ph.D. degrees from Stanford University in 1999, 2000, and 2003, respectively, and was an Assistant Professor 2003-2008, an Associate Professor 2008-2011, and a Professor 2011-2013 at Princeton University. His research on networking received the Alan T. Waterman Award (2013), IEEE Kiyo Tomiyasu Award (2012), a U.S. Presidential Early Career Award for Scientists and Engineers (2008), several young investigator awards, and a few paper awards including the IEEE INFOCOM Best Paper Award (2012). A recipient of the Technology Review TR35 Award (2007), his inventions have resulted in a few technology transfers and commercializations. In 2009, he founded the Princeton EDGE Lab, supported in part by an industry consortium, which aims at bridging the theory-practice divide in networking. He served as an IEEE Communications Society Distinguished Lecturer in 2012-2013, chaired the founding steering committee of the new IEEE Transactions on Network Science and Engineering, and co-chaired the 2012 US NITRD special workshop on complex engineered networks. He created a new undergraduate course: “Networks:  Friends, Money, and Bytes” that lead to an open online offering and a flipped classroom at Princeton. The corresponding textbook: “Networked Life: 20 Questions and Answers,'' provided the Integrated and Individualized BookApp (IIB) format, and received the PROSE Award in Engineering and Technology (2013) from the Association of American Publishers. In 2013, he initiated the online learning platform, ``3 Nights and Done.'' 
+\end{document}

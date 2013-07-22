@@ -1,0 +1,732 @@
+\begin{thebibliography}{100}
+
+\bibitem{NetFlow}
+Cisco NetFlow.
+\newblock \url{http://www.cisco.com/go/netflow}.
+
+\bibitem{cisco_visual_networ_index2011}
+Cisco visual networking index: Forecast and methodology, 2011-2016.
+\newblock
+  \url{http://www.cisco.com/en/US/solutions/collateral/ns341/ns525/ns537/ns705/ns827/white_paper_c11-481360_ns827_Networking_Solutions_White_Paper.html}.
+
+\bibitem{13:_abs_internet}
+{Internet Activity, Australia}.
+\newblock
+  \url{http://www.abs.gov.au/AUSSTATS/abs@.nsf/DOSSbyTopic/0444532C5EBD3B76CA256BD0002833B6},
+  2013.
+
+\bibitem{Acar10Tensor}
+E.~Acar, T.~G. Kolda, D.~M. Dunlavy, and M.~M{\o}rup.
+\newblock Scalable tensor factorizations for incomplete data.
+\newblock In {\em SIAM International Conference on Data Mining (SDM) 2010},
+  pages 701--712, April 2010.
+
+\bibitem{Ager11CDN}
+B.~Ager, W.~M\"{u}hlbauer, G.~Smaragdakis, and S.~Uhlig.
+\newblock Web content cartography.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)}, pages
+  585--600, November 2011.
+
+\bibitem{Akaike74AIC}
+H.~Akaike.
+\newblock A new look at statistical model identification.
+\newblock {\em IEEE Trans. Autom. Control}, 19(6):716--723, December 1974.
+
+\bibitem{Alderson06Topology}
+D.~L. Alderson, H.~Chang, M.~Roughan, S.~Uhlig, and W.~Willinger.
+\newblock The many facets of {I}nternet topology and traffic.
+\newblock {\em Networks and Heterogeneous Media}, 1(4):569--600, December 2006.
+
+\bibitem{Algers97Micro}
+S.~Algers, E.~Bernauer, M.~Boero, L.~Breheret, C.~{Di Taranto}, M.~Dougherty,
+  K.~Fox, and J.-F. Gabard.
+\newblock Review of micro-simulation models.
+\newblock Technical report, Simulation Modelling Applied to Road Transport
+  European Scheme Tests (SMARTEST), Leeds University, 1997.
+\newblock \url{http://www.its.leeds.ac.uk/smartest}.
+
+\bibitem{baran64:_distr}
+P.~Baran.
+\newblock On distributed communications: 1. {I}ntroduction to distributed
+  communications network.
+\newblock RAND Memorandum, August 1964.
+
+\bibitem{Barford02Anomaly}
+P.~Barford, J.~Kline, D.~Plonka, and A.~Ron.
+\newblock A signal analysis of network traffic anomalies.
+\newblock In {\em Proceedings of the 2nd ACM SIGCOMM Workshop on Internet
+  measurement}, pages 71--82, 2002.
+
+\bibitem{Bharti10Invisible}
+V.~Bharti, P.~Kankar, L.~Setia, G.~G\"{u}rsun, A.~Lakhina, and M.~Crovella.
+\newblock Inferring invisible traffic.
+\newblock In {\em Proceedings of the 6th International Conference}, Co-NEXT
+  '10, pages 22:1--22:12, 2010.
+
+\bibitem{blili08:_best_pract_deter_traff_matric}
+R.~Blili and A.~Maghbouleh.
+\newblock Best practices for determining traffic matrices in {IP} networks {V
+  4.0}.
+\newblock Tutorial in NANOG 43,
+  \url{http://www.nanog.org/meetings/nanog43/presentations/Blili_trafficmatrix_N43.pdf},
+  2008.
+
+\bibitem{Boyd04Opt}
+S.~Boyd and L.~Vandenberghe.
+\newblock {\em Convex Optimization}.
+\newblock Cambridge University Press, 2004.
+
+\bibitem{Brauckhoff09Anomaly}
+D.~Brauckhoff, X.~Dimitropoulos, A.~Wagner, and K.~Salamatian.
+\newblock Anomaly extraction in backbone networks using association rules.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)}, pages
+  28--34, 2009.
+
+\bibitem{Brockwell02TimeSeries}
+P.~J. Brockwell and R.~A. Davis.
+\newblock {\em Introduction to Time Series and Forecasting}.
+\newblock Springer, 2nd edition, March 2002.
+
+\bibitem{Buriol03GAOSPF}
+L.~S. Buriol, M.~G.~C. Resende, C.~Ribeiro, and M.~Thorup.
+\newblock A hybrid genetic algorithm for the weight setting problem in
+  {OSPF/IS-IS} routing.
+\newblock {\em Optimization Online}, 2003.
+
+\bibitem{Caesar05BGP}
+M.~Caesar and J.~Rexford.
+\newblock {BGP} routing policies in {ISP} networks.
+\newblock {\em IEEE Network}, 19(6):5--11, 2005.
+
+\bibitem{Cahn98WANDesign}
+R.~S. Cahn.
+\newblock {\em Wide Area Network Design}.
+\newblock Morgan Kaufmann, 1998.
+
+\bibitem{CandesPlan09MtxNoise}
+E.~Candes and Y.~Plan.
+\newblock Matrix completion with noise.
+\newblock {\em Proc. IEEE}, 98(6):925--936, June 2010.
+
+\bibitem{CandesRecht08MtxComp}
+E.~Candes and B.~Recht.
+\newblock Exact matrix completion via convex optimization.
+\newblock {\em Found. of Comput. Math.}, 9:717--772, 2008.
+
+\bibitem{CandesTaoCS06}
+E.~Candes and T.~Tao.
+\newblock Near optimal signal recovery from random projections: {U}niversal
+  encoding strategies?
+\newblock {\em IEEE Trans. Info. Theory}, 52(12):5406--5425, December 2006.
+
+\bibitem{CandesTao09MtxComp}
+E.~Candes and T.~Tao.
+\newblock The power of convex relaxation: {N}ear-optimal matrix completion.
+\newblock {\em IEEE Trans. Info. Theory}, 56(5):2053--2080, May 2010.
+
+\bibitem{Cao01Nonstationarity}
+J.~Cao, W.~S. Cleveland, D.~Lin, and D.~X. Sun.
+\newblock On the nonstationarity of {I}nternet traffic.
+\newblock In {\em ACM SIGMETRICS 2001}, pages 102--112, New York, NY, USA,
+  2001.
+
+\bibitem{Cao00Tomo}
+J.~Cao, D.~Davis, S.~V. Wiel, and B.~Yu.
+\newblock Time-varying network tomography: {R}outer link data.
+\newblock {\em J.~Am.~Statist.~Assoc.}, 95(452):1063--1075, December 2000.
+
+\bibitem{SNMP}
+J.~D. Case, M.~Fedor, M.~L. Schoffstall, and J.~R. Davin.
+\newblock A simple network management protocol {(SNMP)}.
+\newblock Technical Report RFC 1157, IETF, May 1990.
+\newblock \url{http://www.ietf.org/rfc/rfc1157.txt}.
+
+\bibitem{tomo_CCLNY_2004}
+R.~Castro, M.~Coates, G.~Liang, R.~Nowak, and B.~Yu.
+\newblock {Network Tomography: Recent Developments}.
+\newblock {\em Statistical Science Magazine}, 19(3):499--517, August 2004.
+
+\bibitem{Nimda}
+CERT/CC.
+\newblock {CERT Advisory CA-2001-26 Nimda Worm: An Overview}.
+\newblock \url{http://www.cert.org/advisories/CA-2001-26.html}, September 2001.
+
+\bibitem{Chang05EmpiricalAS}
+H.~Chang, S.~Jamin, Z.~Mao, and W.~Willinger.
+\newblock An empirical approach to modeling inter-{AS} traffic matrices.
+\newblock In {\em ACM/SIGCOMM Internet Measurement Conference (IMC) 2005},
+  pages 139--152, October 2005.
+
+\bibitem{claffy94:_track_long_term_growt_of_nsfnet}
+K.~Claffy, H.-W. Braun, and G.~Polyzos.
+\newblock Tracking long-term growth of the {NSFNET}.
+\newblock Cooperative Association for Internet Data Analysis - CAIDA,
+  \url{http://www.caida.org/publications/papers/1994/tlg/}, 1994.
+
+\bibitem{tomo_CHNY_2002}
+M.~Coates, A.~Hero, R.~Nowak, and B.~Yu.
+\newblock {Internet tomography}.
+\newblock {\em Signal Processing Magazine}, 19(3):47--65, May 2002.
+
+\bibitem{CoatesCompressedNetworkMonitoring}
+M.~Coates, Y.~Pointurier, and M.~Rabbat.
+\newblock Compressed net\-work monitoring for {IP} and all-optical networks.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)}, pages
+  241--252, 2007.
+
+\bibitem{Converse49RetGravNew}
+P.~D. Converse.
+\newblock New laws of retail gravitation.
+\newblock {\em The Journal of Marketing}, 14(3):379--384, October 1949.
+
+\bibitem{Cover06InfoTheory}
+T.~M. Cover and J.~A. Thomas.
+\newblock {\em Elements of Information Theory}.
+\newblock John Wiley and Sons, Inc., 2nd edition, 2006.
+
+\bibitem{CrovellaKolaczyk03}
+M.~Crovella and E.~Kolaczyk.
+\newblock Graph wavelets for spatial traffic analysis.
+\newblock In {\em Proceedings of IEEE Infocom}, pages 1848--1857, April 2003.
+
+\bibitem{Deming40IPF}
+W.~E. Deming and F.~F. Stephan.
+\newblock On a least squares adjustment of a sampled frequency table when the
+  expected marginal totals are known.
+\newblock {\em Ann. Math. Stat}, 11(4):427--444, 1940.
+
+\bibitem{DonohoCompressed06}
+D.~Donoho.
+\newblock Compressed sensing.
+\newblock {\em IEEE Trans. Info. Theory}, 52(4):1289--1306, April 2006.
+
+\bibitem{Duffield05Sampled}
+N.~Duffield, C.~Lund, and M.~Thorup.
+\newblock Estimating flow distributions from sampled flow statistics.
+\newblock {\em {IEEE/ACM} Trans. Networking}, 13(5):933--946, 2005.
+
+\bibitem{Duffield05Smart}
+N.~Duffield, C.~Lund, and M.~Thorup.
+\newblock Learn more, sample less: control of volume and variance in network
+  measurement.
+\newblock {\em {IEEE} Trans. Info. Theory}, 51(5):1756--1775, 2005.
+
+\bibitem{Duffield01Trajectory}
+N.~G. Duffield and M.~Grossglauser.
+\newblock Trajectory sampling for direct observation.
+\newblock {\em IEEE/ACM Trans. Networking}, 9(3):280--292, June 2001.
+
+\bibitem{Duffield04Unreliable}
+N.~G. Duffield and M.~Grossglauser.
+\newblock Trajectory sampling with unreliable reporting.
+\newblock In {\em INFOCOM 2004}, pages 1570--1581, 2004.
+
+\bibitem{eriksson10:_basis}
+B.~Eriksson, P.~Barford, R.~Bowden, M.~Roughan, N.~Duffield, and J.~Sommers.
+\newblock {BasisDetect} : A model-based network event detection framework.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference}, Melbourne,
+  Australia, 2010.
+
+\bibitem{Erlander90GravTransport}
+S.~Erlander and N.~F. Stewart.
+\newblock {\em The gravity model in transportation analysis: {T}heory and
+  extensions}.
+\newblock Topics in Transportation. International Science, 1990.
+
+\bibitem{Erramilli06IndepConn}
+V.~Erramilli, M.~Crovella, and N.~Taft.
+\newblock An independent-connection model for traffic matrices.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)}, pages
+  251--256, October 2006.
+
+\bibitem{Erramilli06IndepConnTech}
+V.~Erramilli, M.~Crovella, and N.~Taft.
+\newblock An independent-connection model for traffic matrices.
+\newblock Technical Report BUCS-TR-2006-022, Department of Computer Science,
+  Boston University, September 2006.
+
+\bibitem{Feamster03BGPTE}
+N.~Feamster, J.~Borkenhagen, and J.~Rexford.
+\newblock Guidelines for interdomain traffic engineering.
+\newblock {\em ACM SIGCOMM Computer Communications Review}, 33(5):19--30,
+  October 2003.
+
+\bibitem{Feldmann00Netscope}
+A.~Feldmann, A.~Greenberg, C.~Lund, N.~Reingold, and J.~Rexford.
+\newblock Netscope: {T}raffic engineering for {IP} networks.
+\newblock {\em IEEE Net. Magazine}, 14:11--19, March 2000.
+
+\bibitem{Feldmann01TMdemand}
+A.~Feldmann, A.~Greenberg, C.~Lund, N.~Reingold, J.~Rexford, and F.~True.
+\newblock Deriving demands for operational {IP} networks: {M}ethodology and
+  experience.
+\newblock {\em IEEE/ACM Trans. Netw.}, 9:265--280, June 2001.
+
+\bibitem{Feldmann04Web}
+A.~Feldmann, N.~Kammenhuber, O.~Maennel, B.~Maggs, R.~{De Prisco}, and
+  R.~Sundaram.
+\newblock A methodology for estimating interdomain web traffic demand.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)}, pages
+  322--335, October 2004.
+
+\bibitem{Ferrari06Pollinator}
+M.~J. Ferrari, O.~N. Bjornstad, J.~L. Partain, and J.~Antonovics.
+\newblock A gravity model for the spread of a pollinator-borne plant pathogen.
+\newblock {\em American Naturalist}, 168(3):294--303, September 2006.
+
+\bibitem{FRT02}
+B.~Fortz, J.~Rexford, and M.~Thorup.
+\newblock Traffic engineering with traditional {IP} routing protocols.
+\newblock {\em IEEE Communications Magazine}, 40(10):118--124, October 2002.
+
+\bibitem{Fortz02OSPF}
+B.~Fortz and M.~Thorup.
+\newblock Optimizing {OSPF/IS-IS} weights in a changing world.
+\newblock {\em IEEE Journal on Selected Areas in Communications},
+  20(4):756--767, 2002.
+
+\bibitem{Fortz03OSPF}
+B.~Fortz and M.~Thorup.
+\newblock Robust optimization of {OSPF/IS-IS} weights.
+\newblock In {\em Proc. INOC 2003}, pages 225--230, October 2003.
+
+\bibitem{gerber:03}
+A.~Gerber, J.~Houle, H.~Nguyen, M.~Roughan, and S.~Sen.
+\newblock {P2P The Gorilla in the Cable}.
+\newblock In {\em National Cable \& Telecommunications Association(NCTA) 2003
+  National Show}, Chicago,IL, June 2003.
+
+\bibitem{Goldschmidt00LP}
+O.~Goldschmidt.
+\newblock {ISP} backbone inference methods to support traffic engineering:
+  {M}ethodology and experience.
+\newblock In {\em Internet Statistics and Metrics Analysis (ISMA) Workshop},
+  December 2000.
+
+\bibitem{groschwitz94:_time_series_model_of_long}
+N.~K. Groschwitz and G.~C. Polyzos.
+\newblock A time series model of long-term {NSFNET} backbone traffic.
+\newblock Cooperative Association for Internet Data Analysis - CAIDA,
+  \url{http://www.caida.org/publications/papers/1994/tsm/}, 1994.
+
+\bibitem{Gu05Entropy}
+Y.~Gu, A.~McCallum, and D.~Towsley.
+\newblock Detecting anomalies in network traffic using maximum entropy
+  estimation.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)}, pages
+  32--32, 2005.
+
+\bibitem{Gunnar04TMLargeIP}
+A.~Gunnar, M.~Johansson, and T.~Telkamp.
+\newblock Traffic matrix estimation: {A} comparison on real data.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)}, pages
+  149--160, October 2004.
+
+\bibitem{Hoogendoorn01Vehicular}
+S.~P. Hoogendoorn and P.~H.~L. Bovy.
+\newblock State-of-the-art of vehicular traffic flow modelling.
+\newblock In {\em Proceedings of the Institution of Mechanical Engineers, Part
+  I: Journal of Systems and Control Engineering}, pages 283--303, 2001.
+
+\bibitem{Jung59RetailGravTrue}
+A.~F. Jung.
+\newblock Is {R}eilly's law of retail gravitation always true?
+\newblock {\em The Journal of Marketing}, 24(2):62--63, October 1959.
+
+\bibitem{Kolda09Tensor}
+T.~G. Kolda and B.~W. Bader.
+\newblock Tensor decompositions and applications.
+\newblock {\em SIAM Review}, 51(3):455--500, September 2009.
+
+\bibitem{Kowalski95TeleModel}
+J.~Kowalski and B.~Warfield.
+\newblock Modeling traffic demand between nodes in a telecommunications
+  network.
+\newblock In {\em ATNAC '95}, 1995.
+
+\bibitem{labovitz10:_inter_inter_domain_traff}
+C.~Labovitz, S.~Iekel-Johnson, D.~McPherson, J.~Oberheide, and F.~Jahanian.
+\newblock Internet inter-domain traffic.
+\newblock In {\em ACM SIGCOMM}, pages 75--86, 2010.
+
+\bibitem{Lakhina04Anomaly}
+A.~Lakhina, M.~Crovella, and C.~Diot.
+\newblock Characterization of network-wide anomalies in traffic flows.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)}, pages
+  201--206, 2004.
+
+\bibitem{Lakhina04Diagnosing}
+A.~Lakhina, M.~Crovella, and C.~Diot.
+\newblock Diagnosing network-wide traffic anomalies.
+\newblock In {\em ACM SIGCOMM 2004}, pages 219--230, 2004.
+
+\bibitem{Lakhina05Mining}
+A.~Lakhina, M.~Crovella, and C.~Diot.
+\newblock Mining anomalies using traffic feature distributions.
+\newblock In {\em ACM SIGCOMM 2005}, pages 217--228, 2005.
+
+\bibitem{Lakhina04TrafficStruct}
+A.~Lakhina, K.~Papagiannaki, M.~Crovella, C.~Diot, E.~D. Kolaczyk, and N.~Taft.
+\newblock Structural analysis of network traffic flows.
+\newblock {\em SIGMETRICS Perform. Eval. Rev.}, 32(1):61--72, June 2004.
+
+\bibitem{Lam97Teletraffic}
+D.~Lam, D.~Cox, and J.~Widom.
+\newblock Teletraffic modeling for personal communications services.
+\newblock {\em IEEE Communications Magazine: Special Issues on Teletraffic
+  Modeling Engineering and Management in Wireless and Broadband Networks},
+  35:79--87, February 1997.
+
+\bibitem{Li06Anomaly}
+X.~Li, F.~Bian, M.~Crovella, C.~Diot, R.~Govindan, G.~Iannaccone, and
+  A.~Lakhina.
+\newblock Detection and identification of network anomalies using sketch
+  subspaces.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)}, pages
+  147--152, 2006.
+
+\bibitem{mallet:_book}
+S.~Mallat.
+\newblock {\em A Wavelet Tour of Signal Processing}.
+\newblock Academic Press, 1998.
+
+\bibitem{McCullagh89GenLin}
+P.~McCullagh and J.~A. Nelder.
+\newblock {\em Generalized Linear Models}.
+\newblock Monographs on Statistics and Applied Probability. Chapman and Hall,
+  2nd edition, 1989.
+
+\bibitem{McFadden78Choice}
+D.~McFadden.
+\newblock Modeling the choice of residential location.
+\newblock In A.~{Karlqvist et al.}, editor, {\em Spatial Interaction Theory and
+  Planning Models}, pages 75--96. North Holland, 1978.
+
+\bibitem{Medina02Taxonomy}
+A.~Medina, C.~Fraleigh, N.~Taft, S.~Bhattacharyya, and C.~Diot.
+\newblock A taxonomy of {IP} traffic matrices.
+\newblock {\em Proc. SPIE}, 4868(200--213), July 2002.
+
+\bibitem{Medina02TMdirections}
+A.~Medina, N.~Taft, K.~Salmatian, S.~Bhattacharyya, and C.~Diot.
+\newblock Traffic matrix estimation: {E}xisting techniques and new directions.
+\newblock In {\em ACM SIGCOMM 2002}, pages 161--174, 2002.
+
+\bibitem{Mitra05StochasticTE}
+D.~Mitra and Q.~Wang.
+\newblock Stochastic traffic engineering for demand uncertainty and risk-aware
+  network revenue management.
+\newblock {\em IEEE/ACM Trans. Networking}, 13(2):221--233, April 2005.
+
+\bibitem{Murphy02TE}
+J.~Murphy, R.~Harris, and R.~Nelson.
+\newblock Traffic engineering using {OSPF} weights and splitting ratios.
+\newblock In {\em Proceedings of 6th International Symposium on Communications
+  Interworking of IFIP - Interworking 2002}, pages 13--16, 2002.
+
+\bibitem{Murray77Measles}
+G.~D. Murray and A.~D. Cliff.
+\newblock A stochastic model for measles epidemics in a multi-regional setting.
+\newblock {\em Trans. Institue British Geographers}, 2:158--174, 1977.
+
+\bibitem{Abilene}
+NLANR.
+\newblock Abilene Trace Data.
+\newblock \url{http://pma.nlanr.net/Special/ipls3.html}.
+
+\bibitem{Norros94Storage}
+I.~Norros.
+\newblock A storage model with self-similar input.
+\newblock {\em Queueing Systems}, 16(3-4):387--396, 1994.
+
+\bibitem{Nucci07IGP}
+A.~Nucci, S.~Bhattacharyya, N.~Taft, and C.~Diot.
+\newblock {IGP} link weight assignment for operational {Tier-1} backbones.
+\newblock {\em IEEE/ACM Trans. Networking}, 15(4):789--802, August 2007.
+
+\bibitem{Nucci04IGPchange}
+A.~Nucci, R.~Cruz, N.~Taft, and C.~Diot.
+\newblock Design of {IGP} link weight changes for estimation of traffic
+  matrices.
+\newblock In {\em INFOCOM 2004}, volume~4, pages 2341--2351, March 2004.
+
+\bibitem{Nucci05TMSynth}
+A.~Nucci, A.~Sridharan, and N.~Taft.
+\newblock The problem of synthetically generating {IP} traffic matrices:
+  {I}nitial recommendations.
+\newblock {\em SIGCOMM Comput. Commun. Rev.}, 35:19--32, July 2005.
+
+\bibitem{odlyzko03:_internet_growth}
+A.~M. Odlyzko.
+\newblock Internet traffic growth: Sources and implications.
+\newblock In B.~B. Dingel, W.~Weiershausen, A.~K. Dutta, and K.-I. Sato,
+  editors, {\em Optical Transmission Systems and Equipment for WDM Networking
+  II}, volume 5247, pages 1--15. Proc. SPIE, 2003.
+
+\bibitem{Papagiannaki05Long}
+K.~Papagiannaki, N.~Taft, Z.-L. Zhang, and C.~Diot.
+\newblock Long-term forecasting of {I}nternet backbone traffic.
+\newblock {\em IEEE Trans. Neural Netw.}, 16(5):1110--1124, September 2005.
+
+\bibitem{Patrikakis04DDoS}
+C.~Patrikakis, M.~Masikos, and O.~Zouraraki.
+\newblock Distributed denial of service attacks.
+\newblock {\em The Internet Protocol Journal}, 7(4):13--35, December 2004.
+
+\bibitem{Paxson97Routing}
+V.~Paxson.
+\newblock End-to-{E}nd routing behavior in the {I}nternet.
+\newblock {\em IEEE/ACM Trans. Networking}, 5(5):601--615, October 1997.
+
+\bibitem{potts72}
+R.~B. Potts and R.~M. Oliver.
+\newblock {\em Flows in Transportation Networks}.
+\newblock Academic Press, 1972.
+
+\bibitem{Pyhnen63Trade}
+P.~P\"{o}yh\"{o}nen.
+\newblock A tentative model for the volume of trade between countries.
+\newblock {\em Weltwirtschaftliches Archive}, 90:93--100, 1963.
+
+\bibitem{Quoitin05CBGP}
+B.~Quoitin and S.~Uhlig.
+\newblock Modeling the routing of an autonomous system with {C-BGP}.
+\newblock {\em IEEE Network}, 19(6):12--19, 2005.
+
+\bibitem{Recht07MtxComp}
+B.~Recht, M.~Fazel, and P.~A. Parrilo.
+\newblock Guaranteed minimum--rank solutions of linear matrix equations via
+  nuclear norm minimization.
+\newblock {\em SIAM Review}, 52(3):471--501, 2010.
+
+\bibitem{Rekhter1995BGP}
+Y.~Rekhter and T.~Li.
+\newblock A {B}order {G}ateway {P}rotocol 4 {(BGP-4)}.
+\newblock {\em RFC 1771}, 1995.
+\newblock \url{http://www.ietf.org/rfc/rfc1771.txt}.
+
+\bibitem{Rexford06Route}
+J.~Rexford.
+\newblock Route optimization in {IP} networks.
+\newblock In {\em Handbook of Optimization in Telecommunications, Springer
+  Science and Business}. Kluwer Academic Publishers, 2006.
+
+\bibitem{Reynolds53RetailGrav}
+R.~B. Reynolds.
+\newblock A test of the law of retail gravitation.
+\newblock {\em The Journal of Marketing}, 17(3):273--277, January 1953.
+
+\bibitem{rincon08:_dw}
+D.~Rinc\'{o}n, M.~Roughan, and W.~Willinger.
+\newblock Towards a meaningful {MRA} of traffic matrices.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC'08)}, pages
+  331--336, 2008.
+
+\bibitem{Ringberg07PCA}
+H.~Ringberg, A.~Soule, J.~Rexford, and C.~Diot.
+\newblock Sensitivity of {PCA} for traffic anomaly detection.
+\newblock In {\em Proceedings of the 2007 ACM SIGMETRICS}, pages 109--120,
+  2007.
+
+\bibitem{Rissanen83MDL}
+J.~Rissanen.
+\newblock A universal prior for integers and estimation by minimum description
+  length.
+\newblock {\em Ann. Statis.}, 11(2):416--431, June 1983.
+
+\bibitem{Roughan05GravSynth}
+M.~Roughan.
+\newblock Simplifying the synthesis of {I}nternet traffic matrices.
+\newblock {\em SIGCOMM Comput. Commun. Rev.}, 35(5):93--96, 2005.
+
+\bibitem{roughan10:_case_accur_snmp_measur}
+M.~Roughan.
+\newblock A case-study of the accuracy of {SNMP} measurements.
+\newblock {\em Journal of Electrical and Computer Engineering}, 2010, 2010.
+\newblock Article ID 812979.
+
+\bibitem{Roughan10Robust}
+M.~Roughan.
+\newblock Robust network planning.
+\newblock In C.~R. Kalmanek, S.~Misra, and R.~Yang, editors, {\em The Guide to
+  Reliable Internet Services and Applications}, chapter~5, pages 137--177.
+  Springer, 2010.
+
+\bibitem{Roughan02BRvariable}
+M.~Roughan, A.~Greenberg, C.~Kalmanek, M.~Rumsewicz, J.~Yates, and Y.~Zhang.
+\newblock Experience in measuring backbone traffic variability: {M}odels,
+  metrics, measurements and meaning.
+\newblock In {\em ACM SIGCOMM Internet Measurement Workshop}, pages 91--92,
+  2002.
+
+\bibitem{Roughan03TETM}
+M.~Roughan, M.~Thorup, and Y.~Zhang.
+\newblock Traffic engineering with estimated traffic matrices.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)}, pages
+  248--258, October 2003.
+
+\bibitem{Scherrer07Memory}
+A.~Scherrer, N.~Larrieu, P.~Owezarski, P.~Borgnat, and P.~Abry.
+\newblock Non-{G}aussian and long memory statistical characterizations for
+  {I}nternet traffic with anomalies.
+\newblock {\em IEEE Trans. Depend. Secure Computing}, 4(1):56--70,
+  January--March 2007.
+
+\bibitem{Schwarz78BIC}
+G.~Schwarz.
+\newblock Estimating the dimension of a model.
+\newblock {\em Ann. Statist.}, 6(2):461--464, 1978.
+
+\bibitem{Sen95Gravity}
+A.~K. Sen and T.~E. Smith.
+\newblock {\em Gravity models of spatial interaction behavior}.
+\newblock Springer, 1995.
+
+\bibitem{Shaikh02OSPF}
+A.~Shaikh, C.~Isett, A.~Greenberg, M.~Roughan, and J.~Gottlieb.
+\newblock A case study of {OSPF} behavior in a large enterprise network.
+\newblock In {\em Proceedings of the 2nd ACM SIGCOMM Workshop on Internet
+  measurement}, IMW '02, pages 217--230, 2002.
+
+\bibitem{sommers11:_effic}
+J.~Sommers, R.~A. Bowden, B.~Eriksson, P.~Barford, M.~Roughan, and N.~G.
+  Duffield.
+\newblock Efficient network-wide flow record generation.
+\newblock In {\em IEEE Infocom}, pages 2363--2371, 2011.
+
+\bibitem{Soule04TMLargest}
+A.~Soule, A.~Nucci, R.~Cruz, E.~Leonardi, and N.~Taft.
+\newblock How to identify and estimate the largest traffic matrix elements in a
+  dynamic environment.
+\newblock {\em SIGMETRICS Perform. Eval. Rev.}, 32(1):73--84, June 2004.
+
+\bibitem{soule07:_estim_dynam_traff_matric_using}
+A.~Soule, A.~Nucci, R.~L. Cruz, E.~Leonardi, and N.~Taft.
+\newblock Estimating dynamic traffic matrices by using viable routing changes.
+\newblock {\em IEEE/ACM Transactions on Networking}, 15(3):485--498, 2007.
+
+\bibitem{Stewart98MtxVol1}
+G.~W. Stewart.
+\newblock {\em Matrix algorithms {V}olume 1: {B}asic decompositions}.
+\newblock SIAM, 1998.
+
+\bibitem{Stewart48Socio}
+J.~Q. Stewart.
+\newblock Demographic gravitation: {E}vidence and applications.
+\newblock {\em Sociometry}, 11(1/2):31--58, February 1948.
+
+\bibitem{Swait59Choice}
+J.~D. Swait.
+\newblock Probabilistic choice set information in transportation demand.
+\newblock Technical report, Department of Civil and Environmental Engineering,
+  MIT, June 1984.
+
+\bibitem{Tebaldi98Tomo}
+C.~Tebaldi and M.~West.
+\newblock Bayesian inference on network traffic using link count data.
+\newblock {\em J.~Am.~Statist.~Assoc.}, 93(442), June 1998.
+
+\bibitem{Teixeira05TMRoute}
+R.~Teixeira, N.~Duffield, J.~Rexford, and M.~Roughan.
+\newblock Traffic matrix reloaded: {I}mpact of routing changes.
+\newblock In {\em Proc. Passive and Active Measurement Workshop}, pages
+  251--264, April 2005.
+
+\bibitem{Teixeira04PotatoSIG}
+R.~Teixeira, A.~Shaikh, T.~Griffin, and J.~Rexford.
+\newblock Dynamics of hot-potato routing in {IP} networks.
+\newblock {\em SIGMETRICS Perform. Eval. Rev.}, 32:307--319, June 2004.
+
+\bibitem{Tinbergen62Econ}
+J.~Tinbergen.
+\newblock Shaping the world economy: {S}uggestions for an international
+  economic policy.
+\newblock {\em The Twentieth Century Fund}, 1962.
+
+\bibitem{Uhlig04Implications}
+S.~Uhlig, O.~Bonaventure, V.~Magnin, C.~Rapier, and L.~Deri.
+\newblock Implications of the topological properties of internet traffic on
+  traffic engineering.
+\newblock In {\em 19th ACM Symposium on Applied Computing, Special Track on
+  Computer Networks}, pages 339--346, March 2004.
+
+\bibitem{GEANT}
+S.~Uhlig, B.~Quoitin, J.~Lepropre, and S.~Balon.
+\newblock Providing public intradomain traffic matrices to the research
+  community.
+\newblock {\em Computer Communication Review}, 36(1):83--86, January 2006.
+
+\bibitem{Vardi96Tomo}
+Y.~Vardi.
+\newblock {Network Tomography: Estimating source-destination traffic
+  intensities from link data}.
+\newblock {\em J.~Am.~Statist.~Assoc.}, 91:365--377, 1996.
+
+\bibitem{Varghese03Measure}
+G.~Varghese and C.~Estan.
+\newblock The measurement manifesto.
+\newblock {\em SIGCOMM Comput. Commun. Rev.}, 34(1):9--14, January 2004.
+
+\bibitem{Veitch97Wavelet}
+D.~Veitch and P.~Abry.
+\newblock Wavelet analysis of long-range dependent network traffic.
+\newblock In {\em Proceedings of the 9th INFORMS Applied Probability
+  Conference}, page~57, Cambridge, Massachusetts, 30 June - 1 July 1997.
+  INFORMS Technical Section on Applied Probability.
+\newblock \url{http://appliedprob.society.informs.org/}.
+
+\bibitem{Wallace99MML}
+C.~S. Wallace and D.~M. Boulton.
+\newblock An information measure for classification.
+\newblock {\em Computer Journal}, 11(2):185--194, August 1968.
+
+\bibitem{wang10:_wavel_based_traff_matrix_model}
+J.~Wang and M.~Rabbat.
+\newblock Wavelet-based traffic matrix modelling.
+\newblock In {\em Network Measurement and Mapping Conference}, 2010.
+
+\bibitem{Xia04Measles}
+Y.~C. Xia, O.~N. Bjornstad, and B.~T. Grenfell.
+\newblock Measles metapopulation dynamics: {A} gravity model for
+  epidemiological coupling and dynamics.
+\newblock {\em American Naturalist}, 164(3):267--281, 2004.
+
+\bibitem{roughan_mra_09}
+Y.~Zhang, Z.~Ge, S.~Diggavi, Z.~Mao, M.~Roughan, V.~Vaishampayan, and
+  W.~Willinger.
+\newblock {\em Markov Processes and Related Topics: A Festschrift for Thomas G.
+  Kurtz}, volume~4 of {\em IMS Collections}, chapter Internet Traffic and
+  Multiresolution Analysis, pages 215--234.
+\newblock Institute for Mathematical Statistics, 2009.
+\newblock Stewart N. Ethier, Jin Feng, Richard H. Stockbridge, Editors.
+
+\bibitem{Zhang05Anomography}
+Y.~Zhang, Z.~Ge, A.~Greenberg, and M.~Roughan.
+\newblock Network anomography.
+\newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)}, pages
+  317--330, 2005.
+
+\bibitem{Zhang03Fast}
+Y.~Zhang, M.~Roughan, N.~Duffield, and A.~Greenberg.
+\newblock Fast accurate computation of large-scale {IP} traffic matrices from
+  link loads.
+\newblock In {\em ACM SIGMETRICS 2003}, pages 206--217, 2003.
+
+\bibitem{Zhang03InfoSIGCOMM}
+Y.~Zhang, M.~Roughan, C.~Lund, and D.~Donoho.
+\newblock An information-theoretic approach to traffic matrix estimation.
+\newblock In {\em ACM SIGCOMM 2003}, pages 301--312, 2003.
+
+\bibitem{Zhang05InfoTh}
+Y.~Zhang, M.~Roughan, C.~Lund, and D.~Donoho.
+\newblock Estimating {P}oint-to-{P}oint and {P}oint-to-{M}ultipoint traffic
+  matrices: {A}n information-theoretic approach.
+\newblock {\em IEEE/ACM Trans. Netw.}, 13(5):947--960, October 2005.
+
+\bibitem{Zhang09TMCS}
+Y.~Zhang, M.~Roughan, W.~Willinger, and L.~Qiu.
+\newblock Spatio-{T}emporal compressive sensing and {I}nternet traffic
+  matrices.
+\newblock In {\em ACM SIGCOMM 2009}, pages 267--278, August 2009.
+
+\end{thebibliography}

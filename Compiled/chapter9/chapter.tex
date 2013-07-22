@@ -1,0 +1,128 @@
+%\documentclass[journal,A4format,10pt]{IEEEtran}
+%\documentclass{journal}
+
+\newcommand{\CLASSINPUTinnersidemargin}{0.7in}
+\newcommand{\CLASSINPUToutersidemargin}{0.7in}
+\documentclass{article}
+
+\usepackage{hyperref}
+%\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{epsfig}
+
+\usepackage{subfigure}
+%\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{verbatim}
+\usepackage{flushend}
+\usepackage{amsthm,amsmath}
+\usepackage{enumerate}
+\usepackage[xindy,nonumberlist]{glossaries}
+
+\usepackage{amsmath}
+%\usepackage{amsfonts,amssymb,amsmath,bm,paralist,color}
+
+\makeglossaries
+
+\renewcommand*{\glspostdescription}{}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\newcommand{\articleformat}{paper }
+\newcommand{\Articleformat}{Paper }
+
+%\newtheorem{definition}{Definition}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+
+\newtheoremstyle{definition}
+  {\topsep}      % ABOVESPACE
+  {\topsep}      % BELOWSPACE
+  {\normalfont}  % BODYFONT
+  {0pt}          % INDENT (empty value is the same as 0pt)
+  {\bfseries}    % HEADFONT
+  {.}            % HEADPUNCT
+  {5pt plus 1pt minus 1pt} % HEADSPACE
+  {}             % CUSTOM-HEAD-SPEC
+
+%\newenvironment{proof}[1][Proof]{\begin{trivlist}
+%\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+%\newenvironment{example}[1][Example]{\begin{trivlist}
+%\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+\input{customcommands}
+\begin{document}
+
+\title{Enabling Multihop Communication in Spontaneous Wireless Networks}
+\author{Juan Antonio Cordero, Jiazi Yi, Thomas Clausen, Emmanuel Baccelli}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+%\keywords{RPL, WSN, wireless sensor network, MPR, broadcast, comparison, performance, parent flooding}
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+
+
+%\author{\IEEEauthorblockN{Juan Antonio Cordero}
+%\IEEEauthorblockA{ICTEAM, Universit\'e catholique de Louvain, Belgium\\
+%juan.cordero@uclouvain.be}
+%\and
+%\IEEEauthorblockN{Thomas Clausen, Ulrich Herberg}
+%\IEEEauthorblockA{Laboratoire d'Informatique (LIX) -- 
+%Ecole Polytechnique, France\\
+%Thomas@ThomasClausen.org, Ulrich@Herberg.name}
+%}
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+%\IEEEpeerreviewmaketitle
+
+\input{Content/glossary}
+
+\input{Content/introduction}
+\input{Content/fundamentals}
+\input{Content/comm_wless}
+\input{Content/flood_rtg}
+\input{Content/specific}
+\input{Content/wospf}
+
+
+%\input{Content/exercises}
+
+\input{Content/conclusion}
+
+\newpage
+
+\addcontentsline{toc}{section}{References}
+
+\bibliographystyle{ieeetr}
+\bibliography{bibliography}
+
+\newpage
+
+\addcontentsline{toc}{section}{Glossary}
+\glsaddall
+\printglossaries
+
+% that's all folks
+\end{document}
+
+

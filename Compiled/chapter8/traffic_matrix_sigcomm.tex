@@ -1,0 +1,279 @@
+%%%%%%%%%%%%%%%%%% SIGCOMM
+\newcommand{\CLASSINPUTinnersidemargin}{0.7in}
+\newcommand{\CLASSINPUToutersidemargin}{0.7in}
+\documentclass{article}
+
+\usepackage{cite}
+\usepackage{bbm,amssymb,amsmath,amsfonts,latexsym,amsthm}
+\usepackage{graphicx,color}
+\usepackage{tikz}
+\usepackage{algorithm,algorithmic}
+\usepackage{graphics,url}
+\usepackage{multirow}
+\usepackage{titling}
+\usepackage{rotating}
+%\usepackage[margin=3cm]{geometry}
+\usepackage{caption}
+\let\subcaption\relax
+\let\subfloat\relax
+\usepackage{subcaption}
+\captionsetup[figure]{labelfont={bf,small},textfont={it,small}}
+\captionsetup[subfloat]{labelfont={bf,footnotesize},textfont={it,footnotesize},subrefformat=parens}
+\let\captioncaption\caption
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,pdfauthor={Paul Tune and Matthew Roughan},pdftitle={Internet Traffic Matrices: A Primer}]{hyperref}
+\let\caption\captioncaption
+\usepackage[all]{hypcap} 
+ 
+% use "autoref" the way I want
+%   autoref is nice because the text or brackets of a ref are part of link
+%   see http://tex.stackexchange.com/questions/36575/autorefs-inserted-text-has-not-the-correct-case
+%       http://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing
+%       http://www.tug.org/applications/hyperref/manual.html#TBL-23
+\def\algorithmautorefname{Algorithm}
+\def\sectionautorefname{\S\!\!}
+\def\subsectionautorefname{\S\!\!}
+% from http://tex.stackexchange.com/questions/52410/how-to-use-the-command-autoref-to-implement-the-same-effect-when-use-the-comman
+\def\equationautorefname~#1\null{%
+  (#1)\null
+}
+  
+%%%%%%%%% Colour effects
+\definecolor{subtler}{rgb}{1,0,0.1}  % subtle shading
+\def\y{\color{subtler}}              % color of changes
+\def\b{\color{blue}\small}           % talking to colleagues
+\def\pt{\color{black}}
+
+
+
+%------- My common Definitions
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ben}{\begin{equation*}}
+\newcommand{\een}{\end{equation*}}
+\newcommand{\ba}{\begin{eqnarray}}
+\newcommand{\ea}{\end{eqnarray}}
+\newcommand\Var {{\rm Var}}
+\def\Cov {\makebox{Cov }}
+\newcommand{\Z}{Z\!\!\!Z}
+\def\integer {\cal Z}
+\def\real {{\cal R}}
+\def\bl{\Bigl(\,}
+\def\br{\,\Bigr)}
+
+
+%%%%%%%%%%%%%%%%% definitions for this document
+\def\mus{{$\mu$s}}         % microseconds
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}%[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+% MATH -----------------------------------------------------------
+\newcommand{\id}[1]{\mathbf{I}_{#1}}
+\newcommand{\mnull}[1]{\mathbf{0}_{#1}}
+\newcommand{\vnull}[2]{\mathbf{0}_{#1 \times #2}}
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\mset}[1]{\lbrack #1\rbrack}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\Complex}{\mathbb C}
+\newcommand{\Integer}{\mathbb Z}
+\newcommand{\Natural}{\mathbb N}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\To}{\longrightarrow}
+\newcommand{\BX}{\mathbf{B}(X)}
+\newcommand{\I}{\boldsymbol{\mathcal{I}}_{\vth}}
+\newcommand{\tr}{\mathbf{tr}}
+\newcommand{\adj}{\mathrm{adj}}
+\newcommand{\T}{\mathrm{T}}
+\newcommand{\E}{\mathbb E}
+\newcommand{\bEu}[1]{\mathbf{e}_{#1}}
+\newcommand{\bin}[2]{\text{Bin}(#1,#2)}
+\newcommand{\Count}{1}
+\newcommand{\constr}{\mathbf{G}}
+\newcommand{\ind}{\mathbbm 1}
+\newcommand{\veth}{\boldsymbol{\hat \theta}}
+\newcommand{\vbth}{\boldsymbol{\bar \theta}}
+\newcommand{\iset}[1]{\lbrack #1 \rbrack}
+\newcommand{\bxi}[1]{\mathbf{x}^{(#1)}}
+\newcommand{\bXi}[1]{\mathbf{X}^{(#1)}}
+\newcommand{\iomega}[1]{\omega^{(#1)}}
+\newcommand{\bdi}[1]{\mathbf{d}^{(#1)}}
+% ----------------------------------------------------------------
+\renewcommand{\labelenumi}{(\roman{enumi})}
+\newcounter{tempcnt}
+%-----------------------------------------------------------------
+% Autoref configuration
+\newcommand{\thmautorefname}{Theorem}
+\newcommand{\lemautorefname}{Lemma}
+
+\def\gap{\vspace{10pt}\noindent}
+\def\naive{na\"{\i}ve\ }
+\def\onen{\mathbf{1}_n}
+\def\range{\text{range}}
+\def\Cov{\text{Cov}}
+
+\def\vth{\boldsymbol\theta}
+
+% defs for this paper
+\newcommand{\Nat}{\mathbb N}
+\def\bJ{\mathbf{J}_{\vth}}
+\def\bc{\mathbf{c}_{\vth}}
+\def\bW{\mathbf{W}_{\vth}}
+\def\bG{\mathbf{G}_{\vth}}
+\def\bA{\mathbf{A}}
+\def\bC{\mathbf{C}}
+\def\bD{\mathbf{D}}
+\def\bE{\mathbf{E}}
+\def\bH{\mathbf{H}_{\vth}}
+\def\bM{\mathbf{M}}
+\def\bN{\mathbf{N}}
+\def\bP{\mathbf{P}}
+\def\bW{\mathbf{W}}
+\def\bU{\mathbf{U}}
+\def\bQ{\mathbf{Q}}
+\def\bV{\mathbf{V}}
+\def\bF{\mathbf{F}}
+\def\bT{\mathbf{T}}
+\def\bX{\mathbf{X}}
+\def\bY{\mathbf{Y}}
+\def\bZ{\mathbf{Z}}
+\def\bB{\mathbf{B}}
+\def\bTheta{\boldsymbol{\Theta}}
+\def\vec{\mathrm{vec}}
+\def\bee{\mathbf{e}}
+\def\baa{\mathbf{a}}
+\def\bu{\mathbf{u}}
+\def\bv{\mathbf{v}}
+\def\bx{\mathbf{x}}
+\def\bbx{\mathbf{\bar{x}}}
+\def\by{\mathbf{y}}
+\def\bby{\mathbf{\bar{y}}}
+\def\bz{\mathbf{z}}
+\def\bw{\mathbf{w}}
+\def\bb{\mathbf{b}}
+\def\bp{\mathbf{p}}
+\def\cc{\mathbf{\bar c}}
+\def\bI{\mathbf{\tilde I}}
+\def\rank{\text{rank}}
+\def\diag{\text{diag}}
+
+\def\cA{\mathcal{A}}
+\def\cB{\mathcal{B}}
+\def\cC{\mathcal{C}}
+\def\cS{\mathcal{S}}
+\def\cP{\mathcal{P}}
+\def\cI{\mathcal{I}}
+\def\cE{\mathcal{E}}
+\def\cM{\mathcal{M}}
+\def\cJ{\mathcal{J}}
+\def\cT{\mathcal{T}}
+\def\cX{\boldsymbol{\mathcal{X}}}
+
+\def\iY{\boldsymbol{Y}}
+\def\bepsilon{\boldsymbol{\eps}}
+
+\def\Spd{\mathbb{S}^{n}_{++}}
+\def\Spsd{\mathbb{S}^{n}_{+}}
+
+\def\SD{\text{StdDev}}
+\def\Var{\text{Var}}
+\def\ce{\mathbf{c}_e}
+\def\oneinf{\mathbf{1}_{\infty}}
+\def\Fourier{\boldsymbol{\mathcal{F}}}
+
+\def\CovMtx	{\boldsymbol{\Sigma}_{\vth}}
+\def\CovMtxSeq	{\boldsymbol{\Sigma}_{\hat{\vth}^{(N)}}}
+\def\bSigma {\boldsymbol{\Sigma}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\newcommand{\etal}{{\em et al.}~}
+\newcommand{\ie}{{\em i.e.,}}
+\newcommand{\eg}{{\em e.g.,}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+%----- Figure to file mappings
+%\def\homedir{.}
+%\def\figuresdir{\homedir}
+\graphicspath{{.}
+{Figs/}
+{Figures/}
+}
+
+\newlength{\oneup}
+\newlength{\twoup}
+\newlength{\threeup}
+\setlength{\oneup}{0.9\textwidth}
+\setlength{\twoup}{0.45\textwidth}
+\setlength{\threeup}{0.31\textwidth}
+
+%%%%%%%%% Gravity Model %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\def\GravityExample		{\centering\includegraphics[width=\oneup]{example_grav_1}}
+\def\GravityInner		{\centering\includegraphics[width=\oneup]{example_grav_2}}
+\def\HotPotatoIn		{\centering\includegraphics[width=\twoup]{hot_potato}}
+\def\HotPotatoOut		{\centering\includegraphics[width=\twoup]{hot_potato_2}}
+\def\GravityEx			{\centering\includegraphics[width=0.7\oneup]{example_grav_2}}
+\def\GravityInternal		{\centering\includegraphics[width=\twoup]{example_grav_int}}
+\def\GravityIn			{\centering\includegraphics[width=\twoup]{example_grav_in}}
+\def\GravityOut			{\centering\includegraphics[width=\twoup]{example_grav_out}}
+\def\GravityExternal		{\centering\includegraphics[width=\twoup]{example_grav_ex}}
+\def\Topology			{\centering\includegraphics[width=0.9\oneup]{baran}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{titlepage}
+
+\title{Internet Traffic Matrices: A Primer}
+
+
+\author{
+Paul Tune and Matthew Roughan\\
+School of Mathematical Sciences\\
+The University of Adelaide, Australia.\\
+\texttt{\{paul.tune,matthew.roughan\}@adelaide.edu.au}
+} 
+
+
+%\author{Paul~Tune, Matthew~Roughan \thanks{The authors are with the School of Mathematical Sciences, The University 
+%of Adelaide, Australia (Email: \{paul.tune,matthew.roughan\}@adelaide.edu.au).}} 
+\vfill
+\date{}
+
+\end{titlepage}
+\maketitle
+\input{abstract}
+
+
+\newpage
+\tableofcontents
+
+\newpage
+% Introduction
+\input{introduction}
+
+% Traffic Matrices
+\input{tm}
+
+% Measurement
+\input{measurements}
+
+% Model
+\input{models}
+
+\input{applications}
+
+\input{future}
+
+\input{resources}
+
+\clearpage
+\small
+\bibliography{TuneBib}
+\bibliographystyle{abbrv}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

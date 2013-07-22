@@ -1,0 +1,73 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Managed Wireless Networks}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Spontaneous Wireless Networks}{4}{subsection.1.2}
+\contentsline {paragraph}{Handling heterogeneity at layer 3}{4}{section*.2}
+\contentsline {subsection}{\numberline {1.3}Mobile Ad hoc and Low-Power Lossy Networks}{5}{subsection.1.3}
+\contentsline {paragraph}{Mobile Ad hoc Networks (MANETs)}{5}{section*.3}
+\contentsline {paragraph}{Low-Power Lossy Networks (LLNs)}{6}{section*.4}
+\contentsline {paragraph}{Vehicular Ad hoc Networks (VANETs)}{6}{section*.5}
+\contentsline {paragraph}{Community Wireless Mesh Networks}{6}{section*.6}
+\contentsline {paragraph}{Wireless Sensor Networks (WSNs)}{7}{section*.7}
+\contentsline {subsection}{\numberline {1.4}Reader's Guide}{8}{subsection.1.4}
+\contentsline {section}{\numberline {2}Fundamentals of IP Networking and Internet Routing}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}The IP Networking Model}{9}{subsection.2.1}
+\contentsline {paragraph}{Addressing}{9}{section*.8}
+\contentsline {paragraph}{Forwarding rule}{10}{section*.9}
+\contentsline {subsection}{\numberline {2.2}Main Routing Techniques}{11}{subsection.2.2}
+\contentsline {paragraph}{Link-State Routing}{11}{section*.10}
+\contentsline {paragraph}{Distance-Vector Routing}{11}{section*.11}
+\contentsline {paragraph}{Path-vector routing}{11}{section*.12}
+\contentsline {paragraph}{Proactive routing}{12}{section*.13}
+\contentsline {paragraph}{Reactive routing}{12}{section*.14}
+\contentsline {paragraph}{Other routing approaches}{13}{section*.15}
+\contentsline {subsection}{\numberline {2.3}The Internet Routing Architecture}{13}{subsection.2.3}
+\contentsline {section}{\numberline {3}Communication in Spontaneous Wireless Networks}{14}{section.3}
+\contentsline {subsection}{\numberline {3.1}Physical Aspects of Wireless Communication}{15}{subsection.3.1}
+\contentsline {paragraph}{Coverage and Interference}{16}{section*.16}
+\contentsline {subsection}{\numberline {3.2}IP Model Issues in Spontaneous Wireless Networks}{16}{subsection.3.2}
+\contentsline {paragraph}{Non-Symmetric Links}{17}{section*.17}
+\contentsline {paragraph}{Non-Transitive Links}{18}{section*.18}
+\contentsline {paragraph}{Hidden Nodes}{18}{section*.19}
+\contentsline {paragraph}{Exposed Nodes}{19}{section*.20}
+\contentsline {subsection}{\numberline {3.3}An IP-compatible Architectural Model}{19}{subsection.3.3}
+\contentsline {paragraph}{Network View}{19}{section*.21}
+\contentsline {paragraph}{Semibroadcast Interfaces}{20}{section*.22}
+\contentsline {paragraph}{Node Morphology}{20}{section*.23}
+\contentsline {paragraph}{Impact on IP Addressing}{22}{section*.24}
+\contentsline {section}{\numberline {4}Flooding and Routing in Spontaneous Wireless Networks}{22}{section.4}
+\contentsline {subsection}{\numberline {4.1}Neighborhood Discovery}{23}{subsection.4.1}
+\contentsline {paragraph}{1-hop and 2-hop neighborhood}{23}{section*.25}
+\contentsline {subsection}{\numberline {4.2}Flooding}{24}{subsection.4.2}
+\contentsline {paragraph}{Excessive Number of Retransmissions and Efficient Flooding}{25}{section*.26}
+\contentsline {paragraph}{Systematic Packet Collisions and Jittering Techniques}{28}{section*.27}
+\contentsline {paragraph}{Duplicate Packets and Detection Techniques}{30}{section*.28}
+\contentsline {subsection}{\numberline {4.3}Link Metrics}{31}{subsection.4.3}
+\contentsline {section}{\numberline {5}IETF Routing Protocols for Spontaneous Wireless Networks}{32}{section.5}
+\contentsline {paragraph}{Routing in MANETs: OLSR and AODV}{32}{section*.29}
+\contentsline {paragraph}{Routing in LLNs: RPL and LOADng}{33}{section*.30}
+\contentsline {subsection}{\numberline {5.1}Optimized Link State Routing Protocol (OLSR)}{34}{subsection.5.1}
+\contentsline {paragraph}{Neighborhood Discovery}{34}{section*.31}
+\contentsline {paragraph}{Link State Advertisements}{34}{section*.32}
+\contentsline {paragraph}{Routing Set Calculation}{35}{section*.33}
+\contentsline {subsection}{\numberline {5.2}Ad Hoc On-Demand Distance-Vector Protocol (AODV)}{35}{subsection.5.2}
+\contentsline {paragraph}{Route Discovery}{36}{section*.34}
+\contentsline {paragraph}{Route Maintenance}{36}{section*.35}
+\contentsline {subsubsection}{\numberline {5.2.1}Lightweight On-demand Ad hoc Distance-Vector (LOADng)}{36}{subsubsection.5.2.1}
+\contentsline {subsection}{\numberline {5.3}Routing Protocol for LLNs (RPL)}{37}{subsection.5.3}
+\contentsline {paragraph}{DODAG Construction}{37}{section*.36}
+\contentsline {paragraph}{Requirement of DODAG Root}{39}{section*.37}
+\contentsline {paragraph}{Data Traffic Flows}{40}{section*.38}
+\contentsline {paragraph}{The DAO Mechanisms: Downward and Point-to-Point Routes}{40}{section*.39}
+\contentsline {section}{\numberline {6}Routing in Wired/Wireless Internetworks with OSPF}{41}{section.6}
+\contentsline {subsection}{\numberline {6.1}Open Shortest Path First Protocol (OSPF)}{42}{subsection.6.1}
+\contentsline {paragraph}{Interface Types}{43}{section*.40}
+\contentsline {subsection}{\numberline {6.2}MANET Extensions: A Wireless Interface for OSPF}{44}{subsection.6.2}
+\contentsline {paragraph}{Multi-Point Relays}{44}{section*.41}
+\contentsline {paragraph}{Overlapping Relays \& Smart Peering}{45}{section*.42}
+\contentsline {paragraph}{MANET Designated Routers}{45}{section*.43}
+\contentsline {paragraph}{Preserving OSPF routing principles}{45}{section*.44}
+\contentsline {paragraph}{Why maintain LSDB synchronization in Extended OSPF ?}{46}{section*.45}
+\contentsline {paragraph}{Further Extensions: adapted LSDB synchronization, MPR+SP and SLOT-OSPF}{46}{section*.46}
+\contentsline {section}{\numberline {7}Conclusion: Integrating Spantaneous Wireless Networks in the IP Architecture}{47}{section.7}
+\contentsline {section}{References}{50}{section.7}
+\contentsline {section}{Glossary}{58}{section*.47}

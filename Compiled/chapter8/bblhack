@@ -1,0 +1,6 @@
+#!/usr/local/bin/perl
+while (defined($line = <>)) {
+    $line =~ s/%\s*$//;
+    print $line;
+}
+

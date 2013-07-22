@@ -1,0 +1,245 @@
+\clearpage
+\section{Introduction}
+
+Internet topology research is concerned with the study of the various
+types of connectivity structures that are enabled by the layered
+architecture of the Internet. More than a decade of Internet topology
+research has produced a number of high-profile "discoveries" that
+continue to fascinate the scientific community, even though (or,
+especially because) they have been simultaneously touted by different
+segments of that community as either seminal, controversial, seriously
+flawed, or simply wrong.  Among these highly-popularized discoveries
+are the observed power-law relationships of the Internet topology, the
+network's scale-free nature, and its extreme vulnerability to attacks
+that target the highly-connected nodes in its core (\ie the
+Achilles' heel of the Internet).
+
+The purpose of this chapter is to bring order to the current state of
+Internet topology research and separate ``the wheat from the chaff''.
+In particular, by relying on carefully vetted data and readily
+available domain knowledge, we re-examine the reported discoveries and
+expose them to higher standards with respect to statistical inference
+and model validation.  In the process, we reveal the superficial
+nature of many of these discoveries and provide alternative solutions
+that reflect networking reality and do not collapse under scrutiny
+with high-quality data or when examined in detail by domain experts.
+
+\subsection{The many facets of Internet connectivity}
+
+Internet topology research is concerned with the study of the various
+types of connectivity structures that are enabled by the layered
+architecture of the Internet.  These structures include the inherently
+physical components of the Internet's infrastructure (\eg routers
+and switches and the fiber cables connecting them) as well as a wealth
+of more logical topologies that can be defined and studied at the
+higher layers of the Internet's TCP/IP protocol stack (\eg IP-level
+graph, AS-level network, Web-graph, P2P networks, Online Social
+Networks or OSNs).
+
+
+As early as the ARPANET\index{ARPANET}, researchers were drawing maps
+of the network representing its
+connectivity~\cite{cerf90:_selected_maps}.  The earliest date to
+1969. In those days, the entire network was simply enough to draw on
+the back of an envelope\footnote{For instance see
+  \url{http://personalpages.manchester.ac.uk/staff/m.dodge/cybergeography/atlas/roberts_arpanet_large.gif}},
+and accurate maps could be drawn because every piece of equipment was
+expensive, installation was a major task, and only a few people worked
+on the network.
+
+As the network grew, its complexity also grew, until the point where
+no one person could draw such a map. At that point, automated
+strategies started to arise for measuring the topology. The earliest
+Internet topology studies date back to the time of the
+NSFNET\index{NSFNET} and focused mainly on the network's physical
+infrastructure consisting of routers, switches and the physical links
+connecting them (\eg
+see~\cite{Calvert97,pansiot98:_inter}). The decommissioning of
+the NSFNET around 1995 led to a transition of the Internet from a
+largely monolithic network structure (\ie NSFNET) to a genuinely
+diverse "network of networks."  Also known as Autonomous Systems
+(ASes), together these individual networks form what we now call the
+"public Internet" and are owned by a diverse set of organizations
+and companies that includes large and small Internet Service Providers
+(ISPs), transit providers, network service providers, Fortune 500
+companies and small businesses, academic and research organizations,
+content providers, Content Distribution Networks (CDNs), Web hosting
+companies, and cloud providers.
+
+With this transition came an increasing fascination of the research
+community with a largely economics-driven connectivity structure
+commonly referred to as the Internet's AS-graph; that is, the logical
+Internet topology where nodes represent individual ASes and edges
+reflect observed relationships among the ASes (\eg
+customer-provider, peer-peer, or sibling-sibling relationship). It is
+important to note that the AS-graph\index{AS-graph} says little about
+how two ASes connect with one another at the physical level; in
+particular, it says nothing about if or how they exchange actual
+traffic.  Nevertheless, starting shortly after 1995, this fascination
+with the AS-graph has resulted in thousands of research publications
+covering a range of aspects related to measuring, modeling, and
+analyzing the AS-level topology of the Internet and its evolution over
+time~\cite{govindan97:_topology,roughan11}.
+
+At the application layer, the emergence of the World Wide Web (WWW) in
+the late 1990 as a killer application generated general interest in
+exploring the Web-graph, where nodes represent web pages and edges
+denote hyperlinks~\cite{Broder:2000:GSW:346241.346290}. While this overlay network
+or logical connectivity structure says nothing about how the servers
+hosting the web pages are connected at the physical or AS level, its
+scale and dynamics differ drastically from its physical-based or
+economics-driven underlays -- a typical Web-graph has billions of
+nodes and even more edges and is highly dynamic; a large ISP's
+router-level topology consists of some thousands of routers, and
+today's AS-level Internet is made up of some 30,000-40,000 actively
+routed ASes and an order of magnitude more links.
+
+Other applications that give rise to their own "overlay" or logical
+connectivity structure and have attracted some attention among
+researchers include email and various P2P systems such as Gnutella,
+Kad, eDonkey, and BitTorrent\index{P2P}\index{BitTorrent}.  More
+recently, the enormous popularity of Online Social Networks (OSNs) has
+resulted in a staggering number of research papers dealing with all
+different aspects of measuring, modeling, analyzing, and designing
+OSNs\index{OSN}.  Data from large-scale crawls or, in rare
+circumstances, OSN-provided data have been used to examine snapshots
+of many real-world OSNs or OSN-type systems, where the snapshots are
+generally simple graphs with nodes representing individual users and
+edges denoting some implicit or explicit friendship relationship among
+the users.
+
+\subsection{Many interested parties with different objectives}
+
+The above-mentioned list of possible connectivity structures that
+exist in today's Internet is by no means complete, but illustrates how
+these structures arise naturally within the Internet's layered
+architecture. It also highlights the many different meanings of the
+term ``Internet topology,'' and sensible use of this term requires
+explicitly specifying which facet of Internet connectivity is
+considered because the differences are critical.
+
+The list also reflects the different motivations that different
+researchers have for studying Internet-related graphs or networks.
+For example, engineers are mainly concerned with the physical facets
+of Internet connectivity, where technological issues generally
+dominate over economic and social aspects.  However, the more
+economics-minded researchers are particularly interested in the
+Internet's AS-level structure where business considerations and market
+forces mix with technological innovation and societal considerations
+and shape the very structure and evolution of this logical topology.
+Moreover, social scientists see in the application-level connectivity
+structures that result from large-scale crawls of the various OSNs new
+and exciting opportunities for studying different aspects of human
+behavior and technology-enabled inter-personal communication at
+previously unheard of scale.
+
+In addition, mathematicians are interested in the different
+connectivity structures mainly because of their many novel features
+and properties that tend to require new and creative modeling and
+analysis methodologies. From the perspective of many computer
+scientists, the challenges posed by many of these intricate
+connectivity structures are algorithmic in nature and arise from
+trying to solve specific problems involving a particular topological
+structure. For yet another motivation, many physicists turned
+network scientists see the Internet as one of many examples of
+large-scale complex networks that awaits the discovery of universal
+properties that do not depend on system-specific details and advance
+our understanding of these complex networks irrespective of the domain
+in which they arose in the first place.
+
+\subsection{More than a decade of Internet topology research}
+
+When trying to assess the large body of literature in the area of
+Internet topology research that has accumulated since about 1995 and
+has experienced enormous growth especially during the last 10+ years,
+the picture that emerges is at best murky.
+
+On the one hand, there are high-volume datasets of detailed network
+measurements that have been collected by domain experts.  These
+datasets have been made publicly available so other researchers can
+use them.  As a result, Internet topology research has become a prime
+example of a measurement-driven research effort, where third-party
+studies of the available datasets abound and have contributed to a
+general excitement about the topic area, mainly because many of the
+inferred connectivity structures have been reported to exhibit
+surprising properties (\eg power-law relationships for inferred
+quantities such as node
+degree~\cite{faloutsos99:_power_law_relat_of_inter_topol}). In turn,
+these surprising discoveries have led network scientists and
+mathematicians alike to develop new network models that are provably
+consistent with some of this highly-publicized empirical evidence.
+Partly due to their simplicity and partly due to their strong
+predictive power, these newly proposed network models have become very
+popular within the larger scientific
+community~\cite{barabasi00,barabasi09:_scale_free_networ,barabasi12}. For
+example, they have resulted in claims about the Internet that have made
+their way into standard textbooks on complex networks, where they are
+also used to support the view that a bottom-up approach dominated by
+domain-specific details and knowledge is largely doomed when trying to
+match the insight and understanding that a top-down approach centered
+around a general quest for "universality" promises to
+provide~\cite{barabasi02:_linked,dorogovtsev03:_evolut_networ,pastor-satorras04:_evolut_struc_inter,newman10:_networ}.
+
+On the other hand, there is a body of work within the networking
+research literature that argues essentially just the opposite and
+presents the necessary evidence in support of a inherently
+engineering-oriented approach filled with domain-specific details and
+knowledge~\cite{Li04,Alderson05,willinger09:_mathem_and_inter}. In contrast to being
+measurement-driven, this approach is first and foremost concerned with
+notions such as a network's purpose or functionality, the hard
+technological constraints that the different devices used to build a
+network's physical infrastructure have to obey, or the sources of
+uncertainty in a network's "environment" with respect to which the
+built network should be robust.  As for the measurements that have
+been key to the top-down approach, the reliance on domain knowledge
+reveals the data's sub-par quality and highlights how errors of
+various forms occur and can add up to produce results and claims that
+create excitement among non-experts but quickly collapse when
+scrutinized or examined by domain experts. While there exist currently
+no textbooks that document these failures of applying detail- and
+domain knowledge-agnostic perspective to the Internet, there is an
+increasing number of papers in the published networking research
+literature that detail the various mis-steps and show why findings and
+claims that look at first glance impressive and conclusive to a
+science-minded reader turn out to be simply wrong or completely
+meaningless when examined closely by domain
+experts~\cite{willinger09:_mathem_and_inter,Alderson10,krishnamurthy11:_what}.
+
+In short, a survey of the existing literature on Internet topology
+research leaves one with the distinct impression that ``too many cooks
+spoil the broth.''  We hope that in the not-too-distant future, this
+impression will be replaced by ``many hand make light work'', and we
+see this chapter as a first step towards achieving this goal.
+
+\subsection{Themes}
+
+In writing this chapter there are a number of themes that emerge, and
+it is our intention to highlight them to bring out in the open the
+main differences between a detail-oriented engineering approach to
+Internet topology modeling versus an approach that has become a
+hallmark of network science and aims at abstracting away as many
+details as possible to uncover ``universal'' laws that govern the
+behavior of large-scale complex networks irrespective of the domains
+that specify those networks in the first place.
+ 
+\vspace{5mm}
+
+\begin{description}
+\item[{\bf Theme 1:}] When studying highly-engineered systems such as
+  the Internet, ``details'' in the form of protocols, architecture,
+  functionality, and purpose matter.
+
+\item[{\bf Theme 2:}] When analyzing Internet measurements, examining
+  the ``hygiene'' of the available measurements (\ie an in-depth
+  recounting of the potential pitfalls associated with producing the
+  measurements in question) is critical.
+
+\item[{\bf Theme 3:}] When validating proposed topology models, it is
+  necessary to treat network modeling as an exercise in
+  reverse-engineering and not as an exercise in model-fitting.
+
+\item[{\bf Theme 4:}] When modeling highly-engineered systems such as
+  the Internet, beware of M.L. Mencken's quote ``For every complex
+  problem there is an answer that is clear, simple, and wrong.''
+
+\end{description}
