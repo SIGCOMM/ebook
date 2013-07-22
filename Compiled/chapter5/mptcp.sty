@@ -1,0 +1,145 @@
+\usepackage{epsfig}
+\usepackage{times}
+\usepackage{url}
+\usepackage{pifont}
+\usepackage{graphicx}
+\usepackage[amsmath,thmmarks]{ntheorem}
+
+\hfuzz=3cm
+\vfuzz=1cm
+%\hbadness=15000
+%\vbadness=15000
+
+%\setlength{\abovecaptionskip}{0.2em}
+%\setlength{\belowcaptionskip}{-1em}
+
+%% \renewcommand{\topfraction}{.85}
+%% \renewcommand{\bottomfraction}{.7}
+%% \renewcommand{\textfraction}{.15}
+%% \renewcommand{\floatpagefraction}{.66}
+%% \renewcommand{\dbltopfraction}{.66}
+%% \renewcommand{\dblfloatpagefraction}{.66}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{20}
+\setcounter{dbltopnumber}{9}
+
+\renewcommand{\paragraph}[1]{\vspace{0.8em}\noindent\textbf{#1}\hspace{0.5em}}
+
+
+\newcommand{\fs}{\scriptsize}
+\newcommand{\fss}{\tiny}
+
+\newcommand{\reciprocal}[1]{\frac{1}{#1}}
+
+\newcommand{\RTT}{\textsf{\small{RTT}}}
+\newcommand{\hw}{\hat{w}}
+\newcommand{\hx}{\hat{x}}
+\newcommand{\pmin}{p_{\text{min}}}
+\newcommand{\TCP}{{\textsf{\tiny{TCP}}}}
+\newcommand{\rp}{\phi}
+\newcommand{\MPTCP}{\textsc{MPTCP}\xspace}
+\newcommand{\EWTCP}{\textsc{EWTCP}\xspace}
+\newcommand{\Coupled}{\textsc{Coupled}\xspace}
+\newcommand{\Semicoupled}{\textsc{Semicoupled}\xspace}
+
+
+
+\newtheorem{objective}{Goal}
+\newtheorem{lemma}{Lemma}
+\makeatletter
+\newtheoremstyle{nonumberplaindjw}%
+{\item[\theorem@headerfont\hskip\labelsep ##1\theorem@separator]}%
+{\item[\theorem@headerfont\hskip \labelsep ##1: ##3\theorem@separator]}
+\makeatother
+\theoremstyle{nonumberplaindjw}
+\theorembodyfont{\rmfamily}
+\theoremheaderfont{\scshape}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{algorithmfamily}{Algorithm Family}
+{
+\theoremstyle{nonumberplain}
+\theoremsymbol{\ensuremath{\Box}}
+\theoremheaderfont{\normalfont\itshape}
+\theorembodyfont{\normalfont}
+\newtheorem{Proof}{Proof.}
+\newtheorem{SketchProof}{Sketch proof.}
+\theoremstyle{empty}
+\newtheorem{ProofOf}{Proof of}
+}
+
+
+\newcounter{enum}
+\renewenvironment{enumerate}
+  {
+  \renewcommand{\theenum}{\roman{enum}}
+  \begin{list}{\theenum.}
+    {
+    \usecounter{enum}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\topsep}{0pt}
+    \setlength{\leftmargin}{\labelsep}
+        \settowidth{\labelwidth}{\textit{iii.}}
+    \addtolength{\leftmargin}{\labelwidth}
+    }
+  }
+  {\end{list}}
+\newcommand{\enumref}[1]{(\ref{#1})}
+\makeatletter
+\let\DJW@olditem\item
+\newcommand{\DJW@item}[1][$\bullet$]{\DJW@olditem[#1]}
+\renewenvironment{itemize}
+  {
+  \renewcommand{\DJW@item}[1][\small\raisebox{1pt}{$\m@th\bullet$}]{\DJW@olditem[##1\hfill]}
+  \let\item\DJW@item
+  \begin{list}{}
+    {
+    \setlength{\itemsep}{3pt}
+    \setlength{\parsep}{3pt}
+    \setlength{\topsep}{3pt}
+    \setlength{\itemindent}{0em}
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\listparindent}{2em}
+    \settowidth{\labelwidth}{\textit{(ii)}}
+    \setlength{\labelsep}{0em}
+    }
+  }
+  {\end{list}}
+\newenvironment{itemizesmall}
+  {
+  \renewcommand{\DJW@item}[1][\small\raisebox{1pt}{$\m@th\bullet$}]{\DJW@olditem[##1\hfill]}
+  \let\item\DJW@item
+  \begin{list}{}
+    {
+    \setlength{\itemsep}{1pt}
+    \setlength{\parsep}{1pt}
+    \setlength{\topsep}{1pt}
+    \setlength{\itemindent}{0em}
+    \setlength{\leftmargin}{1.5em}
+    \setlength{\listparindent}{2em}
+    \settowidth{\labelwidth}{\textit{(ii)}}
+    \setlength{\labelsep}{0em}
+    }
+  }
+  {\end{list}}
+\makeatother
+
+
+\newcommand{\marginnote}[1]{%
+{\color{red}\small{#1}}%
+}
+
+% For comparison, the existing overlap macros:
+% \def\llap#1{\hbox to 0pt{\hss#1}}
+% \def\rlap#1{\hbox to 0pt{#1\hss}}
+\def\clap#1{\hbox to 0pt{\hss#1\hss}}
+\def\mathllap{\mathpalette\mathllapinternal}
+\def\mathrlap{\mathpalette\mathrlapinternal}
+\def\mathclap{\mathpalette\mathclapinternal}
+\def\mathllapinternal#1#2{%
+\llap{$\mathsurround=0pt#1{#2}$}}
+\def\mathrlapinternal#1#2{%
+\rlap{$\mathsurround=0pt#1{#2}$}}
+\def\mathclapinternal#1#2{%
+\clap{$\mathsurround=0pt#1{#2}$}}

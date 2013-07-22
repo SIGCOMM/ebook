@@ -1,0 +1,120 @@
+\documentclass[10pt]{article}
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{times}
+\usepackage{multicol,multirow}
+\usepackage{epsf,psfrag,pstricks}
+\usepackage{mdwlist}
+\usepackage{epsf,pstricks}
+\usepackage{rotating}
+\usepackage{xspace}
+\usepackage{url}
+\urlstyle{rm}
+\usepackage{capt-of}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage[noend]{algpseudocode}
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+\newcommand{\martrace}{\textsf{MAR10}\xspace}
+\newcommand{\btlong}{\textsf{BitTorrent-14d}\xspace}
+\newcommand{\httplong}{\textsf{HTTP-14d}\xspace}
+\newcommand{\dnslong}{\textsf{DNS-5d}\xspace}
+\newcommand{\cate}{\textsf{CaTE}\xspace}
+\newcommand{\epsfrag}[2]{\psfrag{#1}[cc][cc]{\fontsize{6}{5}\selectfont \sffamily #2}}
+\newcommand{\epsfragl}[2]{\psfrag{#1}[lc][lc]{\fontsize{6}{5}\selectfont \sffamily #2}}
+\newcommand{\padis}{\textsf{PaDIS}\xspace}
+\newcommand{\MDC}{{Microdatacenter}\xspace}
+\newcommand{\MDCs}{{Microdatacenters}\xspace}
+\newcommand{\Netpaas}{{NetPaaS}\xspace}
+\newcommand{\ONSERVICE}{{ON-DEMAND SERVICE}\xspace}
+\newcommand{\OnService}{{On-Demand Service}\xspace}
+\newcommand{\Onservice}{{On-demand service}\xspace}
+\newcommand{\onservice}{{on-demand service}\xspace}
+\newcommand{\Ondemandbase}{{On-demand service deployment}\xspace}
+\newcommand{\ondemandbase}{{on-demand service deployment}\xspace}
+\newcommand{\onserviceemph}{\emph{on-demand service}\xspace}
+\newcommand{\sliceallocation}{\texttt{slice lo\-ca\-tion}\xspace}
+\newcommand{\sliceassignment}{\texttt{user-slice as\-sign\-ment}\xspace}
+
+\input{utils}
+
+\def\QEDclosed{\mbox{\rule[0pt]{1.3ex}{1.3ex}}} % for a filled box
+\def\QEDopen{{\setlength{\fboxsep}{0pt}\setlength{\fboxrule}{0.2pt}\fbox{\rule[0pt]{0pt}{1.3ex}\rule[0pt]{1.3ex}{0pt}}}}
+\def\QED{\QEDclosed} % default to closed
+\def\proof{\noindent\hspace{2em}{\itshape Proof: }}
+\def\endproof{\hspace*{\fill}~\QED\par\endtrivlist\unskip}
+%
+\newtheorem{Definition}{Definition}
+%
+\begin{document}
+
+\title{Collaboration Opportunities for\\Content Delivery and Network Infrastructures}
+
+
+\author{
+Benjamin~Frank, Ingmar~Poese, Georgios~Smaragdakis,\\
+Anja~Feldmann, Bruce M. Maggs, Steve~Uhlig,\\
+Vinay~Aggarwal, and Fabian~Schneider
+}
+
+
+\maketitle
+
+%
+%\tableofcontents
+%
+%\newpage 
+\input{sections/Motivation}
+%
+%\newpage
+\input{sections/Introduction}
+%
+%\newpage
+\input{sections/Internet-Network-Infrastructures}
+%
+%\newpage
+\input{sections/Traffic-Trends-Overall}
+%
+%\newpage
+\input{sections/Traffic-Trends-Server-Diversity}
+%
+%\newpage
+\input{sections/Content-Delivery-Overview}
+%
+%\newpage
+\input{sections/Content-Delivery-Landscape}
+%
+%\newpage
+\input{sections/Challenges}
+%
+%\newpage
+\input{sections/Incentives}
+%
+%\newpage
+\input{sections/Opportunities}
+%
+%\newpage
+\input{sections/Collaboration-Use-Cases}
+%
+%\newpage
+\input{sections/Collaboration-Future}
+%
+%\newpage
+\input{sections/Conclusion}
+%
+%\newpage
+\input{sections/Acks}
+
+%\listoffigures
+%\listoftables
+%\newpage
+
+\bibliographystyle{abbrv}
+\bibliography{paper}
+
+
+\end{document}

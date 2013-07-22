@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}\label{sec:introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Recent traffic studies~\cite{TrafficTypesGrowth:2011,arbor,PADIS2010} show that
+a large fraction of Internet traffic is due to content delivery and is
+originated by a small number of Content Delivery Infrastructures (CDIs). Major
+CDIs include highly popular rich-media sites like YouTube and Netflix,
+One-Click Hosters (OCHs), \eg RapidShare~\cite{OCH-performance},
+Content Delivery Networks (CDNs) such as Akamai and Limelight, and
+hyper-giants, \eg Google, Yahoo!, and Microsoft.  Gerber and Doverspike~\cite
+{TrafficTypesGrowth:2011} report that a few CDIs account for more than half of
+the traffic of a US-based Tier-1 carrier.  Poese \etal~\cite{PADIS2010} report
+a similar observation from the traffic of a European Tier-1 carrier. Labovitz
+\etal~\cite{arbor} infer that more than 10\% of the total Internet inter-domain
+traffic originates from Google, and Akamai claims to deliver more than 20\% of
+the total Internet Web traffic~\cite{Akamai-Network}. Netflix alone, a company
+that offers a high definition video video-on-demand streaming service, is
+responsible for a significant fraction of the traffic in North America ISPs
+during peak hours~\cite{sandvine,Netflix-CDN-presentation}.
+
+To cope with the increasing demand for content, CDIs have deployed massively
+distributed server infrastructures to replicate content and make it accessible
+from different locations on the Internet \cite{CDNsec2009}. These
+infrastructures have multiple choices as to how and where to place their
+servers. As described in~\cite {ImprovingPerformanceInternet2009}, the main
+approaches are (1) centralized hosting, (2) data center-based CDIs, (3)
+edge-cache-based CDIs, and (4) peer-to-peer (P2P) networks. Approaches~2 and~3
+scale content delivery by distributing the content onto dedicated
+infrastructures.  These infrastructures can be composed of a few large data
+centers, a large number of edge caches, or any combination thereof.
+
+To complicate matters further, some of these infrastructures are entangled with
+the very infrastructures that provide network connectivity to end-users. For
+example, one of the largest players in content delivery, Akamai, operates more
+than 120,000 servers in more than 2,000 locations across nearly 1,150 ISP
+networks~\cite {Akamai-Network,Akamai-website}. Google is reported to operate
+tens of data centers and front-end server clusters
+worldwide~\cite{MovingBeyondE2E2009,Tariq:What-if,Google-Datacenters}.
+Microsoft has deployed its content delivery infrastructure in 24 locations
+around the world~\cite{azure}. Amazon maintains at least 5 large data centers
+and caches in at least 21 locations around the world~\cite{amazon}. Limelight
+operates thousands of servers in more than 22 delivery centers and connects
+directly to 600 networks worldwide~\cite{LLNetworks}. Last but not least, P2P
+networks rely on a huge number of end users to store, replicate, and distribute
+content.
+
+Despite the significant entanglement between the infrastructures that deliver
+content and the network connectivity fabric, our knowledge of their
+interactions is largely through the literature on network interconnections, \eg
+see the recent book by W. Norton~\cite{peering-playbook}. Given the nature of
+network interconnections, previous work has studied the interactions from an
+economic perspective~\cite
+{internet-economics,interactions-economics,content-oriented-economics}. The
+limited knowledge available about the settlements between networks have led
+researchers to try to reason about why peering choices are made~\cite
+{ToPeerOrNot:Infocom2006} and what drives the evolution of the
+Internet~\cite{evolution}.
+
+Most of the literature has considered the interactions between content and the
+network indirectly, \eg through peerings and traffic measurements, despite
+recent changes in Internet traffic~\cite{TrafficTypesGrowth:2011,arbor} that
+have shown the importance of content and applications.  The observed changes in
+traffic, either through direct traffic measurements~\cite
+{TrafficDemand:ToN2001,Feldmann:Kammenhuber:2004,uhlig-public,arbor,IXPSIGCOMM2012},
+or through
+inference~\cite{medina_tm:2002,zhang_tm:2003,zhang_link:2003,gunnar_estimation:2004,dina_distributed:2004,soule_tm:2005}
+have repeatedly shown how volatile traffic can be. With the rise of
+user-generated content and large shifts in content popularity, traffic
+volatility has become especially relevant.
+
+Handling changes in traffic has traditionally been done through traffic
+engineering (TE). Initially, traffic engineering was used by large network
+operators to optimize the utilization of their networks
+\cite{Awduche_OverviewTE:2002}. The vast majority of the traffic engineering
+literature has therefore focused on traffic engineering inside a single network
+\cite{netscope,FT00,Xiao_Traffic:2000,Aukia_RATES:2000,MPLS:Infocom2000,FT01}.
+In reality, most of the traffic in the Internet is exchanged between different
+networks \cite{arbor}, and especially directly between data centers and
+residential ISPs \cite{IXPSIGCOMM2012}. Organizations that originate a lot of
+content, \eg Google, connect directly to a large number of other networks
+\cite{arbor}, and need to optimize how content leaves their networks.
+Organizations that provide Internet access to broadband or mobile users
+typically wish to optimize how traffic enters their networks, as most users
+still download more content than they upload. In between, transit ISPs try to
+balance the load of the traffic exchanged between the networks they connect.
+
+Traditional traffic engineering aims at reducing the likelihood that
+bottlenecks arise inside a given network due to mismatches between network
+provisioning and expected demand. Changes in network provisioning are slow,
+taking place over time scales of weeks or months. Popular content, on the other
+hand, generates bursts in demand over much smaller time scales, \eg hours or
+minutes. Today's Internet requires much more reactive network control
+techniques than those we have today, and these techniques must take content
+delivery into consideration. A few steps have been made in this direction.
+Indeed, collaborative approaches
+\cite{TECDN,CooperativeSettlement:ToN,Cate-CCR} have been proposed to help deal
+with the traffic generated by content delivery infrastructures. Even in the
+case of P2P, portals have been proposed to allow P2P applications and users to
+communicate with ISPs to receive updated views of their networks~\cite{p4p}. In
+broad terms, all information CDIs are missing today for optimizing their
+operations is available to ISPs. Combined with the already proposed schemes for
+collaboration, it is surprising how little real collaboration is performed in
+today's Internet between these parties.
+
+In this chapter, we analyze the operation of CDIs as well as network operators.
+The analysis demonstrates the potential for fruitful collaboration.  We argue
+that for collaboration to become more common, it is important for every party
+in the content delivery landscape, \ie the content delivery infrastructures,
+the network operators, and the end users, to benefit.  Finally, we present, in
+depth, two systems that have incentives for every party and that can readily be
+used today.
+

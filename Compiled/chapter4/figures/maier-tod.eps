@@ -1,0 +1,3669 @@
+%!PS-Adobe-3.0
+%%Title: (S-PLUS Graphics)
+%%Creator: S-PLUS
+%%For: (Gregor Maier)
+%%CreationDate: Mon May 11 18:11:52 2009
+%%BoundingBox: 20 11 592 781
+%%Pages: (atend)
+%%DocumentData: Clean7Bit
+%%DocumentNeededResources: (atend)
+%%EndComments
+%%BeginProlog
+150 dict begin gsave
+/bd{bind def}def
+/PVer 3200 def
+% drawing commands
+/I{Coord SetPage 1 setlinecap 1 setlinejoin
+    LineTypes{RastersPerPoint ScaleArray}forall
+    /Helvetica findfont
+    PointSize RastersPerPoint mul Cex mul scalefont setfont
+    /Colors GColors def
+}bd
+/BWOp{
+    bw{currentrgbcolor add add 2.9 gt{1}{0}ifelse setgray}if
+    exec
+    bw{CurSc Sc}if
+}bd
+/IBu{}def
+/B{newpath}bd
+/E{{stroke}BWOp}bd
+/C{currentpoint Penup{newpath}{E}ifelse moveto}bd
+/F{closepath eofill}bd
+/M{moveto}bd
+/L{lineto}bd
+/Pu{load /XEQ exch def /Penup true def}bd
+/Pd{/XEQ{}def /Penup false def}bd
+/Px{currentdict /XEQ known{XEQ}if}bd
+/h{Penup{rmoveto Px}{rlineto}ifelse}bd
+/j{neg Penup{rmoveto Px}{rlineto}ifelse}bd
+/k{exch neg exch Penup{rmoveto Px}{rlineto}ifelse}bd
+/l{neg exch neg exch Penup{rmoveto Px}{rlineto}ifelse}bd
+/m{moveto Penup{Px}if}bd
+/x{0 Penup{rmoveto Px}{rlineto}ifelse}bd
+/y{0 exch Penup{rmoveto Px}{rlineto}ifelse}bd
+/w{neg x}bd
+/z{neg y}bd
+/a{B M dup y exch x neg y closepath}bd
+/b{a eofill}bd
+/c{a E}bd
+/A{PageBegin BackCol 0 ge
+    {CurSc gsave 0 SC Page aload pop
+    exch 4 -1 roll dup 5 1 roll sub 3 1 roll exch dup 4 1 roll sub 4 2 roll b
+    grestore SC}if
+}bd
+/Ph{gsave Pch-x Pch-y rmoveto Show grestore}bd
+/Pc{Pch Ph}bd
+/T{/Adjust exch def gsave translate StringRot rotate 0 0 moveto
+    dup stringwidth pop neg Adjust mul 0 rmoveto
+    currentpoint translate TextShow grestore}bd
+/X{erasepage InPage{PageEnd}if}bd
+/Z{gsave showpage grestore PageEnd}bd
+/W{grestore end}bd
+% parameter setting commands
+/saveAt{Attr begin
+    /Atlinewidth currentlinewidth def
+    /Atfont currentfont def
+    /Atdash currentdash 2 array astore def
+    /AtSc CurSc def
+end}bd
+/restAt{Attr begin
+    Atlinewidth Atfont Atdash AtSc
+    end
+    SC aload pop setdash setfont setlinewidth
+}bd
+/SC{dup dup 0 eq
+    {pop BackIdx
+        {BackCol dup 0 lt {pop 1 setgray} {Sc}ifelse}
+        {/Colors BColor def 1 Sc}ifelse}
+    {/Colors GColors def Sc}ifelse
+    /CurSc exch def
+}bd
+/St{1 sub LineTypes dup 3 1 roll length Rem floor get 0 setdash}bd
+/Sw{abs 2 div RastersPerPoint mul setlinewidth SetClip}bd
+/Sp{dup 42 eq{pop IBu}{Pch exch 0 exch put SetPchSize}ifelse}bd
+/Sx{dup Cex div /Ratio exch def
+     /Cex exch def
+     currentfont Ratio scalefont setfont
+     /Pch-x Pch-x Ratio mul def
+     /Pch-y Pch-y Ratio mul def
+     /Text-y Text-y Ratio mul def}bd
+/So{4 1 roll exch 4 -1 roll Plot astore pop SetClip}bd
+/Sg{4 1 roll exch 4 -1 roll Figure astore pop SetClip}bd
+/Sr{/StringRot exch def}bd
+/Sh{/CharRot exch def}bd
+/Sd{0 eq /ClipToPlot exch def SetClip}bd
+/Iv{/InPage false def/Clip 4 array def/Page 4 array def
+    /Figure [0 0 1 1] def/Plot [0 0 1 1] def/ClipToPlot true def
+    /Cex 1 def/Outline false def
+    /Pch 1 string def/Pch-x 0 def/Pch-y 0 def/Text-y 0 def
+    /LineTypes [ % in default units
+        [] [1 2] [4 4] [8 4] [13 3] [16 2 2 2] [8 2 2 2] [1 13] [6 5] [12 4]
+    ] def
+    /Attr 5 dict def/CurSc 1 def/Penup false def/XEQ{}def
+}bd
+/Rem{2 copy div floor mul sub floor cvi}bd
+/RastersPerPoint{RastersPerInch 72 div}bd
+/ScaleArray{/Factor exch def /Array exch def
+    0 1 Array length 1 sub
+    {dup Array exch get Factor mul Array 3 1 roll put}for}bd
+/Coord{Region aload pop /uy exch def /ux exch def /ly exch def /lx exch def
+    uy ly sub ux lx sub Landscape{exch}if /Width exch def /Height exch def
+    lx ly translate Landscape{90 rotate 0 Height neg translate}if
+    1 RastersPerPoint div dup scale}bd
+/SetPchSize{gsave
+    newpath 0 0 moveto Pch false charpath flattenpath pathbbox
+    exch 3 1 roll
+    add 2 div neg /Pch-y exch def
+    add 2 div neg /Pch-x exch def
+    grestore}bd
+/Show{Outline{false charpath E}{{show}BWOp}ifelse}bd
+/SimpleShow{0 Text-y 2 div neg rmoveto Show}bd
+/FancyShow{
+    /RotDiff exch def
+    /Cos RotDiff cos abs def
+    /Sin RotDiff sin abs def
+    {
+        ( ) dup 0 4 -1 roll put
+        dup stringwidth pop /CharWidth exch def
+        Cos 0 eq{
+            Text-y Sin div
+        }{
+            Sin 0 eq{
+                CharWidth Cos div
+            }{
+                Text-y Sin div dup
+                CharWidth Cos div dup
+                4 1 roll lt{exch pop}{pop}ifelse
+            }ifelse
+        }ifelse 2 div /CharDist exch def
+        CharDist 0 translate 0 0 moveto
+        gsave
+            RotDiff rotate
+            CharWidth 2 div neg Text-y 2 div neg rmoveto
+            Show
+        grestore
+        CharDist 0 translate 0 0 moveto
+    }forall
+}bd
+/TextShow{
+    CharRot StringRot sub dup 0 eq{pop SimpleShow}{FancyShow}ifelse
+}bd
+/BoxClip{/CLW currentlinewidth def
+    2{CLW add 4 1 roll}repeat
+    2{CLW sub 4 1 roll}repeat
+    % initclip
+    saveAt grestore gsave restAt
+    newpath 2 index exch 2 index exch dup 6 index exch
+    moveto 3{lineto}repeat closepath clip newpath}bd
+/Subregion{
+    7 dict begin/A exch def/Uy exch def/Ux exch def/Ly exch def/Lx exch def
+    Ux Lx sub A 0 get mul Lx add
+    Uy Ly sub A 1 get mul Ly add
+    Ux Lx sub A 2 get mul Lx add
+    Uy Ly sub A 3 get mul Ly add end}bd
+/SetFigure{Page aload pop Figure Subregion}bd
+/SetPlot{SetFigure Plot Subregion}bd
+/SetClip{ClipToPlot{SetPlot}{SetFigure}ifelse BoxClip}bd
+/SetPage{0 0 Width Height Page astore RastersPerPoint ScaleArray}bd
+/PageBegin{save /PageContext exch def /InPage true def gsave}bd
+/PageEnd{grestore PageContext restore /InPage false def}bd
+/SImage{
+    dup /Bits exch def 8 exch idiv /PerByte exch def
+    /Ht exch def /Wid exch def
+    1 Wid div 1 Ht div scale
+    /saveSc CurSc def /Colors IColors def
+    /curstr Wid PerByte add 1 sub PerByte idiv string def
+    /MaskByte 16#ff Bits 8 sub bitshift def
+    1 1 Ht{
+        currentfile curstr readhexstring pop pop
+        /CurPos 0 def
+        /Left PerByte def
+        1 1 Wid{
+            Left PerByte eq{
+                /CurByte curstr CurPos get def
+                /MaskMove -8 Bits add def
+                /CurPos CurPos 1 add def
+            }if
+            CurByte MaskMove bitshift MaskByte and
+            dup 0 gt{
+                Sc
+                exch dup 3 1 roll B M 1 z 1 w 1 y F
+            }{pop pop}ifelse
+            Left 1 sub dup /Left exch def 0 le
+            {/Left PerByte def}
+            {/MaskMove MaskMove Bits add def}ifelse
+        }for
+        pop
+    }for
+    /Colors GColors def saveSc Sc
+}bd
+/SImageUneven{
+    /YCorners exch def
+    /XCorners exch def
+    dup /Bits exch def 8 exch idiv /PerByte exch def
+    /Ht exch def /Wid exch def
+    1 Wid div 1 Ht div scale
+    /saveSc CurSc def /Colors IColors def
+    /curstr Wid PerByte add 1 sub PerByte idiv string def
+    /MaskByte 16#ff Bits 8 sub bitshift def
+    1 1 Ht{
+        dup 1 sub /CellBottom YCorners 3 -1 roll get def
+        dup /CellTop YCorners 3 -1 roll get def
+        currentfile curstr readhexstring pop pop
+        /CurPos 0 def
+        /Left PerByte def
+        1 1 Wid{
+            dup 1 sub /CellLeft XCorners 3 -1 roll get def
+            dup /CellRight XCorners 3 -1 roll get def
+            Left PerByte eq{
+                /CurByte curstr CurPos get def
+                /MaskMove -8 Bits add def
+                /CurPos CurPos 1 add def
+            }if
+            CurByte MaskMove bitshift MaskByte and
+            dup 0 gt{
+                Sc
+                CellLeft CellBottom B M CellRight CellBottom L CellRight CellTop L CellLeft CellTop L CellLeft CellBottom L F
+            }{pop}ifelse
+            pop
+            Left 1 sub dup /Left exch def 0 le
+            {/Left PerByte def}
+            {/MaskMove MaskMove Bits add def}ifelse
+        }for
+        pop
+    }for
+    /Colors GColors def saveSc Sc
+}bd
+/SImageUneven16BitColormap{
+    % same argument list as SImageUneven, but Bits argument is
+    % assumed to be 16 (and is ignored).  Allows color map to
+    % to be up to 2^16-1 long and requires 4 hex digits per image cell.
+    /YCorners exch def
+    /XCorners exch def
+    dup /Bits exch def 16 exch idiv /PerShort exch def
+    /Ht exch def /Wid exch def
+    1 Wid div 1 Ht div scale
+    /saveSc CurSc def /Colors IColors def
+    /curstr Wid 2 mul string def
+    1 1 Ht{
+        dup 1 sub /CellBottom YCorners 3 -1 roll get def
+        dup /CellTop YCorners 3 -1 roll get def
+        currentfile curstr readhexstring pop pop
+        /CurPos 0 def
+        1 1 Wid{
+            dup 1 sub /CellLeft XCorners 3 -1 roll get def
+            dup /CellRight XCorners 3 -1 roll get def
+            /CurByte1 curstr CurPos get def
+            /CurPos CurPos 1 add def
+            /CurByte2 curstr CurPos get def
+            /CurPos CurPos 1 add def
+            /CurShort CurByte1 256 mul CurByte2 add def
+            CurShort dup 0 gt{
+                % dup == % print this cell's color number
+                Sc
+                CellLeft CellBottom B M CellRight CellBottom L CellRight CellTop L CellLeft CellTop L CellLeft CellBottom L F
+            }{pop}ifelse
+            pop
+        }for
+        pop
+    }for
+    /Colors GColors def saveSc Sc
+}bd
+/Ic {} bd
+/Sc {
+    dup dup 1 lt exch 0 ge and
+    {1 exch sub setgray}  % explicit gray level [0,1)
+    {1 sub Colors dup 3 1 roll length Rem floor get
+     dup type /arraytype eq {aload pop setrgbcolor} {setgray} ifelse
+    } ifelse
+} bd
+% list of fonts not to be reencoded
+/NonStdFonts [
+    /Symbol
+    /ZapfChancery-MediumItalic
+    /ZapfDingbats
+] def
+% fontName -> isNonStdFont -> boolean
+/isNonStdFont {
+    /fontName exch def
+    /val false def
+    NonStdFonts { fontName eq { /val true def } { } ifelse } forall
+    val
+} def
+
+/If {/ISOLatin1Encoding where {pop} {/ISOLatin1Encoding [
+    StandardEncoding 0 144 getinterval aload pop
+    99 -1 roll pop /minus 99 1 roll
+    /dotlessi /grave /acute /circumflex /tilde /macron /breve /dotaccent
+    /dieresis /.notdef /ring /cedilla /.notdef /hungarumlaut /ogonek /caron
+    /space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+    /dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen
+    /registered /macron /degree /plusminus /twosuperior /threesuperior /acute
+    /mu /paragraph /periodcentered /cedilla /onesuperior /ordmasculine
+    /guillemotright /onequarter /onehalf /threequarters /questiondown /Agrave
+    /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla /Egrave
+    /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+    /Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+    /Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+    /agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+    /egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex
+    /idieresis /eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis
+    /divide /oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn
+    /ydieresis] def} ifelse
+
+    /ISOLatin1Encoding-bullet200 where {pop} { /ISOLatin1Encoding-bullet200 [
+    ISOLatin1Encoding 0 255 getinterval aload pop
+    127 -1 roll pop /bullet 127 1 roll ] def } ifelse
+    /EncodedYet Fonts length array def
+    /DoEncode Fonts length array def
+    0 1 Fonts length 1 sub { dup Fonts exch get isNonStdFont { dup DoEncode exch false put } { dup DoEncode exch true put } ifelse } for
+} bd
+/NewFName {
+    dup length dup dup 4 2 roll string cvs
+    3 -1 roll 7 add string dup dup 5 2 roll copy pop (-Latin1) putinterval
+} bd
+/Sf {
+    dup 0 lt /Outline exch def abs 1 sub Fonts dup 3 1 roll length Rem floor
+    dup /FontNumber exch def
+    dup EncodedYet exch get null ne {get NewFName findfont} {
+    dup EncodedYet exch true put get dup findfont dup length dict begin {
+        1 index /FID ne {def} {pop pop} ifelse
+	} forall
+    FontNumber DoEncode exch get true eq {/Encoding ISOLatin1Encoding-bullet200 def} { } ifelse
+    currentdict end exch NewFName exch definefont
+    } ifelse
+    PointSize Cex mul RastersPerPoint mul scalefont dup setfont
+    dup /FontMatrix get /Matrix exch def /FontBBox get aload pop
+    Matrix transform 4 2 roll Matrix transform
+    exch pop add /Text-y exch def pop SetPchSize
+} bd
+%%EndProlog
+%%BeginSetup
+% fixed controlling parameters
+/Landscape true def
+/Region [20.88 11.8008 591.12 780.199] def
+/bw false
+ def
+/RastersPerInch 300 def
+/PointSize 14 def
+/Fonts [
+	/Helvetica
+	/Courier
+	/Times-Roman
+	/Helvetica-Oblique
+	/Helvetica-Bold
+	/Helvetica-BoldOblique
+	/Courier-Oblique
+	/Courier-Bold
+	/Courier-BoldOblique
+	/Times-Italic
+	/Times-Bold
+	/Times-BoldItalic
+	/Symbol
+	/AvantGarde-Book
+	/AvantGarde-BookOblique
+	/AvantGarde-Demi
+	/AvantGarde-DemiOblique
+	/Bookman-Demi
+	/Bookman-DemiItalic
+	/Bookman-Light
+	/Bookman-LightItalic
+	/Helvetica-Narrow
+	/Helvetica-Narrow-Bold
+	/Helvetica-Narrow-BoldOblique
+	/Helvetica-Narrow-Oblique
+	/NewCenturySchlbk-Roman
+	/NewCenturySchlbk-Bold
+	/NewCenturySchlbk-Italic
+	/NewCenturySchlbk-BoldItalic
+	/Palatino-Roman
+	/Palatino-Bold
+	/Palatino-Italic
+	/Palatino-BoldItalic
+	/ZapfChancery-MediumItalic
+	/ZapfDingbats
+] def
+/GColors [
+	[ 0 0 0 ]
+	[ 0 0.372549 0.745098 ]
+	[ 0.745098 0 0.372549 ]
+	[ 0 0.745098 0 ]
+	[ 1 0.501961 0 ]
+	[ 0 0.501961 1 ]
+	[ 0.501961 0.25098 0 ]
+	[ 0.752941 0 0 ]
+	[ 0.721569 1 1 ]
+	[ 1 0.764706 1 ]
+	[ 0.784314 1 0.784314 ]
+	[ 1 0.819608 0.560784 ]
+	[ 0.662745 0.886275 1 ]
+	[ 1 1 0.764706 ]
+	[ 1 0.54902 0.541176 ]
+	[ 0.431373 0.431373 0.392157 ]
+	[ 0.866667 0.901961 0.960784 ]
+	[ 0.858309 0.895425 0.95615 ]
+	[ 0.84995 0.888889 0.951515 ]
+	[ 0.841592 0.882353 0.946881 ]
+	[ 0.833234 0.875817 0.942246 ]
+	[ 0.824876 0.869281 0.937611 ]
+	[ 0.816518 0.862745 0.932977 ]
+	[ 0.80816 0.856209 0.928342 ]
+	[ 0.799802 0.849673 0.923708 ]
+	[ 0.791444 0.843137 0.919073 ]
+	[ 0.783086 0.836601 0.914438 ]
+	[ 0.774728 0.830065 0.909804 ]
+	[ 0.76637 0.823529 0.905169 ]
+	[ 0.758011 0.816993 0.900535 ]
+	[ 0.749653 0.810458 0.8959 ]
+	[ 0.741295 0.803922 0.891266 ]
+	[ 0.732937 0.797386 0.886631 ]
+	[ 0.724579 0.79085 0.881996 ]
+	[ 0.716221 0.784314 0.877362 ]
+	[ 0.707863 0.777778 0.872727 ]
+	[ 0.699505 0.771242 0.868093 ]
+	[ 0.691147 0.764706 0.863458 ]
+	[ 0.682789 0.75817 0.858824 ]
+	[ 0.674431 0.751634 0.854189 ]
+	[ 0.666072 0.745098 0.849554 ]
+	[ 0.657714 0.738562 0.84492 ]
+	[ 0.649356 0.732026 0.840285 ]
+	[ 0.640998 0.72549 0.835651 ]
+	[ 0.63264 0.718954 0.831016 ]
+	[ 0.624282 0.712418 0.826381 ]
+	[ 0.615924 0.705882 0.821747 ]
+	[ 0.607566 0.699346 0.817112 ]
+	[ 0.599208 0.69281 0.812478 ]
+	[ 0.59085 0.686275 0.807843 ]
+	[ 0.582492 0.679739 0.803209 ]
+	[ 0.574134 0.673203 0.798574 ]
+	[ 0.565775 0.666667 0.793939 ]
+	[ 0.557417 0.660131 0.789305 ]
+	[ 0.549059 0.653595 0.78467 ]
+	[ 0.540701 0.647059 0.780036 ]
+	[ 0.532343 0.640523 0.775401 ]
+	[ 0.523985 0.633987 0.770766 ]
+	[ 0.515627 0.627451 0.766132 ]
+	[ 0.507269 0.620915 0.761497 ]
+	[ 0.498911 0.614379 0.756863 ]
+	[ 0.490553 0.607843 0.752228 ]
+	[ 0.482194 0.601307 0.747594 ]
+	[ 0.473836 0.594771 0.742959 ]
+	[ 0.465478 0.588235 0.738324 ]
+	[ 0.45712 0.581699 0.73369 ]
+	[ 0.448762 0.575163 0.729055 ]
+	[ 0.440404 0.568627 0.724421 ]
+	[ 0.432046 0.562092 0.719786 ]
+	[ 0.423688 0.555556 0.715151 ]
+	[ 0.41533 0.54902 0.710517 ]
+	[ 0.406972 0.542484 0.705882 ]
+	[ 0.398614 0.535948 0.701248 ]
+	[ 0.390256 0.529412 0.696613 ]
+	[ 0.381897 0.522876 0.691979 ]
+	[ 0.373539 0.51634 0.687344 ]
+	[ 0.365181 0.509804 0.682709 ]
+	[ 0.356823 0.503268 0.678075 ]
+	[ 0.348465 0.496732 0.67344 ]
+	[ 0.340107 0.490196 0.668806 ]
+	[ 0.331749 0.48366 0.664171 ]
+	[ 0.323391 0.477124 0.659537 ]
+	[ 0.315033 0.470588 0.654902 ]
+	[ 0.306675 0.464052 0.650267 ]
+	[ 0.298317 0.457516 0.645633 ]
+	[ 0.289958 0.45098 0.640998 ]
+	[ 0.2816 0.444444 0.636364 ]
+	[ 0.273242 0.437909 0.631729 ]
+	[ 0.264884 0.431373 0.627094 ]
+	[ 0.256526 0.424837 0.62246 ]
+	[ 0.248168 0.418301 0.617825 ]
+	[ 0.23981 0.411765 0.613191 ]
+	[ 0.231452 0.405229 0.608556 ]
+	[ 0.223094 0.398693 0.603922 ]
+	[ 0.214736 0.392157 0.599287 ]
+	[ 0.206378 0.385621 0.594652 ]
+	[ 0.198019 0.379085 0.590018 ]
+	[ 0.189661 0.372549 0.585383 ]
+	[ 0.181303 0.366013 0.580749 ]
+	[ 0.172945 0.359477 0.576114 ]
+	[ 0.164587 0.352941 0.571479 ]
+	[ 0.156229 0.346405 0.566845 ]
+	[ 0.147871 0.339869 0.56221 ]
+	[ 0.139513 0.333333 0.557576 ]
+	[ 0.131155 0.326797 0.552941 ]
+	[ 0.122797 0.320261 0.548307 ]
+	[ 0.114439 0.313726 0.543672 ]
+	[ 0.10608 0.30719 0.539037 ]
+	[ 0.0977223 0.300654 0.534403 ]
+	[ 0.0893642 0.294118 0.529768 ]
+	[ 0.0810061 0.287582 0.525134 ]
+	[ 0.072648 0.281046 0.520499 ]
+	[ 0.06429 0.27451 0.515865 ]
+	[ 0.0559319 0.267974 0.51123 ]
+	[ 0.0475738 0.261438 0.506595 ]
+	[ 0.0392157 0.254902 0.501961 ]
+] def
+/BackIdx true def
+/BColor [ [ 1 1 1 ] ] def
+/OrigSC /SC load def
+/BackCol -1 def
+/IColors [
+	[ 0.866667 0.901961 0.960784 ]
+	[ 0.858309 0.895425 0.95615 ]
+	[ 0.84995 0.888889 0.951515 ]
+	[ 0.841592 0.882353 0.946881 ]
+	[ 0.833234 0.875817 0.942246 ]
+	[ 0.824876 0.869281 0.937611 ]
+	[ 0.816518 0.862745 0.932977 ]
+	[ 0.80816 0.856209 0.928342 ]
+	[ 0.799802 0.849673 0.923708 ]
+	[ 0.791444 0.843137 0.919073 ]
+	[ 0.783086 0.836601 0.914438 ]
+	[ 0.774728 0.830065 0.909804 ]
+	[ 0.76637 0.823529 0.905169 ]
+	[ 0.758011 0.816993 0.900535 ]
+	[ 0.749653 0.810458 0.8959 ]
+	[ 0.741295 0.803922 0.891266 ]
+	[ 0.732937 0.797386 0.886631 ]
+	[ 0.724579 0.79085 0.881996 ]
+	[ 0.716221 0.784314 0.877362 ]
+	[ 0.707863 0.777778 0.872727 ]
+	[ 0.699505 0.771242 0.868093 ]
+	[ 0.691147 0.764706 0.863458 ]
+	[ 0.682789 0.75817 0.858824 ]
+	[ 0.674431 0.751634 0.854189 ]
+	[ 0.666072 0.745098 0.849554 ]
+	[ 0.657714 0.738562 0.84492 ]
+	[ 0.649356 0.732026 0.840285 ]
+	[ 0.640998 0.72549 0.835651 ]
+	[ 0.63264 0.718954 0.831016 ]
+	[ 0.624282 0.712418 0.826381 ]
+	[ 0.615924 0.705882 0.821747 ]
+	[ 0.607566 0.699346 0.817112 ]
+	[ 0.599208 0.69281 0.812478 ]
+	[ 0.59085 0.686275 0.807843 ]
+	[ 0.582492 0.679739 0.803209 ]
+	[ 0.574134 0.673203 0.798574 ]
+	[ 0.565775 0.666667 0.793939 ]
+	[ 0.557417 0.660131 0.789305 ]
+	[ 0.549059 0.653595 0.78467 ]
+	[ 0.540701 0.647059 0.780036 ]
+	[ 0.532343 0.640523 0.775401 ]
+	[ 0.523985 0.633987 0.770766 ]
+	[ 0.515627 0.627451 0.766132 ]
+	[ 0.507269 0.620915 0.761497 ]
+	[ 0.498911 0.614379 0.756863 ]
+	[ 0.490553 0.607843 0.752228 ]
+	[ 0.482194 0.601307 0.747594 ]
+	[ 0.473836 0.594771 0.742959 ]
+	[ 0.465478 0.588235 0.738324 ]
+	[ 0.45712 0.581699 0.73369 ]
+	[ 0.448762 0.575163 0.729055 ]
+	[ 0.440404 0.568627 0.724421 ]
+	[ 0.432046 0.562092 0.719786 ]
+	[ 0.423688 0.555556 0.715151 ]
+	[ 0.41533 0.54902 0.710517 ]
+	[ 0.406972 0.542484 0.705882 ]
+	[ 0.398614 0.535948 0.701248 ]
+	[ 0.390256 0.529412 0.696613 ]
+	[ 0.381897 0.522876 0.691979 ]
+	[ 0.373539 0.51634 0.687344 ]
+	[ 0.365181 0.509804 0.682709 ]
+	[ 0.356823 0.503268 0.678075 ]
+	[ 0.348465 0.496732 0.67344 ]
+	[ 0.340107 0.490196 0.668806 ]
+	[ 0.331749 0.48366 0.664171 ]
+	[ 0.323391 0.477124 0.659537 ]
+	[ 0.315033 0.470588 0.654902 ]
+	[ 0.306675 0.464052 0.650267 ]
+	[ 0.298317 0.457516 0.645633 ]
+	[ 0.289958 0.45098 0.640998 ]
+	[ 0.2816 0.444444 0.636364 ]
+	[ 0.273242 0.437909 0.631729 ]
+	[ 0.264884 0.431373 0.627094 ]
+	[ 0.256526 0.424837 0.62246 ]
+	[ 0.248168 0.418301 0.617825 ]
+	[ 0.23981 0.411765 0.613191 ]
+	[ 0.231452 0.405229 0.608556 ]
+	[ 0.223094 0.398693 0.603922 ]
+	[ 0.214736 0.392157 0.599287 ]
+	[ 0.206378 0.385621 0.594652 ]
+	[ 0.198019 0.379085 0.590018 ]
+	[ 0.189661 0.372549 0.585383 ]
+	[ 0.181303 0.366013 0.580749 ]
+	[ 0.172945 0.359477 0.576114 ]
+	[ 0.164587 0.352941 0.571479 ]
+	[ 0.156229 0.346405 0.566845 ]
+	[ 0.147871 0.339869 0.56221 ]
+	[ 0.139513 0.333333 0.557576 ]
+	[ 0.131155 0.326797 0.552941 ]
+	[ 0.122797 0.320261 0.548307 ]
+	[ 0.114439 0.313726 0.543672 ]
+	[ 0.10608 0.30719 0.539037 ]
+	[ 0.0977223 0.300654 0.534403 ]
+	[ 0.0893642 0.294118 0.529768 ]
+	[ 0.0810061 0.287582 0.525134 ]
+	[ 0.072648 0.281046 0.520499 ]
+	[ 0.06429 0.27451 0.515865 ]
+	[ 0.0559319 0.267974 0.51123 ]
+	[ 0.0475738 0.261438 0.506595 ]
+	[ 0.0392157 0.254902 0.501961 ]
+] def
+/Colors GColors def
+% bullet is at 200 (octal) in our modified Latin1 encoding.
+/IBu {Pch 0 8#200 put SetPchSize} def
+/Bu {Pc} def
+
+% all initialization action here
+Iv I
+currentdict /Ic known {Ic} if
+currentdict /If known {If} if
+
+
+%%EndSetup
+
+
+%%Page: 1 1
+%%PageOrientation: Landscape
+/SaveBackCol BackCol def
+/SaveBackIdx BackIdx def
+/SaveBColor  BColor  def
+/BackCol 1 def
+/BackIdx false def
+/BColor [ [ 1 1 1 ] ] def
+A
+/BackIdx SaveBackIdx def
+/BColor  SaveBColor  def
+/BackCol SaveBackCol def
+1 St
+1 Sw
+/SC {pop 0 0 0 setrgbcolor} def 1 SC
+0 Sr
+42 Sp
+1.7 Sx
+0.111505 0.986882 0.150253 0.967593 So
+0 1 0 1 Sg
+0 Sh
+1 Sd
+%%IncludeResource: font Helvetica
+1 Sf
+(time) 1757 88 0.5 T
+90 Sr
+90 Sh
+(relative volume) 87 1328 0.5 T
+0 Sr
+0 1 0 1 So
+0 Sh
+2802 1942 356 357 c
+0.111505 0.986882 0.150253 0.967593 So
+567 357 m
+39 z
+785 357 m
+39 z
+1000 357 m
+39 z
+1215 357 m
+39 z
+1430 357 m
+39 z
+1649 357 m
+39 z
+1864 357 m
+39 z
+2079 357 m
+39 z
+2294 357 m
+39 z
+2513 357 m
+39 z
+2728 357 m
+39 z
+2943 357 m
+39 z
+E
+567 357 m
+2376 x
+E
+( 4h) 567 227 0.5 T
+( 8h) 1000 227 0.5 T
+( 12h) 1430 227 0.5 T
+( 16h) 1864 227 0.5 T
+( 20h) 2294 227 0.5 T
+( 0h) 2728 227 0.5 T
+2 Sw
+/SC {pop 0 0.422222 0.844444 setrgbcolor} def 1 SC
+0 Sd
+B
+459 734 m
+4 5 h
+11 z
+4 1 j
+2 y
+4 12 j
+11 y
+3 x
+8 z
+4 3 j
+8 z
+18 y
+4 x
+9 z
+4 16 j
+7 y
+4 6 h
+4 z
+4 2 j
+9 y
+3 10 j
+9 z
+4 7 h
+11 z
+4 4 h
+7 z
+4 y
+4 2 h
+15 y
+4 8 j
+15 z
+4 6 h
+6 y
+4 5 h
+9 z
+3 2 j
+9 y
+4 1 j
+19 z
+4 7 h
+13 z
+4 15 h
+9 z
+2 z
+4 15 j
+9 z
+4 4 h
+2 y
+3 4 h
+7 z
+4 4 j
+4 y
+4 2 j
+14 y
+4 5 h
+11 z
+4 4 j
+14 z
+10 y
+4 3 j
+6 z
+3 12 h
+5 z
+4 14 h
+12 z
+4 2 h
+17 z
+4 7 h
+4 y
+4 12 j
+12 y
+4 8 j
+5 z
+3 14 h
+3 z
+7 z
+4 3 h
+4 z
+4 6 h
+4 y
+4 1 j
+2 y
+4 6 h
+11 z
+4 5 j
+10 y
+4 9 h
+1 z
+3 14 j
+3 z
+6 z
+4 4 j
+6 y
+4 7 j
+2 y
+4 14 h
+5 z
+4 3 h
+5 z
+4 9 h
+4 y
+3 10 j
+9 y
+4 2 j
+5 y
+4 22 h
+5 y
+9 z
+4 8 h
+19 z
+4 6 j
+4 y
+4 5 h
+1 z
+3 4 h
+3 y
+4 1 j
+12 z
+4 x
+18 y
+4 2 j
+8 y
+4 z
+4 4 h
+1 y
+4 8 j
+8 y
+3 8 j
+14 y
+4 9 h
+10 z
+4 21 j
+18 y
+4 10 j
+6 y
+4 20 j
+6 y
+4 4 h
+8 z
+3 12 h
+2 z
+4 1 j
+2 z
+4 26 h
+5 y
+4 5 j
+25 y
+4 3 j
+3 z
+4 1 j
+3 z
+4 13 j
+4 z
+1 y
+3 4 j
+4 y
+4 14 h
+7 z
+4 8 j
+19 y
+4 2 h
+6 z
+4 9 j
+18 y
+4 16 h
+5 y
+3 7 h
+13 z
+4 21 h
+1 y
+6 y
+4 27 j
+1 z
+4 31 j
+13 z
+4 34 h
+5 y
+4 12 h
+17 z
+3 34 h
+12 y
+4 20 h
+21 y
+4 33 j
+14 y
+4 24 h
+1 z
+4 19 h
+34 z
+4 2 h
+3 6 j
+20 y
+4 1 j
+4 y
+4 7 j
+15 y
+4 13 j
+18 y
+4 2 h
+5 y
+12 y
+4 7 h
+14 z
+4 4 h
+1 y
+3 4 h
+8 y
+4 4 j
+35 y
+4 5 j
+6 z
+4 20 j
+3 y
+4 29 j
+15 y
+3 z
+4 10 h
+5 y
+3 6 h
+14 y
+4 1 h
+7 z
+4 12 j
+9 y
+4 17 h
+18 z
+4 32 h
+4 y
+4 7 h
+6 z
+3 3 j
+16 y
+3 y
+4 1 h
+14 z
+4 3 h
+7 z
+4 11 h
+30 y
+4 13 j
+4 8 j
+2 z
+3 2 h
+13 y
+4 20 j
+7 z
+13 y
+4 11 h
+12 z
+4 13 j
+14 y
+4 17 j
+8 y
+4 27 h
+18 y
+3 25 j
+12 y
+4 13 j
+18 y
+4 2 h
+4 6 j
+2 y
+5 y
+4 7 h
+22 y
+4 18 j
+67 y
+4 14 j
+8 y
+3 7 h
+7 z
+4 24 h
+1 z
+4 3 j
+16 y
+4 4 h
+20 z
+18 z
+4 12 h
+12 y
+4 18 h
+15 z
+3 16 j
+3 z
+4 x
+12 y
+4 15 h
+1 y
+4 23 h
+13 z
+4 33 h
+11 y
+4 9 j
+5 z
+3 8 h
+64 y
+4 25 h
+11 y
+4 26 j
+7 y
+4 3 j
+14 z
+4 27 h
+13 y
+4 16 j
+26 z
+3 28 h
+6 y
+13 z
+4 16 h
+2 z
+4 13 j
+25 y
+4 13 j
+7 z
+4 14 h
+28 y
+4 11 h
+35 z
+4 x
+10 y
+3 22 j
+25 y
+4 15 j
+42 y
+15 y
+4 x
+1 y
+4 26 j
+14 z
+4 11 j
+14 z
+4 15 h
+36 y
+3 9 h
+6 z
+4 31 h
+50 z
+4 3 j
+12 z
+12 y
+4 8 j
+40 y
+4 33 j
+17 z
+4 2 h
+17 z
+3 8 j
+5 y
+4 9 h
+16 y
+4 39 h
+20 y
+4 35 j
+34 y
+4 25 h
+25 y
+13 z
+4 67 h
+17 z
+3 1 h
+13 z
+4 26 h
+44 y
+4 40 j
+47 z
+4 14 h
+31 y
+4 11 h
+40 z
+4 9 j
+48 z
+23 y
+3 25 j
+52 y
+4 15 h
+26 y
+4 54 j
+21 z
+4 34 h
+28 z
+4 17 j
+17 y
+4 35 h
+6 y
+4 23 h
+16 z
+3 25 j
+44 z
+45 y
+4 21 h
+14 z
+4 30 j
+4 27 j
+34 z
+4 18 j
+73 y
+4 22 h
+23 y
+3 30 h
+6 z
+4 33 j
+6 y
+4 16 h
+1 y
+4 4 j
+47 y
+4 7 j
+25 y
+4 38 j
+10 z
+3 41 h
+28 y
+4 22 h
+57 z
+4 8 h
+25 z
+4 9 h
+42 z
+5 y
+4 12 h
+11 z
+4 7 h
+39 y
+3 13 j
+45 y
+4 27 j
+42 z
+4 2 h
+9 z
+4 28 h
+2 z
+4 36 h
+50 z
+32 z
+4 6 j
+39 y
+4 19 j
+33 y
+3 17 j
+12 y
+4 38 j
+8 z
+4 17 h
+9 y
+4 9 j
+15 z
+4 13 j
+20 y
+4 x
+65 z
+4 y
+3 21 h
+38 y
+4 33 h
+21 z
+4 15 j
+39 z
+4 9 h
+6 z
+4 13 h
+14 y
+4 28 h
+6 y
+3 2 h
+15 y
+36 y
+4 25 j
+10 z
+4 12 j
+14 y
+4 25 j
+8 y
+4 57 h
+44 z
+4 15 j
+25 y
+3 25 j
+14 y
+4 9 j
+11 z
+4 17 j
+13 z
+33 y
+4 9 j
+16 z
+4 11 j
+27 y
+4 10 h
+16 y
+3 18 j
+35 y
+4 30 j
+65 z
+4 24 h
+44 y
+4 2 h
+53 y
+31 z
+4 5 j
+18 y
+4 29 j
+21 z
+4 48 h
+17 y
+3 16 h
+24 y
+4 30 j
+14 z
+4 34 j
+44 y
+4 10 h
+22 y
+4 12 j
+21 y
+3 y
+4 8 j
+54 z
+3 71 h
+3 y
+4 1 h
+6 y
+4 2 h
+17 z
+4 11 j
+4 y
+4 22 h
+3 y
+4 21 h
+28 z
+4 z
+3 48 h
+34 z
+4 58 j
+12 y
+4 10 h
+5 z
+4 32 h
+9 z
+4 11 j
+11 z
+4 23 h
+5 z
+3 29 h
+10 z
+4 10 h
+19 z
+26 z
+4 11 j
+12 z
+4 55 h
+22 z
+4 8 j
+49 y
+4 22 j
+8 y
+4 1 h
+30 y
+3 9 j
+26 y
+4 30 j
+8 z
+20 y
+4 22 j
+17 z
+4 8 h
+12 z
+4 9 h
+31 y
+4 7 j
+41 z
+3 54 h
+38 y
+4 44 j
+63 y
+4 9 j
+15 z
+4 28 j
+33 y
+3 y
+4 9 j
+19 z
+4 44 h
+42 z
+3 1 j
+4 y
+4 4 j
+38 y
+4 9 j
+24 z
+4 43 j
+9 z
+4 23 j
+26 y
+1 y
+4 8 h
+10 y
+3 2 h
+29 z
+4 6 j
+12 y
+4 42 h
+10 z
+4 2 h
+37 z
+4 2 h
+33 y
+4 50 j
+18 y
+3 5 h
+4 z
+15 z
+4 8 j
+11 y
+4 7 h
+10 z
+4 25 j
+3 z
+4 19 h
+2 y
+4 19 h
+61 z
+4 3 h
+18 y
+3 28 h
+29 z
+38 y
+4 24 h
+55 z
+4 19 h
+40 y
+4 21 j
+45 y
+4 31 j
+29 z
+4 18 h
+15 y
+3 25 h
+20 z
+4 9 h
+28 y
+4 x
+10 y
+13 y
+4 32 j
+70 y
+4 65 j
+67 z
+4 3 h
+57 y
+3 4 h
+20 z
+4 33 h
+4 17 j
+14 z
+4 23 j
+20 y
+39 y
+4 62 j
+21 y
+4 17 h
+48 z
+3 7 h
+3 z
+4 53 h
+16 z
+4 17 j
+14 y
+4 58 j
+43 y
+4 13 j
+44 y
+4 17 j
+31 z
+20 z
+4 18 h
+12 y
+3 1 j
+20 y
+4 45 h
+4 38 j
+19 y
+4 27 h
+21 z
+4 38 j
+28 y
+4 7 j
+42 y
+27 z
+3 38 h
+36 z
+4 20 h
+35 z
+4 11 j
+67 y
+4 7 j
+21 z
+4 27 j
+31 y
+4 64 j
+58 y
+3 4 h
+52 z
+4 17 h
+17 y
+11 y
+4 4 j
+16 z
+4 38 h
+46 z
+4 4 h
+1 z
+4 8 j
+12 y
+3 2 h
+10 z
+4 4 j
+43 y
+4 28 h
+45 z
+37 y
+4 45 h
+10 z
+4 30 h
+23 y
+4 44 h
+7 z
+3 22 j
+7 z
+4 12 j
+1 y
+4 4 j
+9 z
+4 x
+10 z
+4 27 h
+46 y
+34 z
+4 35 j
+6 y
+4 20 j
+1 y
+3 12 h
+30 z
+4 59 h
+12 y
+4 52 h
+42 z
+4 4 h
+25 y
+4 16 j
+10 y
+38 z
+4 12 j
+1 y
+3 18 h
+29 y
+4 54 j
+5 z
+4 2 j
+16 y
+4 3 j
+5 z
+4 24 j
+26 z
+4 26 h
+4 y
+3 13 h
+4 y
+23 y
+4 16 j
+60 y
+4 9 h
+7 y
+4 48 j
+35 y
+4 3 j
+6 z
+4 26 j
+38 y
+3 16 h
+2 y
+4 39 j
+18 y
+47 z
+4 7 h
+13 z
+4 23 h
+42 y
+4 29 h
+5 y
+4 19 h
+10 z
+4 56 j
+24 z
+3 x
+27 z
+4 8 h
+10 z
+4 44 h
+19 z
+83 z
+4 43 h
+33 y
+4 54 j
+35 y
+4 48 j
+1 z
+3 60 h
+12 z
+4 9 h
+30 z
+4 85 h
+35 z
+4 88 j
+44 y
+18 z
+4 4 h
+14 y
+4 19 h
+45 y
+3 4 h
+13 y
+4 31 j
+20 z
+4 7 j
+10 y
+4 29 j
+3 y
+4 11 h
+46 z
+4 7 h
+28 y
+4 y
+3 7 h
+20 y
+4 25 j
+46 z
+4 46 j
+16 y
+4 30 h
+16 z
+4 1 j
+1 y
+4 3 h
+67 y
+3 5 h
+6 z
+66 z
+4 25 h
+15 y
+4 2 h
+14 y
+4 56 j
+50 y
+4 53 h
+88 z
+4 1 j
+14 z
+4 15 h
+3 y
+3 21 j
+39 y
+4 21 h
+24 z
+14 z
+4 29 h
+16 y
+4 8 h
+8 z
+4 23 h
+18 z
+4 21 j
+37 y
+3 31 j
+35 y
+4 18 h
+28 y
+4 36 j
+7 z
+32 y
+4 28 h
+1 z
+4 35 h
+43 z
+4 14 h
+19 z
+3 4 h
+42 y
+4 3 h
+82 z
+4 1 h
+26 z
+4 6 h
+62 y
+4 10 j
+12 z
+11 z
+4 8 h
+31 y
+3 37 j
+9 y
+4 58 h
+21 z
+4 11 j
+13 z
+4 5 j
+8 y
+4 7 h
+37 z
+4 10 h
+21 y
+26 z
+4 2 h
+25 z
+3 17 h
+24 z
+4 14 j
+36 z
+4 37 h
+18 y
+4 8 j
+42 y
+4 25 h
+19 z
+4 66 j
+5 z
+3 23 j
+3 y
+27 y
+4 5 h
+11 z
+4 19 h
+38 z
+4 40 j
+52 y
+4 20 h
+17 z
+4 11 h
+12 y
+3 25 h
+9 z
+4 5 h
+26 y
+31 z
+4 5 h
+9 z
+4 45 h
+2 y
+4 10 j
+7 z
+4 36 h
+27 y
+3 7 j
+43 z
+4 24 h
+12 y
+4 x
+9 z
+4 26 j
+16 y
+53 z
+4 78 h
+78 z
+4 6 j
+31 y
+3 37 j
+41 z
+4 20 h
+21 y
+4 47 h
+60 z
+4 11 h
+1 y
+4 24 h
+14 z
+33 z
+4 4 h
+6 y
+4 1 j
+5 y
+3 25 h
+11 y
+4 18 h
+16 y
+4 14 j
+51 z
+4 8 j
+3 y
+4 48 h
+21 z
+4 44 h
+25 y
+46 z
+3 2 j
+4 7 j
+42 y
+4 38 h
+19 z
+4 20 j
+25 z
+4 76 j
+66 y
+4 10 j
+1 z
+3 13 h
+55 y
+2 y
+4 30 j
+38 y
+4 7 h
+29 y
+4 16 j
+28 z
+4 41 j
+18 y
+4 26 j
+38 y
+3 30 h
+26 z
+4 3 j
+24 y
+4 12 j
+23 y
+21 y
+4 24 h
+62 z
+4 43 j
+36 z
+4 70 h
+11 z
+4 36 j
+18 z
+3 21 j
+37 y
+4 11 j
+17 z
+4 7 h
+48 y
+4 39 j
+54 z
+4 48 j
+22 y
+4 4 j
+56 y
+3 18 j
+19 z
+4 28 j
+26 y
+4 45 h
+1 y
+4 61 j
+53 y
+4 29 h
+8 z
+63 z
+4 21 j
+24 y
+3 9 h
+20 z
+4 8 j
+7 z
+4 15 h
+12 y
+4 31 j
+6 z
+4 29 h
+45 y
+4 10 h
+47 z
+31 z
+3 33 j
+2 y
+4 1 j
+27 y
+4 56 j
+15 y
+4 10 j
+26 y
+4 31 j
+26 z
+4 67 h
+50 z
+3 28 j
+4 31 j
+35 z
+8 z
+4 7 h
+4 y
+4 19 h
+22 z
+4 5 j
+16 y
+4 26 h
+31 z
+4 28 h
+29 z
+3 22 h
+10 z
+4 4 j
+15 y
+27 y
+4 27 j
+47 y
+4 6 h
+46 z
+4 52 j
+7 y
+4 8 h
+7 z
+3 15 j
+33 z
+4 4 j
+13 y
+4 18 h
+25 z
+4 20 h
+33 z
+51 z
+4 x
+20 y
+4 7 j
+3 z
+3 1 h
+46 y
+4 51 j
+2 z
+4 10 h
+4 26 h
+9 z
+4 21 j
+23 y
+32 z
+4 43 h
+11 z
+3 31 j
+49 z
+4 11 j
+20 y
+4 18 h
+6 z
+4 22 h
+6 z
+4 19 h
+15 z
+4 2 j
+37 z
+4 15 h
+19 z
+21 z
+3 66 h
+14 z
+4 4 h
+11 z
+4 8 j
+17 y
+4 29 j
+22 z
+4 6 j
+5 y
+4 10 h
+28 y
+3 18 h
+54 z
+36 y
+4 24 h
+18 y
+4 x
+43 z
+4 14 j
+15 y
+4 4 h
+57 z
+4 13 h
+22 z
+3 22 j
+27 y
+4 43 j
+23 y
+4 8 h
+29 z
+12 z
+4 15 j
+6 z
+4 17 h
+10 z
+4 19 h
+55 z
+3 27 j
+44 y
+4 16 j
+61 z
+4 46 h
+12 z
+4 x
+24 z
+12 y
+4 26 h
+4 34 h
+5 y
+3 10 j
+1 z
+4 7 h
+10 z
+4 5 j
+35 z
+4 5 h
+25 z
+4 9 h
+3 z
+4 4 j
+40 z
+34 z
+4 1 h
+2 z
+3 10 h
+26 y
+4 10 j
+19 z
+4 6 j
+4 y
+4 22 h
+23 y
+4 11 h
+25 z
+4 10 j
+33 z
+3 1 j
+26 z
+4 13 h
+3 y
+4 8 j
+22 z
+4 22 h
+4 7 h
+18 y
+4 10 h
+3 6 j
+13 z
+4 3 h
+46 z
+16 z
+4 24 h
+4 5 h
+3 z
+4 31 h
+24 y
+4 30 j
+10 z
+3 4 h
+27 z
+4 8 j
+48 y
+4 17 j
+17 z
+10 z
+4 3 h
+7 y
+4 35 h
+17 z
+4 x
+12 y
+3 12 j
+9 z
+4 27 j
+18 y
+4 6 j
+10 z
+4 2 j
+16 y
+4 5 j
+13 y
+5 z
+4 8 h
+8 z
+4 8 j
+19 z
+3 17 j
+10 z
+4 12 j
+23 z
+4 4 h
+10 z
+4 20 h
+2 z
+4 33 h
+6 z
+4 16 j
+6 y
+3 29 j
+46 y
+4 40 h
+10 z
+4 12 j
+14 y
+4 5 h
+20 z
+4 36 j
+1 y
+4 7 h
+12 y
+3 8 h
+3 z
+25 z
+4 31 j
+25 y
+4 29 h
+1 z
+4 6 j
+5 z
+4 10 h
+44 z
+4 2 j
+7 z
+3 20 j
+2 z
+4 3 j
+21 z
+13 y
+4 11 h
+4 9 h
+23 z
+4 15 h
+2 z
+4 3 j
+1 y
+4 12 j
+26 z
+3 43 j
+2 y
+4 20 h
+3 y
+4 23 j
+15 z
+8 y
+4 8 j
+16 z
+4 18 h
+2 z
+4 27 j
+18 z
+3 5 h
+18 y
+4 3 j
+5 y
+4 19 h
+32 z
+4 5 j
+12 z
+23 z
+4 9 h
+7 z
+4 9 j
+21 z
+3 4 j
+7 z
+4 14 h
+21 y
+4 9 h
+30 z
+4 7 j
+5 z
+4 13 h
+9 z
+4 2 j
+16 z
+17 y
+3 10 h
+8 y
+4 17 j
+11 z
+4 3 j
+24 y
+4 7 h
+2 z
+4 4 h
+7 z
+4 6 j
+2 z
+3 15 h
+1 z
+24 z
+4 14 j
+5 z
+4 14 j
+2 z
+4 17 h
+19 y
+4 3 j
+1 y
+4 6 h
+10 z
+4 9 j
+11 y
+3 9 j
+10 z
+4 6 h
+32 z
+29 y
+4 19 j
+9 z
+4 2 j
+8 y
+4 15 j
+3 z
+4 19 h
+36 y
+3 12 j
+23 z
+4 5 j
+15 y
+4 20 j
+3 y
+12 z
+4 x
+6 y
+4 14 j
+5 y
+4 3 j
+1 y
+3 4 h
+E
+1 Sp
+2.57143 Sx
+B
+448 765 m
+38 x
+15 18 j
+36 z
+15 18 l
+38 w
+20 18 k
+36 y
+20 18 h
+E
+B
+736 742 m
+38 x
+15 18 j
+36 z
+15 18 l
+38 w
+20 18 k
+36 y
+20 18 h
+E
+B
+1020 1288 m
+38 x
+15 18 j
+36 z
+15 18 l
+38 w
+20 18 k
+36 y
+20 18 h
+E
+B
+1308 1497 m
+38 x
+15 18 j
+36 z
+15 18 l
+38 w
+20 18 k
+36 y
+20 18 h
+E
+B
+1592 1616 m
+38 x
+15 18 j
+36 z
+15 18 l
+38 w
+20 18 k
+36 y
+20 18 h
+E
+B
+1880 1867 m
+38 x
+15 18 j
+36 z
+15 18 l
+38 w
+20 18 k
+36 y
+20 18 h
+E
+B
+2164 1849 m
+38 x
+15 18 j
+36 z
+15 18 l
+38 w
+19 18 k
+36 y
+19 18 h
+E
+B
+2452 1650 m
+38 x
+15 18 j
+36 z
+15 18 l
+38 w
+20 18 k
+36 y
+20 18 h
+E
+B
+2736 1095 m
+38 x
+16 18 j
+36 z
+16 18 l
+38 w
+19 18 k
+36 y
+19 18 h
+E
+B
+3024 719 m
+38 x
+15 18 j
+36 z
+15 18 l
+38 w
+19 18 k
+36 y
+19 18 h
+E
+/SC {pop 0.844444 0 0.422222 setrgbcolor} def 1 SC
+42 Sp
+1.7 Sx
+B
+459 526 m
+4 2 h
+2 z
+4 2 h
+1 z
+4 x
+1 y
+3 x
+1 z
+4 1 h
+2 y
+1 z
+4 4 j
+4 1 h
+1 z
+4 1 h
+2 y
+4 2 j
+1 y
+3 x
+4 x
+3 z
+4 x
+1 y
+4 1 j
+4 2 h
+1 y
+4 2 h
+3 z
+4 1 h
+3 x
+1 y
+4 1 j
+2 z
+4 1 j
+4 1 h
+1 y
+4 1 j
+4 z
+4 2 h
+1 y
+3 x
+1 z
+4 x
+4 1 j
+2 y
+4 1 j
+4 x
+1 z
+2 z
+4 2 h
+1 y
+3 2 h
+1 z
+4 1 h
+4 z
+4 x
+2 z
+4 1 h
+1 y
+4 x
+4 x
+3 3 h
+1 y
+1 y
+4 1 j
+1 z
+4 x
+2 y
+4 1 j
+4 2 j
+4 2 h
+1 z
+4 3 j
+1 y
+3 1 j
+1 z
+1 y
+4 1 j
+4 3 h
+4 x
+1 z
+4 2 j
+1 y
+4 1 h
+1 z
+3 x
+1 z
+4 x
+4 3 h
+4 1 h
+1 z
+4 2 j
+1 y
+4 x
+1 y
+3 x
+1 y
+4 x
+2 z
+4 x
+1 y
+4 1 h
+2 z
+4 2 h
+4 1 h
+2 y
+3 x
+2 z
+4 1 j
+4 1 j
+2 y
+4 x
+1 z
+4 1 j
+1 y
+4 2 h
+2 z
+3 1 j
+1 y
+4 1 j
+4 x
+2 z
+4 1 h
+2 y
+4 x
+1 y
+4 x
+4 x
+2 z
+2 y
+3 x
+1 y
+4 1 h
+1 y
+4 x
+2 y
+4 3 j
+2 z
+4 2 j
+2 y
+4 1 j
+1 z
+3 2 h
+2 y
+4 1 h
+3 y
+1 z
+4 1 j
+1 z
+4 3 j
+2 z
+4 2 h
+1 y
+4 2 h
+1 y
+3 1 j
+1 z
+4 3 h
+4 x
+1 z
+1 y
+4 1 h
+1 y
+4 1 h
+1 z
+4 2 h
+1 y
+3 1 h
+2 y
+4 3 j
+4 x
+3 y
+4 1 h
+1 z
+4 1 j
+4 1 j
+4 1 h
+2 y
+3 1 h
+2 y
+4 1 j
+4 2 h
+3 z
+4 1 j
+2 y
+4 x
+1 y
+4 x
+3 y
+3 3 j
+1 y
+4 1 h
+4 z
+4 1 h
+3 y
+4 2 h
+1 z
+4 2 h
+1 z
+4 1 j
+3 2 h
+2 y
+4 3 j
+6 y
+4 4 h
+4 1 h
+4 x
+1 y
+4 3 j
+1 y
+3 2 h
+4 3 j
+1 y
+3 y
+4 1 h
+4 5 h
+4 3 j
+3 y
+4 2 j
+1 y
+3 1 j
+1 y
+4 1 h
+1 y
+4 1 h
+4 2 h
+1 z
+1 y
+4 1 h
+1 y
+4 1 h
+4 y
+4 2 j
+3 y
+3 5 j
+4 4 h
+3 z
+4 4 h
+2 y
+4 1 h
+2 y
+3 z
+4 2 h
+2 y
+4 1 j
+2 z
+3 1 j
+2 y
+4 4 h
+3 z
+4 3 h
+1 z
+4 2 h
+2 z
+4 x
+3 y
+4 1 j
+1 z
+1 y
+3 1 h
+5 y
+4 x
+2 y
+4 1 j
+1 z
+4 1 h
+1 z
+4 1 j
+3 y
+4 3 h
+2 y
+3 3 j
+2 z
+4 2 h
+1 z
+4 x
+2 z
+4 2 h
+1 y
+4 3 h
+4 x
+1 y
+4 4 j
+4 y
+3 1 j
+3 z
+4 5 h
+5 y
+4 3 h
+2 y
+4 2 j
+3 y
+4 2 j
+2 z
+4 2 h
+2 y
+3 1 j
+4 1 h
+2 z
+4 x
+1 y
+4 y
+4 x
+2 z
+4 2 h
+2 z
+4 4 j
+3 2 j
+1 y
+4 5 h
+2 y
+4 1 h
+4 2 j
+5 y
+4 1 j
+4 y
+1 y
+4 5 h
+1 z
+3 3 j
+1 y
+4 3 h
+2 z
+4 1 h
+3 y
+4 3 h
+3 z
+4 1 j
+3 z
+4 x
+1 z
+2 y
+3 3 j
+6 y
+4 x
+5 y
+4 10 j
+3 y
+4 3 j
+6 y
+4 2 j
+1 y
+4 1 j
+2 y
+4 2 j
+2 y
+3 5 j
+1 z
+5 y
+4 1 h
+3 z
+4 1 j
+3 z
+4 1 h
+2 z
+4 2 h
+4 y
+4 3 j
+1 y
+3 2 h
+4 1 h
+1 z
+4 5 h
+2 y
+4 3 j
+9 y
+4 3 j
+2 z
+4 4 j
+2 z
+3 5 h
+4 1 h
+4 z
+4 5 h
+1 y
+4 1 j
+3 z
+2 y
+4 4 j
+1 y
+4 2 j
+4 y
+3 2 h
+2 z
+4 2 j
+1 z
+4 2 j
+1 z
+4 1 h
+3 y
+4 3 h
+6 z
+1 y
+4 2 h
+2 y
+4 1 j
+1 z
+3 x
+2 y
+4 3 j
+5 z
+4 7 h
+1 y
+4 2 j
+1 z
+4 1 j
+2 y
+4 6 j
+8 y
+3 x
+3 z
+4 x
+4 x
+4 z
+4 x
+3 z
+4 2 h
+2 y
+4 2 j
+5 y
+3 5 j
+1 z
+2 y
+4 1 h
+1 y
+4 4 h
+1 y
+4 7 j
+1 z
+4 5 h
+2 z
+4 4 h
+2 z
+3 4 j
+3 z
+4 2 j
+1 y
+4 1 j
+3 y
+3 y
+4 4 h
+2 z
+4 5 j
+1 y
+4 x
+2 z
+3 3 h
+4 1 h
+3 z
+4 x
+3 y
+4 3 h
+3 y
+3 y
+4 2 j
+1 z
+4 1 j
+4 2 h
+2 z
+3 2 h
+1 y
+4 1 j
+3 z
+4 x
+4 1 h
+1 y
+4 2 h
+2 z
+4 8 h
+2 z
+3 1 h
+4 z
+4 2 j
+4 y
+4 3 j
+3 z
+4 1 j
+3 z
+4 x
+4 2 h
+1 y
+1 z
+3 5 h
+4 z
+4 1 j
+2 z
+4 3 h
+4 6 h
+4 6 j
+1 y
+4 1 j
+2 y
+3 5 h
+4 z
+4 3 h
+2 z
+1 y
+4 2 j
+2 z
+4 2 h
+4 z
+4 2 j
+2 y
+4 2 h
+1 z
+4 1 h
+7 y
+3 1 h
+3 z
+4 3 j
+1 z
+4 y
+4 3 j
+3 z
+4 1 j
+1 z
+4 3 h
+1 y
+4 2 h
+3 3 h
+3 y
+4 2 j
+3 y
+4 2 j
+1 y
+4 x
+1 y
+1 y
+4 x
+3 z
+4 2 j
+1 y
+3 2 h
+2 z
+4 1 h
+1 y
+4 2 j
+2 z
+4 x
+2 z
+4 1 h
+2 y
+2 y
+4 1 j
+5 z
+3 4 h
+4 y
+4 6 h
+2 y
+4 3 j
+1 z
+4 1 j
+1 y
+4 1 h
+4 y
+4 3 j
+1 z
+3 5 h
+2 z
+3 y
+4 x
+1 z
+4 3 h
+2 z
+4 x
+4 4 j
+1 y
+4 3 h
+2 z
+4 2 h
+1 z
+3 2 j
+4 y
+5 y
+4 3 j
+1 y
+4 2 j
+1 z
+4 1 h
+2 y
+4 4 j
+2 y
+4 2 h
+3 5 h
+4 1 j
+6 y
+4 2 j
+1 z
+4 1 h
+1 y
+4 x
+4 z
+4 1 j
+2 y
+3 2 h
+1 y
+4 9 h
+6 z
+4 8 j
+4 4 j
+4 y
+4 4 j
+3 y
+4 x
+1 y
+3 x
+4 6 h
+1 z
+4 1 h
+2 z
+4 7 j
+3 y
+4 4 j
+6 y
+4 4 h
+2 z
+4 2 h
+4 z
+3 x
+4 1 h
+1 y
+4 1 h
+4 y
+4 x
+7 z
+4 2 j
+1 y
+4 5 h
+3 y
+2 z
+3 1 j
+4 x
+3 z
+4 2 h
+4 y
+4 2 j
+1 y
+4 5 j
+2 y
+4 2 j
+4 y
+3 5 j
+1 z
+4 7 h
+1 y
+1 y
+4 2 h
+3 y
+4 3 j
+4 z
+4 1 h
+2 z
+4 3 j
+1 z
+3 6 j
+1 y
+4 2 h
+3 z
+4 8 h
+2 y
+1 y
+4 3 h
+4 3 h
+7 y
+4 1 h
+2 y
+3 4 j
+2 z
+4 2 h
+8 z
+4 3 h
+2 y
+4 1 j
+3 z
+4 3 h
+1 y
+1 y
+4 3 h
+2 y
+4 4 h
+3 x
+2 z
+4 5 h
+3 z
+4 x
+4 z
+4 1 h
+5 y
+4 3 j
+1 y
+5 z
+4 1 j
+3 z
+3 x
+1 y
+4 1 j
+4 y
+4 1 j
+2 z
+4 1 j
+4 y
+4 2 j
+5 z
+4 x
+1 y
+3 5 h
+4 y
+2 z
+4 3 h
+7 y
+4 4 j
+1 y
+4 4 j
+1 y
+4 2 j
+3 z
+4 1 j
+3 1 j
+5 y
+4 x
+1 y
+3 y
+4 2 j
+5 z
+4 4 h
+4 3 h
+5 y
+4 3 h
+3 z
+4 4 j
+2 z
+3 2 h
+1 y
+4 4 j
+4 2 h
+3 z
+4 3 h
+4 3 j
+4 1 j
+5 z
+3 3 h
+1 z
+4 1 h
+5 y
+4 x
+4 1 j
+2 z
+1 y
+4 1 h
+5 y
+4 2 h
+2 z
+3 1 j
+3 z
+4 1 h
+4 x
+1 y
+4 6 h
+4 y
+4 x
+6 z
+4 5 j
+3 y
+4 z
+3 4 h
+4 1 j
+4 8 j
+4 z
+4 4 h
+4 2 h
+2 y
+4 1 h
+1 y
+3 2 h
+6 z
+1 z
+4 3 j
+3 y
+4 2 h
+3 y
+4 4 j
+4 y
+4 6 j
+4 1 j
+2 z
+4 1 h
+3 y
+3 5 j
+3 z
+4 x
+1 z
+4 5 h
+3 z
+4 4 j
+3 y
+4 9 h
+2 z
+4 1 j
+5 z
+3 2 j
+7 y
+4 6 h
+4 z
+4 1 h
+3 z
+2 y
+4 1 j
+4 y
+4 3 j
+1 y
+4 4 h
+1 y
+3 4 h
+4 1 j
+2 z
+4 1 h
+1 z
+4 1 j
+3 y
+4 1 j
+9 z
+5 z
+4 6 h
+1 y
+3 2 j
+6 z
+4 9 h
+4 2 h
+2 z
+4 3 h
+2 y
+4 2 j
+2 z
+4 x
+5 y
+4 z
+4 x
+1 z
+3 1 j
+2 z
+4 x
+1 y
+4 1 h
+1 y
+4 2 h
+3 y
+4 x
+1 z
+4 1 j
+1 y
+3 4 j
+5 y
+1 z
+4 5 h
+2 z
+4 5 h
+4 z
+4 1 j
+3 y
+4 4 h
+4 2 h
+1 z
+3 1 h
+4 z
+4 3 h
+2 y
+4 x
+4 x
+1 z
+4 2 h
+1 y
+4 4 h
+1 z
+3 1 j
+1 z
+4 4 h
+2 y
+4 1 j
+3 z
+4 x
+6 y
+2 z
+4 x
+6 z
+4 1 h
+1 z
+3 4 j
+4 1 h
+5 y
+4 1 j
+6 z
+4 5 h
+5 z
+4 3 h
+1 y
+4 z
+4 1 j
+1 z
+4 2 h
+1 z
+3 1 h
+6 y
+4 4 h
+2 z
+4 3 j
+3 y
+4 1 h
+4 z
+4 2 j
+3 z
+4 4 h
+5 z
+3 1 h
+2 z
+4 2 j
+1 z
+4 5 h
+1 y
+4 1 j
+5 z
+4 15 j
+15 y
+4 1 j
+1 y
+3 2 h
+1 z
+7 y
+4 7 j
+4 3 h
+3 y
+4 1 j
+4 3 j
+3 y
+4 x
+4 y
+3 1 j
+2 y
+4 3 j
+1 z
+4 3 h
+1 z
+4 1 h
+2 y
+4 5 j
+5 z
+4 9 h
+1 y
+4 5 j
+3 z
+3 4 j
+2 y
+4 4 h
+5 z
+4 1 j
+1 y
+2 z
+4 1 j
+4 z
+4 2 j
+2 y
+4 2 j
+1 y
+3 1 j
+1 y
+4 x
+1 y
+4 4 j
+1 y
+4 x
+2 y
+4 x
+1 z
+1 y
+4 2 j
+2 z
+3 1 j
+3 y
+4 2 j
+2 z
+4 2 j
+1 z
+4 3 j
+3 y
+4 4 h
+3 z
+4 3 h
+1 z
+7 z
+3 1 h
+1 z
+4 x
+3 z
+4 3 h
+4 3 h
+1 z
+4 4 j
+2 z
+4 4 h
+2 z
+3 2 j
+1 z
+4 1 j
+1 z
+4 4 j
+2 z
+4 2 h
+1 y
+4 x
+1 z
+4 x
+2 z
+4 1 j
+4 z
+3 8 j
+1 y
+4 3 j
+2 z
+1 y
+4 2 j
+3 y
+4 2 j
+5 z
+4 4 j
+1 y
+4 2 h
+3 z
+3 2 j
+3 z
+4 x
+4 y
+4 2 h
+4 x
+1 z
+4 z
+4 1 j
+3 z
+4 1 j
+3 x
+4 2 j
+4 2 j
+1 y
+4 2 h
+4 z
+4 3 j
+1 y
+1 y
+4 2 h
+1 y
+3 2 j
+3 z
+4 3 j
+1 y
+4 1 h
+3 y
+4 x
+1 z
+4 x
+1 y
+4 3 j
+2 z
+4 3 h
+4 z
+3 3 j
+2 z
+4 1 h
+2 z
+4 x
+2 z
+4 3 h
+4 z
+4 5 h
+1 z
+4 2 h
+1 y
+3 1 h
+2 z
+1 y
+4 2 j
+3 y
+4 x
+2 z
+4 6 j
+5 y
+4 2 j
+1 z
+4 2 j
+2 y
+3 1 h
+1 z
+4 5 j
+1 y
+4 x
+2 z
+4 2 j
+1 y
+4 1 h
+1 z
+4 1 j
+1 z
+3 1 h
+4 1 j
+16 z
+4 13 h
+2 z
+4 1 h
+2 z
+2 y
+4 1 j
+4 x
+3 1 h
+3 y
+4 2 j
+1 z
+4 x
+1 y
+4 2 h
+4 z
+4 3 j
+1 z
+4 2 h
+2 z
+1 y
+4 1 h
+1 y
+3 3 h
+4 4 j
+6 z
+4 x
+1 z
+4 3 h
+1 y
+4 2 j
+1 y
+4 1 j
+1 z
+1 y
+3 2 j
+1 z
+4 1 j
+2 z
+4 x
+4 x
+4 1 j
+1 y
+4 1 h
+2 z
+3 x
+1 z
+4 2 h
+4 z
+1 y
+4 2 h
+4 2 j
+2 y
+4 2 j
+3 z
+4 1 h
+1 z
+3 x
+6 z
+4 1 j
+2 y
+4 1 j
+2 z
+3 z
+4 2 j
+2 y
+4 1 h
+1 y
+4 1 h
+3 z
+3 1 j
+1 y
+4 2 j
+2 y
+4 2 j
+1 y
+4 2 j
+4 1 h
+1 z
+4 x
+2 y
+4 2 j
+1 y
+3 1 j
+1 y
+4 x
+2 z
+4 1 j
+1 z
+4 2 j
+1 z
+4 x
+1 z
+1 z
+4 1 j
+1 z
+3 1 h
+1 y
+4 1 j
+2 z
+4 x
+1 y
+4 2 h
+1 z
+4 2 j
+1 z
+4 2 h
+3 3 h
+1 z
+1 z
+4 1 j
+3 z
+4 x
+1 z
+4 2 j
+2 z
+4 2 h
+2 z
+4 1 j
+2 y
+3 1 j
+1 z
+4 1 j
+1 z
+1 y
+4 2 h
+4 2 h
+4 z
+4 1 h
+2 y
+4 x
+1 y
+4 2 j
+3 z
+3 2 j
+4 3 h
+4 2 j
+1 y
+4 1 j
+1 z
+4 x
+1 y
+4 4 j
+3 2 h
+2 y
+4 x
+1 y
+4 x
+1 z
+4 1 j
+1 z
+2 z
+4 x
+1 y
+4 2 j
+3 x
+1 z
+4 2 h
+2 z
+4 2 j
+1 z
+4 2 h
+4 1 h
+1 y
+4 1 j
+2 z
+3 z
+3 2 h
+1 z
+4 x
+1 z
+4 2 h
+4 1 h
+2 z
+4 1 h
+1 y
+4 2 j
+1 z
+3 1 j
+1 y
+2 z
+4 1 h
+1 y
+4 3 j
+4 2 h
+2 y
+4 1 j
+2 z
+4 x
+1 y
+4 1 h
+3 x
+1 y
+4 2 j
+2 z
+1 y
+4 x
+3 z
+4 1 h
+1 y
+4 4 j
+4 4 h
+1 z
+3 x
+4 1 h
+4 3 j
+1 y
+4 1 h
+4 x
+1 z
+4 1 h
+3 2 j
+E
+2 Sp
+2.57143 Sx
+B
+467 563 m
+34 72 j
+69 w
+35 72 h
+E
+B
+755 559 m
+34 72 j
+69 w
+35 72 h
+E
+B
+1039 635 m
+34 72 j
+69 w
+35 72 h
+E
+B
+1327 669 m
+34 72 j
+69 w
+35 72 h
+E
+B
+1611 696 m
+34 72 j
+69 w
+35 72 h
+E
+B
+1899 729 m
+34 72 j
+69 w
+35 72 h
+E
+B
+2183 743 m
+34 72 j
+69 w
+35 72 h
+E
+B
+2471 687 m
+34 72 j
+69 w
+35 72 h
+E
+B
+2755 606 m
+35 72 j
+70 w
+35 72 h
+E
+B
+3043 566 m
+34 72 j
+69 w
+35 72 h
+E
+1 Sw
+/SC {pop 1 1 1 setrgbcolor} def 1 SC
+42 Sp
+1.6 Sx
+1 Sd
+1551 370 405 1902 b
+/SC {pop 0 0 0 setrgbcolor} def 1 SC
+405 1902 m
+370 y
+1956 1902 m
+370 y
+E
+405 1902 m
+1551 x
+405 2272 m
+1551 x
+E
+/SC {pop 0 0.422222 0.844444 setrgbcolor} def 1 SC
+1 Sp
+B
+628 2205 m
+46 x
+23 23 j
+44 z
+23 23 l
+46 w
+23 23 k
+44 y
+23 23 h
+E
+2 Sw
+B
+862 2160 m
+242 x
+E
+1 Sw
+/SC {pop 0 0 0 setrgbcolor} def 1 SC
+(downstream) 1227 2160 0 T
+/SC {pop 0.844444 0 0.422222 setrgbcolor} def 1 SC
+2 Sp
+B
+651 2082 m
+46 90 j
+92 w
+46 90 h
+E
+2 Sw
+B
+862 2037 m
+242 x
+E
+1 Sw
+/SC {pop 0 0 0 setrgbcolor} def 1 SC
+(upstream) 1227 2037 0 T
+Z
+%%Trailer
+%%Pages: 1
+%%DocumentNeededResources: font Helvetica
+W
+%%EOF

@@ -1,0 +1,117 @@
+\section{Challenges in Content Delivery}\label{sec:challenges}
+
+The challenges that CDIs and P2P systems are faced with are based on the fact
+that they are unaware of the underlying network infrastructure and its
+conditions. In the best case, they can try to detect and infer the topology and
+state of the ISP's network through measurements, but even with large scale
+measurements, it is a difficult task, especially if accuracy is necessary.
+Furthermore, when it comes to short-term congestion and/or avoiding network
+bottlenecks, measurements are of no use. In the following we describe the
+challenges those systems face in more detail.
+
+\subsection{Content Delivery Infrastructures (CDIs)}\label{sec:CDIs-and-Challenges}
+
+From the viewpoint of the end-users and ISPs, the redirection schemes employed
+by existing CDIs have three major limitations:
+
+\paragraph{Network Bottlenecks.} Despite the traffic flow optimization
+performed by CDIs, the assignment of end-user requests to servers by CDIs may
+still result in sub-optimal content delivery performance for the end-users.
+This is a consequence of the limited information CDIs have about the network
+conditions between the end-user and their servers. Tracking the ever changing
+conditions in networks, \ie through active measurements and end-user reports,
+incurs an overhead for the CDI without a guarantee of performance improvements
+for the end-user.  Without sufficient information about the network paths
+between the CDI servers and the end-user, any assignment performed by the CDI
+may lead to additional load on existing network bottlenecks, or to the creation
+of new bottlenecks.
+
+
+\paragraph{User Mis-location.} DNS requests received by the CDI DNS servers
+originate from the DNS resolver of the end-user, not from the end-user itself.
+The assignment is therefore based on the assumption that end-users are close to
+their DNS resolvers. Recent studies have shown that in many cases this
+assumption does not hold~\cite {Precise:Mao2002,DNS-IMC-2010}. As a result, the
+end-user is mis-located and the server assignment is not optimal. As a response
+to this issue, DNS extensions have been proposed to include the end-user IP
+information~ \cite{DNS-extension-IP-client}.  \paragraph{Content Delivery Cost}
+Finally, CDIs strive to minimize the overall cost of delivering huge amounts of
+content to end-users. To that end, their assignment strategy is mainly driven
+by economic aspects.  While a CDI will always try to assign users in such a way
+that the server can deliver reasonable performance, this can again result in
+end-users not being directed to the server able to deliver best performance.
+
+\subsection{Peer-to-Peer Networks (P2P)}\label{sec:P2P-and-Challenges}
+
+P2P traffic often starves other applications like Web traffic of
+bandwidth~\cite{swxzz-hptp-07}.  This is because most P2P systems rely on
+application layer routing based on an overlay topology on top of the Internet,
+which is largely independent of the Internet routing and
+topology~\cite{abfw-mendg-04}. This can result in a situation where a node in
+Frankfurt downloads a large content file from a node in Sydney, while the same
+information may be available at a node in Berlin.  As a result P2P systems use
+more network resources due to traffic crossing the underlying network multiple
+times. For more details and information on P2P systems, see
+Section~\ref{sec:P2P}.
+
+
+\subsection{Internet Service Providers (ISPs)}\label{sec:ISPs-and-Challenges}
+
+ISPs face several challenges regarding the operation of their network
+infrastructure. With the emergence of Content, and especially distributed
+content delivery, be it from CDIs or P2P networks, these operational challenges
+have increased manifold.
+
+\paragraph{Network Provisioning.} Provisioning and operation a network means
+running the infrastructure at its highest efficiency. To ensure this, new
+cables as well as the peering points with other networks need to be established
+and/or upgraded. However, with the emergence of CDIs and P2P networks, the
+network provisioning has become more complicated, since the network loads tend
+to shift depending on the content that is currently transported while the
+direct peering might not be effective anymore.
+
+\paragraph{Volatile Content Traffic.} CDIs and P2P networks strive to optimize
+their own operational overhead, possibly at the expense of the underlying
+infrastructure. In terms of CDIs, this means that a CDI chooses the best server
+based on its own criteria, not knowing what parts of the networks
+infrastructure is being used. Especially with globally deployed CDIs it becomes
+increasingly difficult for ISPs to predict what CDI is causing what traffic
+from where based on past behavior. This has a direct implication on the traffic
+engineering of the network, as this is usually based on traffic predictions
+from past network traffic patterns.
+
+\paragraph{Customer Satisfaction.} Regardless of the increased difficulty with
+network provisioning and traffic engineering, end-users are demanding more and
+larger content. This, coupled with the dominant form of flat rates for customer
+subscriptions, increases the pressure on ISPs to delay network upgrades as long
+as possible to keep prices competitive. But letting links run full increases
+packet loss. This, in turn, drastically reduces the quality of experience of
+the end-users. This, in turn, encourages end-users to switch their
+subscriptions.
+
+
+\subsection{Summary}
+
+In summary, we identify the following challenges in todays content delivery:
+
+\begin{itemize*}
+
+\item The ISP has limited ability to manage its traffic and therefore incurs
+  potentially increased costs, e.g., for its interdomain traffic, as well as
+  for its inability to do traffic engineering on its internal network while
+  having to offer competitive subscriptions to its end-users.
+
+\item The P2P system has limited ability to pick an optimal overlay topology
+  and therefore provide optimal performance to its users, as it has no prior
+  knowledge of the underlying Internet topology. It therefore has to either
+  disregard or reverse engineer it.
+
+\item The CDI has limited ability to pick the optimal server and therefore
+  provide optimal performance to its users, as it has to infer the network
+  topology as well as the dynamic network conditions. Moreover, it has limited
+  knowledge about the location of the user as it only knows the IP address of
+  the DNS resolver.
+
+\item The different systems try to measure the path performance independently.
+
+\end{itemize*}

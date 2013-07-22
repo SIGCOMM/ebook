@@ -1,0 +1,33 @@
+sections/Collaboration-Future.tex:\includegraphics[width=0.9\linewidth]{fig/NSDI13/ISP+Content} \end{center}
+sections/Collaboration-Future.tex:    \includegraphics[width=0.6\linewidth]{fig/Resource_Negotiation}
+sections/Collaboration-Future.tex:    \includegraphics[width=0.8\linewidth]{fig/Mapping_System}
+sections/Collaboration-Use-Cases.tex:     {\includegraphics[angle=-90,width=1\linewidth]{plots/gnutella/snapshot_nond}}
+sections/Collaboration-Use-Cases.tex:     {\includegraphics[angle=-90,width=1\linewidth]{plots/gnutella/snapshot_nd}}
+sections/Collaboration-Use-Cases.tex:     {\includegraphics[width=1\textwidth]{plots/gnutella/asdist}}
+sections/Collaboration-Use-Cases.tex:    {\includegraphics[width=1\textwidth]{plots/gnutella/intraAS-leaf}}
+sections/Collaboration-Use-Cases.tex:    {\includegraphics[width=1\textwidth]{plots/gnutella/intraAS-up}}
+sections/Collaboration-Use-Cases.tex:  \center\includegraphics[width=0.8\linewidth]{fig/trafficShift-concept}
+sections/Collaboration-Use-Cases.tex:    \center \includegraphics[width=3.2in]{fig/CaTE_Schematic}
+sections/Collaboration-Use-Cases.tex:\center\includegraphics[width=0.90\linewidth]{fig/trafficShift-illustration}
+sections/Collaboration-Use-Cases.tex:\center\includegraphics[width=1\linewidth]{fig/providersVsVolume}
+sections/Collaboration-Use-Cases.tex:\center\includegraphics[width=1\linewidth]{fig/Volume_timeseries}
+sections/Collaboration-Use-Cases.tex:\center\includegraphics[width=1\linewidth]{fig/subnetVsVolumeBucket}
+sections/Collaboration-Use-Cases.tex:\includegraphics[width=1\linewidth]{fig/SubnetChoice_r-2}
+sections/Content-Delivery-Landscape.tex:    \includegraphics[width=0.7\linewidth]{fig/NSDI13/spectrum}
+sections/Content-Delivery-Overview.tex:\includegraphics[width=0.7\linewidth]{fig/imc04aka/flows-example} \end{center}
+sections/Content-Delivery-Overview.tex:\includegraphics[width=0.6\linewidth]{fig/imc04aka/page}
+sections/Internet-Network-Infrastructures.tex:  \includegraphics[width=\linewidth]{fig/IMC10/Internet-Layout}
+sections/Internet-Network-Infrastructures.tex:\includegraphics[width=1\linewidth]{fig/Classic-TE} \end{center} \caption{IGP
+sections/Internet-Network-Infrastructures.tex:\includegraphics[width=0.8\linewidth]{fig/DNSHierarchy} \end{center}
+sections/Traffic-Trends-Overall.tex:\includegraphics[width=0.95\linewidth]{fig/appmix/appmix}
+sections/Traffic-Trends-Overall.tex:\includegraphics[width=0.95\linewidth]{fig/appmix/ctypes}
+sections/Traffic-Trends-Overall.tex:\includegraphics[angle=-90,width=0.85\linewidth]{fig/appmix/maier-tod}
+sections/Traffic-Trends-Overall.tex:\includegraphics[width=0.85\linewidth]{fig/appmix/sandvine-tod}
+sections/Traffic-Trends-Server-Diversity.tex:  \includegraphics[height=0.7\linewidth]{fig/IMC10/dns-diversity}
+sections/Traffic-Trends-Server-Diversity.tex:   \includegraphics[height=0.7\linewidth,angle=-90]{fig/IMC10/avgResponseSize.ps}\\
+sections/Traffic-Trends-Server-Diversity.tex:   \includegraphics[height=0.7\linewidth,angle=-90]{fig/IMC10/avgResponseSubnetSize.ps}
+sections/Traffic-Trends-Server-Diversity.tex:   \includegraphics[height=0.7\linewidth,angle=-90]{fig/IMC10/14day-returnedIPCDF-bytes.ps}
+sections/Traffic-Trends-Server-Diversity.tex:   \includegraphics[height=0.7\linewidth,angle=-90]{fig/IMC10/14day-returnedIPCDF-hits.ps}
+sections/Traffic-Trends-Server-Diversity.tex:   \includegraphics[height=0.7\linewidth,angle=-90]{fig/IMC10/Anja-Zurich-Talk-SubnetsByBytes.ps}
+sections/Traffic-Trends-Server-Diversity.tex:   \includegraphics[height=0.7\linewidth,angle=-90]{fig/IMC10/Anja-Zurich-Talk-SubnetsByHits.ps}
+sections/Traffic-Trends-Server-Diversity.tex:  \center\includegraphics[height=0.7\linewidth,angle=-90]{fig/IMC10/maxTTLCDF.ps}

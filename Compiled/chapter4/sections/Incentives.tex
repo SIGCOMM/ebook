@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Incentives for Collaboration}\label{sec:Incentives}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ISPs are in a unique position to help CDIs and P2P systems to improve content
+delivery.  Specifically, ISPs have the knowledge about the state of the
+underlying network topology and the status of individual links that CDIs are
+lacking. This information not only helps CDIs in their user-to-server mapping,
+but also reduces the need for CDIs to perform large-scale active measurements
+and topology discovery \cite{sureroute}.  It also enables CDIs to better
+amortize their existing infrastructure, offer better quality of experience to
+their users, and plan their infrastructure expansion more efficiently. On the
+other side, ISPs are not just selflessly giving up their network information.
+Offering their intimate knowledge of the network to CDIs puts ISPs in the
+position that they can also actively guide the CDIs. This allows ISPs to gain
+unprecedented influence on CDI traffic.
+
+The opportunity for ISPs to coordinate with CDIs is technically possible
+thanks to the decoupling of server selection from content delivery. In general,
+any end-user requesting content from a CDI first does a mapping request,
+usually through the Domain Name System (DNS). During this request, the CDI
+needs to locate the network position of the end-user and assign a server
+capable of delivering the content, preferably close to the end-user.  ISPs have
+this information ready at their fingertips, but are currently not able to
+communicate their knowledge to CDIs. Furthermore, ISPs solve the challenge of
+predicting CDI traffic, which is very difficult due to the lack of information
+on the CDI mapping strategy regarding the end-users to servers assignment. In
+order to reap the benefits of the other's knowledge, both parties require
+incentives to work together.
+
+\subsection{Incentives for CDIs}
+
+The CDIs' market requires them to enable new applications while reducing
+their operational costs and improve end-user experience~\cite{Akamai-Network}.
+By cooperating with an ISP, a CDI improves the mapping of end-users to servers,
+improves in the end-user experience, has accurate and up-to-date knowledge of
+the networks and thus gains a competitive advantage. This is particularly
+important for CDIs in light of the commoditization of the content delivery
+market and the selection offered to end-users, for example through
+meta-CDNs~\cite{Conviva2011}. The improved mapping also yields better
+infrastructure amortization and, thanks to cooperation with ISPs, CDIs will no
+longer have to perform and analyze voluminous measurements in order to infer
+the network conditions or end-user locations.
+
+To stimulate cooperation, ISPs can operate and provide their network
+knowledge as a free service to CDIs or even offer discounts on peering or
+hosting prices, \eg for early adopters and CDIs willing to cooperate. The loss
+of peering or hosting revenue is amortized with the benefits of a lower network
+utilization, reduced investments in network capacity expansion and by taking
+back some control over traffic within the network. Ma et al.~\cite
+{CooperativeSettlement:ToN} have developed a methodology to estimate the prices
+in such a cooperative scheme by utilizing the Shapley settlement mechanism.
+Cooperation can also act as an enabler for CDIs and ISPs to jointly launch new
+applications in a cost-effective way, for example traffic-intensive
+applications such as the delivery of high definition video on-demand, or
+real-time applications such as online games.
+
+\subsection{Incentives for ISPs}\label{sec:ISP-Incentive} 
+
+ISPs are interested in reducing their operational and infrastructure upgrade
+costs, offering broadband services at competitive prices, and delivering the
+best end-user experience possible. Due to network congestion during peak hour,
+ISPs in North America have recently revisited the flat pricing model and some
+have announced data caps to broadband services. A better management of traffic
+in their networks allows them to offer higher data caps or even alleviate the
+need to introduce them. From an ISP perspective, cooperation with a CDI offers
+the possibility to do global traffic and peering management through an improved
+awareness of traffic across the whole network. For example, peering agreements
+with CDIs can offer cooperation in exchange for reduced costs to CDIs. This can
+be an incentive for CDIs to peer with ISPs, and an additional revenue for an
+ISP, as such reduced prices can attract additional peering customers.
+Furthermore, collaboration with CDIs has the potential to reduce the
+significant overhead due to the handling of customer complaints that often do
+not stem from the operation of the ISP but the operation of CDIs~\cite
+{ControllingDataCloud}. Through this, ISPs can identify and mitigate congestion
+in content delivery, and react to short disturbances caused by an increased
+demand of content from CDIs by communicating these incidents back directly to
+the source.
+
+\subsection{Effect on End-users}\label{sec:Users-Incentive} 
+
+Collaboration between ISPs and CDIs in content delivery empowers end-users to
+obtain the best possible quality of experience. As such, this creates an
+incentive for end-users to support the adoption of collaboration by both ISPs
+and CDIs. For example, an ISP can offer more attractive products, \ie higher
+bandwidth or lower prices, since it is able to better manage the traffic inside
+its network.  Also, thanks to better traffic engineering, ISPs can increase
+data caps on their broadband offers, making the ISP more attractive to
+end-users. Moreover, CDIs that are willing to jointly deliver content can offer
+better quality of experience to end-users. This can even be done through
+premium services offered by the CDI to its customers. For example, CDIs
+delivering streaming services can offer higher quality videos to end-users
+thanks to better server assignment and network engineering.

@@ -1,0 +1,111 @@
+%\ed{A one page conclusion.} 
+%Something on evolution of transport
+%Something on Middleboxes
+%Something on MPTCP
+%Something on Minion
+%One paragraph on the future
+
+The Transport Layer in the Internet evolved for nearly two decades,
+but it has been stuck for over a decade now.
+A proliferation of middleboxes in the Internet,
+devices in the network that look past the IP header,
+has shifted the waist of the Internet hourglass 
+upward from IP
+to include UDP and TCP,
+the legacy workhorses of the Internet.
+While popular for many
+different reasons, 
+middleboxes thus deviate from the Internet’s
+end-to-end design, creating large deployment
+“black-holes”---singularities where legacy transports get through, but
+any new transport technology or protocol fails,
+severely limiting transport protocol evolution.
+The fallout of this ossification
+is that new transport protocols,
+such as SCTP and DCCP,
+that were developed to offer much needed 
+richer end-to-end services to applications,
+have had trouble getting deployed since they require changes 
+to extant middleboxes.
+
+Multipath TCP is perhaps the most significant change to TCP in the past twenty
+years. It allows existing TCP applications to achieve better
+performance and robustness over today's networks, and it has been
+standardized at the IETF. The Linux kernel implementation shows that
+these benefits can be obtained in practice.  However, as with any
+change to TCP, the deployment bar for Multipath TCP is very high: only
+time will tell whether the benefits it brings will outweigh the added
+complexity it brings in the end-host stacks.
+
+The design of Multipath TCP has been a lengthy, painful process that took around five
+years. Most of the difficulty came from the need to support existing middlebox
+behaviors, while offering the exact same service to applications as TCP. Although
+the design space seemed wide open in the beginning, in the end we were \emph{just} able
+to evolve TCP this way: for many of the design choices there was only one viable option
+that could be used. When the next major TCP extension is designed in a network with even more
+middleboxes, will we, as a community, be as lucky?
+
+A pragmatic answer to the inability to deploy new transport protocols
+is Minion. It allows deploying new transport services 
+by being backward compatible with middleboxes by encapsulating new protocols inside TCP.
+Minion demonstrates that it is possible to obtain
+unordered delivery and multistreaming
+from wire-compatible TCP and TLS streams
+with surprisingly small changes to TCP stacks
+and application-level code.
+Minion offers a path toward
+the performance benefits of unordered delivery,
+which we expect to be useful to applications
+that use TCP for a variety of pragmatic reasons.
+
+%Minion is just the latest in an ever-growing encapsulation war that 
+%has engulfed end-hosts and network providers for years on end. 
+Early in the Internet's history,
+all IP packets could travel freely through the Internet, as IP was the narrow waist of
+the protocol stack. 
+Eventually, 
+apps started using UDP and TCP exclusively,
+and some, such as Skype, used them adaptively,
+probably due to security concerns
+in addition to the increasing proliferation of middleboxes that allowed only UDP and TCP through.
+As a result, UDP and TCP over IP were then perceived to constitute the new waist of the Internet.
+(We'll note that HTTP has also recently
+been suggested as the new waist~\cite{popa10http}.) 
+%UDP is not that great getting through newer firewalls either, so TCP is the new narrow
+%waist, or even HTTP as recently proposed. 
+
+Our observation is that
+whatever the new waist is,
+middleboxes will embrace it and optimize for it: 
+if MPTCP and/or Minion become popular, 
+it is likely that middleboxes will be devised that understand these protocols
+to optimize for the most successful use-case of these protocols
+and to help protect any vulnerable applications using them.
+One immediate answer from an application would be to
+use the encrypted communication proposed in Minion---%
+but actively hiding information from a network operator
+can potentially encourage the network operator
+to embed middleboxes that intercept encrypted connections,
+effectively mounting man-in-the-middle attacks
+to control traffic over their network,
+as is already being done in several corporate firewalls~\cite{marko10using}.
+%a potential serious security breach, and many ISPs
+%may either drop traffic or require their customers to ``install'' keys in the 
+%browser that effectively allow middleboxes to become a man-in-the-middle of the TLS connection. 
+To bypass these middleboxes,
+new applications may encapsulate their data {\em even} deeper,
+leading to a vicious circle resembling an ``arms race'' for control
+over network use.
+% them looking even deeper in the packets. As we can see, 
+%this is a vicious circle that no-one can ever win.
+
+This ``arms race'' is a symptom of a fundamental tussle between
+end-hosts and the network: end-hosts will always want to deploy new
+applications and services, while the network will always want to allow and optimize only
+existing ones~\cite{tussle}.
+To break out of this vicious circle,
+we propose that
+end-hosts and the network must co-operate,
+and that they must build cooperation into their protocols.
+Designing and providing protocols and incentives for this cooperation may hold the key to creating a
+truly evolvable transport (and Internet) architecture.

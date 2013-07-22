@@ -1,0 +1,114 @@
+This appendix contains a few exercises on the evolution of transport protocols and their interactions with middleboxes.
+
+\subsection{Transport protocols}
+
+\begin{enumerate}
+
+\item TCP provides a reliable transport service. Assuming that you control the two endpoints of a connection, how would you modify the TCP protocol to provide an unreliable service ? Explore two variants of such a transport service :
+  \begin{itemize}
+  \item an unreliable bytestream where bytes can be corrupted but where there are no losses
+  \item an unreliable bytestream that prevents data corruption but can deliver holes in the bytestream
+  \end{itemize}
+
+\item Same question as above, but for SCTP.
+
+\item TCP provides a connection-oriented bytestream service. How would you modify TCP to support a message-oriented service. Consider two variants of this service :
+ \begin{itemize}
+    \item A connection-oriented message-mode service that supports only small messages, i.e. all messages are smaller than one segment.
+    \item A connection-oriented message-mode service that supports any message length. 
+ \end{itemize}
+
+\item The large windows extension for TCP defined in \cite{rfc1323} uses the \texttt{WScale} option to negotiate a scaling factor which is valid for the entire duration of the connection. Propose another method to transport a larger window by using a new type of option inside each segment. What are the advantages/drawbacks of this approach compared to \cite{rfc1323} assuming that there are no middleboxes ?
+
+\item One of the issues that limits the extensibility of TCP is the limited amount of space to encode TCP options. This limited space is particularly penalizing in the SYN segment. Explore two possible ways of reducing the consumption of precious TCP option-space
+\begin{itemize}
+\item Define a new option that packs several related options in a smaller option. For example try to combine SACK with Timestamp and Window scale in a small option for the SYN segment. 
+\item Define a compression scheme that allows to pack TCP options in fewer bytes. The utilisation of this compression scheme would of course need to be negotiated during the three way handshake.
+\end{itemize}
+
+
+
+\end{enumerate}
+
+\subsection{Middleboxes}
+
+Middleboxes may perform various changes and checks on the packets that they process.  Testing  real middleboxes can be difficult because it involves installing complex and sometimes costly devices. However, getting an understanding of the interactions between middleboxes and transport protocols can be useful for protocol designers. 
+
+A first approach to understand the impact of middleboxes on transport protocols is to emulate the interference caused by middleboxes.This can be performed by using \texttt{click} \cite{Kohler_click:2000} elements that emulate the operation of middleboxes \cite{Hesmans_click:2013} : 
+\begin{itemize}
+\item \texttt{ChangeSeqElement} changes the sequence number in the TCP header of processed segments to model a firewall that randomises sequence numbers
+\item \texttt{RemoveTCPOptionElement} selectively removes a chosen option from processed TCP segments
+\item \texttt{SegSplitElement} selectively splits a TCP segment in two different segments and copies the options in one or both segments
+\item \texttt{SegCoalElement} selectively coalesces consecutive segments and uses the TCP option from the first/second segment for the coalesced one
+\end{itemize}
+
+Using some of these \texttt{click} elements, perform the following tests with one TCP implementation. 
+
+\begin{enumerate}
+
+\item Using a TCP implementation that supports the timestamp option defined in \cite{rfc1323} evaluate the effect of removing this option in the \texttt{SYN}, \texttt{SYN+ACK} or regular TCP segments with the \texttt{RemoveTCPOptionElement} \texttt{click} element.
+
+\item Using a TCP implementation that supports the selective acknowledgement option defined in \cite{rfc2018} predict the effect randomizing the sequence number in the TCP header without updating anything in this option as done by some firewalls. Use the \texttt{ChangeSeqElement} \texttt{click} element to experimentally verify your answer. Instead of using random sequence numbers, evaluate the impact of logarithmically increasing/decreasing the sequence numbers (i.e. +10, +100, +1000, +1000, \ldots)
+
+\item Recent TCP implementations support the large windows extension defined in \cite{rfc1323}. This extension uses the \texttt{WScale} option in the \texttt{SYN} and \texttt{SYN+ACK} segments. Evaluate the impact of removing this option in one of these segments with the \texttt{RemoveTCPOptionElement} element. For the experiments, try to force the utilisation of a large receive window by configuring your TCP stack.
+
+\item Some middleboxes split or coalesce segments. Considering Multipath TCP, discuss the impact of splitting and coalescing segments on the correct operation of the protocol. Use the Multipath TCP implementation in the Linux kernel and the \texttt{SegCoalElement} and \texttt{SegSplitElement} \texttt{click} elements to experimentally verify your answer.
+
+%\item Using the Multipath TCP implementation in the Linux kernel and one of the above mentioned \texttt{click} elements, 
+
+
+\item The extensibility of SCTP depends on the utilisation of chunks. Consider an SCTP-aware middlebox that recognizes the standard SCTP chunks but drops the new ones. Consider for example the partial-reliability extension defined in \cite{rfc3758}. Develop a \texttt{click} element that allows to selectively remove a chunk from processed segments and evaluate experimentally its impact on SCTP.
+
+\end{enumerate}
+
+Another way to evaluate middleboxes is to try to infer their presence in a network by sending probe packets. This is the approach used by Michio Honda and his colleagues in \cite{honda2011still}. However, the TCPExposure software requires the utilisation of a special server and thus only allows to probe the path towards this particular server. An alternative is to use \texttt{tracebox} \cite{Detal_Tracebox:2013}. \texttt{tracebox} is an extension to the popular \texttt{traceroute} tool that allows to detect middleboxes on (almost) any path. \texttt{tracebox} sends TCP and UDP segments inside IP packets that have different Time-To-Live values like \texttt{traceroute}. When an IPv4 router receives an IPv4 packet whose TTL is going to expire, it returns an ICMPv4 \emph{Time Exceeded} packet that contains the offending packet. Older routers return in the ICMP the IP header of the original packet and the first 64 bits of the payload of this packet. When the packet contains a TCP segment, these first 64 bits correspond to the source and destination ports and the sequence number. However, recent measurements show that a large fraction of IP routers in the Internet, notably in the core, comply with \cite{rfc1812} and thus return the complete original packet. \texttt{tracebox} compares the packet returned inside the ICMP message with the original one to detect any modification performed by middleboxes. All the packets sent and received by \texttt{tracebox} are recorded as a libpcap file that can be easily processed by using \texttt{tcpdump} or \texttt{wireshark}.
+
+
+\begin{enumerate}
+
+\item Use \texttt{tracebox} to detect whether the TCP sequence numbers of the segments that your host sends are modified by intermediate firewalls or proxies.
+
+\item Use \texttt{tracebox} behind a Network Address Translator to see whether \texttt{tracebox} is able to detect the modifications performed by the NAT. Try with TCP, UDP and regular IP packets to see whether the results vary with the protocol. Analyse the collected packet traces.
+
+\item Some firewalls and middleboxes change the \texttt{MSS} option in the \texttt{SYN} segments that they process. Can you explain a possible reason for this change ? Use \texttt{tracebox} to verify whether there is a middlebox that performs this change inside your network.
+
+\item Use \texttt{tracebox} to detect whether the middleboxes that are deployed in your network allow new TCP options, such as the ones used by Multipath TCP, to pass through.
+
+\item Extend \texttt{tracebox} so that it supports the transmission of SCTP segments containing various types of chunks.
+
+
+\end{enumerate}
+
+
+\subsection{Multipath TCP}
+
+Although Multipath TCP is a relatively young extension to TCP, it is already possible to perform interesting experiments and simulations with it. The following resources can be useful to experiment with Multipath TCP :
+
+\begin{itemize}
+\item \url{http://www.multipath-tcp.org} provides an implementation of Multipath TCP in the Linux kernel with complete source code and binary packages. This implementation covers most of \cite{rfc6824} and supports the coupled congestion control \cite{rfc6356} and OLIA \cite{olia}. Mininet and netkit images containing the Multipath TCP kernel are available from the above website.
+\item \url{http://caia.swin.edu.au/urp/newtcp/mptcp/} provides a kernel patch that enables Multipath TCP in the FreeBSD-10.x kernel. This implementation only supports a subset of \cite{rfc6824}
+\item The \texttt{ns-3} network simulator\footnote{See \url{http://www.nsnam.org/}.} contains two forms of support for Multipath TCP. The first one is by using a Multipath TCP model\footnote{See \url{https://code.google.com/p/mptcp-ns3/}}. The second is by executing a modified Linux kernel inside \texttt{ns-3}  by using Direct Code Execution\footnote{See \url{http://www.nsnam.org/projects/direct-code-execution/}}.
+
+\end{itemize}
+
+Most of the exercises below can be performed by using one of the above mentioned simulators or implementation. 
+
+\begin{enumerate}
+
+\item Several congestion control schemes have been proposed for Multipath TCP and some of them have been implemented. Compare the performance of the congestion control algorithms that your implementation supports. 
+
+\item The Multipath TCP congestion control scheme was designed to move traffic away from congested paths. TCP detects congestion through losses. Devise an experiment using one of the above mentioned simulators/implementation to analyse the performance of Multipath TCP when losses occur.
+
+\item The non-standard \texttt{TCP\_INFO} socket option\cite{Pfeiffer_Measuring:2007} in the Linux kernel allows to collect information about any active TCP connection. Develop an application that uses \texttt{TCP\_INFO} to study the evolution of the Multipath TCP congestion windows.
+
+
+\item Using the Multipath TCP  Mininet or netkit image, experiment with Multipath TCP's fallback mechanism by using \texttt{ftp} to transfer files through a NAT that includes an application level gateway. Collect the packet trace and verify that the fallback works correctly.
+
+\end{enumerate}
+
+
+
+%\subsection {Minion}
+
+
+%\ed{Any suggestion from Jana ?} 

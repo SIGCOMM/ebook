@@ -1,0 +1,119 @@
+\section{Motivation}
+
+The Internet is a hugely successful man-made artifact that has changed society
+fundamentally.  Imagine the effect a prolonged outage of the Internet would
+have: (1) Youngsters wouldn't know how to interact with their peers and how to
+spend their leisure time as they increasingly rely on social networks, online
+games, YouTube, and other online entertainment offerings.  (2) Manufacturing
+would hit a roadblock as the communication paths within and between companies
+increasingly rely on the Internet. (3) Control of critical infrastructures
+would be hampered as it increasingly relies on the Internet for gathering input
+data and propagating control information.
+
+In becoming a hugely successful infrastructure, the usage of the Internet and
+thus its structure has also undergone continuous changes. Usage has changed
+from dominance by email and FTP in the early days, to the World Wide Web (WWW)
+from 1995 to 2000, to peer-to-peer applications (P2P) from 2000 to 2007, back
+to the WWW since 2007. These changes are driven in part by the Internet users'
+interests as well as how content, including user generated content, is made
+available.
+
+When considering the current application mix and traffic streams in the
+Internet, the latest buzz is that ``Content is King'' just as Bill
+Gates~\cite{Gates-Content-King} predicted in his essay from 1996.  Hereby, the
+term content has to be seen very broadly and encompasses everything from
+commercially prepared content, \eg broadcast and interactive TV, news, and
+software, to user-generated content, \eg videos uploaded to YouTube, and photos
+uploaded to Flickr, to interactive activities, \eg online games. Or to quote
+Bronfman~\cite{Bronfman-remarks}, the head of a major music producer and
+distributor: ``What would the Internet be without `content'? It would be a
+valueless collection of silent machines with gray screens. It would be the
+electronic equivalent of a marine desert---lovely elements, nice colors, no
+life.  It would be nothing.''
+
+The idea of content delivery being the fundamental operation around which to
+design future Internet architecture for comes as no surprise. In fact, the idea
+of Content-Centric Networking (CCN)~\cite{CCN} is guided by this principle.
+Change, however, takes time, and when hundreds of million of devices are
+involved, change can only be made slowly. Before such a novel and radically
+different architecture such as CCN is available or potentially deployable, the
+Internet in its current state must cope with the challenge of delivering
+ever-increasing amounts of content to Internet users.
+
+Accordingly, it appears that solely providing connectivity to end users is no
+longer sufficient for Internet Service Providers (ISPs).  Yet, connectivity is
+a crucial ingredient and some authors, \eg Andrew
+Odlyzko~\cite{odlyzko2001content} have opined that enabling communication is
+the main task of the Internet network infrastructure. In his paper ``Content is
+not king'' he claims that ``Content will have a place on the Internet, possibly
+a substantial place. However, its place will likely be subordinate to that of
+business and personal communication''.
+
+At this point it is crucial to realize that the producers of content are
+usually not the operators of today's Internet infrastructure. Nonetheless, both
+content producers and network operators depend on each other. In fact, neither
+the Internet infrastructure operators nor the content producers can be
+successful without the other.  After all, the content producers want to ensure
+that their content gets to Internet users with reasonable performance for which
+they need to rely on the network infrastructure.  On the other hand, the
+network infrastructure providers have to transport the content and manage the
+infrastructure to satisfy the demand for content from their subscribers. It is
+this symbiosis between the two parties that motivates our work collaboration
+between content producers and network operators in delivering content.
+
+\bigskip 
+
+\noindent\textbf{Outline:} We start this chapter with a short introduction in
+Section~\ref{sec:introduction}.  Then, in Section~\ref{sec:ISP}, we set the
+stage by providing an overview of today's Internet network infrastructure,
+discussing how Internet Service Providers (ISPs) perform traffic engineering,
+and reviewing the Domain Name System (DNS), an essential component of any
+Web-based content-delivery architecture.   Next, we review current trends in
+Internet traffic and the application mix as well as traffic dynamics in
+Sections~\ref{sec:traffic} and~\ref{sec:traffic-diversity}.
+
+We finish the overview with a brief summary on the background of content
+delivery in Section~\ref{sec:overview}. Here, we assume that the reader is
+familiar with the basic architecture of the Web. There are excellent text books
+on this topic, \eg~\cite{web-book}.  Given that there are several approaches to
+content delivery, we provide a general high level description of how different
+Content Delivery Infrastructures work.  Since there are also many peer-to-peer
+based content delivery systems we provide a short review of the basic P2P
+architectures as well. For additional background on P2P we refer the reader to,
+\eg~\cite{p2pbook1,p2pbook2}.
+
+An overview of the current content delivery spectrum is presented in
+Section~\ref{sec:content-delivery}. Here we discuss various types of Content
+Delivery Infrastructures (CDIs) which range from Web-based Content Distribution
+Networks (CDNs) to Hybrid CDNs to peer-to-peer (P2P) systems. Furthermore, in
+Section~\ref{sec:challenges} we turn to the challenges that each party involved
+in Internet content delivery faces separately today.
+
+Finally, we turn to the state of the art of collaboration between networks and
+content providers.  We start by outlining the collaboration incentives for each
+member of the content delivery landscape in Section~\ref{sec:Incentives}. Next
+we review the collaboration schemes that have been discussed in research as
+well as at the Internet Engineering Task Force (IETF) in
+Section~\ref{sec:Opportunities}. We briefly introduce the well-known approaches
+and summarize their key functions. We then pick two collaboration schemes,
+namely the P2P Oracle and the Provider-aided Distance Information System
+(PaDIS) for a case study. In Section~\ref{sec:oracle} we discuss the P2P Oracle
+with regards to its effect on the P2P system as well as on network operations.
+Likewise, the second case study discusses the model of the Provider-aided
+Distance Information System in Section~\ref{sec:te-cate}, including a large
+scale analysis based on real traffic traces.  Section~\ref{sec:future} outlines
+a possible future direction for collaboration between content providers and
+network operators.  We conclude this part of the chapter in
+Section~\ref{sec:conclusion}.
+
+
+\bigskip 
+
+\noindent\textbf{Summary:} This chapter builds upon the student's
+basic knowledge of how the Internet infrastructure operates, i.e., as a network
+of networks. After reading this chapter the student should have a fundamental
+understanding about how content distribution via the Internet works today, what
+the challenges are, and which opportunities lie ahead. Moreover, the chapter
+points out how all parties---including end users---can benefit from the
+collaboration between ISPs and content providers. Indeed, simple, almost
+intuitive, means will enable such collaboration.

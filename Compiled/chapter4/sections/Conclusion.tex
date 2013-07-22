@@ -1,0 +1,55 @@
+\section{Conclusion}\label{sec:conclusion}
+
+People value the Internet for the content and the applications it makes
+available~\cite{CCN}. For example, the demand for online entertainment and web
+browsing has exceeded 70\% of the peak downstream traffic in the United
+States~\cite{sandvine}. Recent traffic
+studies~\cite{TrafficTypesGrowth:2011,arbor,PADIS2010} show that a large
+fraction of Internet traffic is originated by a small number of Content
+Distribution Infrastructures (CDIs). Major CDIs include highly popular
+rich-media sites such as YouTube and Netflix, One-Click Hosters (OCHs), \eg
+RapidShare, Content Delivery Networks (CDNs) such as Akamai, and hyper-giants,
+\eg Google and Yahoo!. Gerber and Doverspike~\cite{TrafficTypesGrowth:2011}
+report that a few CDIs account for more than half of the traffic in a US-based
+Tier-1 carrier.
+
+To cope with the increasing demand for content, CDIs deploy massively
+distributed infrastructures~\cite{ImprovingPerformanceInternet2009} to
+replicate content and make it accessible from different locations in the
+Internet~\cite{CDNsec2009,Cartography}.  Not all CDIs are built upon the same
+philosophy, design, or technology. For example, a CDI can be operated
+independently by deploying caches in different networks, by renting space in
+datacenters, or by building datacenters. Furthermore, some CDIs are operated by
+ISPs, some by Content Producers, or in the case of Peer-to-Peer networks, by
+self-organized end users. Accordingly, we give an overview of the spectrum of
+CDI solutions.
+
+CDIs often struggle in mapping users to the best server, regardless of whether
+the best server is the closest, the one with the most capacity, or the one
+providing the lowest delay.  The inability of CDIs to map end users to the
+right server stems from the fact that CDIs have limited visibility into ISP
+networks, \ie a CDI has incomplete knowledge of an ISP's set up, operation, and
+current state.  Thus, in this book chapter, we propose viewing the challenges
+that CDIs and ISPs face as an opportunity: \emph{to collaborate}.  We point out
+the opportunities and incentives for all parties---CDIs, ISPs and end
+users---to get involved. This collaboration may ultimately lead to major
+changes in the way that content is distributed across the Internet.
+
+Accordingly, we review the proposed enablers and building blocks for
+collaboration ranging from the P2P oracle service, P4P, Ono, and PaDIS, to the
+IETF activities~\cite{afs-cispp2pcip-ccr07,p4p,taming,PADIS2010,ALTO-WG,CDNi}. To
+illustrate the benefits of collaboration between applications and networks, we
+provide two use-cases: P2P and traffic engineering. The main take away is that
+substantial benefits for all involved parties are obtainable.
+
+Upcoming trends include virtualization and the Cloud. These trends offer new
+ways of collaborative deployment of content delivery infrastructure if combined
+with the proposed enablers for collaboration.  Accordingly, we propose Network
+Platform as a Service (\Netpaas), which allows CDIs and ISPs to cooperate not
+only on user assignment, but on dynamically deploying and removing servers and
+thus scaling content delivery infrastructure on demand.
+
+We believe that ISP-CDN collaboration and \Netpaas can play a significant role
+in the future content delivery ecosystem.  Most of the collaboration enablers,
+however, have not yet been deployed in the wild, and therefore only the future
+will tell if the Internet takes advantage of these opportunities.

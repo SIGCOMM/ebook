@@ -1,0 +1,212 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Opportunities for Collaboration}\label{sec:Opportunities}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+As pointed out ISPs are in a unique position to help CDIs and P2P systems to
+improve content delivery since they have the knowledge about the state of the
+underlying network topology, the status of individual links, as well as the
+location of the user. In this section we first describe the high level concept
+all existing solutions have in common and then continue by illustrating where
+and why they differ in certain aspects.
+
+The presented solutions include the original Oracle concept proposed by
+Aggarwal et al~\cite{afs-cispp2pcip-ccr07}, P4P proposed by Xie et al.~\cite{p4p},
+Ono proposed by Choffnes and Bustamante~\cite{taming} and PaDIS proposed by Poese
+et al.~\cite{PaDIS-IC}. We also give an overview of the activities within the
+IETF which have been fueled to some extend by the proposed systems discussed in
+this section, namely ALTO and CDNi.
+
+\subsection{Conceptual Design}\label{sec:Concept-Opportunties-Collaboration}
+
+To overcome the challenges in Content Delivery, recall
+section~\ref{sec:challenges}, various solutions have been proposed by the
+research community. While they all differ in certain aspects, their basic idea
+is the same: utilize available information about the network to make an
+educated selection prior connecting to a service.  Following this idea, all of
+the proposed solution employ the same basic conceptual design: the
+\emph{management plane} is responsible for collecting up-to-date information
+about the network while the \emph{control plane} acts as an interface to this
+information for the application.\\
+
+\noindent {\bf Management Plane: The Network Map.}
+The systems management plane is responsible to collect up-to-date state network
+information, such as network topology, routing information, link utilization
+and other important metrics. This information is used to maintain an internal
+map of the network representing the current state of the real network.  One
+important aspect of this component is how the information about the network is
+retrieved. The different implementations range from active measurements over
+passive measurements to active participation in network management systems
+(such as BGP). Another important aspect is the frequency in which the
+information is collected. For certain information such as topology or routing
+an immediate update is necessary to guarantee correct functioning of the
+system, while others, such as link utilization or packet loss rates, only
+degrade the quality of the system. Still other information, such as link
+capacities or transmission delays, can be considered (semi-)static.  Last but
+not least the systems differ in what information is necessary to be
+operational and if additional information sources can be used to improve
+accuracy.\\
+
+\noindent {\bf Control Plane: The Information Interface.}
+The control plane of the system is responsible for providing an interface to
+the information of the management plane so that clients can make use of the
+information. This can basically be seen as an interface or API that clients can
+query to get information about the current network state. The various proposed
+solutions differ mainly in which fashion and at which granularity the
+information can be retrieved. There are two main competing approaches:
+abstracted network maps and preference lists. The first one transforms the
+available information from the management plane into an annotated
+representation of nodes and edges. The big difference to the actual data of the
+management plane is the aggregation level and the specific annotations. Clients
+can then query the system to get an up-to-date abstract network map, which they
+can use to decide which of the possible destination to connect to by
+calculating the best candidates by themselves using their own optimization
+target. The second one uses the information of the management plane to create a
+ranked list of possible service destinations (read: IP addresses). The required
+input includes the source, possible destinations and (if the system supports
+multiple collaboration objectives) an optimization goal, \eg minimal delay. The
+output consists of a re-ordered list of the possible destinations in regard to
+the optimization goal, the first being the most and the last being the least
+desirable destination.
+
+Note that in both cases the client is in the position to select the final
+destination, allowing to completely ignore the additional information. Another
+important fact is that the client is not necessarily the end-user but might be
+a service provider themselves. For instance a company providing content
+delivery service (CDN) could make use of this service to improve its
+user-to-server mapping accuracy or in case of the BitTorrent P2P system the
+tracker could query the service prior returning an initial peer list to a
+connected client.  While not strictly necessary, the two components are
+usually implemented as separate entities within the system to allow better
+scalability, information aggregation and/or anonymization without loosing
+precision or multiple collaboration objectives. In addition to that, all
+systems table important issues for any collaboration approach, such as privacy
+information leakage or targeted objective(s).
+
+The presentation of the following solutions will outline the specific
+implementation and thus highlights the differences between the solutions.
+
+\subsection{P2P Oracle Service}\label{sec:p2p-collaboration}
+
+Aggarwal et al.~\cite{afs-cispp2pcip-ccr07} describe an \emph{oracle} service to
+solve the mismatch between the overlay network and underlay routing network in
+P2P content delivery. Instead of the P2P node choosing neighbors independently,
+the ISP can offer a service, the \emph{oracle}, that ranks the potential
+neighbors according to certain metrics: a client supplied peer list is
+re-ordered based on coarse-grained distance metrics, \eg the number of AS
+hops~\cite{routing-book-00}, the peer being inside/outside the AS or the
+distance to the edge of the AS. This ranking can be seen as the ISP expressing
+preference for certain P2P neighbors.  For peers inside the network additional
+information can be used, such as access bandwidth, expected delay or link
+congestion to further improve the traffic management.
+
+
+\subsection{Proactive Network Provider Participation for P2P (P4P)}\label{sec:P4P}
+
+The ``Proactive Network Provider Participation for P2P'' is another approach to
+enable cooperative network information sharing between the network provider and
+applications. The P4P architecture~\cite{p4p} introduces iTrackers as portals
+operated by network providers that divides the traffic control responsibilities
+between providers and applications. Each iTracker maintains an internal
+representation of the network in the form of nodes and annotated edges.  A node
+represents a set of clients that can be aggregated at different levels, \eg
+certain locations (PoP) or network state (similar level of congestion).
+Clients can query the iTracker to obtain the ``virtual'' cost for possible peer
+candidates. This ``virtual'' cost allows the network operators to express any
+kind of preferences and may be based on the provider's choice of metrics,
+including utilization, transit costs, or geography. It also enables the client
+to compare and choose the most suited peers to connect to.
+
+
+\subsection{Ono - Travelocity-based Path Selection}\label{sec:Ono}
+
+The Ono system~\cite{taming} by Choffnes and Bustamante is based on
+``techniques for inferring and exploiting the network measurements performed by
+CDNs for the purpose of locating and utilizing quality Internet paths without
+performing extensive path probing or monitoring'' proposed by Su \etal
+in~\cite{DraftingAkamai:SIGCOMM2006}. Based on their observations that CDN
+redirection is driven primarily by latency~\cite{DraftingAkamai:SIGCOMM2006},
+they formulate the following hypothesis: Peers that exhibit similar redirection
+behavior of the same CDN are most likely close to each other, probably even in
+the same AS.  For this each peer performs periodic DNS lookups on popular CDN
+names and calculates how close other peers are by determining the cosine
+similarity with their lookups. To share the lookup among the peers they use
+either direct communication between Ono enabled peers or via distributed
+storage solutions \eg DHT-based.  On the downside Ono relies on the precision
+of the measurements that the CDNs perform and that their assignment strategy is
+actually based mainly on delay. Should the CDNs change their strategy in that
+regard Ono might yield wrong input for the biased peer selection the authors
+envision.
+
+When considering our design concept described above, Ono is a bit harder to fit
+into the picture: Ono distributes the functionality of the management and
+control planes among all participating peers.  Also, Ono does not try to
+measure the network state directly, but infers it by observing Akamai's
+user-to-server mapping behavior on a large scale and relies on Akamai doing the
+actual measurements~\cite{Akamai-Network}, Thus the management plane of Ono
+consists of recently resolved hostnames from many P2P clients. The quality of
+other peers can then be assessed by the number of hostnames that resolve to the
+same destination.  The control plane in Ono's case is a DHT, which allows
+decentralized reads and writes of key-value pairs in a distributed manner, thus
+giving access to the data of the management plane.
+
+\subsection{Provider-aided Distance Information System (PaDIS)}\label{PaDIS-Opportunities-for-Collaboration}
+\newcommand{\assignmentenabler}{{informed user-server as\-sign\-ment}\xspace}
+\newcommand{\assignment}{{user-server as\-sign\-ment}\xspace}
+\newcommand{\assignmentproblem}{{informed user-server as\-sign\-ment problem}\xspace}
+
+
+In~\cite{PADIS2010,PaDIS-IC} Poese et al. propose a ``Provider-aided Information Systems
+(PaDIS)'', a system to enable collaboration between network operators and
+content delivery systems. The system enhances concept of the P2P Oracle to
+include server based content delivery systems (\eg CDNs), to maintain an
+up-to-date annotated map of the ISP network and its properties as well as the
+state of ISP-operated servers that are open for rent. In addition, it provides
+recommendations on possible locations for servers to better satisfy the demand
+by the CDN and ISP traffic engineering goals.  In the management plane, it
+gathers detailed information about the network topology, \ie routers and links,
+annotations such as link utilization, router load as well as topological
+changes. An Interior Gateway Protocol (IGP) listener provides up-to-date
+information about routers and links.  Additional information, \eg link
+utilization and other metrics can be retrieved via SNMP. A Border Gateway
+Protocol (BGP) listener collects routing information to calculate the paths
+that traffic takes through the network, including egress traffic. Ingress
+points of traffic can be found by utilizing Netflow data. This allows for
+complete forward and reverse path mapping inside the ISP and enables a complete
+path map between any two points in the ISP network.  While PaDIS builds an
+anotated map of the ISP network, it keeps the information acquired from other
+components in separate data structures. This separation ensures that changes in
+prefix assignments do not directly affect the routing in the annotated network
+map.  Pre-calculating path properties for all paths, allow for constant lookup
+speed independent of path length and network topology. On the control plane,
+PaDIS makes use of the prefrence lists known from the P2P Oracle, but supports
+multiple, individual optimization targets. Apart from basic default
+optimizations (\eg low delay, high throughput), additional optimizations can be
+negotiated between the network operator and the content delivery system.
+For CDN-ISP collaboration opportunities when the ISP operates both the network and the CDN we
+refer the reader to~\cite{CooperativeISPCDN,TECDN,N-CDN,CTTE2010}.
+
+\subsection{Application-Layer Traffic Optimization (ALTO)}\label{sec:ALTO}
+
+The research into P2P traffic localization has led the IETF to form a working
+group for ``Application Layer Traffic Optimization (ALTO)''~\cite{ALTO-WG}.
+The goal of the ALTO WG is to develop Internet standards that offer
+``better-than-random'' peer selection by providing information about the
+underlying network and to design a query-response protocol that the
+applications can query for an optimized peer selection
+strategy~\cite{ietf-alto-protocol}.  On the control plane, ALTO offers multiple
+services to the Applications querying it, most notably are the Endpoint Cost
+Service and the Map service. The Endpoint Cost Service allows the Application
+the query the ALTO server for costs and rankings based on endpoints (usually IP
+subnets) and use that information for an optimized peer selection process or to
+pick the most suitable server of a CDI. The Network Map service makes use of
+the fact that most endpoints are in fact rather close to each other and thus
+can be aggregated into a single entity. The resulting set of entities is then
+called an ALTO Network Map. The definition of proximity in that case depends on
+the aggregation level, in one Map endpoints in the same IP subnet may be
+considered close while in another all subnets attached to the same Point of
+Presence (PoP) are close. In contrast to the Endpoint Cost Service the ALTO
+Network Map is suitable when more Endpoints need to be considered and offers
+better scalability, especially when coupled with caching techniques. Although
+the ALTO WG statement is more P2P centric, the service is also suitable to
+improve the connection to CDN servers.
+

@@ -1,0 +1,126 @@
+The TCP/IP protocol suite was designed with the end-to-end principle \cite{saltzer1984end} in mind. TCP and SCTP are no exception to this rule. They both assume that the network contains relays that operate only at the physical, datalink and network layers of the reference models. 
+
+In such an end-to-end Internet, the payload of an IP packet is never modified inside the network and any transport protocol can be used above IPv4 or IPv6. Today, this behavior corresponds to some islands in the Internet like research backbones and some university networks. Measurements performed in enterprise, cellular and other types of commercial networks reveal that IP packets are processed differently in deployed networks \cite{honda2011still,wang2011untold}.
+
+In addition to the classical repeaters, switches and routers, currently deployed networks contain various types of middleboxes \cite{rfc3234}.  Middleboxes were not part of the original TCP/IP architecture and they have evolved mainly during the last decade. A recent survey in enterprise networks reveals that such networks contain sometimes as many middleboxes as routers \cite{sherry2012making}. 
+
+A detailed survey of all possible middleboxes is outside the scope of this chapter, but it is useful to study the operation of some important types of middleboxes to understand their impact on transport protocols and how transport protocols have to cope with them. 
+
+\subsection{Firewalls}
+
+Firewalls perform checks on the received packets and decide to accept or discard them based on configured security policies. Firewalls play an important role in delimiting network boundaries and controlling incoming and outgoing traffic in enterprise networks. In theory, firewalls should not directly affect transport protocols, but in practice, they may block the deployment of new protocols or extensions to existing ones. Firewalls can either filter packets on the basis of a white list, i.e. an explicit list of allowed communication flows, or a black list, i.e. an explicit list of all forbidden communication flows. Most enterprise firewalls use a white list approach. The network administrator defines a set of allowed communication flows, based on the high-level security policies of the enterprise and configures the low-level filtering rules of the firewall to implement these policies. With such a whitelist, all flows that have not been explicitly defined are forbidden and the firewall discards all packets that do not match an accepted communication flow. This unfortunately implies that a packet that contains a different \emph{Protocol} than the classical TCP, ICMP and UDP protocols will usually not be accepted by such a firewall. This is a major hurdle for the deployment of new transport protocols like SCTP. 
+
+Some firewalls can perform more detailed verification and maintain state for each established TCP connection. Some of these stateful firewalls are capable of verifying whether a packet that arrives for an accepted TCP connection contains a valid sequence number. For this, the firewall maintains state for each TCP connection that it accepts and when a new data packet arrives, it verifies that it belongs to an established connection and that its sequence number fits inside the advertised receive window. This verification is intended to protect the hosts that reside behind the firewall from packet injection attacks despite the fact that these hosts also need to perform the same verification. 
+
+Stateful firewalls may also limit the extensibility of protocols like TCP. To understand the problem, let us consider the large windows extension defined in \cite{rfc1323}. This extension fixes one limitation of the original TCP specification. The TCP header \cite{rfc793} includes a 16-bits field that encodes the receive window in the TCP header. A consequence of this choice is that the standard TCP cannot support a receive window larger than 64 KBytes. This is not large enough for high bandwidth networks. To allow hosts to use a larger window, \cite{rfc1323} changes the semantics of the \emph {receive window} field of the TCP header on a per-connection basis. \cite{rfc1323} defines the \texttt{WScale} TCP option that can only be used inside the \texttt{SYN} and \texttt{SYN+ACK} segments. This extension allows the communicating hosts to maintain their receive window as a 32 bits field. The \texttt{WScale} option contains as parameter the number of bits that will be used to shift the 32-bits window to the right before placing the lower 16 bits in the TCP header. This shift is used on a TCP connection provided that both the client and the server have included the \texttt{WScale} option in the \texttt{SYN} and \texttt{SYN+ACK} segments.
+
+Unfortunately, a stateful firewall that does not understand the \texttt{WScale} option, may cause problems. Consider for example a client and a server that use a very large window. During the three-way handshake, they indicate with the \texttt{WScale} option that they will shift their window by $14$ bits to the right. When the connection starts, each host reserves $2^{17}$ bytes of memory for its receive window\footnote{It is common to start a TCP connection with a small receive window/buffer and automatically increase the buffer size during the transfer \cite{Semke:1998hf}.}. Given the negotiated shift, each host will send in the TCP header a window field set to \texttt{0000000000000100}. If the stateful firewall does understand the \texttt{WScale} option used in the \texttt{SYN} and \texttt{SYN+ACK} segments, it will assume a window of 4 bytes and will discard all received segments. Unfortunately, there are still today stateful firewalls\footnote{See e.g. \url{http://support.microsoft.com/kb/934430}} that do not understand this TCP option defined in 1992.
+
+Stateful firewalls can perform more detailed verification of the packets exchanged during a TCP connection. For example, intrusion detection and intrusion prevention systems are often combined with traffic normalizers \cite{Vutukuru_TCP:2008,handley2001network}. A traffic normalizer is a middlebox that verifies that all packets obey the protocol specification. When used upstream of an intrusion detection system, a traffic normalizer can for example buffer the packets that are received out-of-order and forward them to the IDS once they are in-sequence.
+
+\subsection{Network Address Translators}
+
+A second, and widely deployed middlebox, is the Network Address Translator (NAT). The NAT was defined in \cite{rfc1631} and various extensions have been developed over the years. One of the initial motivation for NAT was to preserve public IP addresses and allow a group of users to share a single IP address. This enabled the deployment of many networks that use so-called \emph{private addresses} \cite{rfc1918} internally and rely on NATs to reach the global Internet. At some point, it was expected that the deployment of IPv6 would render NAT obsolete. This never happened and IPv6 deployment is still very slow \cite{Dhamdhere_IPv6:2012}. Furthermore, some network administrators have perceived several benefits with the deployment of NATs \cite{rfc2993} including : reducing the exposure of addresses, topology hiding, independence from providers, \ldots Some of these perceived advantages have caused the IETF to consider NAT for IPv6 as well, despite the available address space. Furthermore, the IETF, vendors and operators are considering the deployment of large scale Carrier Grade NATs (CGN) to continue to use IPv4 despite the depletion of the addressing space \cite{Perreault_CGN:2012} and also to ease the deployment of IPv6 \cite{rfc6264}. NATs will remain a key element of the deployed networks for the foreseeable future. 
+
+There are different types of NATs depending on the number of addresses that they support and how they maintain state. In this section, we concentrate on a simple but widely deployed NAT that serves a large number of users on a LAN and uses a single public IP address. In this case, the NAT needs to map several private IP addresses on a single public address. To perform this translation and still allow several internal hosts to communicate simultaneously, the NAT must understand the transport protocol that is used by the internal hosts. For TCP, the NAT needs to maintain a pool of TCP port numbers and use one of the available port as the source port for each new connection initiated by an internal host. Upon reception of a packet, the NAT needs to update the source and destination addresses, the source (or destination) port number and also the IP and TCP checksums. The NAT performs this modification transparently in both directions. It is important to note that a NAT can only change the header of the transport protocol that it supports. Most deployed NATs only support TCP \cite{rfc5382}, UDP \cite{rfc4787} and ICMP \cite{rfc5508}. Supporting another transport protocol on a NAT requires software changes \cite{Hayes_NAT:2008} and few NAT vendors implement those changes. This often forces users of new transport protocol to tunnel their protocol on top of UDP to traverse NATs and other middleboxes \cite{rfc6773,Tuexen_Encap:2013}. This limits the ability to innovate in the transport layer.
+
+NAT can be used transparently by most Internet applications. Unfortunately, some applications cannot easily be used over NATs \cite{rfc3027}. The textbook example of this problem is the File Transfer Protocol (FTP) \cite{rfc959}. An FTP client uses two types of TCP connections : a control connection and data connections. The control connection is used to send commands to the server. One of these is the \texttt{PORT} command that allows to specify the IP address and the port numbers that will be used for the data connection to transfer a file. The parameters of the \texttt{PORT} command are sent using a special ASCII syntax \cite{rfc959}. To preserve the operation of the FTP protocol, a NAT can translate the IP addresses and ports that appear in the IP and TCP headers, but also as parameters of the \texttt{PORT} command exchanged over the data connection. Many deployed NATs include Application Level Gateways (ALG) \cite{rfc3027} that implement part of the application level protocol and modify the payload of segments. For FTP, after translation a \texttt{PORT} command may be longer or shorter than the original one. This implies that the FTP ALG needs to maintain state and will have to modify the sequence/acknowledgment numbers of all segments sent over a connection after having translated a \texttt{PORT} command. This is transparent for the FTP application, but has influenced the design of Multipath TCP although recent FTP implementations rarely use the \texttt{PORT} command\cite{rfc2428}.
+
+\subsection{Proxies}
+
+The last middlebox that we cover is the proxy. A proxy is a middlebox that resides on a path and terminates TCP connections. A proxy can be explicit or transparent. The SOCKS5 protocol \cite{rfc1928} is an example of the utilization of an explicit proxy. SOCKS5 proxies are often used in enterprise networks to authenticate the establishment of TCP connections. A classical example of transparent proxies are the HTTP proxies that are deployed in various commercial networks to cache and speedup HTTP requests. In this case, some routers in the network are configured to intercept the TCP connections and redirect them to a proxy server \cite{McLaggan_WCCP:2012}. This redirection is transparent for the application, but from a transport viewpoint, the proxy acts as a relay between the two communicating hosts and there are two different TCP connections\footnote{Some deployments use several proxies in cascade. This allows the utilization of compression techniques and other non-standard TCP extensions on the connection between two proxies.}. The first one is initiated by the client and terminates at the proxy. The second one is initiated by the proxy and terminates at the server. The data exchanged over the first connection is passed to the second one, but the TCP options are not necessarily preserved. In some deployments, the proxy can use different options than the client and/or the server.
+
+
+\subsection{How prevalent are middleboxes?}
+
+We've learnt that middleboxes of various kinds exist, but are they really deployed in today's networks? Answering
+this question can guide the right way to develop new protocols and enhance existing ones. 
+
+Here we briefly review measurement studies that have attempted to paint an accurate image of middlebox
+deployments in use. The conclusion is that middleboxes are widespread to the point where 
+end-to-end paths without middleboxes have become exceptions, rather than the norm.
+
+There are two broad types of middlebox studies.
+The first type of study uses ground-truth topology information from providers and other organizations.
+While accurate, these studies may overestimate the influence of middleboxes on end-to-end traffic because
+certain behavior is only triggered in rare, corner cases (e.g. an intrusion prevention system may only affect
+traffic carrying known worm signatures). These studies do not tell us exactly \emph{what operations} are applied
+to packets by middleboxes.
+One recent survey study has found that the 57 enterprise networks surveyed deploy as many 
+middleboxes as routers \cite{sherry2012making}. 
+
+Active measurements probe end-to-end paths to trigger ``known'' behaviors of middleboxes.
+Such measurements are very accurate, pinpointing exactly what middleboxes do in certain scenarios.
+However, they offer a lower bound of middlebox deployments, as they may pass through other 
+middleboxes without triggering them. Additionally, such studies are limited to
+probing a full path (cannot probe path segments) thus cannot tell how many middleboxes are deployed 
+on a path exhibiting middlebox behavior. The data surveyed below comes from such studies. 
+
+Network Address Translators are easy to test for: the traffic source needs to compare its local source address
+with the source address of its packets reaching an external site (e.g. what's my IP). When the addresses differ,
+a NAT has been deployed on path. Using this basic technique, existing studies have shown that NATs are deployed almost
+universally by (or for) end-users, be they home or mobile:
+\begin{itemize}
+\item Most cellular providers use them to cope with address space shortage and to provide some level of security. A study surveying 107
+cellular networks across the globe found that 82 of them used NATs \cite{wang2011untold}.
+\item Home users receive a single public IP address (perhaps via DHCP) from their access providers, and deploy NATs to support
+multiple devices. The typical middlebox here is the ``wireless router'', an access point that aggregates all home traffic 
+onto the access link. A study using peer-to-peer clients found that only 12\% of the peers have a public IP address \cite{nat-study}.
+\end{itemize}
+
+Testing for stateless firewalls is equally simple: the client generates traffic using different transport protocols and port
+numbers, and the server acks it back. As long as some tests work, the client knows the endpoint is reachable, and that the failed
+tests are most likely due to firewall behavior. There is a chance that the failed tests are due to the stochastic packet loss
+inherent in the Internet; that is why tests are interleaved and run multiple times.
+
+Firewalls are equally widespread in the Internet, being deployed by most cellular operators \cite{netpiculet}. Home routers often act as
+firewalls, blocking new protocols and even existing ones (e.g. UDP) \cite{nat-study}. Most servers also deploy firewalls to restrict
+in-bound traffic \cite{sherry2012making}. Additionally, many modern operating systems come with ``default-on'' firewalls. For instance, 
+the Windows 7 firewall explicitly asks users to allow incoming connections and to whitelist applications allowed to make outgoing 
+connections.
+
+Testing for explicit proxies can be done by comparing the segments that leave the source with the ones arriving at the destination.
+A proxy will change sequence numbers, perhaps segment packets differently, modify the receive window, and so forth. Volunteers 
+from various parts of the globe ran TCPExposure, a tool that aims to detect such proxies and other middlebox behavior 
+\cite{honda2011still}. The tests cover 142 access networks (including cellular, DSL, public hotspots and offices) in 
+24 countries. Proxying behavior was seen on 10\% of the tested paths\cite{honda2011still}. 
+
+Beyond basic reachability, middleboxes such as traffic normalizers and stateful firewalls have some expectations on the packets they see: what exactly do these middleboxes do, and how widespread are they? The same study sheds some light into
+this matter:
+\begin{itemize}
+\item Middlebox behavior depends on the ports used. Most middleboxes are active on port 80 (HTTP traffic).
+\item A third of paths keep TCP flow state and use it to actively correct acknowledgments for data the middlebox has not
+seen. To probe this behavior, TCPExposure sends a few TCP segments leaving a gap in the sequence number, while the server
+acknowledgment also covers the gap. 
+\item 14\% of paths remove unknown options from SYN packets. These paths will not allow TCP extensions to be deployed.
+\item 18\% of paths modify sequence numbers; of these, a third seem to be proxies, and the other are most likely
+firewalls than randomize the initial sequence number to protect vulnerable end hosts against in-window injection attacks.
+\end{itemize}
+ 
+
+\subsection{The Internet is Ossified}
+
+Deploying a new IP protocol requires a lot of investment to change all the deployed hardware. Experience
+with IPv6 after 15 years since it has been standardized is not encouraging: only a minute fraction of the Internet has
+migrated to v6, and there are no signs of it becoming ``the Internet'' anytime soon. 
+
+Changing IPv4 itself is in theory possible with IP options. Unfortunately, it has been known for a while now
+that ``IP options are not an option'' \cite{fonseca2005ip}. This is because existing routers implement forwarding in hardware 
+for efficiency reasons; packets carrying unknown IP options are treated as exceptions that are processed in software.
+To avoid a denial-of-service on routers' CPU's, such packets are dropped by most routers. 
+
+In a nutshell, we can't really touch IP - but have we also lost our ability to change transport protocols as well? 
+The high level picture emerging from existing middlebox studies is that of a network that is highly tailored to today's traffic
+to the point it is ossified: \emph{changing existing transport protocols is challenging as it needs to carefully consider
+middlebox interactions}. Further, \emph{deploying new transport protocols natively is almost impossible}. 
+
+Luckily, changing transport protocols is still possible, albeit great care must be taken when doing so. 
+Firewalls will block \emph{any} traffic they do not understand, so deploying new protocols
+must necessarily use existing ones just to get through the network. This observation has recently lead to the development
+of Minion, a container protocol that enables basic connectivity above TCP while avoiding its in-order, reliable bytestream
+semantics at the expense of slightly increased bandwidth usage. We discuss Minion in Section \ref{section:minion}.
+
+Even changing TCP is very difficult. The semantics of TCP are embedded in the network fabric, and new extensions
+must function within the confines of these semantics, or they will fail. In section \ref{section:mptcp} we discuss Multipath TCP, 
+another recent extension to TCP, that was designed explicitly to be middlebox compatible.  
+

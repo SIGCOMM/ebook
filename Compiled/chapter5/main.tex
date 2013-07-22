@@ -1,0 +1,101 @@
+\newcommand{\CLASSINPUTinnersidemargin}{0.7in}
+\newcommand{\CLASSINPUToutersidemargin}{0.7in}
+
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{fancyvrb}
+\usepackage{boxedminipage}
+\usepackage{color}
+\usepackage{paralist}
+\usepackage{algorithmic}
+\usepackage{slashbox}
+\usepackage{xspace}
+\usepackage{url}
+\usepackage{subfig}
+\usepackage{amsthm}
+\newcommand{\ed}[1]{\textsf{\textcolor{red}{[#1]}}}
+\newcommand{\remove}[1]{}
+\usepackage{epstopdf}
+\epstopdfsetup{update}
+
+\begin{document}
+
+\title{Recent advances in reliable transport protocols\footnote{
+Parts of the text in this chapter have appeared in the following
+ publications by the same author(s): \cite{login}, \cite{mptcp-cc},
+ \cite{raiciu2012hard}, ~\cite{nowlan12fitting} 
+and~\cite{iyengar10minion}.}
+}
+
+\author{}
+
+\maketitle
+
+\begin{abstract}
+Transport protocols play a critical role in today's Internet. This
+chapter first looks at the recent of the reliable transport
+protocols. It then explains the growing impact of middleboxes on the
+evolvability of these protocols. 
+Two recent protocol extensions,
+Multipath TCP and Minion,
+which were both designed to extend the current Transport Layer 
+in the Internet
+are then described.
+\end{abstract}
+
+
+\section{Introduction}
+%%%%%%%%%%%%%%%%%%
+
+\input{intro.tex}
+
+
+\section{Today's Internet}\label{section:today}
+%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{internet.tex}
+
+%\section{Structuring the transport layer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{structure.tex}
+
+\section{Multipath TCP}\label{section:mptcp}
+
+%%%%%%%%%%%%%%%%%%%%
+
+\input{mptcp.tex}
+
+\section{Minion}\label{section:minion}
+%%%%%%%%%%%%%
+
+\input{minion.tex}
+
+
+%\section{A glimpse into future transport protocols}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{future.tex}
+
+\section{Conclusion}\label{section:conclusion}
+%%%%%%%%%%%%%%%%%
+
+\input{conclusion.tex}
+
+
+\bibliographystyle{plain}
+\bibliography{ebook,rfc}
+
+\appendix
+
+\section{Exercises}
+%%%%%%%%%%%%%%%%
+
+\input{exercises.tex}
+
+\end{document}
+

@@ -1,0 +1,1 @@
+latex paper; bibtex paper; dvips -Ppdf paper.dvi ; ps2pdf paper.ps
