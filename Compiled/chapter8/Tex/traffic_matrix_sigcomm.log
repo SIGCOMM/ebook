@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.7.4)  22 JUL 2013 16:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.7.4)  23 JUL 2013 11:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -718,14 +718,9 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbraceleft' on input line 248.
 
-(./abstract.tex) [1
+(./abstract.tex) (./introduction.tex [1
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (Tex/tr
-affic_matrix_sigcomm.toc)
-\tf@toc=\write5
-\openout5 = `traffic_matrix_sigcomm.toc'.
-
- [2] (./introduction.tex [3]
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 108.
 
 
@@ -734,9 +729,9 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 108.
- [4] [5] [6])
-(./tm.tex [7]
-<Figures/traffic_matrices.pdf, id=233, 627.34375pt x 276.03125pt>
+ [3] [4] [5])
+(./tm.tex [6]
+<Figures/traffic_matrices.pdf, id=199, 627.34375pt x 276.03125pt>
 File: Figures/traffic_matrices.pdf Graphic file (type pdf)
 
 <use Figures/traffic_matrices.pdf>
@@ -747,9 +742,7 @@ Overfull \hbox (44.48593pt too wide) detected at line 40
 \OML/cmm/m/it/10 X \OT1/cmr/m/n/10 = []
  []
 
-[8
-
- <./Figures/traffic_matrices.pdf>] [9] (./eg_tm.tex) [10] [11]
+[7 <./Figures/traffic_matrices.pdf>] [8] (./eg_tm.tex)
 Package epstopdf Info: Source file: <Figures/abilene_map.eps>
 (epstopdf)                    date: 2013-07-22 16:06:11
 (epstopdf)                    size: 22677 bytes
@@ -761,7 +754,7 @@ verted-to.pdf Figures/abilene_map.eps>
 (epstopdf)             \includegraphics on input line 231.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/abilene_map-eps-converted-to.pdf, id=288, 391.4625pt x 204.765pt>
+<Figures/abilene_map-eps-converted-to.pdf, id=243, 391.4625pt x 204.765pt>
 File: Figures/abilene_map-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figures/abilene_map-eps-converted-to.pdf>
@@ -780,7 +773,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 243.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/Abilene_2004_totals-eps-converted-to.pdf, id=291, 746.79pt x 275.0275p
+<Figures/Abilene_2004_totals-eps-converted-to.pdf, id=246, 746.79pt x 275.0275p
 t>
 File: Figures/Abilene_2004_totals-eps-converted-to.pdf Graphic file (type pdf)
  <use Figures/Abilene_2004_totals-eps-converted-to.pdf>
@@ -799,7 +792,7 @@ _short-eps-converted-to.pdf Figures/Abilene_2004_totals_short.eps>
 (epstopdf)             \includegraphics on input line 253.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/Abilene_2004_totals_short-eps-converted-to.pdf, id=292, 776.9025pt x 2
+<Figures/Abilene_2004_totals_short-eps-converted-to.pdf, id=247, 776.9025pt x 2
 75.0275pt>
 File: Figures/Abilene_2004_totals_short-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -807,39 +800,36 @@ File: Figures/Abilene_2004_totals_short-eps-converted-to.pdf Graphic file (type
 Package pdftex.def Info: Figures/Abilene_2004_totals_short-eps-converted-to.pdf
  used on input line 253.
 (pdftex.def)             Requested size: 310.4979pt x 109.92091pt.
-)
-(./measurements.tex [12] [13 <./Figures/abilene_map-eps-converted-to.pdf> <./Fi
-gures/Abilene_2004_totals-eps-converted-to.pdf> <./Figures/Abilene_2004_totals_
-short-eps-converted-to.pdf>] [14
 
-] [15]
+[9] [10]) (./measurements.tex [11] [12 <./Figures/abilene_map-eps-converted-to.
+pdf> <./Figures/Abilene_2004_totals-eps-converted-to.pdf> <./Figures/Abilene_20
+04_totals_short-eps-converted-to.pdf>] [13]
 Overfull \hbox (1.88441pt too wide) in paragraph at lines 137--139
 []\OT1/cmr/bx/n/10 incorrect link ob-ser-va-tions\OT1/cmr/m/n/10 : poor router 
 ven-dor im-ple-men-ta-tions causes
  []
 
-[16] <Figures/tm_formulation.pdf, id=370, 375.4025pt x 232.87pt>
+[14] <Figures/tm_formulation.pdf, id=328, 375.4025pt x 232.87pt>
 File: Figures/tm_formulation.pdf Graphic file (type pdf)
 
 <use Figures/tm_formulation.pdf>
 Package pdftex.def Info: Figures/tm_formulation.pdf used on input line 216.
 (pdftex.def)             Requested size: 155.24895pt x 96.30522pt.
 
-<Figures/tm_formulation_2.pdf, id=371, 375.4025pt x 232.87pt>
+<Figures/tm_formulation_2.pdf, id=329, 375.4025pt x 232.87pt>
 File: Figures/tm_formulation_2.pdf Graphic file (type pdf)
 
 <use Figures/tm_formulation_2.pdf>
 Package pdftex.def Info: Figures/tm_formulation_2.pdf used on input line 223.
 (pdftex.def)             Requested size: 155.24895pt x 96.30522pt.
- [17 <./Figures/tm_formulation.pdf> <./Figures/tm_formulation_2.pdf>]
-<Figures/underdetermined.pdf, id=406, 523.9575pt x 232.87pt>
+ [15] [16 <./Figures/tm_formulation.pdf> <./Figures/tm_formulation_2.pdf>]
+<Figures/underdetermined.pdf, id=377, 523.9575pt x 232.87pt>
 File: Figures/underdetermined.pdf Graphic file (type pdf)
 
 <use Figures/underdetermined.pdf>
 Package pdftex.def Info: Figures/underdetermined.pdf used on input line 307.
 (pdftex.def)             Requested size: 207.0021pt x 91.99863pt.
- [18 <./Figures/underdetermined.pdf>])
-(./models.tex [19]
+) (./models.tex [17 <./Figures/underdetermined.pdf>]
 Package epstopdf Info: Source file: <Figures/australian_internet_usage_log.eps>
 
 (epstopdf)                    date: 2013-07-22 16:06:11
@@ -853,7 +843,7 @@ _usage_log-eps-converted-to.pdf Figures/australian_internet_usage_log.eps>
 (epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/australian_internet_usage_log-eps-converted-to.pdf, id=446, 748.7975pt
+<Figures/australian_internet_usage_log-eps-converted-to.pdf, id=409, 748.7975pt
  x 497.86pt>
 File: Figures/australian_internet_usage_log-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -862,10 +852,8 @@ Package pdftex.def Info: Figures/australian_internet_usage_log-eps-converted-to
 .pdf used on input line 46.
 (pdftex.def)             Requested size: 217.34756pt x 144.51244pt.
 
-[20
-
-] [21 <./Figures/australian_internet_usage_log-eps-converted-to.pdf>]
-[22]
+[18 <./Figures/australian_internet_usage_log-eps-converted-to.pdf>] [19]
+[20]
 Package epstopdf Info: Source file: <Figures/Abilene_2004_decomp_1.eps>
 (epstopdf)                    date: 2013-07-22 16:06:10
 (epstopdf)                    size: 121436 bytes
@@ -878,7 +866,7 @@ _1-eps-converted-to.pdf Figures/Abilene_2004_decomp_1.eps>
 (epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/Abilene_2004_decomp_1-eps-converted-to.pdf, id=491, 780.9175pt x 275.0
+<Figures/Abilene_2004_decomp_1-eps-converted-to.pdf, id=456, 780.9175pt x 275.0
 275pt>
 File: Figures/Abilene_2004_decomp_1-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -886,7 +874,7 @@ File: Figures/Abilene_2004_decomp_1-eps-converted-to.pdf Graphic file (type pdf
 Package pdftex.def Info: Figures/Abilene_2004_decomp_1-eps-converted-to.pdf use
 d on input line 227.
 (pdftex.def)             Requested size: 310.4979pt x 109.35017pt.
- [23 <./Figures/Abilene_2004_decomp_1-eps-converted-to.pdf>]
+ [21 <./Figures/Abilene_2004_decomp_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/Abilene_2004_fourier_sprectra.eps>
 
 (epstopdf)                    date: 2013-07-22 16:06:10
@@ -900,7 +888,7 @@ r_sprectra-eps-converted-to.pdf Figures/Abilene_2004_fourier_sprectra.eps>
 (epstopdf)             \includegraphics on input line 284.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/Abilene_2004_fourier_sprectra-eps-converted-to.pdf, id=513, 488.82625p
+<Figures/Abilene_2004_fourier_sprectra-eps-converted-to.pdf, id=477, 488.82625p
 t x 422.57875pt>
 File: Figures/Abilene_2004_fourier_sprectra-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -922,7 +910,7 @@ r_cum_power-eps-converted-to.pdf Figures/Abilene_2004_fourier_cum_power.eps>
 (epstopdf)             \includegraphics on input line 293.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/Abilene_2004_fourier_cum_power-eps-converted-to.pdf, id=514, 523.9575p
+<Figures/Abilene_2004_fourier_cum_power-eps-converted-to.pdf, id=478, 523.9575p
 t x 411.5375pt>
 File: Figures/Abilene_2004_fourier_cum_power-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -944,7 +932,7 @@ r_model_10-eps-converted-to.pdf Figures/Abilene_2004_fourier_model_10.eps>
 (epstopdf)             \includegraphics on input line 304.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/Abilene_2004_fourier_model_10-eps-converted-to.pdf, id=515, 811.03pt x
+<Figures/Abilene_2004_fourier_model_10-eps-converted-to.pdf, id=479, 811.03pt x
  275.0275pt>
 File: Figures/Abilene_2004_fourier_model_10-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -965,7 +953,7 @@ r_model_100-eps-converted-to.pdf Figures/Abilene_2004_fourier_model_100.eps>
 (epstopdf)             \includegraphics on input line 313.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/Abilene_2004_fourier_model_100-eps-converted-to.pdf, id=516, 811.03pt 
+<Figures/Abilene_2004_fourier_model_100-eps-converted-to.pdf, id=480, 811.03pt 
 x 275.0275pt>
 File: Figures/Abilene_2004_fourier_model_100-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -974,7 +962,7 @@ File: Figures/Abilene_2004_fourier_model_100-eps-converted-to.pdf Graphic file
 Package pdftex.def Info: Figures/Abilene_2004_fourier_model_100-eps-converted-t
 o.pdf used on input line 313.
 (pdftex.def)             Requested size: 310.4979pt x 105.2921pt.
- [24] [25 <./Figures/Abilene_2004_fourier_sprectra-eps-converted-to.pdf> <./Fig
+ [22] [23 <./Figures/Abilene_2004_fourier_sprectra-eps-converted-to.pdf> <./Fig
 ures/Abilene_2004_fourier_cum_power-eps-converted-to.pdf> <./Figures/Abilene_20
 04_fourier_model_10-eps-converted-to.pdf> <./Figures/Abilene_2004_fourier_model
 _100-eps-converted-to.pdf>]
@@ -991,7 +979,7 @@ ogram_input-eps-converted-to.pdf Figures/Abilene_2004_spectrogram_input.eps>
 (epstopdf)             \includegraphics on input line 383.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/Abilene_2004_spectrogram_input-eps-converted-to.pdf, id=564, 760.8425p
+<Figures/Abilene_2004_spectrogram_input-eps-converted-to.pdf, id=529, 760.8425p
 t x 275.0275pt>
 File: Figures/Abilene_2004_spectrogram_input-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -1014,7 +1002,7 @@ m_week.eps>
 (epstopdf)             \includegraphics on input line 392.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/Abilene_2004_fourier_spectrogram_week-eps-converted-to.pdf, id=565, 75
+<Figures/Abilene_2004_fourier_spectrogram_week-eps-converted-to.pdf, id=530, 75
 5.82375pt x 253.94875pt>
 File: Figures/Abilene_2004_fourier_spectrogram_week-eps-converted-to.pdf Graphi
 c file (type pdf)
@@ -1037,7 +1025,7 @@ _day.eps>
 (epstopdf)             \includegraphics on input line 407.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/Abilene_2004_fourier_spectrogram_day-eps-converted-to.pdf, id=566, 755
+<Figures/Abilene_2004_fourier_spectrogram_day-eps-converted-to.pdf, id=531, 755
 .82375pt x 253.94875pt>
 File: Figures/Abilene_2004_fourier_spectrogram_day-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -1050,10 +1038,6 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 435.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 435.
-
-[26] [27 <./Figures/Abilene_2004_spectrogram_input-eps-converted-to.pdf> <./Fig
-ures/Abilene_2004_fourier_spectrogram_week-eps-converted-to.pdf> <./Figures/Abi
-lene_2004_fourier_spectrogram_day-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/PCA_example.eps>
 (epstopdf)                    date: 2013-07-22 16:06:11
 (epstopdf)                    size: 204985 bytes
@@ -1065,7 +1049,7 @@ verted-to.pdf Figures/PCA_example.eps>
 (epstopdf)             \includegraphics on input line 479.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/PCA_example-eps-converted-to.pdf, id=617, 385.44pt x 218.8175pt>
+<Figures/PCA_example-eps-converted-to.pdf, id=544, 385.44pt x 218.8175pt>
 File: Figures/PCA_example-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figures/PCA_example-eps-converted-to.pdf>
@@ -1076,7 +1060,11 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 484.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 484.
- [28 <./Figures/PCA_example-eps-converted-to.pdf>] [29] [30] [31] [32] [33]
+ [24] [25 <./Figures/Abilene_2004_spectrogram_input-eps-converted-to.pdf> <./Fi
+gures/Abilene_2004_fourier_spectrogram_week-eps-converted-to.pdf> <./Figures/Ab
+ilene_2004_fourier_spectrogram_day-eps-converted-to.pdf>] [26 <./Figures/PCA_ex
+ample-eps-converted-to.pdf>]
+[27] [28] [29] [30] [31]
 Package epstopdf Info: Source file: <Figures/hot_potato.eps>
 (epstopdf)                    date: 2013-07-22 16:06:11
 (epstopdf)                    size: 59846 bytes
@@ -1088,7 +1076,7 @@ erted-to.pdf Figures/hot_potato.eps>
 (epstopdf)             \includegraphics on input line 822.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/hot_potato-eps-converted-to.pdf, id=726, 707.64375pt x 387.4475pt>
+<Figures/hot_potato-eps-converted-to.pdf, id=691, 707.64375pt x 387.4475pt>
 File: Figures/hot_potato-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figures/hot_potato-eps-converted-to.pdf>
@@ -1107,73 +1095,71 @@ nverted-to.pdf Figures/hot_potato_2.eps>
 (epstopdf)             \includegraphics on input line 822.
 Package epstopdf Info: Output file is already uptodate.
 
-<Figures/hot_potato_2-eps-converted-to.pdf, id=727, 707.64375pt x 387.4475pt>
+<Figures/hot_potato_2-eps-converted-to.pdf, id=692, 707.64375pt x 387.4475pt>
 File: Figures/hot_potato_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figures/hot_potato_2-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/hot_potato_2-eps-converted-to.pdf used on inpu
 t line 822.
 (pdftex.def)             Requested size: 155.24895pt x 84.99632pt.
- [34 <./Figures/hot_potato-eps-converted-to.pdf> <./Figures/hot_potato_2-eps-co
-nverted-to.pdf>]
-<Figures/example_grav_2.pdf, id=750, 617.30624pt x 277.035pt>
+
+<Figures/example_grav_2.pdf, id=696, 617.30624pt x 277.035pt>
 File: Figures/example_grav_2.pdf Graphic file (type pdf)
 
 <use Figures/example_grav_2.pdf>
 Package pdftex.def Info: Figures/example_grav_2.pdf used on input line 894.
 (pdftex.def)             Requested size: 217.34756pt x 97.53859pt.
 
-<Figures/example_grav_int.pdf, id=751, 617.30624pt x 277.035pt>
+<Figures/example_grav_int.pdf, id=697, 617.30624pt x 277.035pt>
 File: Figures/example_grav_int.pdf Graphic file (type pdf)
 
 <use Figures/example_grav_int.pdf>
 Package pdftex.def Info: Figures/example_grav_int.pdf used on input line 903.
 (pdftex.def)             Requested size: 155.24895pt x 69.67284pt.
 
-<Figures/example_grav_in.pdf, id=752, 617.30624pt x 277.035pt>
+<Figures/example_grav_in.pdf, id=698, 617.30624pt x 277.035pt>
 File: Figures/example_grav_in.pdf Graphic file (type pdf)
 
 <use Figures/example_grav_in.pdf>
 Package pdftex.def Info: Figures/example_grav_in.pdf used on input line 910.
 (pdftex.def)             Requested size: 155.24895pt x 69.67284pt.
 
-<Figures/example_grav_out.pdf, id=753, 617.30624pt x 277.035pt>
+<Figures/example_grav_out.pdf, id=699, 617.30624pt x 277.035pt>
 File: Figures/example_grav_out.pdf Graphic file (type pdf)
 
 <use Figures/example_grav_out.pdf>
 Package pdftex.def Info: Figures/example_grav_out.pdf used on input line 917.
 (pdftex.def)             Requested size: 155.24895pt x 69.67284pt.
 
-<Figures/example_grav_ex.pdf, id=754, 617.30624pt x 277.035pt>
+<Figures/example_grav_ex.pdf, id=700, 617.30624pt x 277.035pt>
 File: Figures/example_grav_ex.pdf Graphic file (type pdf)
 
 <use Figures/example_grav_ex.pdf>
 Package pdftex.def Info: Figures/example_grav_ex.pdf used on input line 924.
 (pdftex.def)             Requested size: 155.24895pt x 69.67284pt.
- [35] [36 <./Figures/example_grav_2.pdf> <./Figures/example_grav_int.pdf> <./Fi
-gures/example_grav_in.pdf> <./Figures/example_grav_out.pdf> <./Figures/example_
-grav_ex.pdf>] [37] [38] [39] [40] [41]
-[42] [43] [44] [45]) (./applications.tex [46] [47
-
-]
+ [32 <./Figures/hot_potato-eps-converted-to.pdf> <./Figures/hot_potato_2-eps-co
+nverted-to.pdf>] [33 <./Figures/example_grav_2.pdf> <./Figures/example_grav_int
+.pdf> <./Figures/example_grav_in.pdf> <./Figures/example_grav_out.pdf> <./Figur
+es/example_grav_ex.pdf>] [34] [35] [36]
+[37] [38] [39] [40] [41] [42] [43]) (./applications.tex [44] [45]
 Overfull \hbox (3.19603pt too wide) detected at line 88
 [] [] \OML/cmm/m/it/10 y[]A[] \OMS/cmsy/m/n/10 ^^@ [] \OML/cmm/m/it/10 y[]A[] \
 OT1/cmr/m/n/10 = []
  []
 
-[48] [49] <Figures/baran.pdf, id=1007, 590.205pt x 208.78pt>
+[46] [47] <Figures/baran.pdf, id=970, 590.205pt x 208.78pt>
 File: Figures/baran.pdf Graphic file (type pdf)
 
 <use Figures/baran.pdf>
 Package pdftex.def Info: Figures/baran.pdf used on input line 203.
 (pdftex.def)             Requested size: 279.4462pt x 98.85294pt.
- [50 <./Figures/baran.pdf>] [51]
-(./Figures/demands_example.tex) [52] [53] [54] [55] [56] [57]) (./future.tex
-[58] [59
+ [48 <./Figures/baran.pdf>] [49]
+(./Figures/demands_example.tex) [50] [51] [52] [53] [54] [55]) (./future.tex
+[56]
 
-]) (./resources.tex [60]) [61
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-] (Tex/traffic_matrix_sigcomm.bbl
+) (./resources.tex [57] [58]) (Tex/traffic_matrix_sigcomm.bbl
 Underfull \hbox (badness 3000) in paragraph at lines 8--11
 []\OT1/cmr/m/n/9 Cisco vi-sual net-work-ing in-dex: Fore-cast and method-ol-ogy
 , 2011-2016.
@@ -1191,11 +1177,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--11
 ng _ Solutions _
  []
 
-[62
-
-] [63] [64] [65] [66] [67] [68])
+[59] [60] [61] [62] [63] [64] [65])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
- [69]
+ [66]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 279.
  (Tex/traffic_matrix_sigcomm.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
@@ -1210,9 +1194,9 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
  ) 
 Here is how much of TeX's memory you used:
- 16902 strings out of 493315
- 298599 string characters out of 6137905
- 375206 words of memory out of 5000000
+ 16895 strings out of 493315
+ 298503 string characters out of 6137905
+ 376205 words of memory out of 5000000
  19582 multiletter control sequences out of 15000+600000
  20765 words of font info for 82 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1252,10 +1236,10 @@ ype1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2013/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2013/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
 /public/amsfonts/symbols/msbm7.pfb>
-Output written on Tex/traffic_matrix_sigcomm.pdf (69 pages, 1507200 bytes).
+Output written on Tex/traffic_matrix_sigcomm.pdf (66 pages, 1501669 bytes).
 PDF statistics:
- 1429 PDF objects out of 1440 (max. 8388607)
- 1250 compressed objects within 13 object streams
- 333 named destinations out of 1000 (max. 500000)
+ 1387 PDF objects out of 1440 (max. 8388607)
+ 1211 compressed objects within 13 object streams
+ 329 named destinations out of 1000 (max. 500000)
  354 words of extra memory for PDF output out of 10000 (max. 10000000)
 

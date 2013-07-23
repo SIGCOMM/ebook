@@ -1,5 +1,5 @@
-\newcommand{\CLASSINPUTinnersidemargin}{0.7in}
-\newcommand{\CLASSINPUToutersidemargin}{0.7in}
+%\newcommand{\CLASSINPUTinnersidemargin}{0.7in}
+%\newcommand{\CLASSINPUToutersidemargin}{0.7in}
 \documentclass{article}
 
 \usepackage{graphicx}
@@ -12,7 +12,7 @@
 Computer Science Department \\
 Boston University \\
 Boston, MA 02215, USA}
-\date{\today}							% Activate to display a given date or no date
+\date{}							% Activate to display a given date or no date
 
 \def\pd#1#2{\frac{\partial#1}{\partial#2}}   % my own macros
 \def\lg{{\rm log}}
@@ -27,7 +27,7 @@ Boston, MA 02215, USA}
 \begin{document}
 \maketitle
 
-\tableofcontents
+%\tableofcontents
 
 %%%%%
 \section{Introduction}
@@ -109,7 +109,7 @@ Figure \ref{fig:gas-control-loop} illustrates with a block diagram the closed-lo
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering 
-   \includegraphics[width=4in]{gas-control-loop} 
+   \includegraphics[width=4in]{figures/gas-control-loop} 
    \caption{The gas control loop}
    \label{fig:gas-control-loop}
 \end{figure}
@@ -122,7 +122,7 @@ An important question is: {\em What is the goal of network design?} Is it to mak
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=4in]{net-control-loop.jpg} 
+   \includegraphics[width=4in]{figures/net-control-loop.jpg} 
    \caption{The network control loop}
    \label{fig:net-control-loop}
 \end{figure}
@@ -142,14 +142,14 @@ Throughout this chapter we assume strictly concave utilities.
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=2in]{concave-utility.jpg} 
+   \includegraphics[width=2in]{figures/concave-utility.jpg} 
    \caption{Concave utility function}
    \label{fig:concave-utility}
 \end{figure}
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=2in]{concave-function.jpg} 
+   \includegraphics[width=2in]{figures/concave-function.jpg} 
    \caption{Concave function. 
    A function $f(.)$ is said to be concave if $f(\alpha x_1 + (1-\alpha)x_2) \geq \alpha f(x_1) + (1-\alpha) f(x_2)$,
    i.e., for any two points $x_1$ and $x_2$, the straight line  that connects $f(x_1)$ and $f(x_2)$ is always below
@@ -180,7 +180,7 @@ So the routing matrix has seven rows and three columns.
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=5in]{net-model.jpg} 
+   \includegraphics[width=5in]{figures/net-model.jpg} 
    \caption{A network model}
    \label{fig:net-model}
 \end{figure}
@@ -201,7 +201,7 @@ For such an optimization problem, it is known that there exists a unique solutio
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=1.5in]{convex-set.jpg} 
+   \includegraphics[width=1.5in]{figures/convex-set.jpg} 
    \caption{A convex set. A convex set intuitively means that any linear combination of any two points located on the boundary of the region, which is formed by the linear inequalities, lies within the region itself. }
    \label{fig:convex-set}
 \end{figure}
@@ -247,7 +247,7 @@ f = \sum_{r \in R} w_r\; x_r
 Maximizing this function results in maximizing the total weighted throughput for all users. As a special case, for unit weights, the network optimization problem maximizes the total throughput through the network. This might seem to fly in the face of what we think is fair! Consider the following simple example (see Figure~\ref{fig:greedy-alloc}):
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=4in]{greedy-alloc.jpg} 
+   \includegraphics[width=4in]{figures/greedy-alloc.jpg} 
    \caption{Greedy network allocation}
    \label{fig:greedy-alloc}
 \end{figure}
@@ -267,7 +267,7 @@ In other words, if a user cannot consume its equal share of a link, then the exc
 (see Figure~\ref{fig:max-min-alloc}):
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=4in]{max-min-fair.jpg} 
+   \includegraphics[width=4in]{figures/max-min-fair.jpg} 
    \caption{Max-min fair capacity allocation}
    \label{fig:max-min-alloc}
 \end{figure}
@@ -469,7 +469,7 @@ we only consider operation in a linear regime, for example, we ignore non-linear
 the buffer goes empty or hits full capacity.
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=3in]{system-model.jpg} % requires the graphicx package
+   \includegraphics[width=3in]{figures/system-model.jpg} % requires the graphicx package
    \caption{Typical system model}
    \label{fig:system-model}
 \end{figure}
@@ -545,7 +545,7 @@ the block diagram of Figure~\ref{fig:TCP-RED-diagram},
 which can then be analyzed using control-theoretic techniques.
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=4in]{tcp-red.jpg} % requires the graphicx package
+   \includegraphics[width=4in]{figures/tcp-red.jpg} % requires the graphicx package
    \caption{TCP Reno over RED feedback control system}
    \label{fig:TCP-RED-diagram}
 \end{figure}
@@ -738,7 +738,7 @@ Figure~\ref{fig:red} shows how RED tries to avoid congestion by dropping (or mar
 as a (non-linear) function of the average queue length $v$.
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=2in]{red.jpg} % requires the graphicx package
+   \includegraphics[width=2in]{figures/red.jpg} % requires the graphicx package
    \caption{RED dropping (or marking) function}
    \label{fig:red}
 \end{figure}
@@ -803,7 +803,7 @@ where the non-linear system is approximated by a set of {\em linear} equations a
 See Figure \ref{fig:linearize}.
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=3in]{linearize.jpg} % requires the graphicx package
+   \includegraphics[width=3in]{figures/linearize.jpg} % requires the graphicx package
    \caption{Linearization}
    \label{fig:linearize}
 \end{figure}
@@ -910,7 +910,7 @@ the queue length $b(t)$ to a target $B_r$ by controlling the input window or sen
 The output rate from the queue is denoted by $c(t)$.
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=2.5in]{vegas-control.jpg} % requires the graphicx package
+   \includegraphics[width=2.5in]{figures/vegas-control.jpg} % requires the graphicx package
    \caption{Vegas-like system}
    \label{fig:vegas-control}
 \end{figure}
@@ -941,7 +941,7 @@ where $G_0 = \frac{1}{s}$.
 This is called the {\em block diagram} and provides a powerful pictorial tool.
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=4in]{vegas-BD.jpg} % requires the graphicx package
+   \includegraphics[width=4in]{figures/vegas-BD.jpg} % requires the graphicx package
    \caption{Block diagram of Vegas-like system}
    \label{fig:vegas-BD}
 \end{figure} 
@@ -1005,7 +1005,7 @@ we can also control the system's transient response.
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=1.6in]{overdamped.jpg} 
+   \includegraphics[width=1.6in]{figures/overdamped.jpg} 
    \caption{Overdamped response}
    \label{fig:overdamped}
 \end{figure}
@@ -1053,7 +1053,7 @@ See Figure~\ref{fig:undamped}.
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=2.5in]{undamped.jpg} 
+   \includegraphics[width=2.5in]{figures/undamped.jpg} 
    \caption{Undamped response}
    \label{fig:undamped}
 \end{figure}
@@ -1071,7 +1071,7 @@ of the s-plane, the system is stable as oscillations in response to impulse inpu
 and we say that the system exhibits {\em underdamped response}.
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=4in]{pole-loc.jpg} % requires the graphicx package
+   \includegraphics[width=4in]{figures/pole-loc.jpg} % requires the graphicx package
    \caption{Time response depending on pole location}
    \label{fig:pole-loc}
 \end{figure}
@@ -1091,7 +1091,7 @@ when the system stabilizes away from the desired target value.
 
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=4in]{perf-spec.jpg} % requires the graphicx package
+   \includegraphics[width=4in]{figures/perf-spec.jpg} % requires the graphicx package
    \caption{Performance Metrics}
    \label{fig:transient}
 \end{figure}
@@ -1390,7 +1390,7 @@ Z = P + N
 
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=4in]{cauchy.jpg} % requires the graphicx package
+   \includegraphics[width=4in]{figures/cauchy.jpg} % requires the graphicx package
    \caption{Cauchy's principle}
    \label{fig:cauchy}
 \end{figure}
@@ -1405,7 +1405,7 @@ Observe that the zeros of $F(s)$ are the closed-loop poles,
 and the poles of $F(s)$ are the poles of $G(s)H(s)$ (so-called ``open-loop" poles).
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=3in]{closed-loop.jpg} % requires the graphicx package
+   \includegraphics[width=3in]{figures/closed-loop.jpg} % requires the graphicx package
    \caption{Typical closed-loop control system}
    \label{fig:closed-loop}
 \end{figure}
@@ -1423,7 +1423,7 @@ the s-contour avoids such a pole and we show it as a small circle around it.
 }
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=3in]{s-contour.jpg} % requires the graphicx package
+   \includegraphics[width=3in]{figures/s-contour.jpg} % requires the graphicx package
    \caption{Contour around the unstable right-side of the s-plane}
    \label{fig:s-contour}
 \end{figure}
@@ -1473,7 +1473,7 @@ Such intercepts occur when $\omega T = \frac{\pi}{2}, \frac{3 \pi}{2}, \cdots$, 
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=3in]{ex-nyquist.jpg} 
+   \includegraphics[width=3in]{figures/ex-nyquist.jpg} 
    \caption{Example showing the effect of feedback delay}
    \label{fig:ex-nyquist}
 \end{figure}
@@ -1507,7 +1507,7 @@ albeit over a longer timescale of minutes, hours or even days compared to that o
 Figure \ref{fig:block-routing} shows a block diagram that includes both route and sending rate adaptation.
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=5in]{block-routing.jpg} % requires the graphicx package
+   \includegraphics[width=5in]{figures/block-routing.jpg} % requires the graphicx package
    \caption{Block diagram with both flow and routing control}
    \label{fig:block-routing}
 \end{figure}
@@ -1528,7 +1528,7 @@ x = G(\lambda)
 
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=4in]{routing-conv.jpg} % requires the graphicx package
+   \includegraphics[width=4in]{figures/routing-conv.jpg} % requires the graphicx package
    \caption{Convergence}
    \label{fig:routing-conv}
 \end{figure}
@@ -1549,7 +1549,7 @@ and this iterative process continues until we reach the fixed point.
 
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=3in]{contractive.jpg} % requires the graphicx package
+   \includegraphics[width=3in]{figures/contractive.jpg} % requires the graphicx package
    \caption{Contractive mapping}
    \label{fig:contractive}
 \end{figure}
@@ -1563,7 +1563,7 @@ Figure \ref{fig:non-contractive} illustrates a mapping that results in divergenc
 
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=3in]{non-contractive.jpg} % requires the graphicx package
+   \includegraphics[width=3in]{figures/non-contractive.jpg} % requires the graphicx package
    \caption{Divergent mapping}
    \label{fig:non-contractive}
 \end{figure}
@@ -1774,7 +1774,7 @@ s^2 + \alpha\; N = 0 \Rightarrow s = \stackrel{+}{-} j \sqrt{\alpha\; N}
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=4in]{case1-block.jpg} 
+   \includegraphics[width=4in]{figures/case1-block.jpg} 
    \caption{Block diagram of the link sharing model}
    \label{fig:case1-block}
 \end{figure}
@@ -1955,7 +1955,7 @@ a weighted share of the resources.
   
   \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
      \centering
-     \includegraphics[width=4in]{case2-tunnel.jpg} 
+     \includegraphics[width=4in]{figures/case2-tunnel.jpg} 
      \caption{Soft bandwidth-guaranteed tunnel}
      \label{fig:case2-tunnel}
   \end{figure}
@@ -2141,7 +2141,7 @@ to assess such convergence behavior.
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=4in]{tunnel-block1} 
+   \includegraphics[width=4in]{figures/tunnel-block1} 
 \caption{Block diagram of the elastic-tunnel model} 
 \label{fig:block1}
 \end{figure}
@@ -2229,7 +2229,7 @@ in cross-traffic.
 \end{figure*}
 
 \begin{figure}[tbp]
-   \includegraphics[width=5in]{tunnel-block} 
+   \includegraphics[width=5in]{figures/tunnel-block} 
 \caption{Elastic-tunnel model (with feedback delay)} 
 \label{fig:block2}
 \end{figure}
@@ -2820,7 +2820,7 @@ buffer's service rate are constant values.
 \begin{figure*}[htp]
 \centerline{
   % Requires \usepackage{graphicx}
-  \includegraphics[width=0.7\textwidth]{blockDiagram}
+  \includegraphics[width=0.7\textwidth]{figures/blockDiagram}
   }
    \caption{System block diagram}
    \label{fig:sol-block}

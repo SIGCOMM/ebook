@@ -5,6 +5,7 @@ chapter3.pdf: *.tex *.bib Figures/*
 	pdflatex Draft
 	bibtex Draft
 	pdflatex Draft
+	mv Draft.pdf chapter3.pdf
 
 quick:
 	pdflatex Draft

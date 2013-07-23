@@ -114,6 +114,7 @@ $(MAIN_DOCUMENT).ps: $(MAIN_DOCUMENT).dvi
 pdf: $(MAIN_DOCUMENT).pdf 
 	gs -sDEVICE=pdfwrite -dBATCH -dNOPAUSE -dSAFER -dPDFSETTINGS=/printer -dCompatibilityLevel=1.5 -sOutputFile=paper_embed.pdf -c "<> setdistillerparams" -f $< -c quit
 	mv paper_embed.pdf $(MAIN_DOCUMENT).pdf
+	mv $(MAIN_DOCUMENT).pdf chapter5.pdf
 
 $(MAIN_DOCUMENT).pdf: $(SOURCE_DEPENDENCIES) pdffigs
 # Several runs are required in order to get cross-references and

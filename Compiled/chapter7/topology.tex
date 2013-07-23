@@ -20,8 +20,8 @@
 \usepackage{pdfpages}
 % pdfimages gets actual 'images' (bitmaps) out of the PDF, but not plots
 \usepackage{latexsym}
-\usepackage{dsfont}
-\usepackage{amsfonts}
+%\usepackage{dsfont}
+%\usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{ifthen}
@@ -93,7 +93,7 @@
 
 \renewcommand{\comment}[1]{}
 
-\makeindex
+%\makeindex
 \newcommand{\boldindex}[1]{\textbf{\hyperpage{#1}}} % need this so that bold index entries still have hyperlinks
 \newcommand{\define}[1]{{\em #1}\index{#1|boldindex}}
 
@@ -177,15 +177,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
 
 \begin{document}
-
-\pagenumbering{arabic}
-\pagestyle{plain}
-
+%\pagenumbering{arabic}
+%\pagestyle{plain}
 \maketitle
 
 % ToC, etc
-\setcounter{tocdepth}{2}
-\tableofcontents
+%\setcounter{tocdepth}{2}
+%\tableofcontents
 % \clearpage
 % \listoffigures
 % \clearpage
@@ -207,7 +205,7 @@
 % \input{overlay}
 \input{conclusion}
 
-\clearpage
+%\clearpage
 {
 \setlength{\parskip}{1mm}
 \footnotesize
