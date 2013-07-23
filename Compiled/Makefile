@@ -10,6 +10,39 @@ ebook.pdf: *.tex preface/*tex intro/*tex $(PDFCHAPTERS)
 	pdflatex ebook
 	pdflatex ebook
 
+chapter1/chapter1.pdf:
+	cd chapter1 ; $(MAKE) 
+
+
+chapter2/chapter2.pdf:
+	cd chapter2 ; $(MAKE) 
+
+chapter3/chapter3.pdf:
+	cd chapter3 ; $(MAKE) 
+
+chapter4/chapter4.pdf:
+	cd chapter4 ; $(MAKE) 
+
+chapter5/chapter5.pdf:
+	cd chapter5 ; $(MAKE)
+
+chapter6/chapter6.pdf:
+	cd chapter6 ; $(MAKE)
+
+chapter7/chapter7.pdf:
+	cd chapter7 ; $(MAKE) 
+
+chapter8/chapter8.pdf:
+	cd chapter8 ; $(MAKE) 
+
+
+chapter9/chapter9.pdf:
+	cd chapter9 ; $(MAKE) 
+
+
+
+
+
 clean:
 	-for d in $(DIRS); do (cd $$d; $(MAKE) clean ); done
 	rm -f *.aux *.bbl *.blg *.log *.dvi *.bak *~ *.thm ebook.ps ebook.pdf 
