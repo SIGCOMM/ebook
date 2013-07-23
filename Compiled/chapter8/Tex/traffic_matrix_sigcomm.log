@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.7.4)  23 JUL 2013 11:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.7.4)  23 JUL 2013 14:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -744,10 +744,10 @@ Overfull \hbox (44.48593pt too wide) detected at line 40
 
 [7 <./Figures/traffic_matrices.pdf>] [8] (./eg_tm.tex)
 Package epstopdf Info: Source file: <Figures/abilene_map.eps>
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 22677 bytes
 (epstopdf)             Output file: <Figures/abilene_map-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 13007 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/abilene_map-eps-con
 verted-to.pdf Figures/abilene_map.eps>
@@ -762,11 +762,11 @@ Package pdftex.def Info: Figures/abilene_map-eps-converted-to.pdf used on input
  line 231.
 (pdftex.def)             Requested size: 310.4979pt x 162.42181pt.
 Package epstopdf Info: Source file: <Figures/Abilene_2004_totals.eps>
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 430269 bytes
 (epstopdf)             Output file: <Figures/Abilene_2004_totals-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 277764 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Abilene_2004_totals
 -eps-converted-to.pdf Figures/Abilene_2004_totals.eps>
@@ -781,11 +781,11 @@ Package pdftex.def Info: Figures/Abilene_2004_totals-eps-converted-to.pdf used
 on input line 243.
 (pdftex.def)             Requested size: 310.4979pt x 114.3483pt.
 Package epstopdf Info: Source file: <Figures/Abilene_2004_totals_short.eps>
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 54104 bytes
 (epstopdf)             Output file: <Figures/Abilene_2004_totals_short-eps-conv
 erted-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 44883 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Abilene_2004_totals
 _short-eps-converted-to.pdf Figures/Abilene_2004_totals_short.eps>
@@ -832,11 +832,11 @@ Package pdftex.def Info: Figures/underdetermined.pdf used on input line 307.
 ) (./models.tex [17 <./Figures/underdetermined.pdf>]
 Package epstopdf Info: Source file: <Figures/australian_internet_usage_log.eps>
 
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 11418 bytes
 (epstopdf)             Output file: <Figures/australian_internet_usage_log-eps-
 converted-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 8175 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/australian_internet
 _usage_log-eps-converted-to.pdf Figures/australian_internet_usage_log.eps>
@@ -855,11 +855,11 @@ Package pdftex.def Info: Figures/australian_internet_usage_log-eps-converted-to
 [18 <./Figures/australian_internet_usage_log-eps-converted-to.pdf>] [19]
 [20]
 Package epstopdf Info: Source file: <Figures/Abilene_2004_decomp_1.eps>
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 121436 bytes
 (epstopdf)             Output file: <Figures/Abilene_2004_decomp_1-eps-converte
 d-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 104851 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Abilene_2004_decomp
 _1-eps-converted-to.pdf Figures/Abilene_2004_decomp_1.eps>
@@ -877,11 +877,11 @@ d on input line 227.
  [21 <./Figures/Abilene_2004_decomp_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/Abilene_2004_fourier_sprectra.eps>
 
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 9233 bytes
 (epstopdf)             Output file: <Figures/Abilene_2004_fourier_sprectra-eps-
 converted-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 6968 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Abilene_2004_fourie
 r_sprectra-eps-converted-to.pdf Figures/Abilene_2004_fourier_sprectra.eps>
@@ -899,11 +899,11 @@ Package pdftex.def Info: Figures/Abilene_2004_fourier_sprectra-eps-converted-to
 (pdftex.def)             Requested size: 155.24895pt x 134.20917pt.
 Package epstopdf Info: Source file: <Figures/Abilene_2004_fourier_cum_power.eps
 >
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 19216 bytes
 (epstopdf)             Output file: <Figures/Abilene_2004_fourier_cum_power-eps
 -converted-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 9421 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Abilene_2004_fourie
 r_cum_power-eps-converted-to.pdf Figures/Abilene_2004_fourier_cum_power.eps>
@@ -921,11 +921,11 @@ o.pdf used on input line 293.
 (pdftex.def)             Requested size: 162.15042pt x 127.35551pt.
 Package epstopdf Info: Source file: <Figures/Abilene_2004_fourier_model_10.eps>
 
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 49775 bytes
 (epstopdf)             Output file: <Figures/Abilene_2004_fourier_model_10-eps-
 converted-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 42697 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Abilene_2004_fourie
 r_model_10-eps-converted-to.pdf Figures/Abilene_2004_fourier_model_10.eps>
@@ -942,11 +942,11 @@ Package pdftex.def Info: Figures/Abilene_2004_fourier_model_10-eps-converted-to
 (pdftex.def)             Requested size: 310.4979pt x 105.2921pt.
 Package epstopdf Info: Source file: <Figures/Abilene_2004_fourier_model_100.eps
 >
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 53369 bytes
 (epstopdf)             Output file: <Figures/Abilene_2004_fourier_model_100-eps
 -converted-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 43087 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Abilene_2004_fourie
 r_model_100-eps-converted-to.pdf Figures/Abilene_2004_fourier_model_100.eps>
@@ -968,11 +968,11 @@ ures/Abilene_2004_fourier_cum_power-eps-converted-to.pdf> <./Figures/Abilene_20
 _100-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Figures/Abilene_2004_spectrogram_input.eps
 >
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 132204 bytes
 (epstopdf)             Output file: <Figures/Abilene_2004_spectrogram_input-eps
 -converted-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 100869 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Abilene_2004_spectr
 ogram_input-eps-converted-to.pdf Figures/Abilene_2004_spectrogram_input.eps>
@@ -990,11 +990,11 @@ o.pdf used on input line 383.
 (pdftex.def)             Requested size: 310.4979pt x 112.24162pt.
 Package epstopdf Info: Source file: <Figures/Abilene_2004_fourier_spectrogram_w
 eek.eps>
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 9195 bytes
 (epstopdf)             Output file: <Figures/Abilene_2004_fourier_spectrogram_w
 eek-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 6580 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Abilene_2004_fourie
 r_spectrogram_week-eps-converted-to.pdf Figures/Abilene_2004_fourier_spectrogra
@@ -1013,11 +1013,11 @@ erted-to.pdf used on input line 392.
 (pdftex.def)             Requested size: 310.4979pt x 104.32503pt.
 Package epstopdf Info: Source file: <Figures/Abilene_2004_fourier_spectrogram_d
 ay.eps>
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 21432 bytes
 (epstopdf)             Output file: <Figures/Abilene_2004_fourier_spectrogram_d
 ay-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:10
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 7424 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/Abilene_2004_fourie
 r_spectrogram_day-eps-converted-to.pdf Figures/Abilene_2004_fourier_spectrogram
@@ -1039,10 +1039,10 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 435.
 Package epstopdf Info: Source file: <Figures/PCA_example.eps>
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 204985 bytes
 (epstopdf)             Output file: <Figures/PCA_example-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 31909 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/PCA_example-eps-con
 verted-to.pdf Figures/PCA_example.eps>
@@ -1066,10 +1066,10 @@ ilene_2004_fourier_spectrogram_day-eps-converted-to.pdf>] [26 <./Figures/PCA_ex
 ample-eps-converted-to.pdf>]
 [27] [28] [29] [30] [31]
 Package epstopdf Info: Source file: <Figures/hot_potato.eps>
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 59846 bytes
 (epstopdf)             Output file: <Figures/hot_potato-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 29158 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/hot_potato-eps-conv
 erted-to.pdf Figures/hot_potato.eps>
@@ -1084,11 +1084,11 @@ Package pdftex.def Info: Figures/hot_potato-eps-converted-to.pdf used on input
 line 822.
 (pdftex.def)             Requested size: 155.24895pt x 84.99632pt.
 Package epstopdf Info: Source file: <Figures/hot_potato_2.eps>
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 60259 bytes
 (epstopdf)             Output file: <Figures/hot_potato_2-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2013-07-22 16:06:11
+(epstopdf)                    date: 2013-07-23 12:04:16
 (epstopdf)                    size: 29033 bytes
 (epstopdf)             Command: <epstopdf --outfile=Figures/hot_potato_2-eps-co
 nverted-to.pdf Figures/hot_potato_2.eps>
