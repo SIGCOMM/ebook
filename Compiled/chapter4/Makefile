@@ -4,6 +4,8 @@ all: chapter4.pdf
 chapter4.pdf: *.tex sections/*tex *.bib figures/* 
 	latex paper
 	bibtex paper
+	latex paper
+	latex paper
 	dvips -Ppdf paper.dvi -o chapter4.ps
 	ps2pdf chapter4.ps
 
