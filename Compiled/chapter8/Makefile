@@ -13,8 +13,8 @@
 
 #BIBTEX = bibtex -min-crossrefs=50 
 BIBTEX = bibtex 
-# BIBINPUTS = "./:../:/home/mroughan/Tex/bibtex"
-# export BIBINPUTS
+#BIBINPUTS = "./:../"
+#export BIBINPUTS
 PDFLATEX  = pdflatex -interaction=nonstopmode -halt-on-error -synctex=1 -shell-escape
 # STRING      set interaction mode (STRING=batchmode//
 #                          scrollmode/errorstopmode)
@@ -31,15 +31,15 @@ all: chapter8.pdf
 
 pdf: ${PDF} 
 
-bib: ${TEXFILES} FORCE
-	cd ${FULL_DIR}; ${BIBTEX} ${<:.tex=}
+bib: 	${TEXFILES} FORCE
+	${BIBTEX} ${<:.tex=}
 
 ${PDF}: ${TEXFILES} ${SRCFILES}
-	mkdir -p ${FULL_DIR}
-	${PDFLATEX} -output-directory ${FULL_DIR} "\input{$<}" 
-	cd ${FULL_DIR}; ${BIBTEX} ${<:.tex=}
-	${PDFLATEX} -output-directory ${FULL_DIR} "\input{$<}" 
-	mv ${FULL_DIR}/${<:.tex=.pdf} $@
+	${PDFLATEX} "\input{$<}" 
+	${BIBTEX} ${<:.tex=}
+	${PDFLATEX} "\input{$<}"
+	${PDFLATEX} "\input{$<}"
+	mv ${<:.tex=.pdf} $@
 
 chapter8.pdf: traffic_matrix_sigcomm.pdf
 	mv traffic_matrix_sigcomm.pdf chapter8.pdf 
@@ -50,7 +50,7 @@ FORCE:
 # standard cleanup etc
 .PHONY : clean
 clean: 
-	-rm *.dvi *.out *.log *.aux
+	-rm *.dvi *.out *.log *.aux *.synctex.gz *.bbl *.blg
 
 .PHONY : distclean
 distclean: 

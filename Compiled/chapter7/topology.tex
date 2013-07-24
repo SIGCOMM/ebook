@@ -1,6 +1,9 @@
 \newcommand{\CLASSINPUTinnersidemargin}{0.7in}
 \newcommand{\CLASSINPUToutersidemargin}{0.7in}
 \documentclass{article}
+
+\input{../commonstyle}
+
 % \documentclass[11pt,oneside]{article}
 % This text is inserted in the beginning of all
 % LaTex and Tex files I create.
@@ -67,7 +70,7 @@
 
 % hyperlinks, which caused some of the grief above
 \let\captioncaption\caption
-\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,pdfauthor={Matthew Roughan},pdftitle={Optimisation III}]{hyperref}
+%\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,pdfauthor={Matthew Roughan},pdftitle={Optimisation III}]{hyperref}
 \let\caption\captioncaption
 \usepackage[all]{hypcap} 
  
@@ -206,11 +209,13 @@
 \input{conclusion}
 
 %\clearpage
-{
-\setlength{\parskip}{1mm}
-\footnotesize
+%{
+%\setlength{\parskip}{1mm}
+%\footnotesize
 % \bibliographystyle{ieeetr}
-\bibliographystyle{acm}  
+
+\input{../commonbibstyle}
+%\bibliographystyle{acm}  
 % http://sites.stat.psu.edu/~surajit/present/bib.htm
 % http://www.cs.stir.ac.uk/~kjt/software/latex/showbst.html
 % http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#Bibliography_styles
@@ -219,7 +224,7 @@
  
 %\clearpage
 % \printindex
-}
+%}
 
 \end{document}
 
