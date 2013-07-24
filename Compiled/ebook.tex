@@ -4,7 +4,14 @@
 %styles
 \input{commonstyle}
 
+%\hypersetup{pdftitle={Recent Advances in Networking},\
+%           pdfauthor={Hamed Haddadi and Olivier Bonaventure (Editors)}}
+
+
+
 \usepackage[final]{pdfpages}
+
+%\includepdfset{pagecommand=\thispagestyle{plain}}
 
 % from chapter 1
 
@@ -28,6 +35,7 @@ Hamed Haddadi,  Olivier Bonaventure (Editors)\\
 \date{August 2013}
 
 \maketitle
+\pagenumbering{roman}
 
 %\frontmatter 
 
@@ -46,18 +54,19 @@ Hamed Haddadi,  Olivier Bonaventure (Editors)\\
 
 \newpage
 
+\pagenumbering{arabic}
 
 %\mainmatter 
 
-\includepdf[pages=-]{chapter1/chapter1.pdf}
-\includepdf[pages=-]{chapter2/chapter2.pdf}
-\includepdf[pages=-]{chapter3/chapter3.pdf}
-\includepdf[pages=-]{chapter4/chapter4.pdf}
-\includepdf[pages=-]{chapter5/chapter5.pdf}
-\includepdf[pages=-]{chapter6/chapter6.pdf}
-\includepdf[pages=-]{chapter7/chapter7.pdf}
-\includepdf[pages=-]{chapter8/chapter8.pdf}
-\includepdf[pages=-]{chapter9/chapter9.pdf}
+\includepdf[pages=-,pagecommand=\thispagestyle{plain}]{chapter1/chapter1.pdf}
+\includepdf[pages=-,pagecommand=\thispagestyle{plain}]{chapter2/chapter2.pdf}
+\includepdf[pages=-,pagecommand=\thispagestyle{plain}]{chapter3/chapter3.pdf}
+\includepdf[pages=-,pagecommand=\thispagestyle{plain}]{chapter4/chapter4.pdf}
+\includepdf[pages=-,pagecommand=\thispagestyle{plain}]{chapter5/chapter5.pdf}
+\includepdf[pages=-,pagecommand=\thispagestyle{plain}]{chapter6/chapter6.pdf}
+\includepdf[pages=-,pagecommand=\thispagestyle{plain}]{chapter7/chapter7.pdf}
+\includepdf[pages=-,pagecommand=\thispagestyle{plain}]{chapter8/chapter8.pdf}
+\includepdf[pages=-,pagecommand=\thispagestyle{plain}]{chapter9/chapter9.pdf}
 
 
 %\backmatter

@@ -1,0 +1,18 @@
+\usepackage[absolute,showboxes]{textpos}
+
+%set unit to be pagewidth and height, and increase inner margin of box
+\setlength{\TPHorizModule}{\paperwidth}
+\setlength{\TPVertModule}{\paperheight}
+\TPMargin{5pt}
+
+%define \copyrightstatement command for easier use
+\newcommand{\copyrightstatement}{
+    \begin{textblock}{0.7}(0.08,0.9)    % tweak here: {box width}(leftposition, rightposition)
+         \noindent
+         \footnotesize
+         P. Zave, J. Rexford, ``The Design Space of Network
+         Mobility'', in H. Haddadi, O. Bonaventure (Eds.), \emph{Recent
+         Advances in Networking}, (2013), pp. 5-45. Licensed under a
+         creative commons license and available from \url{http://www.sigcomm.org}
+    \end{textblock}
+}

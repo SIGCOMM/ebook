@@ -4,6 +4,8 @@
 
 \input{../commonstyle}
 
+\input{copyright}
+
 % Package to generate and customize Algorithm as per ACM style
 \usepackage[ruled]{algorithm2e}
 \renewcommand{\algorithmcfname}{ALGORITHM}
@@ -148,9 +150,15 @@
 \date{}
 \begin{document}
 
+\copyrightstatement
 
+\pagestyle{empty}
 
 \maketitle
+
+\thispagestyle{empty}
+
+%\maketitle
 
 %\begin{abstract}
 %The unprecedented growth in demand for data is causing serious concerns about the technological sustainability and economic viability of the Internet. Traditionally, network operators have used simple flat-rate broadband data plans for both wired and wireless network access. But today, with the popularity of mobile devices and exponential growth of apps, videos, and clouds, service providers are gradually moving towards more sophisticated pricing schemes, including dynamic pricing. This decade will therefore likely witness a major change in ways in which network resources are managed and the role of economics in allocating these resources.  Students in Computer Science and Electrical Engineering therefore need to be equipped with an adequate knowledge about the interplay between technological and economic factors in making prudent design choices for networked systems. In particular, they need to have a good overview of economic concepts, network pricing models, system design, pricing signaling mechanisms and protocols, and the impact of human factors on pricing decisions. Unfortunately, most of these materials are not readily available as a single source for quick reference; they are scattered across published articles, white papers, news reports, and industry technical reports, from across researchers in diverse fields. It is therefore important for the networking community to create a chapter that organizes the relevant materials in a holistic approach, drawing on both past and present literature in engineering and economics, theory and systems, academia and industry. This proposed chapter will review some of the well-known past broadband pricing proposals (both static and dynamic) and their current realizations in various consumer data plans around the world, discuss several research challenges and developments, and provide an in-depth analysis of economic models and systems design for smart dynamic pricing. It will also provide a brief overview of the relationships between various pricing ideas in broadband data plans and their counterparts in other markets, such as electricity and transportation networks.  By exploring the economics of Internet data pricing, this work attempts to facilitate the academic community's efforts in understanding the existing literature, recognizing new trends, and shaping an appropriate and timely research agenda.  Graduate students will also benefit from a discussion of the open questions and challenges in pricing for identifying project and research topics, as well as access to video lectures, slides, class notes, and exercise questions to help them better understand the material.
