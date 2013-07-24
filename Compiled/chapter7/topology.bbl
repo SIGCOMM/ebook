@@ -2,8 +2,10 @@
 
 \bibitem{achlioptas05:_bias_of_tracer_sampl}
 {\sc Achlioptas, D., Clauset, A., Kempe, D., and Moore, C.}
-\newblock On the bias of traceroute sampling: or, power-law degree
-  distributions in regular graphs.
+\newblock
+  \href{http://dx.doi.org/http://doi.acm.org/10.1145/1060590.1060693}{On the
+  bias of traceroute sampling: or, power-law degree distributions in regular
+  graphs}.
 \newblock In {\em ACM Symposium on Theory of Computing (STOC)\/} (2005), ACM,
   pp.~694--703.
 
@@ -15,7 +17,8 @@
 
 \bibitem{Aiello00}
 {\sc Aiello, W., Chung, F., and Lu, L.}
-\newblock A random graph model for massive graphs.
+\newblock \href{http://doi.acm.org/10.1145/335305.335326}{A random graph model
+  for massive graphs}.
 \newblock In {\em ACM Symposium on Theory of Computing (STOC)\/} (2000), ACM,
   pp.~171--180.
 
@@ -38,8 +41,8 @@
 
 \bibitem{Alderson05}
 {\sc Alderson, D., Li, L., Willinger, W., and Doyle, J.~C.}
-\newblock Understanding {I}nternet topology: principles, models, and
-  validation.
+\newblock \href{http://dx.doi.org/10.1109/TNET.2005.861250}{Understanding
+  {I}nternet topology: principles, models, and validation}.
 \newblock {\em IEEE/ACM Transactions on Networking 13\/} (December 2005),
   1205--1218.
 
@@ -97,7 +100,8 @@
 \bibitem{Broder:2000:GSW:346241.346290}
 {\sc Broder, A., Kumar, R., Maghoul, F., Raghavan, P., Rajagopalan, S., Stata,
   R., Tomkins, A., and Wiener, J.}
-\newblock Graph structure in the web.
+\newblock \href{http://dx.doi.org/10.1016/S1389-1286(00)00083-9}{Graph
+  structure in the web}.
 \newblock {\em Computer Networks 33}, 1-6 (June 2000), 309--320.
 
 \bibitem{broido01:_inter}
@@ -108,14 +112,17 @@
 
 \bibitem{bush07:_testin}
 {\sc Bush, R., Hiebert, J., Maennel, O., Roughan, M., and Uhlig, S.}
-\newblock Testing the reachability of (new) address space.
+\newblock
+  \href{http://dx.doi.org/http://doi.acm.org/10.1145/1321753.1321756}{Testing
+  the reachability of (new) address space}.
 \newblock In {\em ACM SIGCOMM workshop on Internet network management
   (INM'07)\/} (2007), pp.~236--241.
 
 \bibitem{bush09:_inter_optom}
 {\sc Bush, R., Maennel, O., Roughan, M., and Uhlig, S.}
-\newblock Internet optometry: assessing the broken glasses in {I}nternet
-  reachability.
+\newblock
+  \href{http://dx.doi.org/http://doi.acm.org/10.1145/1644893.1644923}{Internet
+  optometry: assessing the broken glasses in {I}nternet reachability}.
 \newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2009),
   pp.~242--253.
 
@@ -126,7 +133,8 @@
 
 \bibitem{Calvert97}
 {\sc Calvert, K., Doar, M., and Zegura, E.}
-\newblock Modeling {I}nternet topology.
+\newblock \href{http://dx.doi.org/10.1109/35.587723}{Modeling {I}nternet
+  topology}.
 \newblock {\em IEEE Communications Magazine 35}, 6 (June 1997), 160--163.
 
 \bibitem{carlson02:_pnas}
@@ -166,11 +174,14 @@
 
 \bibitem{Chung04}
 {\sc Chung, F., and Lu, L.}
-\newblock The average distance in a random graph with given expected degrees.
+\newblock
+  \href{http://www.tandfonline.com/doi/abs/10.1080/15427951.2004.10129081}{The
+  average distance in a random graph with given expected degrees}.
 \newblock {\em Internet Mathematics 1}, 1 (2004), 91--113.
 
 \bibitem{Cisco05}
-{ISP} network design, {C}isco {S}ystems.
+\href{{ws.edu.isoc.org/data/2005/41363436042fc2b563533b/d1-6up.pdf}}{{ISP}
+  network design, {C}isco {S}ystems}.
 \newblock ISOC ISP/IXP Workshop, 2005.
 
 \bibitem{cisco13:_build_cost_effec_scalab_core}
@@ -270,15 +281,16 @@ Converged transport architecture: Improving scale and efficiency in service
 
 \bibitem{Fabrikant02}
 {\sc Fabrikant, A., Koutsoupias, E., and Papadimitriou, C.}
-\newblock Heuristically optimized trade-offs: A new paradigm for power laws in
-  the internet.
-\newblock In {\em Automata, Languages and Programming}, vol.~2380 of {\em
-  Lecture Notes in Computer Science}. Springer Berlin / Heidelberg, 2002,
-  pp.~781--781.
+\newblock \href{http://dx.doi.org/10.1007/3-540-45465-9_11}{Heuristically
+  optimized trade-offs: A new paradigm for power laws in the internet}.
+\newblock \href{http://dx.doi.org/10.1007/3-540-45465-9_11}{In {\em Automata,
+  Languages and Programming}}, vol.~2380 of {\em Lecture Notes in Computer
+  Science}. Springer Berlin / Heidelberg, 2002, pp.~781--781.
 
 \bibitem{faloutsos99:_power_law_relat_of_inter_topol}
 {\sc Faloutsos, M., Faloutsos, P., and Faloutsos, C.}
-\newblock On power-law relationships of the {I}nternet topology.
+\newblock \href{http://doi.acm.org/10.1145/316188.316229}{On power-law
+  relationships of the {I}nternet topology}.
 \newblock In {\em ACM SIGCOMM\/} (1999), pp.~251--262.
 
 \bibitem{nick-bogon}
@@ -462,12 +474,14 @@ Evolving backbone networks using with an {MPLS} supercore.
 
 \bibitem{knight12:_i}
 {\sc Knight, S., Falkner, N., Nguyen, H., Tune, P., and Roughan, M.}
-\newblock I can see for miles: {R}e-visualizing the {I}nternet.
+\newblock \href{http://dx.doi.org/10.1109/MNET.2012.6375890}{I can see for
+  miles: {R}e-visualizing the {I}nternet}.
 \newblock {\em IEEE Network 26}, 6 (2012), 26--32.
 
 \bibitem{Zoo}
 {\sc Knight, S., Nguyen, H., Falkner, N., Bowden, R., and Roughan, M.}
-\newblock The {I}nternet topology zoo.
+\newblock \href{http://dx.doi.org/10.1109/JSAC.2011.111002}{The {I}nternet
+  topology zoo}.
 \newblock {\em IEEE Journal on Selected Areas in Communications (JSAC) 29}, 9
   (October 2011), 1765--1775.
 
@@ -508,7 +522,9 @@ Evolving backbone networks using with an {MPLS} supercore.
 
 \bibitem{LakhinaByersCrovellaXie03}
 {\sc Lakhina, A., Byers, J., Crovella, M., and Xie, P.}
-\newblock Sampling biases in {IP} topology measurements.
+\newblock
+  \href{http://www.cs.bu.edu/faculty/crovella/paper-archive/infocom03-graph-bias.pdf}{Sampling
+  biases in {IP} topology measurements}.
 \newblock In {\em IEEE INFOCOM\/} (April 2003).
 
 \bibitem{Li_internet_math}
@@ -519,8 +535,8 @@ Evolving backbone networks using with an {MPLS} supercore.
 
 \bibitem{Li04}
 {\sc Li, L., Alderson, D., Willinger, W., and Doyle, J.}
-\newblock A first-principles approach to understanding the {Internet's}
-  router-level topology.
+\newblock \href{http://doi.acm.org/10.1145/1015467.1015470}{A first-principles
+  approach to understanding the {Internet's} router-level topology}.
 \newblock In {\em ACM SIGCOMM\/} (2004), pp.~3--14.
 
 \bibitem{liljenstam03:_devel_of_inter_backb_topol}
@@ -539,8 +555,8 @@ Evolving backbone networks using with an {MPLS} supercore.
 \bibitem{Mahadevan06}
 {\sc Mahadevan, P., Krioukov, D., Fomenkov, M., Dimitropoulos, X., claffy,
   k.~c., and Vahdat, A.}
-\newblock The {I}nternet {AS}-level topology: three data sources and one
-  definitive metric.
+\newblock \href{http://doi.acm.org/10.1145/1111322.1111328}{The {I}nternet
+  {AS}-level topology: three data sources and one definitive metric}.
 \newblock {\em ACM SIGCOMM Computer Communications Review (CCR) 36\/} (January
   2006), 17--26.
 
@@ -573,7 +589,8 @@ Evolving backbone networks using with an {MPLS} supercore.
 
 \bibitem{marchetta12:_quant_igmp}
 {\sc Marchetta, P., Merindol, P., Donnet, B., Pescape, A., and Pansiot, J.}
-\newblock Quantifying and mitigating {IGMP} filtering in topology discovery.
+\newblock \href{http://dx.doi.org/10.1109/GLOCOM.2012.6503388}{Quantifying and
+  mitigating {IGMP} filtering in topology discovery}.
 \newblock In {\em IEEE GLOBECOM\/} (2012), pp.~1871--1876.
 
 \bibitem{Medina01}
@@ -584,14 +601,16 @@ Evolving backbone networks using with an {MPLS} supercore.
 
 \bibitem{Merindol:layer2:imc2010}
 {\sc M\'{e}rindol, P., Donnet, B., Bonaventure, O., and Pansiot, J.-J.}
-\newblock On the impact of layer-2 on node degree distribution.
+\newblock \href{http://doi.acm.org/10.1145/1879141.1879164}{On the impact of
+  layer-2 on node degree distribution}.
 \newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2010),
   pp.~179--191.
 
 \bibitem{merindol09:_quant_ases}
 {\sc M\'{e}rindol, P., Van~den Schrieck, V., Donnet, B., Bonaventure, O., and
   Pansiot, J.-J.}
-\newblock Quantifying {AS}es multiconnectivity using multicast information.
+\newblock \href{http://doi.acm.org/10.1145/1644893.1644937}{Quantifying {AS}es
+  multiconnectivity using multicast information}.
 \newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2009),
   pp.~370--376.
 
@@ -670,7 +689,8 @@ Evolving backbone networks using with an {MPLS} supercore.
 
 \bibitem{pansiot10:_extrac}
 {\sc Pansiot, J.-J., M{\'e}rindol, P., Donnet, B., and Bonaventure, O.}
-\newblock Extracting intra-domain topology from mrinfo probing.
+\newblock \href{http://dl.acm.org/citation.cfm?id=1889324.1889333}{Extracting
+  intra-domain topology from mrinfo probing}.
 \newblock In {\em Passive and Active Measurement Conference (PAM)\/} (2010),
   pp.~81--90.
 
@@ -699,7 +719,8 @@ Evolving backbone networks using with an {MPLS} supercore.
 
 \bibitem{Poese:2011:IGD:1971162.1971171}
 {\sc Poese, I., Uhlig, S., Kaafar, M.~A., Donnet, B., and Gueye, B.}
-\newblock {IP} geolocation databases: unreliable?
+\newblock \href{http://doi.acm.org/10.1145/1971162.1971171}{{IP} geolocation
+  databases: unreliable?}
 \newblock {\em ACM SIGCOMM Computer Communications Review (CCR) 41}, 2 (April
   2011), 53--56.
 
@@ -710,8 +731,9 @@ Evolving backbone networks using with an {MPLS} supercore.
 
 \bibitem{quoitin09:_igen}
 {\sc Quoitin, B., Van~den Schrieck, V., François, P., and Bonaventure, O.}
-\newblock {IGen:} generation of router-level internet topologies through
-  network design heuristics.
+\newblock \href{http://informatique.umons.ac.be/networks/igen/}{{IGen:}
+  generation of router-level internet topologies through network design
+  heuristics}.
 \newblock In {\em International Teletraffic Congress\/} (2009), pp.~1--8.
 
 \bibitem{ramachandran06:_spam}
@@ -779,7 +801,8 @@ Evolving backbone networks using with an {MPLS} supercore.
 
 \bibitem{Shavitt:2012:GIP:2238856.2238872}
 {\sc Shavitt, Y., and Zilberman, N.}
-\newblock Geographical {I}nternet {PoP}-level maps.
+\newblock \href{http://dx.doi.org/10.1007/978-3-642-28534-9_13}{Geographical
+  {I}nternet {PoP}-level maps}.
 \newblock In {\em 4th international conference on Traffic Monitoring and
   Analysis\/} (2012), TMA'12, pp.~121--124.
 
@@ -817,7 +840,8 @@ Evolving backbone networks using with an {MPLS} supercore.
 
 \bibitem{subramanian02:_charac_inter}
 {\sc Subramanian, L., Agarwal, S., Rexford, J., and Katz, R.}
-\newblock Characterizing the {I}nternet hierarchy from multiple vantage points.
+\newblock \href{http://dx.doi.org/10.1109/INFCOM.2002.1019307}{Characterizing
+  the {I}nternet hierarchy from multiple vantage points}.
 \newblock In {\em IEEE INFOCOM\/} (2002), vol.~2, pp.~618--627.
 
 \bibitem{cymru}
@@ -826,14 +850,15 @@ The {T}eam {C}ymru bogon reference page.
 
 \bibitem{Tozal:tracenet:imc2010}
 {\sc Tozal, M.~E., and Sarac, K.}
-\newblock {TraceNET:} an {I}nternet topology data collector.
+\newblock \href{http://doi.acm.org/10.1145/1879141.1879188}{{TraceNET:} an
+  {I}nternet topology data collector}.
 \newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2010),
   pp.~356--368.
 
 \bibitem{Tozal:2012:ENL:2342042.2342069}
 {\sc Tozal, M.~E., and Sarac, K.}
-\newblock Estimating network layer subnet characteristics via statistical
-  sampling.
+\newblock \href{http://dx.doi.org/10.1007/978-3-642-30045-5_21}{Estimating
+  network layer subnet characteristics via statistical sampling}.
 \newblock In {\em 11th international IFIP TC 6 conference on Networking --
   Volume Part I\/} (2012), IFIP'12, pp.~274--288.
 
@@ -860,8 +885,8 @@ The {T}eam {C}ymru bogon reference page.
 
 \bibitem{vroom}
 {\sc Wang, Y., Keller, E., Biskeborn, B., van~der Merwe, J., and Rexford, J.}
-\newblock Virtual routers on the move: live router migration as a
-  network-management primitive.
+\newblock \href{http://doi.acm.org/10.1145/1402958.1402985}{Virtual routers on
+  the move: live router migration as a network-management primitive}.
 \newblock In {\em ACM SIGCOMM\/} (2008), pp.~231--242.
 
 \bibitem{Waxman88}
@@ -879,7 +904,8 @@ The {T}eam {C}ymru bogon reference page.
 
 \bibitem{Willinger04}
 {\sc Willinger, W., Alderson, D., Doyle, J.~C., and Li, L.}
-\newblock More "normal" than normal: scaling distributions and complex systems.
+\newblock \href{http://dl.acm.org/citation.cfm?id=1161734.1161766}{More
+  "normal" than normal: scaling distributions and complex systems}.
 \newblock In {\em 36th cWinter simulation Conference\/} (2004), pp.~130--141.
 
 \bibitem{winter09:_model_inter_routin_topol_with}
@@ -929,8 +955,8 @@ The {T}eam {C}ymru bogon reference page.
 
 \bibitem{Zegura97}
 {\sc Zegura, E.~W., Calvert, K.~L., and Donahoo, M.~J.}
-\newblock A quantitative comparison of graph-based models for {I}nternet
-  topology.
+\newblock \href{http://dx.doi.org/10.1109/90.650138}{A quantitative comparison
+  of graph-based models for {I}nternet topology}.
 \newblock {\em IEEE/ACM Transactions on Networking 5\/} (December 1997),
   770--783.
 
@@ -943,7 +969,8 @@ The {T}eam {C}ymru bogon reference page.
 \bibitem{Zhao01:_MOAS}
 {\sc Zhao, X., Pei, D., Wang, L., Massey, D., Mankin, A., Wu, S.~F., and Zhang,
   L.}
-\newblock An analysis of {BGP} multiple origin {AS} ({MOAS}) conflicts.
+\newblock \href{http://doi.acm.org/10.1145/505202.505207}{An analysis of {BGP}
+  multiple origin {AS} ({MOAS}) conflicts}.
 \newblock In {\em ACM SIGCOMM Internet Measurement Workshop (IMW)\/} (2001),
   pp.~31--35.
 

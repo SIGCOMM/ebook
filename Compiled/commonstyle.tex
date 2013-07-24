@@ -1,5 +1,9 @@
 \usepackage{fullpage} % use entire page layout
 \usepackage{times}     % smaller and better fonts that the standard latex ones
 \usepackage[letterpaper]{geometry} % force letter format
-\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue,anchorcolor=black,citecolor=black]{hyperref}
- 
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue,anchorcolor=black,citecolor=black,backref=none]{hyperref}
+\usepackage[usenames,dvipsnames]{color}
+%% Disable backref and make \href colors more decent:
+\definecolor{MyDarkBlue}{rgb}{0,0.1,0.7}
+\hypersetup{pdfborder={0 0 0},colorlinks,breaklinks=true,
+  urlcolor={MyDarkBlue},citecolor={MyDarkBlue},linkcolor={MyDarkBlue} }

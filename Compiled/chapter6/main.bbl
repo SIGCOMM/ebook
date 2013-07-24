@@ -62,7 +62,9 @@
 
 \bibitem{juniper-preso}
 {\sc Miney, I.}
-\newblock {Scaling considerations in MPLS networks}.
+\newblock
+  \href{http://www.nanog.org/meetings/nanog35/presentations/minei.pdf}{{Scaling
+  considerations in MPLS networks}}.
 \newblock Nanog 35, 2005.
 
 \bibitem{rfc5512}
@@ -88,14 +90,16 @@
 
 \bibitem{cisco-preso}
 {\sc Townsley, M.}
-\newblock {{MPLS over various IP tunnels}}.
+\newblock
+  \href{http://www.nanog.org/meetings/nanog30/presentations/townsley.pdf}{{{MPLS
+  over various IP tunnels}}}.
 \newblock Nanog 30, 2004.
 
 \bibitem{varghese}
 {\sc Varghese, G.}
-\newblock {\em {Network Algorithmics: An Interdisciplinary Approach to
-  Designing Fast Networked Devices (The Morgan Kaufmann Series in
-  Networking)}}.
+\newblock \href{http://www.worldcat.org/isbn/0120884771}{{\em {Network
+  Algorithmics: An Interdisciplinary Approach to Designing Fast Networked
+  Devices (The Morgan Kaufmann Series in Networking)}}}.
 \newblock Morgan Kaufmann, Dec. 2004.
 
 \bibitem{rfc5439}
