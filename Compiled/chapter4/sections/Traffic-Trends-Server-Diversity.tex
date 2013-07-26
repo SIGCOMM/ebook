@@ -94,9 +94,9 @@ similar to the observations made in September 2009~\cite{OnDominantCharacteristi
 and in \martrace, more than 50\perc of the trace's total traffic is captured by
 these hosts.
 
-\begin{figure}[tbp]
+\begin{figure}[htbp]
   \centering
-  \includegraphics[height=0.7\linewidth]{figures/dns-diversity.eps}
+  \includegraphics[height=0.7\linewidth]{figures-pdf/dns-diversity}
   \caption{DNS replies for two different sites hosted on a CDI, in two-hour bins}%
   \label{fig:dns_diversity}
 \end{figure}
@@ -149,10 +149,10 @@ Content Distribution Networks (CDNs), such as Akamai~\cite
 MeasuringAndEvaluating2008}, and Content Delivery Platforms (CDPs), such as
 Google~\cite{MovingBeyondE2E2009} and their YouTube service~\cite {YouTube}.
 
-\begin{figure}[tbp]
+\begin{figure}[htbp]
    \center
-   \includegraphics[height=0.7\linewidth,angle=-90]{figures/avgResponseSize.ps}\\
-   \includegraphics[height=0.7\linewidth,angle=-90]{figures/avgResponseSubnetSize.ps}
+   \includegraphics[height=0.7\linewidth]{figures-pdf/avgResponseSize}\\
+   \includegraphics[height=0.7\linewidth]{figures-pdf/avgResponseSubnetSize}
 
   \caption{CCDF of mean \# of IPs (top) and subnets (bottom) per DNS reply for the ISPs DNS resolver.}
   \label{fig:CDF-AVG-REPLY-IPs}
@@ -193,20 +193,20 @@ resolver as their default one. }. The latter lets us discover additional
 diversity as well as understand the preference of the CDI for this specific
 ISP.
 
-\begin{figure}[tbp]
+\begin{figure}[htbp]
   \center
-   \includegraphics[height=0.7\linewidth,angle=-90]{figures/14day-returnedIPCDF-bytes.ps}
-   \includegraphics[height=0.7\linewidth,angle=-90]{figures/14day-returnedIPCDF-hits.ps}
+   \includegraphics[height=0.7\linewidth]{figures-pdf/14day-returnedIPCDF-bytes}
+   \includegraphics[height=0.7\linewidth]{figures-pdf/14day-returnedIPCDF-hits}
   \caption{CDF of \# of IPs for the ISP DNS resolver normalized by traffic
     volume  (top) and requests (bottom) including aggregation on
     domain levels. (Logarithmic x-axis.)}
   \label{fig:CDF-IPPAF-IPs}
 \end{figure}
 
-\begin{figure}[tbp]
+\begin{figure}[htbp]
   \center
-   \includegraphics[height=0.7\linewidth,angle=-90]{figures/SubnetsByBytes.ps}
-   \includegraphics[height=0.7\linewidth,angle=-90]{figures/SubnetsByHits.ps}
+   \includegraphics[height=0.7\linewidth]{figures-pdf/SubnetsByBytes}
+   \includegraphics[height=0.7\linewidth]{figures-pdf/SubnetsByHits}
   \caption{CDF of \# of subnets for ISP DNS resolver normalized by traffic
     volume  (top) and by requests (bottom) including aggregation on
     domain levels. (Logarithmic x-axis.)}
@@ -243,9 +243,9 @@ more than one IP address. Similarly, there is choice between at least two
 subnets over $40$\perc of the time across both metrics, see Figure~\ref
 {fig:CDF-IPPAF-Subnets}. This indicates that there is significant potential for
 the ISP to bias the location preference of the CDI.
-
-\begin{figure}[tbp]
-  \center\includegraphics[height=0.7\linewidth,angle=-90]{figures/maxTTLCDF.ps}
+\clearpage
+\begin{figure}[htbp]
+  \center\includegraphics[height=0.7\linewidth]{figures-pdf/maxTTLCDF}
   \caption{CDF of DNS TTL value by traffic volume and by number of requests.}
   \label{fig:CDF-IPPAF-TTL}
 \end{figure}

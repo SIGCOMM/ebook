@@ -6,10 +6,9 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{amsmath}
-%\usepackage{times}
 \usepackage{multicol,multirow}
 \usepackage{mdwlist}
-\usepackage{epsf}
+\usepackage{epsf,pstricks}
 \usepackage{rotating}
 \usepackage{xspace}
 \usepackage{url}
@@ -20,7 +19,6 @@
 \usepackage{caption}
 \usepackage{subcaption}
 
-\usepackage{auto-pst-pdf}
 
 \newcommand{\martrace}{\textsf{MAR10}\xspace}
 \newcommand{\btlong}{\textsf{BitTorrent-14d}\xspace}
@@ -87,9 +85,11 @@ Vinay~Aggarwal, and Fabian~Schneider
 \input{sections/Traffic-Trends-Overall}
 %
 %\newpage
+
 \input{sections/Traffic-Trends-Server-Diversity}
 %
-%\newpage
+%\clearpage
+
 \input{sections/Content-Delivery-Overview}
 %
 %\newpage
