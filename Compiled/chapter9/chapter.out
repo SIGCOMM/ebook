@@ -1,28 +1,28 @@
-\BOOKMARK [1][-]{section.1}{Introduction}{}
-\BOOKMARK [2][-]{subsection.1.1}{Managed Wireless Networks}{section.1}
-\BOOKMARK [2][-]{subsection.1.2}{Spontaneous Wireless Networks}{section.1}
-\BOOKMARK [2][-]{subsection.1.3}{Mobile Ad hoc and Low-Power Lossy Networks}{section.1}
-\BOOKMARK [2][-]{subsection.1.4}{Reader's Guide}{section.1}
-\BOOKMARK [1][-]{section.2}{Fundamentals of IP Networking and Internet Routing}{}
-\BOOKMARK [2][-]{subsection.2.1}{The IP Networking Model}{section.2}
-\BOOKMARK [2][-]{subsection.2.2}{Main Routing Techniques}{section.2}
-\BOOKMARK [2][-]{subsection.2.3}{The Internet Routing Architecture}{section.2}
-\BOOKMARK [1][-]{section.3}{Communication in Spontaneous Wireless Networks}{}
-\BOOKMARK [2][-]{subsection.3.1}{Physical Aspects of Wireless Communication}{section.3}
-\BOOKMARK [2][-]{subsection.3.2}{IP Model Issues in Spontaneous Wireless Networks}{section.3}
-\BOOKMARK [2][-]{subsection.3.3}{An IP-compatible Architectural Model}{section.3}
-\BOOKMARK [1][-]{section.4}{Flooding and Routing in Spontaneous Wireless Networks}{}
-\BOOKMARK [2][-]{subsection.4.1}{Neighborhood Discovery}{section.4}
-\BOOKMARK [2][-]{subsection.4.2}{Flooding}{section.4}
-\BOOKMARK [2][-]{subsection.4.3}{Link Metrics}{section.4}
-\BOOKMARK [1][-]{section.5}{IETF Routing Protocols for Spontaneous Wireless Networks}{}
-\BOOKMARK [2][-]{subsection.5.1}{Optimized Link State Routing Protocol \(OLSR\)}{section.5}
-\BOOKMARK [2][-]{subsection.5.2}{Ad Hoc On-Demand Distance-Vector Protocol \(AODV\)}{section.5}
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Lightweight On-demand Ad hoc Distance-Vector \(LOADng\)}{subsection.5.2}
-\BOOKMARK [2][-]{subsection.5.3}{Routing Protocol for LLNs \(RPL\)}{section.5}
-\BOOKMARK [1][-]{section.6}{Routing in Wired/Wireless Internetworks with OSPF}{}
-\BOOKMARK [2][-]{subsection.6.1}{Open Shortest Path First Protocol \(OSPF\)}{section.6}
-\BOOKMARK [2][-]{subsection.6.2}{MANET Extensions: A Wireless Interface for OSPF}{section.6}
-\BOOKMARK [1][-]{section.7}{Conclusion: Integrating Spantaneous Wireless Networks in the IP Architecture}{}
-\BOOKMARK [1][-]{section.7}{References}{}
-\BOOKMARK [1][-]{section*.46}{Glossary}{}
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Managed Wireless Networks}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Spontaneous Wireless Networks}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Mobile Ad hoc and Low-Power Lossy Networks}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Reader's Guide}{section.1}% 5
+\BOOKMARK [1][-]{section.2}{Fundamentals of IP Networking and Internet Routing}{}% 6
+\BOOKMARK [2][-]{subsection.2.1}{The IP Networking Model}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.2}{Main Routing Techniques}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.3}{The Internet Routing Architecture}{section.2}% 9
+\BOOKMARK [1][-]{section.3}{Communication in Spontaneous Wireless Networks}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Physical Aspects of Wireless Communication}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.2}{IP Model Issues in Spontaneous Wireless Networks}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.3}{An IP-compatible Architectural Model}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Flooding and Routing in Spontaneous Wireless Networks}{}% 14
+\BOOKMARK [2][-]{subsection.4.1}{Neighborhood Discovery}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.2}{Flooding}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.3}{Link Metrics}{section.4}% 17
+\BOOKMARK [1][-]{section.5}{IETF Routing Protocols for Spontaneous Wireless Networks}{}% 18
+\BOOKMARK [2][-]{subsection.5.1}{Optimized Link State Routing Protocol \(OLSR\)}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.2}{Ad Hoc On-Demand Distance-Vector Protocol \(AODV\)}{section.5}% 20
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Lightweight On-demand Ad hoc Distance-Vector \(LOADng\)}{subsection.5.2}% 21
+\BOOKMARK [2][-]{subsection.5.3}{Routing Protocol for LLNs \(RPL\)}{section.5}% 22
+\BOOKMARK [1][-]{section.6}{Routing in Wired/Wireless Internetworks with OSPF}{}% 23
+\BOOKMARK [2][-]{subsection.6.1}{Open Shortest Path First Protocol \(OSPF\)}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.2}{MANET Extensions: A Wireless Interface for OSPF}{section.6}% 25
+\BOOKMARK [1][-]{section.7}{Conclusion: Integrating Spantaneous Wireless Networks in the IP Architecture}{}% 26
+\BOOKMARK [1][-]{section.7}{References}{}% 27
+\BOOKMARK [1][-]{section*.46}{Glossary}{}% 28
