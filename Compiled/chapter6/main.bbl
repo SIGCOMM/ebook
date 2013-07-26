@@ -2,45 +2,49 @@
 
 \bibitem{rfc5036}
 {\sc Andersson, L., Minei, I., and Thomas, B.}
-\newblock {{LDP Specification}}.
+\newblock \href{http://tools.ietf.org/html/rfc5036}{{{LDP Specification}}}.
 \newblock RFC 5036, 2007.
 
 \bibitem{rfc4664}
 {\sc Andersson, L., and Rosen, E.}
-\newblock {{Framework for Layer 2 Virtual Private Networks (L2VPNs)}}.
+\newblock \href{http://tools.ietf.org/html/rfc4664}{{{Framework for Layer 2
+  Virtual Private Networks (L2VPNs)}}}.
 \newblock RFC 4664, 2006.
 
 \bibitem{rfc4665}
 {\sc Augustyn, W., and Serbest, Y.}
-\newblock {{Service Requirements for Layer 2 Provider-Provisioned Virtual
-  Private Networks}}.
+\newblock \href{http://tools.ietf.org/html/rfc4665}{{{Service Requirements for
+  Layer 2 Provider-Provisioned Virtual Private Networks}}}.
 \newblock RFC 4665, 2006.
 
 \bibitem{rfc3209}
 {\sc Awduche, D., Berger, L., Gan, D., Li, T., Srinivasan, V., and Swallow, G.}
-\newblock {{RSVP-TE: Extensions to RSVP for LSP Tunnels}}.
+\newblock \href{http://tools.ietf.org/html/rfc3209}{{{RSVP-TE: Extensions to
+  RSVP for LSP Tunnels}}}.
 \newblock RFC 3209, Dec. 2001.
 
 \bibitem{rfc2858}
 {\sc Bates, T., Rekhter, Y., Chandra, R., and Katz, D.}
-\newblock {{Multiprotocol Extensions for BGP-4}}.
+\newblock \href{http://tools.ietf.org/html/rfc2858}{{{Multiprotocol Extensions
+  for BGP-4}}}.
 \newblock RFC 2858, 2000.
 
 \bibitem{integrity}
 {\sc Bush, R., and Griffin, T.~G.}
-\newblock Integrity for virtual private routed networks.
+\newblock \href{http://dx.doi.org/10.1109/INFCOM.2003.1208982}{Integrity for
+  virtual private routed networks}.
 \newblock In {\em In Proc. IEEE INFOCOM\/} (2003).
 
 \bibitem{rfc4110}
 {\sc Callon, R., and Suzuki, M.}
-\newblock {{A Framework for Layer 3 Provider-Provisioned Virtual Private
-  Networks}}.
+\newblock \href{http://tools.ietf.org/html/rfc4110}{{{A Framework for Layer 3
+  Provider-Provisioned Virtual Private Networks}}}.
 \newblock RFC 4110, 2005.
 
 \bibitem{rfc4031}
 {\sc Carugi, M., and McDysan, D.}
-\newblock {{Service Requirements for Layer 3 Provider-Provisioned Virtual
-  Private Networks}}.
+\newblock \href{http://tools.ietf.org/html/rfc4031}{{{Service Requirements for
+  Layer 3 Provider-Provisioned Virtual Private Networks}}}.
 \newblock RFC 4031, 2005.
 
 \bibitem{de-ghein}
@@ -50,8 +54,8 @@
 
 \bibitem{rfc4632}
 {\sc Fuller, V., and Li, T.}
-\newblock {{Classless Inter-domain Routing (CIDR): The Internet Address
-  Assignment and Aggregation Plan}}.
+\newblock \href{http://tools.ietf.org/html/rfc4632}{{{Classless Inter-domain
+  Routing (CIDR): The Internet Address Assignment and Aggregation Plan}}}.
 \newblock RFC 4632, 2006.
 
 \bibitem{minei-lucek}
@@ -69,23 +73,27 @@
 
 \bibitem{rfc5512}
 {\sc Mohapatra, P., and Rosen, E.}
-\newblock {{The BGP Encapsulation Subsequent Address Family Identifier (SAFI)
-  and the BGP Tunnel Encapsulation Attribute}}.
+\newblock \href{http://tools.ietf.org/html/rfc5512}{{{The BGP Encapsulation
+  Subsequent Address Family Identifier (SAFI) and the BGP Tunnel Encapsulation
+  Attribute}}}.
 \newblock RFC 5512, 2009.
 
 \bibitem{rfc4364}
 {\sc Rosen, E., and Rekhter, Y.}
-\newblock {{BGP/MPLS IP Virtual Private Networks (VPNs)}}.
+\newblock \href{http://tools.ietf.org/html/rfc4364}{{{BGP/MPLS IP Virtual
+  Private Networks (VPNs)}}}.
 \newblock RFC 4364, 2006.
 
 \bibitem{rfc3031}
 {\sc Rosen, E., Viswanathan, A., and Callon, R.}
-\newblock {{Multiprotocol Label Switching Architecture}}.
+\newblock \href{http://tools.ietf.org/html/rfc3031}{{{Multiprotocol Label
+  Switching Architecture}}}.
 \newblock RFC 3031, 2001.
 
 \bibitem{rfc4023}
 {\sc T.~Worster, Y.~R., and Rosen, E.}
-\newblock {{Encapsulating MPLS in IP or Generic Routing Encapsulation (GRE)}}.
+\newblock \href{http://tools.ietf.org/html/rfc4023}{{{Encapsulating MPLS in IP
+  or Generic Routing Encapsulation (GRE)}}}.
 \newblock RFC 4023, 2005.
 
 \bibitem{cisco-preso}
@@ -104,7 +112,8 @@
 
 \bibitem{rfc5439}
 {\sc Yasukawa, S., Farrel, A., and Komolafe, O.}
-\newblock {{An Analysis of Scaling Issues in MPLS-TE Core Networks}}.
+\newblock \href{http://tools.ietf.org/html/rfc5439}{{{An Analysis of Scaling
+  Issues in MPLS-TE Core Networks}}}.
 \newblock RFC 5439, Feb. 2009.
 
 \end{thebibliography}
