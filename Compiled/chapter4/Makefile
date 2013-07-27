@@ -71,6 +71,7 @@ $(MAIN).pdf: $(MAIN).ps
 #	ps2pdf -dSAFER -dNOPLATFONTS -dEmbedAllFonts=true -dPDFSETTINGS=/prepress $< $@
 	ps2pdf $< $@
 
+
 .PHONY: report
 report:
 	@echo "PICTURES: $(PICTURES)"
