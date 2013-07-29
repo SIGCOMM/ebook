@@ -22,6 +22,7 @@ chapter3/chapter3.pdf:
 
 chapter4/chapter4.pdf:
 	cd chapter4 ; $(MAKE) 
+	cp chapter4/paper.pdf chapter4/chapter4.pdf
 
 chapter5/chapter5.pdf:
 	cd chapter5 ; $(MAKE)
@@ -45,4 +46,4 @@ chapter9/chapter9.pdf:
 
 clean:
 	-for d in $(DIRS); do (cd $$d; $(MAKE) clean ); done
-	rm -f *.aux *.bbl *.blg *.log *.dvi *.bak *~ *.thm ebook.ps ebook.pdf 
+	rm -f *.out *.aux *.bbl *.blg *.log *.dvi *.bak *~ *.thm ebook.ps ebook.pdf 
