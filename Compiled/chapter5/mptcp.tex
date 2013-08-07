@@ -447,7 +447,9 @@ less congestion.
 \begin{figure}[t]
 \centering
 \includegraphics*[width=0.45\columnwidth,bb=167 245 509 380]{figures/1bottleneck}
-\caption{A scenario which shows the importance of weighting the aggressiveness of subflows (taken from \cite{mptcp-cc}).}
+\caption{A scenario which shows the importance of weighting the
+  aggressiveness of subflows (Reprinted from \cite{mptcp-cc}. Included
+  here by permission).}
 \label{fig:1bottleneck}
 \end{figure}
 
@@ -458,7 +460,8 @@ less congestion.
 and the bottom link is used by two TCP connections. A Multipath TCP connection uses
 both links. Multipath TCP pushes most of its traffic onto less congested top link,
 making the two links behave like a resource pool of capacity 40~pkts/s. Capacity is divided equally,
-with each flow having throughput 10~pkts/s. (taken from \cite{mptcp-cc})}
+with each flow having throughput 10~pkts/s. (Reprinted from
+\cite{mptcp-cc}. Included here by permission)}
 \label{fig:mptcp1}
 \end{figure}
 
@@ -498,7 +501,8 @@ and in a congested network it makes sense to only use the one-hop paths.
 \centering
 \includegraphics*[width=0.8\columnwidth]{figures/3pipes}
 \caption{A scenario to illustrate the importance of choosing the
-  less-congested path. (taken from \cite{mptcp-cc})}
+  less-congested path. (Reprinted from \cite{mptcp-cc}. Included here
+  by permission.)}
 \label{fig:klingon}
 \end{figure}
 
@@ -634,10 +638,11 @@ the Linux kernel implementation \cite{raiciu2012hard}.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.5\textwidth]{figures/figure2}
+\includegraphics[width=0.7\textwidth]{figures/figure2}
 \caption{(Mobility) A mobile device is using both its WiFi and 3G interfaces, and then the WiFi
 interface fails. We plot the instantaneous throughputs of Multipath TCP and application-layer
-handover. (taken from \cite{Paasch_Mobile:2012})} 
+handover. (Reprinted from \cite{Paasch_Mobile:2012}; \copyright 2012,
+ACM. Included here by permission.)} 
 \label{fig:mptcp2}
 \end{figure}
 
@@ -696,7 +701,8 @@ inform the remote end about changes in priority for the subflows.}.
 \caption{(Datacenter load-balancing) This graph compares standard TCP with MPTCP 
 with two and four flows, when tested on an EC2 testbed with 40 instances. Each host 
 uses iperf sequentially to all other hosts. We plot the performance of all flows (Y axis)
-in increasing order of their throughputs (X axis). (taken from \cite{raiciu2011improving})}
+in increasing order of their throughputs (X axis). (Reprinted from
+\cite{raiciu2011improving}, \copyright ACM, 2011. Included here by permission)}
 \label{fig:mptcp3}
 \end{figure}
 
