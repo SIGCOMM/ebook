@@ -22,7 +22,7 @@ chapter3/chapter3.pdf:
 
 chapter4/chapter4.pdf:
 	cd chapter4 ; $(MAKE) 
-	cp chapter4/paper.pdf chapter4/chapter4.pdf
+	mv chapter4/paper.pdf chapter4/chapter4.pdf
 
 chapter5/chapter5.pdf:
 	cd chapter5 ; $(MAKE)

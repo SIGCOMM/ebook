@@ -123,17 +123,15 @@ Goals of the routing information service.
 
 \bibitem{bush07:_testin}
 {\sc Bush, R., Hiebert, J., Maennel, O., Roughan, M., and Uhlig, S.}
-\newblock
-  \href{http://dx.doi.org/http://doi.acm.org/10.1145/1321753.1321756}{Testing
-  the reachability of (new) address space}.
+\newblock \href{http://doi.acm.org/10.1145/1321753.1321756}{Testing the
+  reachability of (new) address space}.
 \newblock In {\em ACM SIGCOMM workshop on Internet network management
   (INM'07)\/} (2007), pp.~236--241.
 
 \bibitem{bush09:_inter_optom}
 {\sc Bush, R., Maennel, O., Roughan, M., and Uhlig, S.}
-\newblock
-  \href{http://dx.doi.org/http://doi.acm.org/10.1145/1644893.1644923}{Internet
-  optometry: assessing the broken glasses in {I}nternet reachability}.
+\newblock \href{http://doi.acm.org/10.1145/1644893.1644923}{Internet optometry:
+  assessing the broken glasses in {I}nternet reachability}.
 \newblock In {\em ACM SIGCOMM Internet Measurement Conference (IMC)\/} (2009),
   pp.~242--253.
 
@@ -290,7 +288,7 @@ Converged transport architecture: Improving scale and efficiency in service
 \newblock \href{http://dx.doi.org/10.1073/pnas.0501426102}{{The ``robust yet
   fragile'' nature of the Internet}}.
 \newblock {\em Proceedings of the National Academy of Sciences of the USA
-  (PNAS) 102}, 41 (2005), 14497--502.
+  (PNAS) 102}, 41 (October 2005), 14497--502.
 
 \bibitem{erdos60}
 {\sc Erd\"{o}s, P., and R\'{e}nyi, A.}
@@ -395,7 +393,7 @@ Converged transport architecture: Improving scale and efficiency in service
 \bibitem{tim:wedgies}
 {\sc Griffin, T.~G., and Huston, G.}
 \newblock \href{http://tools.ietf.org/html/rfc4264}{{BGP} wedgies}.
-\newblock {RFC 4264}.
+\newblock {RFC 4264}, 2005.
 
 \bibitem{griffin02:_analy_med_oscil_probl_bgp}
 {\sc Griffin, T.~G., and Wilfong, G.}
@@ -526,7 +524,8 @@ Evolving backbone networks using with an {MPLS} supercore.
 {\sc Krishnamurthy, B., and Willinger, W.}
 \newblock \href{http://dx.doi.org/10.1145/1453175.1453186}{What are our
   standards for validation of measurement-based networking research?}
-\newblock {\em ACM SIGMETRICS Performance Evaluation Review 36\/} (2008).
+\newblock {\em ACM SIGMETRICS Performance Evaluation Review 36\/} (2008),
+  64--69.
 
 \bibitem{labovitzSig00}
 {\sc Labovitz, C., Ahuja, A., Bose, A., and Jahanian, F.}
