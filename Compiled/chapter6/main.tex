@@ -1068,9 +1068,11 @@ ip vrf VPN2
 
 Fig.~\ref{fig:mpls-slides-12} shows the output of command {\tt show ip bgp vpnv4 
 all} on router LER1. This command has the same effect of {\tt show ip bgp} but 
-it shows the routing entries related to IPv4 VPNs. In this case the output highlights 
-that LER1, in addition to its locally originated prefixes 10.0.0.0/24 with Route Distinguisher 100:1 and 193.1.1.0/24 with Route Distinguisher 100:2, knows two remote prefixes. Namely, it knows 200.1.6.0 with 
-Route Distinguisher 100:11 and 193.1.1.0/24 with Route Distinguisher 100:22.
+it shows the routing entries related to IPv4 VPNs. In this case the output 
+highlights that LER1, in addition to its locally originated prefixes 10.0.0.0/24 
+with Route Distinguisher 100:11 and 193.1.1.0/24 with Route Distinguisher 
+100:22, knows two remote prefixes. Namely, it knows 200.1.6.0/24 with Route 
+Distinguisher 100:11 and 10.0.0.0/24 with Route Distinguisher 100:22.
 \end{shaded}
 
 Tagging IP prefixes with a VPN identifier is an easy solution, but it is 
@@ -1553,7 +1555,7 @@ At least the following should be mentioned.
 
  \item Customer CEs need to support BGP if eBGP peering are established with the PEs. This may not be the case for cheap entry-level router models. As an alternative, BGP can be replaced by static routes configured on PEs, sacrificing part of the flexibility that a dynamic routing protocol between CEs and PEs provides.
 
- \item The P in the MPLS acronym stands for ``Private''. However, MPLS VPNs are only private at routing level: no authentication, confidentiality, or integrity is provided by the architecture. For instance, the provider can inspect all customers' traffic in plaintext. Even worse, since the separation is enforced at the routing level, it turns out that the ability of guaranteeing isolation within the same VPN actually depends on the provider's topology~\cite{integrity}.
+ \item The P in the VPN acronym stands for ``Private''. However, MPLS VPNs are only private at routing level: no authentication, confidentiality, or integrity is provided by the architecture. For instance, the provider can inspect all customers' traffic in plaintext. Even worse, since the separation is enforced at the routing level, it turns out that the ability of guaranteeing isolation within the same VPN actually depends on the provider's topology~\cite{integrity}.
 
  \item The basic MPLS architecture lacks support for quality of service. QoS can usually be offered on top of MPLS, e.g., by establishing LSPs which reflect traffic engineering policies. However, adding traffic engineering and quality of service support comes at the cost of keeping more state in the network, hence posing scalability concerns~\cite{juniper-preso,rfc5439}.
 
